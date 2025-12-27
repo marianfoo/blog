@@ -1,0 +1,124 @@
+baseURL = "https://blog.zeis.de/"
+languageCode = "en-us"
+title = "Marian Zeis Blog"
+theme = "PaperMod"
+
+# Pagination
+[pagination]
+  pagerSize = 10
+
+# Enable emoji support
+enableEmoji = true
+
+# Enable RSS feed and JSON for search
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# Build settings
+[build]
+  writeStats = true
+
+[minify]
+  disableXML = true
+  minifyOutput = true
+
+[params]
+  # Site description for SEO
+  description = "Blog about UI5, ABAP, SAP development and technology insights by Marian Zeis"
+  author = "Marian Zeis"
+  
+  # Theme settings
+  defaultTheme = "auto"  # auto, light, dark
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  disableSpecial1stPost = false
+  disableScrollToTop = false
+  comments = false
+  hidemeta = false
+  hideSummary = false
+  showtoc = true
+  tocopen = false
+
+  # Home page profile mode
+  [params.profileMode]
+    enabled = true
+    title = "Marian Zeis"
+    subtitle = "Independent UI5/ABAP Developer | SAP Consultant | Bavaria, Germany"
+    imageUrl = "https://avatars.githubusercontent.com/u/13335743?v=4"
+    imageWidth = 150
+    imageHeight = 150
+    imageTitle = "Marian Zeis"
+    [[params.profileMode.buttons]]
+      name = "Blog Posts"
+      url = "/posts/"
+    [[params.profileMode.buttons]]
+      name = "About"
+      url = "/about/"
+
+  # Social icons
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/marianfoo"
+  [[params.socialIcons]]
+    name = "rss"
+    url = "/index.xml"
+
+  # Cover image settings
+  [params.cover]
+    hidden = false
+    hiddenInList = false
+    hiddenInSingle = false
+
+  # Search settings
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 1000
+    threshold = 0.4
+    minMatchCharLength = 0
+    keys = ["title", "permalink", "summary", "content"]
+
+# Menu items
+[[menu.main]]
+  identifier = "posts"
+  name = "Posts"
+  url = "/posts/"
+  weight = 10
+
+[[menu.main]]
+  identifier = "about"
+  name = "About"
+  url = "/about/"
+  weight = 20
+
+[[menu.main]]
+  identifier = "search"
+  name = "Search"
+  url = "/search/"
+  weight = 30
+
+[[menu.main]]
+  identifier = "tags"
+  name = "Tags"
+  url = "/tags/"
+  weight = 40
+
+# Markup settings for syntax highlighting
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = true
+    lineNos = false
+    noClasses = false
+    style = "monokai"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
