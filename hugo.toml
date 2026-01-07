@@ -55,7 +55,7 @@ enableEmoji = true
 
   # Home page profile mode
   [params.profileMode]
-    enabled = true
+    enabled = false
     title = "Marian Zeis"
     subtitle = "Independent UI5/ABAP Developer | SAP Consultant | Bavaria, Germany"
     imageUrl = "https://avatars.githubusercontent.com/u/13335743?v=4"
