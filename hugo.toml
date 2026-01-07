@@ -27,6 +27,14 @@ enableEmoji = true
   description = "Blog about UI5, ABAP, SAP development and technology insights by Marian Zeis"
   author = "Marian Zeis"
   
+  # Favicon settings - use data URIs to avoid missing file errors
+  [params.assets]
+    favicon = "data:,"
+    favicon16x16 = "data:,"
+    favicon32x32 = "data:,"
+    apple_touch_icon = "data:,"
+    safari_pinned_tab = "data:,"
+  
   # Theme settings
   defaultTheme = "auto"  # auto, light, dark
   ShowReadingTime = true
