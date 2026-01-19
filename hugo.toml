@@ -119,6 +119,12 @@ enableEmoji = true
   url = "/tags/"
   weight = 40
 
+[[menu.main]]
+  identifier = "rss"
+  name = "RSS"
+  url = "/index.xml"
+  weight = 50
+
 # Markup settings for syntax highlighting
 [markup]
   [markup.highlight]
