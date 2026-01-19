@@ -10,9 +10,11 @@ showToc: false
 cover:
   image: "ui5-lib-diff-screenshot.jpg"
   alt: "UI5 Lib Diff comparison screenshot"
+  relative: true
   hiddenInSingle: true
 images:
   - "ui5-lib-diff-screenshot.jpg"
+  - "bluesky-bot-screenshot.jpg"
 ---
 
 I was recently asked how my UI5 Versions Bot on Bluesky works. So I want to simply explain how it works and how I use an RSS feed as a small “microservice” so I can base other services on this data.
