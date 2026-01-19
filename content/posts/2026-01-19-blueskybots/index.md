@@ -6,8 +6,13 @@ tags: ["rss", "microservices", "github-pages", "bluesky", "ui5"]
 categories: ["Development"]
 author: "Marian Zeis"
 description: "How I use RSS feeds as lightweight microservices to power services like Bluesky bots"
-showToc: true
-TocOpen: false
+showToc: false
+cover:
+  image: "ui5-lib-diff-screenshot.jpg"
+  alt: "UI5 Lib Diff comparison screenshot"
+  hiddenInSingle: true
+images:
+  - "ui5-lib-diff-screenshot.jpg"
 ---
 
 I was recently asked how my UI5 Versions Bot on Bluesky works. So I want to simply explain how it works and how I use an RSS feed as a small “microservice” so I can base other services on this data.
@@ -30,8 +35,8 @@ The Bluesky bot (see [`packages/blueskybotui5version`](https://github.com/marian
 
 Instead of scraping webpages, it periodically fetches the two RSS feeds from the UI5 microservice:
 
-- SAPUI5: https://ui5-lib-diff.marianzeis.de/rss_feed_SAPUI5.xml
-- OpenUI5: https://ui5-lib-diff.marianzeis.de/rss_feed_OpenUI5.xml
+- SAPUI5: <https://ui5-lib-diff.marianzeis.de/rss_feed_SAPUI5.xml>
+- OpenUI5: <https://ui5-lib-diff.marianzeis.de/rss_feed_OpenUI5.xml>
 
 For each RSS item (for example “Version 1.143.0 Changes”), it extracts the version number and checks if it already posted about it. The bot persists that state in a local `posted_versions.json` file so it won’t repost the same version after a restart.
 
