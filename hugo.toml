@@ -2,6 +2,7 @@ baseURL = "https://blog.zeis.de/"
 languageCode = "en-us"
 title = "Marian Zeis Blog"
 theme = "PaperMod"
+enableRobotsTXT = true
 
 # Pagination
 [pagination]
@@ -21,6 +22,11 @@ enableEmoji = true
 [minify]
   disableXML = true
   minifyOutput = true
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
 
 [params]
   # Site description for SEO
@@ -83,6 +89,11 @@ enableEmoji = true
     hidden = false
     hiddenInList = false
     hiddenInSingle = false
+
+  # Structured data
+  [params.schema]
+    publisherType = "Person"
+    sameAs = ["https://github.com/marianfoo"]
 
   # Search settings
   [params.fuseOpts]
