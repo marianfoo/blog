@@ -131,12 +131,6 @@ enableEmoji = true
   weight = 40
 
 [[menu.main]]
-  identifier = "impressum"
-  name = "Impressum"
-  url = "/impressum/"
-  weight = 50
-
-[[menu.main]]
   identifier = "rss"
   name = "RSS"
   url = "/index.xml"
