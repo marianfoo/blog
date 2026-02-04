@@ -28,7 +28,7 @@ Setup instructions are here: [Eclipse configuration (GitHub Copilot)](https://gi
 
 SAP has announced an MCP server for ABAP, so why create a community one?
 
-The trigger for me was the [release of Agent Mode in GitHub Copilot for ADT](https://github.com/orgs/community/discussions/151288#discussioncomment-15617219), which finally makes it possible to edit ABAP code by Copilot.
+The trigger for me was the [release of Agent Mode in GitHub Copilot for ADT](https://github.com/orgs/community/discussions/151288), which finally makes it possible to edit ABAP code by Copilot.
 
 LLM models are already really good, but ABAP knowledge is still a recurring problem. So I wanted an MCP server that is actually tailored for ABAP.
 
