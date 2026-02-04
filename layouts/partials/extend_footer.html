@@ -1,0 +1,116 @@
+<!-- Lightbox overlay (dependency-free) -->
+<div id="pm-lightbox" class="pm-lightbox" aria-hidden="true">
+  <div class="pm-lightbox__backdrop" data-pm-lightbox-close="true"></div>
+  <div class="pm-lightbox__content" role="dialog" aria-modal="true" aria-label="Image preview">
+    <div class="pm-lightbox__topbar">
+      <button type="button" class="pm-lightbox__close" data-pm-lightbox-close="true" aria-label="Close image preview">
+        Close
+      </button>
+    </div>
+    <div class="pm-lightbox__stage">
+      <img class="pm-lightbox__img" alt="">
+    </div>
+  </div>
+</div>
+
+<script>
+  (function () {
+    const root = document.documentElement;
+    const lb = document.getElementById("pm-lightbox");
+    if (!lb) return;
+
+    const imgEl = lb.querySelector(".pm-lightbox__img");
+    const closeTargets = lb.querySelectorAll('[data-pm-lightbox-close="true"]');
+
+    let lastActiveEl = null;
+
+    function isOpen() {
+      return lb.getAttribute("aria-hidden") === "false";
+    }
+
+    function openLightbox(fromImg) {
+      if (!fromImg) return;
+
+      lastActiveEl = document.activeElement;
+
+      const src = fromImg.getAttribute("data-lightbox-src") || fromImg.currentSrc || fromImg.src;
+      if (!src) return;
+
+      imgEl.src = src;
+      imgEl.alt = fromImg.getAttribute("alt") || "";
+
+      lb.setAttribute("aria-hidden", "false");
+      root.classList.add("pm-lightbox-open");
+
+      const closeBtn = lb.querySelector(".pm-lightbox__close");
+      if (closeBtn) closeBtn.focus();
+    }
+
+    function closeLightbox() {
+      if (!isOpen()) return;
+
+      lb.setAttribute("aria-hidden", "true");
+      root.classList.remove("pm-lightbox-open");
+
+      // Clear src to stop loading large images when closed
+      imgEl.removeAttribute("src");
+      imgEl.alt = "";
+
+      if (lastActiveEl && typeof lastActiveEl.focus === "function") {
+        lastActiveEl.focus();
+      }
+      lastActiveEl = null;
+    }
+
+    closeTargets.forEach((el) => el.addEventListener("click", closeLightbox));
+    imgEl.addEventListener("click", closeLightbox);
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") closeLightbox();
+    });
+
+    function shouldEnhanceImage(img) {
+      if (!img) return false;
+      if (img.closest("a")) return false; // don't override linked images
+      if (img.classList.contains("pm-lightbox__img")) return false;
+      if (img.getAttribute("data-no-lightbox") === "true") return false;
+      return true;
+    }
+
+    function bindImages(scope) {
+      const container = scope || document;
+      const imgs = container.querySelectorAll(".post-content img, .post-single img");
+
+      imgs.forEach((img) => {
+        if (!shouldEnhanceImage(img)) return;
+        if (img.getAttribute("data-pm-lightbox-bound") === "true") return;
+
+        img.setAttribute("data-pm-lightbox-bound", "true");
+        img.addEventListener("click", (e) => {
+          // Avoid interfering with selection/drag
+          e.preventDefault();
+          openLightbox(img);
+        });
+      });
+    }
+
+    // Bind initially
+    bindImages(document);
+
+    // Bind dynamically inserted images (e.g. search results, partial re-render)
+    const observer = new MutationObserver((mutations) => {
+      for (const m of mutations) {
+        for (const node of m.addedNodes) {
+          if (!(node instanceof Element)) continue;
+          if (node.matches && node.matches("img")) {
+            bindImages(node.parentElement || document);
+          } else {
+            bindImages(node);
+          }
+        }
+      }
+    });
+
+    observer.observe(document.body, { childList: true, subtree: true });
+  })();
+</script>

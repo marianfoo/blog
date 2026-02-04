@@ -13,5 +13,74 @@
   .footer .footer-impressum {
     font-size: 0.85em;
   }
+
+  /* Simple lightbox for post images */
+  .post-content img:not(a img),
+  .post-single img:not(a img) {
+    cursor: zoom-in;
+  }
+
+  .pm-lightbox {
+    position: fixed;
+    inset: 0;
+    display: none;
+    z-index: 9999;
+  }
+
+  .pm-lightbox[aria-hidden="false"] {
+    display: block;
+  }
+
+  .pm-lightbox__backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.82);
+    backdrop-filter: blur(2px);
+  }
+
+  .pm-lightbox__content {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    padding: 12px;
+  }
+
+  .pm-lightbox__topbar {
+    display: flex;
+    justify-content: flex-end;
+    pointer-events: none;
+  }
+
+  .pm-lightbox__close {
+    pointer-events: auto;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: rgba(0, 0, 0, 0.25);
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+
+  .pm-lightbox__stage {
+    display: grid;
+    place-items: center;
+    min-height: 0;
+  }
+
+  .pm-lightbox__img {
+    max-width: min(1200px, 96vw);
+    max-height: 86vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    cursor: zoom-out;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+
+  .pm-lightbox-open {
+    overflow: hidden;
+  }
 </style>
 
