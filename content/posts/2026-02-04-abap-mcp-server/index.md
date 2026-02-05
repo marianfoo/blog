@@ -56,3 +56,14 @@ Uwe Fetzer already tested the new ABAP MCP server and confirmed it works better 
 [saptodon.org post](https://saptodon.org/@se38@nrw.social/116011617758947257)
 
 Try it out and let me know what you think! You can use either the deployed version on my server or run it locally with Node or Docker.
+
+---
+
+## Update (2026-02-05)
+
+Since publishing, I added two new capabilities:
+
+- **Software Heroes as an online search source**: When `includeOnline: true`, the `search` tool can now also pull relevant content from [Software Heroes](https://software-heroes.com/) (including German and English results).
+- **New `abap_feature_matrix` tool**: You can query the ABAP Feature Matrix to quickly check feature availability across releases and ABAP Cloud, also provided by Björn Schulz.
+
+Huge thanks to **Björn Schulz** for offering his APIs and making these integrations possible.
