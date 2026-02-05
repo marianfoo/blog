@@ -63,7 +63,9 @@ Try it out and let me know what you think! You can use either the deployed versi
 
 Since publishing, I added two new capabilities:
 
-- **Software Heroes as an online search source**: When `includeOnline: true`, the `search` tool can now also pull relevant content from [Software Heroes](https://software-heroes.com/) (including German and English results).
-- **New `abap_feature_matrix` tool**: You can query the ABAP Feature Matrix to quickly check feature availability across releases and ABAP Cloud, also provided by Björn Schulz.
+- **Software Heroes as an online search source**: The `search` tool can now also pull relevant content from [Software Heroes](https://software-heroes.com/) (including German and English results).
+- **New `abap_feature_matrix` tool**: You can query the [ABAP Feature Matrix](https://software-heroes.com/abap-feature-matrix) to quickly check feature availability across releases and ABAP Cloud, also provided by Björn Schulz.
 
 Huge thanks to **Björn Schulz** for offering his APIs and making these integrations possible.
+
+More info about the tools and sources is in the GitHub Repo README: https://github.com/marianfoo/abap-mcp-server#available-tools
