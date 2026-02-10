@@ -97,6 +97,8 @@ One more thing people ask quickly: cost.
 
 For my run, I ended up at about $20.26 for GPT-5.2, $39.76 for Claude Opus 4.5 (8,973,159 tokens), and EUR 98.80 for ABAP-1 (17,983,990 tokens).
 
+To be fair: for OpenAI and Anthropic I used batch processing, so these numbers are already discounted (batch is usually cheaper, sometimes roughly half compared to the regular API). ABAP-1 has no batch API, so there is no discount like that.
+
 Why was ABAP-1 so much more expensive? The benchmark is iterative: when activation or ABAP Unit tests fail, you send the error back to the model and try again. Since ABAP-1 produced errors much more often, many prompts did not get "finished" early and had to be sent again and again, which drives up tokens and cost.
 
 What I find interesting here is not only the final number, but also how the models behave across the feedback loops.
