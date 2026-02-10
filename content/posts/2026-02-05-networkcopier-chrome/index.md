@@ -30,6 +30,8 @@ After using it locally for a while, I decided to publish my first extension in t
 
 **Install it here:** [Chrome Web Store](https://chromewebstore.google.com/detail/network-request-response/mphiaidjajmllkfkjlkfgmfkccpnomgc)
 
+**Update (2026-02-10):** Also available in the [Microsoft Edge Add-ons store](https://microsoftedge.microsoft.com/addons/detail/network-request-respons/mmfhobojdlgibnffjhkidhdcjfbfhgpo).
+
 **Source code:** [GitHub](https://github.com/marianfoo/chrome-extension-copynetworkrequests)
 
 ---
