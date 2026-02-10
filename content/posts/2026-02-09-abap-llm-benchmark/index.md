@@ -2,11 +2,12 @@
 title: "Benchmarking LLMs for ABAP: Why ABAP-1 Isn't a Code Generator (Yet)"
 date: 2026-02-09T09:30:00+01:00
 draft: false
-description: "A short summary of the TH Köln ABAP code generation benchmark and my updated runs with GPT-5.2, Claude Opus 4.5, and SAP ABAP-1 (compared to GPT-5)."
+description: "Comparison of GPT-5, GPT-5.2, Claude Opus 4.5, and SAP ABAP-1 on the TH Köln ABAP code generation benchmark. Claude Opus leads, ABAP-1 trails. Results and practical recommendations for ABAP developers."
 tags: ["abap", "llm", "benchmark", "ai", "openai", "anthropic", "sap"]
 categories: ["projects"]
 author: "Marian Zeis"
 showToc: false
+keywords: ["ABAP code generation", "LLM benchmark", "best LLM for ABAP", "ABAP-1", "Claude Opus", "GPT-5 ABAP"]
 cover:
   image: "success_by_model_by_feedbackround_in_percent.png"
   alt: "Bar chart showing cumulative ABAP code generation success rates by model and feedback round."
@@ -88,7 +89,15 @@ To make it more concrete, here are the cumulative success rates from my current 
 
 Here is the same as a chart:
 
-![Cumulative successful code generations by feedback round (percent)](success_by_model_by_feedbackround_in_percent.png)
+![ABAP LLM benchmark: cumulative success rates by model (GPT-5, Claude Opus 4.5, ABAP-1) and feedback round](success_by_model_by_feedbackround_in_percent.png)
+
+### Cost (rough numbers)
+
+One more thing people ask quickly: cost.
+
+For my run, I ended up at about $20.26 for GPT-5.2, $39.76 for Claude Opus 4.5 (8,973,159 tokens), and EUR 98.80 for ABAP-1 (17,983,990 tokens).
+
+Why was ABAP-1 so much more expensive? The benchmark is iterative: when activation or ABAP Unit tests fail, you send the error back to the model and try again. Since ABAP-1 produced errors much more often, many prompts did not get "finished" early and had to be sent again and again, which drives up tokens and cost.
 
 What I find interesting here is not only the final number, but also how the models behave across the feedback loops.
 
@@ -121,6 +130,6 @@ This matters most when you work with APIs and actually build things. If you only
 
 When developing ABAP, we can provide much more context (for example via my [ABAP MCP server](https://github.com/marianfoo/abap-mcp-server)), catch syntax errors early, run tools like [abaplint](https://abaplint.org/), and then feed that back into the LLM to improve the code, basically like in TypeScript. That usually gets you to pretty good ABAP code that also follows your rules.
 
-Depending on cost, I'll try to keep this up to date with newer models. If you have a model you want to see in the comparison, just open an issue in my blog repo: [GitHub issues](https://github.com/marianfoo/LLM-Benchmark-ABAP-Code-Generation/issues).
+Depending on cost, I'll try to keep this up to date with newer models. If you have a model you want to see in the comparison, just open an issue in the benchmark repo: [GitHub issues](https://github.com/marianfoo/LLM-Benchmark-ABAP-Code-Generation/issues).
 
 Big thanks to Stephan Wallraven, Tim Köhne, Hartmut Westenberger, and Andreas Moser for creating the foundation with their benchmark and paper.
