@@ -17,6 +17,8 @@ images:
   - "success_by_model_by_feedbackround_in_percent.png"
 ---
 
+**Live benchmark results:** [abap-llm-benchmark.marianzeis.de](http://abap-llm-benchmark.marianzeis.de/)
+
 In a lot of SAP webcasts and webinars, especially around AI, the question comes up very early: which model are you using, and which one do you recommend?
 
 For [CAP](https://cap.cloud.sap/docs/) and [UI5](https://ui5.sap.com/) the answer is usually pretty simple: use the current best model from Anthropic. If you add good context via [MCP servers](https://community.sap.com/t5/technology-blog-posts-by-sap/sap-build-introduces-new-mcp-servers-to-enable-agentic-development-for/ba-p/14205602) from the community or SAP, you are basically fine. There is just a lot of public knowledge available, and most of it is in JavaScript/TypeScript, which LLMs handle extremely well.
