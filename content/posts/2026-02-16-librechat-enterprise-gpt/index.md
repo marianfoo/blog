@@ -42,6 +42,8 @@ what it can do. It doesn't connect to your custom codebase, can't search your in
 and has no way to follow references across ABAP objects the way an MCP-based agent can. It is a nice chatbot for 
 general SAP questions, but it is far from a tool that understands *your* system.
 
+This also matches the broader picture. In the [DSAG Investment Report 2026](https://dsag.de/presse/dsag-investment-report-2026-companies-are-investing-more-selectively-ai-is-becoming-established-cloud-computing-is-being-put-to-the-test/), most respondents who already run AI use cases do so with **non-SAP solutions**, not SAP's AI offerings.
+
 On the other end of the spectrum, you have high-end commercial solutions like **Nova Intelligence**. They do exactly what you want: they read the SAP system directly, understand the context, and are enterprise-ready. But they are also **really expensive**.
 
 ### The "Middle Ground": A Secure, Open Source Alternative
@@ -144,5 +146,6 @@ If you are interested in the technical details, check out my **[Setup Guide](htt
 *   **ABAP MCP Server (for Copilot in ADT):** [marianfoo/abap-mcp-server](https://github.com/marianfoo/abap-mcp-server)
 *   **ADT MCP Server (vibing-steampunk):** [oisee/vibing-steampunk](https://github.com/oisee/vibing-steampunk)
 *   **LibreChat:** [librechat.ai](https://www.librechat.ai/)
+*   **DSAG Investment Report 2026 (AI usage):** [Companies are investing more selectively, AI is becoming established](https://dsag.de/presse/dsag-investment-report-2026-companies-are-investing-more-selectively-ai-is-becoming-established-cloud-computing-is-being-put-to-the-test/)
 *   **Benchmarking LLMs for ABAP:** [My Benchmark Post](https://blog.zeis.de/posts/2026-02-09-abap-llm-benchmark/)
 *   **MCP Protocol:** [modelcontextprotocol.io](https://modelcontextprotocol.io/)
