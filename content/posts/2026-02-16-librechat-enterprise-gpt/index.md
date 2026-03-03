@@ -23,14 +23,19 @@ These tools are fantastic for individual developers. You install them, connect t
 **But here is the problem:** For a common SAP consultant, architect, or developer in a corporate environment, this setup is often a nightmare.
 
 1.  **Complexity:** Setting up a local LLM, configuring MCP, and dealing maybe with Docker isn't everyone's cup of tea.
-2.  **Security:** This is the big one. The default ADT MCP server, for example, is powerful—it allows reading and *writing* to the SAP system. No security department in their right mind would allow a "random" AI tool to have write access to the entire development system without strict governance.
+2.  **Security:** This is the big one. The default ADT MCP server, for example, is powerful, it allows reading and *writing* to the SAP system. No security department in their right mind would allow a "random" AI tool to have write access to the entire development system without strict governance.
 3.  **Governance:** Companies need to know where the data is going. Is it staying in Europe? Is it training the model?
+
+This is not mainly a "developer toy". The biggest value is for everyone who needs to understand what is going on in an SAP system: consultants, architects, project leads, support, and developers who are new to a system.
+
+For ABAP developers specifically, the best enterprise-ready setup today is often **GitHub Copilot in ADT** because Agent Mode is available and you can add ABAP-specific knowledge through my [ABAP MCP Server](https://github.com/marianfoo/abap-mcp-server). But this IDE setup still has a gap: it does not give a complete overview of the system and it cannot reliably retrieve additional classes, programs, and related objects on demand to build the full context for an answer.
+Neverthless, it is a great tool for many ABAP developers to query the system and get a complete context for an answer. As you can see in the sample workflow below, it is possible to use the MCP servers to build the full context for an answer and just copy-paste the code into Eclipse.
 
 ### The Enterprise Struggle
 
 I recently saw a discussion that perfectly illustrates this struggle. Companies are desperately searching for "Enterprise Ready" AI usage, but they are hitting walls.
 
-Some are trying manual workarounds, such as exporting their entire codebase to SharePoint for Microsoft Copilot to index. This often involves flattening package hierarchies to bypass navigation limits and manually creating `README.md` or cross-reference files to provide context—all while battling hallucinations where the AI fails to find existing transactions due to indexing errors.
+Some are trying manual workarounds, such as exporting their entire codebase to SharePoint for Microsoft Copilot to index. This often involves flattening package hierarchies to bypass navigation limits and manually creating `README.md` or cross-reference files to provide context, all while battling hallucinations where the AI fails to find existing transactions due to indexing errors.
 
 Then there is **SAP Joule**. SAP's own AI assistant is available for consultants, but it is quite limited in 
 what it can do. It doesn't connect to your custom codebase, can't search your internal SharePoint documentation, 
@@ -68,7 +73,7 @@ The biggest concern is the SAP connection. I did **not** want the AI to write co
 
 The [ADT MCP Server](https://github.com/oisee/vibing-steampunk) has a specific mode for this. I configured it to be **Read-Only**.
 
-Furthermore, I connected it using a **Technical User** in SAP that has *only* display authorizations. This ensures that even if the AI wanted to (or was tricked to), it effectively cannot change anything in the system. It can only "look" — just like a developer using SE80 in display mode.
+Furthermore, I connected it using a **Technical User** in SAP that has *only* display authorizations. This ensures that even if the AI wanted to (or was tricked to), it effectively cannot change anything in the system. It can only "look", just like a developer using SE80 in display mode.
 
 ### Step 2: The Setup
 
@@ -114,7 +119,7 @@ I used LibreChat and Ollama because they are free and open source, which makes t
 You can swap Ollama for Azure OpenAI, Anthropic, or Mistral in seconds. LibreChat supports them out of the box. I even benchmarked different models for ABAP recently: [Benchmarking LLMs for ABAP](https://blog.zeis.de/posts/2026-02-09-abap-llm-benchmark/).
 
 **Want to use Microsoft Copilot?**
-Since MCP is an open standard, you aren't tied to LibreChat. You can host these MCP servers as simple HTTP services and connect them to other clients, including Microsoft Copilot or other agent platforms that support the protocol. The MCP servers are just "infrastructure"—the client is interchangeable.
+Since MCP is an open standard, you aren't tied to LibreChat. You can host these MCP servers as simple HTTP services and connect them to other clients, including Microsoft Copilot or other agent platforms that support the protocol. The MCP servers are just "infrastructure", the client is interchangeable.
 
 **Want more data sources?**
 There are MCP servers for GitHub, Jira, Confluence, and many more. You can "dock" them onto your agent just like we did with the SAP Docs server.
@@ -136,6 +141,7 @@ If you are interested in the technical details, check out my **[Setup Guide](htt
 
 *   **Setup Guide & Repository:** [marianfoo/llm-client-sap-system-integration-sharepoint](https://github.com/marianfoo/llm-client-sap-system-integration-sharepoint)
 *   **SAP Docs MCP Server:** [marianfoo/mcp-sap-docs](https://github.com/marianfoo/mcp-sap-docs)
+*   **ABAP MCP Server (for Copilot in ADT):** [marianfoo/abap-mcp-server](https://github.com/marianfoo/abap-mcp-server)
 *   **ADT MCP Server (vibing-steampunk):** [oisee/vibing-steampunk](https://github.com/oisee/vibing-steampunk)
 *   **LibreChat:** [librechat.ai](https://www.librechat.ai/)
 *   **Benchmarking LLMs for ABAP:** [My Benchmark Post](https://blog.zeis.de/posts/2026-02-09-abap-llm-benchmark/)
