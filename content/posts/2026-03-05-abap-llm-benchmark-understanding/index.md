@@ -1,6 +1,6 @@
 ---
 title: "SAP’s ABAP-1 Loses Every ABAP Benchmark, Even “Explaining”"
-date: 2026-03-05T09:00:00+01:00
+date: 2026-03-03T22:00:00+01:00
 draft: false
 description: "Second post after my ABAP code generation benchmark: a new “Understanding” test (explain existing ABAP from unit tests), updated model lineup, and why ABAP-1 still does not make sense in practice."
 tags: ["abap", "llm", "benchmark", "ai", "sap", "openai", "anthropic", "google", "deepseek", "mistral"]
