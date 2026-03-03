@@ -93,6 +93,18 @@ Here is the high-level concept:
 2.  **Data Privacy**: If you use a local model (like Llama 3) or a private Azure instance, your code never trains a public model.
 3.  **User Experience**: Developers get a chat interface they are used to (like ChatGPT), but it has "superpowers" to look up SAP notes and internal code.
 
+### Sample Workflow: Understanding What Is Going On in Your System
+
+This is the day-to-day use case for consultants, architects, support, and anyone onboarding onto an SAP landscape.
+
+**The Request:**
+Someone asks: "Tell me what `BAPI_DISPUTE_CREATE` is doing in my SAP system. Use SAP docs and my system source code."
+
+**The Process:**
+The agent uses SAP Docs MCP to understand the standard context (what the BAPI is meant to do), then uses the ADT MCP server to find the function module in the actual system, pull the source and function group, and summarize what happens step by step.
+
+![Researching SAP System](images/researching-sap-system.jpg)
+
 ### Sample Workflow: Implementing a RAP Action
 
 Instead of just answering simple questions, the agent can plan and implement features.
