@@ -1,6 +1,6 @@
 ---
 title: "Building an Enterprise-Ready SAP AI Agent with Open Source"
-date: 2026-02-16T09:00:00+01:00
+date: 2026-03-03T09:00:00+01:00
 draft: false
 description: "How to set up a secure, enterprise-grade AI agent for SAP development using LibreChat and MCP, bridging the gap between expensive commercial tools and insecure workarounds."
 tags: ["sap", "ai", "mcp", "librechat", "enterprise", "security"]
@@ -19,6 +19,14 @@ images:
 There is currently a huge hype around the new **MCP (Model Context Protocol)** servers. I've built one for [SAP Docs](https://github.com/marianfoo/mcp-sap-docs), and there are excellent community projects like the [ADT API MCP Server](https://github.com/oisee/vibing-steampunk).
 
 These tools are fantastic for individual developers. You install them, connect them to your IDE or a local LLM, and suddenly your AI assistant knows about SAP.
+
+### Architecture overview (in one picture)
+
+Before diving into the details, here is the high-level architecture I’m aiming for:
+
+![Enterprise SAP AI agent architecture overview: user, LibreChat, LLM (local or cloud), and MCP-based knowledge sources](images/architecture.png)
+
+The idea is simple: users talk to **LibreChat** (the UI + orchestrator). LibreChat calls an **LLM** (local inside the company network, or a trusted cloud model) and enriches answers via **MCP servers**. Those MCP servers connect to your knowledge sources (SAP docs, your SAP system via a read-only ADT connection, and internal SharePoint) without turning this into an “AI tool with write access to prod”.
 
 **But here is the problem:** For a common SAP consultant, architect, or developer in a corporate environment, this setup is often a nightmare.
 
