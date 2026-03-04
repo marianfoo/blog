@@ -8,12 +8,12 @@ categories: ["tutorial"]
 author: "Marian Zeis"
 showToc: true
 cover:
-  image: "images/integration-rap-action-1.jpg"
+  image: "images/architecture.png"
   alt: "Screenshot showing the integration of SAP RAP actions in the AI agent workflow."
   relative: true
   hiddenInSingle: true
 images:
-  - "images/integration-rap-action-1.jpg"
+  - "images/architecture.png"
 ---
 
 There is currently a huge hype around the new **MCP (Model Context Protocol)** servers. I've built one for [SAP Docs](https://github.com/marianfoo/mcp-sap-docs), and there are excellent community projects like the [ADT API MCP Server](https://github.com/oisee/vibing-steampunk).
