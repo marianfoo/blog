@@ -8,6 +8,14 @@
     })
 </script>
 
+{{- with .Param "mainWidth" }}
+<style>
+  :root {
+    --main-width: {{ . }};
+  }
+</style>
+{{- end }}
+
 <style>
   /* Make the footer "Impressum" link visually smaller than the rest */
   .footer .footer-impressum {
@@ -83,4 +91,3 @@
     overflow: hidden;
   }
 </style>
-

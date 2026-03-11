@@ -1,0 +1,45 @@
+name: Update Fiori Elements Feature Map
+
+on:
+  schedule:
+    - cron: "0 5 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    env:
+      TZ: Europe/Berlin
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+          submodules: recursive
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: "lts/*"
+
+      - name: Update feature map data and assets
+        run: npm run feature-map:update
+
+      - name: Commit and push updates
+        run: |
+          git add data/fe-feature-map static/feature-map
+
+          if git diff --cached --quiet; then
+            echo "No changes detected."
+            exit 0
+          fi
+
+          git config user.name "feature-map-bot"
+          git config user.email "feature-map-bot@users.noreply.github.com"
+
+          git commit -m "chore(feature-map): update Fiori Elements feature map"
+          git push origin HEAD:main

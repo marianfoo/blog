@@ -1,0 +1,44 @@
+<section class="fe-feature-map" data-fe-feature-map data-json-url="/feature-map/fe-feature-adoption.json">
+  <h2 class="fe-feature-map__title">SAP Fiori Elements Feature Map</h2>
+  <p class="fe-feature-map__meta">Data updated: <span data-role="generated-at">-</span></p>
+
+  <div class="fe-feature-map__toolbar" role="group" aria-label="Feature map filters">
+    <label class="fe-feature-map__toolbar-label">
+      Full text search
+      <input type="search" data-role="global-search" placeholder="Search all columns">
+    </label>
+
+    <div class="fe-feature-map__floorplan-filter" data-role="floorplan-filter">
+      <button type="button" class="fe-feature-map__button" data-role="floorplan-toggle" aria-expanded="false" aria-haspopup="true">
+        Floorplans: All
+      </button>
+      <div class="fe-feature-map__floorplan-menu" data-role="floorplan-menu" hidden>
+        <div class="fe-feature-map__menu-actions">
+          <button type="button" class="fe-feature-map__button" data-role="floorplan-select-all">Select all</button>
+          <button type="button" class="fe-feature-map__button" data-role="floorplan-clear">Clear</button>
+        </div>
+        <div class="fe-feature-map__floorplan-options" data-role="floorplan-options"></div>
+      </div>
+    </div>
+
+    <button type="button" class="fe-feature-map__button" data-role="clear-filters">Clear Filters</button>
+    <span class="fe-feature-map__count" data-role="result-count">0 / 0 rows</span>
+  </div>
+
+  <div class="fe-feature-map__table-wrap">
+    <table class="fe-feature-map__table" data-role="table">
+      <caption>Feature availability and references across SAPUI5 versions</caption>
+      <thead>
+        <tr data-role="header-row"></tr>
+        <tr class="fe-feature-map__filter-row" data-role="filter-row"></tr>
+      </thead>
+      <tbody data-role="table-body"></tbody>
+    </table>
+  </div>
+
+  <p class="fe-feature-map__status" data-role="status" aria-live="polite"></p>
+
+  <noscript>
+    <p>This table needs JavaScript for search, filters, and sorting.</p>
+  </noscript>
+</section>

@@ -1,0 +1,374 @@
+.fe-feature-map {
+  --fe-map-bg: #f4f7fb;
+  --fe-map-panel: #ffffff;
+  --fe-map-panel-muted: #f6f9ff;
+  --fe-map-text: #1f2937;
+  --fe-map-muted: #4b5563;
+  --fe-map-border: #c6d0df;
+  --fe-map-brand: #0a6ed1;
+  --fe-map-header: #dbe9fb;
+  --fe-map-filter-header: #eef5ff;
+  --fe-map-button-bg: #f8fafc;
+  --fe-map-link: #0b63bd;
+  --fe-map-link-hover: #084d93;
+  --fe-map-input-bg: #ffffff;
+  --fe-map-input-text: #111827;
+  --fe-map-danger: #b42318;
+  --fe-map-shadow: 0 10px 24px rgba(2, 8, 23, 0.16);
+  color: var(--fe-map-text);
+  margin: 1.5rem 0;
+}
+
+:root[data-theme="dark"] .fe-feature-map {
+  --fe-map-bg: #11161f;
+  --fe-map-panel: #1a2230;
+  --fe-map-panel-muted: #202b3b;
+  --fe-map-text: #e7edf8;
+  --fe-map-muted: #b7c3d8;
+  --fe-map-border: #32445d;
+  --fe-map-brand: #69a9ff;
+  --fe-map-header: #233043;
+  --fe-map-filter-header: #27364b;
+  --fe-map-button-bg: #26364a;
+  --fe-map-link: #8ec5ff;
+  --fe-map-link-hover: #b6d8ff;
+  --fe-map-input-bg: #141d29;
+  --fe-map-input-text: #e7edf8;
+  --fe-map-danger: #ff9e9e;
+  --fe-map-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+}
+
+.fe-feature-map__title {
+  margin: 0 0 0.5rem 0;
+  color: var(--fe-map-brand);
+}
+
+.fe-feature-map__meta {
+  color: var(--fe-map-muted);
+  font-size: 0.9rem;
+  margin: 0 0 0.9rem 0;
+}
+
+.fe-feature-map__toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  border: 1px solid var(--fe-map-border);
+  border-radius: 0.7rem;
+  background: var(--fe-map-panel);
+  padding: 0.75rem;
+}
+
+.fe-feature-map__toolbar-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.fe-feature-map__toolbar-label input {
+  min-width: 16rem;
+}
+
+.fe-feature-map input[type="search"] {
+  border: 1px solid var(--fe-map-border);
+  background: var(--fe-map-input-bg);
+  color: var(--fe-map-input-text);
+  border-radius: 0.45rem;
+  padding: 0.42rem 0.55rem;
+  font-size: 0.88rem;
+}
+
+.fe-feature-map input[type="search"]::placeholder {
+  color: var(--fe-map-muted);
+  opacity: 0.95;
+}
+
+.fe-feature-map__button {
+  border: 1px solid var(--fe-map-border);
+  border-radius: 0.45rem;
+  background: var(--fe-map-button-bg);
+  color: var(--fe-map-text);
+  padding: 0.4rem 0.6rem;
+  font-size: 0.82rem;
+  cursor: pointer;
+}
+
+.fe-feature-map__button:hover,
+.fe-feature-map__button:focus-visible {
+  border-color: var(--fe-map-brand);
+}
+
+.fe-feature-map__button:focus-visible,
+.fe-feature-map input[type="search"]:focus-visible,
+.fe-feature-map__sort-button:focus-visible {
+  outline: 2px solid var(--fe-map-brand);
+  outline-offset: 1px;
+}
+
+.fe-feature-map__count {
+  font-size: 0.8rem;
+  color: var(--fe-map-muted);
+}
+
+.fe-feature-map__floorplan-filter {
+  position: relative;
+}
+
+.fe-feature-map__floorplan-menu {
+  position: absolute;
+  top: calc(100% + 0.35rem);
+  left: 0;
+  width: 22rem;
+  max-height: 19rem;
+  overflow: auto;
+  background: var(--fe-map-panel);
+  border: 1px solid var(--fe-map-border);
+  border-radius: 0.55rem;
+  box-shadow: var(--fe-map-shadow);
+  padding: 0.6rem;
+  z-index: 20;
+}
+
+.fe-feature-map__menu-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  border-bottom: 1px solid var(--fe-map-border);
+  margin-bottom: 0.55rem;
+  padding-bottom: 0.55rem;
+}
+
+.fe-feature-map__floorplan-options label {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.82rem;
+  margin-bottom: 0.35rem;
+  cursor: pointer;
+}
+
+.fe-feature-map__table-wrap {
+  margin-top: 0.8rem;
+  border: 1px solid var(--fe-map-border);
+  border-radius: 0.7rem;
+  overflow: visible;
+  max-height: none;
+  background: var(--fe-map-bg);
+}
+
+.fe-feature-map__table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 0;
+  table-layout: fixed;
+  font-size: 0.84rem;
+  line-height: 1.32;
+}
+
+.fe-feature-map__table caption {
+  text-align: left;
+  font-size: 0.8rem;
+  color: var(--fe-map-muted);
+  padding: 0.55rem 0.7rem;
+  background: var(--fe-map-panel-muted);
+  border-bottom: 1px solid var(--fe-map-border);
+}
+
+.fe-feature-map__table th,
+.fe-feature-map__table td {
+  border-top: 1px solid var(--fe-map-border);
+  padding: 0.55rem 0.65rem;
+  text-align: left;
+  vertical-align: top;
+  overflow-wrap: anywhere;
+}
+
+.fe-feature-map__table th:nth-child(1),
+.fe-feature-map__table td:nth-child(1) {
+  width: 16%;
+}
+
+.fe-feature-map__table th:nth-child(2),
+.fe-feature-map__table td:nth-child(2) {
+  width: 18%;
+}
+
+.fe-feature-map__table th:nth-child(3),
+.fe-feature-map__table td:nth-child(3) {
+  width: 28%;
+}
+
+.fe-feature-map__table th:nth-child(4),
+.fe-feature-map__table td:nth-child(4) {
+  width: 24%;
+}
+
+.fe-feature-map__table th:nth-child(5),
+.fe-feature-map__table td:nth-child(5) {
+  width: 14%;
+}
+
+.fe-feature-map__table tbody tr:hover td {
+  background: var(--fe-map-panel-muted);
+}
+
+.fe-feature-map__table thead th {
+  position: sticky;
+  top: 0;
+  background: var(--fe-map-header);
+  z-index: 2;
+  border-top: 0;
+}
+
+.fe-feature-map__table thead tr.fe-feature-map__filter-row th {
+  top: 2.25rem;
+  background: var(--fe-map-filter-header);
+  z-index: 1;
+  padding: 0.45rem 0.55rem;
+}
+
+.fe-feature-map__filter-row input {
+  width: 100%;
+  font-size: 0.77rem;
+}
+
+.fe-feature-map__sort-button {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.32rem;
+}
+
+.fe-feature-map__sort-indicator {
+  font-size: 0.72rem;
+  color: var(--fe-map-muted);
+}
+
+.fe-feature-map__table a {
+  color: var(--fe-map-link);
+  text-decoration: none;
+}
+
+.fe-feature-map__table a:hover {
+  color: var(--fe-map-link-hover);
+  text-decoration: underline;
+}
+
+.fe-feature-map__status {
+  margin-top: 0.65rem;
+  font-size: 0.8rem;
+  color: var(--fe-map-danger);
+  min-height: 1em;
+}
+
+@media (max-width: 960px) {
+  .fe-feature-map__toolbar {
+    align-items: stretch;
+  }
+
+  .fe-feature-map__toolbar-label {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+  }
+
+  .fe-feature-map__toolbar-label input {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .fe-feature-map__floorplan-filter,
+  .fe-feature-map__button[data-role="clear-filters"] {
+    width: 100%;
+  }
+
+  .fe-feature-map__button[data-role="floorplan-toggle"],
+  .fe-feature-map__button[data-role="clear-filters"] {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .fe-feature-map__floorplan-menu {
+    width: min(92vw, 22rem);
+    left: 0;
+    right: auto;
+  }
+
+  .fe-feature-map__table-wrap {
+    overflow: visible;
+    overflow-y: visible;
+    border: 0;
+    background: transparent;
+  }
+
+  .fe-feature-map__table caption {
+    border-radius: 0.7rem;
+    border: 1px solid var(--fe-map-border);
+    margin-bottom: 0.5rem;
+  }
+
+  .fe-feature-map__table {
+    min-width: 0;
+    table-layout: fixed;
+  }
+
+  .fe-feature-map__table thead {
+    display: none;
+  }
+
+  .fe-feature-map__table tbody {
+    display: block;
+  }
+
+  .fe-feature-map__table tbody tr {
+    display: block;
+    border: 1px solid var(--fe-map-border);
+    border-radius: 0.7rem;
+    background: var(--fe-map-panel);
+    margin-bottom: 0.7rem;
+    overflow: hidden;
+  }
+
+  .fe-feature-map__table tbody td {
+    display: grid;
+    grid-template-columns: minmax(7.5rem, 40%) 1fr;
+    gap: 0.45rem;
+    padding: 0.55rem 0.65rem;
+    width: 100%;
+    border-top: 1px solid var(--fe-map-border);
+  }
+
+  .fe-feature-map__table tbody td:first-child {
+    border-top: 0;
+  }
+
+  .fe-feature-map__table tbody td::before {
+    content: attr(data-label);
+    font-weight: 700;
+    color: var(--fe-map-muted);
+    font-size: 0.77rem;
+    text-transform: none;
+  }
+
+  .fe-feature-map__table th:nth-child(1),
+  .fe-feature-map__table td:nth-child(1),
+  .fe-feature-map__table th:nth-child(2),
+  .fe-feature-map__table td:nth-child(2),
+  .fe-feature-map__table th:nth-child(3),
+  .fe-feature-map__table td:nth-child(3),
+  .fe-feature-map__table th:nth-child(4),
+  .fe-feature-map__table td:nth-child(4),
+  .fe-feature-map__table th:nth-child(5),
+  .fe-feature-map__table td:nth-child(5) {
+    width: auto;
+  }
+}

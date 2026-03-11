@@ -1,0 +1,13 @@
+{{- $fragmentPath := "static/feature-map/fe-feature-adoption.fragment.html" -}}
+{{- if os.FileExists $fragmentPath -}}
+  {{- if not (.Page.Scratch.Get "fe_feature_map_assets_loaded") -}}
+<link rel="stylesheet" href="{{ "/feature-map/fe-feature-adoption.css" | relURL }}">
+<script defer src="{{ "/feature-map/fe-feature-adoption.js" | relURL }}"></script>
+    {{- .Page.Scratch.Set "fe_feature_map_assets_loaded" true -}}
+  {{- end -}}
+{{ os.ReadFile $fragmentPath | safeHTML }}
+{{- else -}}
+<div class="fe-feature-map-fallback">
+  The feature map assets are not available yet. Run <code>npm run feature-map:update</code>.
+</div>
+{{- end -}}

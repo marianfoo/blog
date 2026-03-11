@@ -1,0 +1,15 @@
+{
+  "name": "blog-zeis-feature-map",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "feature-map:scrape": "node scripts/scrape-fe-feature-map.mjs",
+    "feature-map:md": "node scripts/generate-feature-adoption-markdown.mjs",
+    "feature-map:matrix": "node scripts/generate-feature-matrix-markdown.mjs",
+    "feature-map:build": "node scripts/build-fe-feature-map-assets.mjs",
+    "feature-map:update": "npm run feature-map:scrape && npm run feature-map:md && npm run feature-map:matrix && npm run feature-map:build"
+  }
+}
