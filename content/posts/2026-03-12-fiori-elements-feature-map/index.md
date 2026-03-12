@@ -41,6 +41,6 @@ The data is taken directly from the official feature list.
 Since the feature map in the SAPUI5 documentation has not been clearly managed, there are sometimes discrepancies.  
 You can see this more clearly in the [feature matrix markdown](/feature-map/fe-feature-matrix.md).
 
-**Download the data:** [JSON](/feature-map/fe-feature-adoption.json) · [CSV](/feature-map/fe-feature-adoption.csv) · [Markdown](/feature-map/fe-feature-adoption.md)
+**Download the data:** [JSON](/feature-map/fe-feature-adoption.json) · [CSV](/feature-map/fe-feature-adoption.csv) · [Adoption (Markdown)](/feature-map/fe-feature-adoption.md) · [Matrix (Markdown)](/feature-map/fe-feature-matrix.md)
 
 {{< fe-feature-map >}}
