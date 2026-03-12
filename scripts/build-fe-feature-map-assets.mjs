@@ -97,6 +97,27 @@ function resolveUrl(href, sourceUrl) {
   const normalized = normalizeWhitespace(href);
   if (!normalized) return null;
 
+  // Already absolute
+  if (/^https?:\/\//i.test(normalized)) return normalized;
+
+  // SAP UI5 SDK uses a hash-based SPA router (#/topic/<id>).
+  // Raw hrefs scraped from the HTML are relative to the page path
+  // (e.g. "topic/<id>"), but must be resolved against the /#/ route,
+  // not the filesystem path. Applying the same rules used in
+  // generate-feature-adoption-markdown.mjs::resolveDocLink.
+  const versionMatch = /^https?:\/\/ui5\.sap\.com\/([\d.]+)\//.exec(sourceUrl ?? "");
+  const version = versionMatch?.[1] ?? null;
+
+  if (version) {
+    if (normalized.startsWith("/#/")) return `https://ui5.sap.com/${version}${normalized}`;
+    if (normalized.startsWith("#/")) return `https://ui5.sap.com/${version}/${normalized}`;
+    if (normalized.startsWith("./topic/")) {
+      return `https://ui5.sap.com/${version}/#/${normalized.replace(/^\.\//, "")}`;
+    }
+    if (normalized.startsWith("topic/")) return `https://ui5.sap.com/${version}/#/${normalized}`;
+  }
+
+  // Fallback for any other relative URL patterns
   try {
     return new URL(normalized, sourceUrl).toString();
   } catch {
