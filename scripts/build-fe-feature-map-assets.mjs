@@ -17,6 +17,7 @@ const STATIC_DIR = path.resolve(process.cwd(), "static/feature-map");
 const LOG_PATH = path.join(DATA_DIR, "scrape-log.json");
 const ADOPTION_DATA_PATH = path.join(DATA_DIR, "fe-feature-adoption.json");
 const STATIC_DATA_PATH = path.join(STATIC_DIR, "fe-feature-adoption.json");
+const STATIC_CSV_PATH = path.join(STATIC_DIR, "fe-feature-adoption.csv");
 const STATIC_FRAGMENT_PATH = path.join(STATIC_DIR, "fe-feature-adoption.fragment.html");
 const STATIC_CSS_PATH = path.join(STATIC_DIR, "fe-feature-adoption.css");
 const STATIC_JS_PATH = path.join(STATIC_DIR, "fe-feature-adoption.js");
@@ -254,6 +255,47 @@ function getLatestSnapshotFetchedAt(snapshots) {
   }
 
   return latest;
+}
+
+function escapeCsv(value) {
+  const s = String(value ?? "").replace(/"/g, '""');
+  if (/[,\r\n"]/.test(s)) return `"${s}"`;
+  return s;
+}
+
+function buildCsv(rows) {
+  const headers = [
+    "Controls, UI Elements, Features",
+    "Supported Floorplans",
+    "Developer Documentation",
+    "SAP Fiori Design Guidelines",
+    "Available from Version"
+  ];
+
+  const headerLine = headers.map(escapeCsv).join(",");
+
+  const dataLines = rows.map((row) => {
+    const floorplans = (row.supportedFloorplans ?? []).join("; ");
+    const docsText = (row.developerDocumentation?.links ?? [])
+      .map((l) => l?.label ?? l?.url ?? "")
+      .filter(Boolean)
+      .join("; ");
+    const guidelinesText = (row.sapFioriDesignGuidelines?.links ?? [])
+      .map((l) => l?.label ?? l?.url ?? "")
+      .filter(Boolean)
+      .join("; ");
+    const version = row.availableFromVersion ?? "";
+
+    return [
+      escapeCsv(row.feature),
+      escapeCsv(floorplans),
+      escapeCsv(docsText),
+      escapeCsv(guidelinesText),
+      escapeCsv(version)
+    ].join(",");
+  });
+
+  return [headerLine, ...dataLines].join("\n");
 }
 
 function buildAdoptionData(snapshots, rows) {
@@ -1156,12 +1198,14 @@ async function main() {
 
   await writeJson(ADOPTION_DATA_PATH, adoptionData);
   await writeJson(STATIC_DATA_PATH, adoptionData);
+  await writeText(STATIC_CSV_PATH, buildCsv(rows));
   await writeText(STATIC_FRAGMENT_PATH, buildFragment());
   await writeText(STATIC_CSS_PATH, buildCss());
   await writeText(STATIC_JS_PATH, buildJs());
 
   console.log(`Wrote ${ADOPTION_DATA_PATH}`);
   console.log(`Wrote ${STATIC_DATA_PATH}`);
+  console.log(`Wrote ${STATIC_CSV_PATH}`);
   console.log(`Wrote ${STATIC_FRAGMENT_PATH}`);
   console.log(`Wrote ${STATIC_CSS_PATH}`);
   console.log(`Wrote ${STATIC_JS_PATH}`);

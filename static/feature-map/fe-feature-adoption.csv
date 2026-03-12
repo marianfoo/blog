@@ -1,0 +1,171 @@
+"Controls, UI Elements, Features",Supported Floorplans,Developer Documentation,SAP Fiori Design Guidelines,Available from Version
+Chart,Analytical list page; List report page; Object page; Overview page,Configuring Charts,Chart,1.145.0
+Micro chart,Analytical list page; List report page; Object page,Micro Chart Facet in the Object Page Header; Adding a Micro Chart to a Table,Micro Chart,1.145.0
+Quick views for link navigation,List report page; Object page,Enabling Quick Views for Link Navigation,,1.145.0
+Lazy loading,Object page,Defining the Loading Behavior of Object Pages,,1.144.1
+Save and navigate to the list report page,Object page,Save and Navigation Options on the Object Page,,1.144.1
+ConditionalSwitch building block,List report page; Object page; Analytical list page,The ConditionalSwitch Building Block; Building Blocks,,1.143.2
+Status building block,List report page; Object page; Analytical list page,The Status Building Block; Building Blocks,,1.143.2
+Combine buttons/actions in the toolbar,List report page,Actions,,1.142.7
+Inline Edit,List report page; Object page,Inline Edit,,1.142.7
+Multiple views of list report page tables,List report page,Multiple Views on the List Report Page,,1.142.7
+Checkbox group,Object page,Grouping of Fields,,1.141.4
+Checkbox groups,Object page,Grouping of Fields,,1.139.4
+Icon for AI buttons,List report page; Object page; Analytical list page; Overview page; Worklist,Adding the AI Icon to Action Buttons,,1.139.4
+Input assistance,Object page,Input Assistance,,1.139.4
+Retrieve row count of a table,List report page; Object page; Analytical list page; Overview page; Worklist,Influencing the Request Dynamically,,1.139.4
+MessageButton building block,List report page; Object page; Analytical list page,The MessageButton Building Block; Building Blocks,,1.136.15
+Page building block,List report page; Object page; Analytical list page,The Page Building Block; Building Blocks,,1.136.15
+SAP Fiori development portal,List report page; Object page; Analytical list page; Overview page; Worklist page,Building Blocks; Extension Points for Sections on the Object Page; Extension Points for Pages,,1.136.15
+RichTextEditor building block,Object page,The RichTextEditor Building Block; Building Blocks,,1.134.1
+VariantManagement building block,List report page; Object page; Analytical list page,The VariantManagement Building Block; Building Blocks,,1.134.1
+Generative AI Features,List report page; Object page,Generative AI Features,Designing for Generative AI,1.133.5
+Flexible Programming Model,List report (OData V4); Object page (OData V4); Analytical list page (OData V4),Flexible Programming Model; Building Blocks; Extension Points for Sections on the Object Page; Extension Points for Pages,,1.131.1
+Context menu,Object page; List report page; Analytical list page,Tables,,1.124.11
+TreeTable building block,List report page; Object page; Analytical list page,The TreeTable Building Block; Building Blocks,,1.124.11
+Context-dependent actions,Object page; List report page; Analytical list page,Actions,,1.120.43
+Context-dependent value help,Object page; List report page; Analytical list page,Field Help,Value Help Dialog,1.120.43
+Defining the order of standard actions,List report page; Object page,Adding Actions to Tables,Action Placement,1.120.43
+Empty row mode for table entries,Object page,Enabling Inline Creation Mode or Empty Row Mode for Table Entries,,1.120.43
+Freeze the first column in a table,List report page; Object page; Analytical list page,Tables,Table Overview,1.120.43
+History of recently entered values,List report page; Object page,Enabling the History of Recently Entered Values,,1.120.43
+Inline creation mode for table entries,Object page,Enabling Inline Creation Mode or Empty Row Mode for Table Entries,,1.120.43
+Launch object page in edit mode,Object page,Handling of the preferredMode Parameter,,1.120.43
+Share to Microsoft Teams,List report page; Object page,The Share Functionality,Header Toolbar,1.120.43
+Tree table hierarchy,List report page; Object page,Setting the Table Type,Tree Table,1.120.43
+Add card to insights,List report page; Analytical list page,Creating Cards for the Insights Cards Section of My Home in SAP S/4HANA Cloud Public Edition and My Home in SAP S/4HANA,,1.114.10
+Adaptation,List report page; Object page,Adapting the UI: List Report Page and Object Page; Extending Delivered Apps Using Adaptation Extensions,,1.102.2
+Copying and pasting from spreadsheet applications to tables,Object page,Copying and Pasting from External Applications to Tables,,1.102.2
+Custom code,Overview page,Using Custom Code Before Standard Operations,,1.102.2
+Direct edit,List report page; Object page,Navigation to an Object Page in Edit Mode,,1.102.2
+Internal navigation,List report page; Object page,Example: Enable Internal Navigation to Different Detail Page,,1.102.2
+Keyboard shortcuts,List report page; Object page; Analytical list page,Keyboard Shortcuts,,1.102.2
+Mass edit,List report page,Enabling Editing Using a Dialog (Mass Edit); Enabling Editing Using a Dialog (Mass Edit) on the List Report Page,Enabling Editing Using a Dialog in the List Report,1.102.2
+Save,Object page,Save and Navigation Options on the Object Page; Toggling Between Draft and Saved Values,,1.102.2
+Stream support,Object page,Enabling Stream Support,,1.102.2
+Worklist,Worklist,Worklist,Worklist,1.102.2
+"""Share"" functionality",List report page; Object page,The Share Functionality; Store/Restore the Application State,,1.96.46
+Add column to a table,Analytical list page; List report page; Object page; Overview page,Defining Line Items; Table Cards; Grouping of Fields,Table Overview,1.96.46
+Add custom column,List report page; Object page,Extension Points for Tables,Table Overview,1.96.46
+Add multiple fields to one column,Analytical list page; List report page; Object page; Overview page,Adding Multiple Fields to One Column in Responsive Tables,,1.96.46
+Building blocks,List report page; Object page; Analytical list page,Building Blocks; The Field Building Block; The Form Building Block; The FormElement Building Block; The Table Building Block; The FilterBar Building Block; The FilterField Building Block; The MicroChart Building Block; The Chart Building Block; The FlexibleColumnLayoutActions Building Block; The Share Building Block; The Paginator Building Block; The TreeTable Building Block; The VariantManagement Building Block; The RichTextEditor Building Block; The Page Building Block; The MessageButton Building Block; The KPITag Building Block; The AINotice Building Block,,1.96.46
+Canvas page,List report page (OData V2); Object page (OData V2),Extending Apps Using a Canvas Page,,1.96.46
+Chart building block,List report page; Object page; Analytical list page,The Chart Building Block; Building Blocks,,1.96.46
+Column popin,Object page,Tables,,1.96.46
+Combine buttons/actions in toolbar,List report,Actions,,1.96.46
+Custom action,List report page; Object page,Adding Custom Actions Using Extension Points,Action Placement,1.96.46
+Custom dynamic side content,Object page,Adding Dynamic Side Content to Object Page Sections,Dynamic Side Content,1.96.46
+Custom filter field,List report page,Adding Custom Fields to the Filter Bar,Filter Bar,1.96.46
+Custom form,Object page,Extension Points for Forms on the Object Page,Form / Simple Form,1.96.46
+Custom header facet,List report page; Object page,Extension Point for List Report Page Header; Extension Points for Object Page Header Facets,List Report Floorplan; Object Page Floorplan,1.96.46
+Custom section,Object page,Extension Points for Sections on the Object Page,Object Page Floorplan,1.96.46
+Custom subsection,Object page,Extension Points for Subsections on the Object Page,Object Page Floorplan,1.96.46
+Default values for action parameter dialog,List report page; Object page,Default Values for Action Parameters; Actions; Prefilling Fields Using the DefaultValuesFunction,Dialog,1.96.46
+Display text and ID for value help,Object page,Value Help,,1.96.46
+Export to spreadsheet,List report page; Object page,Using the Export Button,,1.96.46
+Field building block,List report page; Object page; Analytical list page,The Field Building Block; Building Blocks,,1.96.46
+FilterBar building block,List report page; Object page; Analytical list page,The FilterBar Building Block; Building Blocks,,1.96.46
+FlexibleColumnLayoutActions building block,List report page; Object page; Analytical list page,The FlexibleColumnLayoutActions Building Block; Building Blocks,,1.96.46
+FormElement building block,List report page; Object page; Analytical list page,The FormElement Building Block; Building Blocks,,1.96.46
+Keep alive,List report page; Object page,Refresh Dataset for Back Navigation When sap-keep-alive Is Set to True,,1.96.46
+MicroChart building block,List report page; Object page; Analytical list page,The MicroChart Building Block; Building Blocks,,1.96.46
+Navigation extension,List report page; Object page; Analytical list page,Replacing Standard Navigation in a Table; Example: Replacing Standard Navigation in a Responsive Table on the Object Page; Creating an Extension to Modify Properties in the Navigation Context; Example: Enable Internal Navigation to Different Detail Page,,1.96.46
+Paginator building block,List report page; Object page; Analytical list page,The Paginator Building Block; Building Blocks,,1.96.46
+sap-keep-alive mode,Object page; List report page,Refresh Entity Sets in sap-keep-alive Mode,,1.96.46
+Semantic date range on filter bar,Analytical list page; List report page; Object page; Overview page,Enabling Semantic Operators in the Filter Bar,,1.96.46
+Share building block,List report page; Object page; Analytical list page,The Share Building Block; Building Blocks,,1.96.46
+Table building block,List report page; Object page; Analytical list page,The Table Building Block; Building Blocks,,1.96.46
+Analytical card,Analytical list page; Overview page,Creating Key Performance Indicator Tags in Analytical Services; Analytical Cards,Analytical Card,1.84.57
+Analytical table,List report page; Object page,Configuring Tables,Analytical Table (ALV),1.84.57
+Area micro chart,Analytical list page; List report page; Object page,Micro Chart Facet in the Object Page Header; Area Micro Chart; Adding a Micro Chart to a Table,Area Micro Chart,1.84.57
+Avatar,List report page; Object page,Using Images and Icons,Avatar,1.84.57
+Breadcrumb,Analytical list page; Object page,Object Page Header,Breadcrumb,1.84.57
+Bullet chart,Analytical list page; Object page,Configuring Charts,Bullet Chart,1.84.57
+Bullet micro chart,Analytical list page; List report page; Object page,Micro Chart Facet in the Object Page Header; Bullet Micro Chart; Adding a Micro Chart to a Table,Bullet Micro Chart,1.84.57
+Busy indicator,Analytical list page; List report page; Object page; Overview page,,Busy Indicator,1.84.57
+Button/Action,Analytical list page; List report page; Object page; Overview page,Actions; Adding Custom Actions Using Extension Points,Button,1.84.57
+Card filter,Overview page (OData V2),Configuring Card Filters,,1.84.57
+Chart/Smart chart,Analytical list page; List report page; Object page; Overview page,Configuring the Chart-Only View as the Default Option; Configuring Charts; Chart Cards Used in Overview Pages,Chart; Smart Chart,1.84.57
+Checkbox,Analytical list page; List report page; Object page; Overview page,Configuring the Selection Mode for Tables,Checkbox,1.84.57
+Coloring cards based on threshold values,Overview page,Coloring Cards Based on Threshold Values,,1.84.57
+Column chart,Analytical list page; Overview page,Column Chart,Column Chart,1.84.57
+Combo box,Analytical list page; List report page; Object page; Overview page,Value Help as a Dropdown List; Configuring View Switch,Combo Box,1.84.57
+Contact quick view,List report page; Object page,Adding a Contact Quick View to a Table,,1.84.57
+Copy and paste from Microsoft Excel to editable tables,Object page,Copying and Pasting from Microsoft Excel to Editable Tables,,1.84.57
+Cumulation (Waterfall chart),Analytical list page; Object page,Configuring Charts,Cumulation (Waterfall Chart),1.84.57
+Currency,Analytical list page; List report page; Object page; Overview page,Different Representations of a Field,Currency,1.84.57
+Custom card,Overview page,Creating Custom Cards,,1.84.57
+Date picker,Analytical list page; List report page; Object page; Overview page,Field Help,Date Picker,1.84.57
+Date range selection,Analytical list page; List report page; Object page; Overview page,Enabling Semantic Operators in the Filter Bar,Date Range Selection,1.84.57
+Date/time picker,Analytical list page; List report page; Object page; Overview page,Field Help,Date/Time Picker,1.84.57
+Default sort order in a table,List report page; Object page,"Configuring Default Settings (Visualizations, Sort Order, Filter Values)",,1.84.57
+Dialog box,Analytical list page; List report page; Object page,Adapting Texts for Confirmation Dialog Box When Deleting Lines in a Table; Confirmation Popups; Enabling Object Creation Using the Dialog on the List Report Page,Dialog,1.84.57
+Draft handling,List report page; Object page,Draft Handling,Draft Handling,1.84.57
+Dynamic page layout,List report page; Overview page,Configuring the Manifest for the Overview Page,Dynamic Page Layout,1.84.57
+Editing status,List report page; Object page,Editing Status; Disabling the Editing Status Filter; Settings for List Report Page Tables,,1.84.57
+Filter bar,Analytical list page; List report page; Overview page,"Enhancing ValueList Annotations for Visual Filters; Adapting the Filter Bar; Disabling the Editing Status Filter; Adding Custom Fields to the Filter Bar; Configuring the Global Filter on the Overview Page; Adding Custom Filters to the Overview Page; Configuring Filter Bars; Enabling the Search Function; Enabling Semantic Operators in the Filter Bar; Configuring Default Filter Values; Defining Filter Facets; Configuring Filter Fields; Configuring Default Settings (Visualizations, Sort Order, Filter Values); Enabling the History of Recently Entered Values",Filter Bar,1.84.57
+Flexible column layout,List report page; Object page,Enabling the Flexible Column Layout,Flexible Column Layout (Layout + SAP Fiori Elements),1.84.57
+Footer toolbar,Object page,Defining Determining Actions; Adding Custom Actions Using Extension Points,Footer Toolbar,1.84.57
+Form,List report page; Object page,Defining and Configuring Sections; Grouping of Fields,Form,1.84.57
+Formatting numeric values,Overview page,Formatting Numeric Values,,1.84.57
+Generic tag,Analytical list page (OData V2),Creating Key Performance Indicator Tags in Analytical Services,Generic Tag,1.84.57
+Grid table,List report page; Object page,Setting the Table Type,Grid Table,1.84.57
+Header toolbar,Analytical list page; List report page; Object page; Overview page,Actions; Enabling Actions in the Object Page Header; Adding Custom Actions Using Extension Points; Defining Custom Actions on the Overview Page,Header Toolbar,1.84.57
+Highlighting line items based on criticality,List report page; Object page,Highlighting Line Items Based on Criticality,,1.84.57
+Icon tab bar,List report page; Object page,Defining and Configuring Sections; Multiple Views on the List Report Page; Grouping of Fields,Icon Tab Bar,1.84.57
+Image,Analytical list page; List report; Object page; Overview page,"Displaying Images in Tables; Setting Up the Object Page Header; List Cards; Link List Cards; Using Images, Initials, and Icons",Image,1.84.57
+Inline creation of table entries,Object page,Enabling Inline Creation Mode or Empty Rows Mode for Table Entries,,1.84.57
+Input field,List report page; Object page,Adapting the Filter Bar; Defining and Configuring Sections; Grouping of Fields,Input Field,1.84.57
+Interactive chart,Analytical list page,Visual Filters,Interactive Chart,1.84.57
+Label,List report page; Object page,Defining and Configuring Sections; Grouping of Fields,Label,1.84.57
+Line chart,Analytical list page; Object page,Configuring Charts,Line Chart,1.84.57
+Line micro chart,Analytical list page; List report page; Object page,Micro Chart Facet in the Object Page Header; Line Micro Chart; Adding a Micro Chart to a Table,Line Micro Chart,1.84.57
+Link,Analytical list page; List report page; Object page; Overview page,Adding a Contact Quick View to a Table; Enabling Quick Views for Link Navigation,,1.84.57
+Link list card,Overview page,Link List Cards,Link List Card,1.84.57
+List card,Overview page,List Cards,List Cards,1.84.57
+Manage cards,Overview page,Configuring Overview Pages Using Runtime Capabilities,,1.84.57
+Menu button,List report page (OData V2); Object page (OData V2),Adapting the UI: List Report and Object Page,Menu Button,1.84.57
+Message box,Analytical list page; List report page; Object page; Overview page,Adding Confirmation Popovers for Actions; Confirmation Popups; Using Messages,Message Box,1.84.57
+Message page,Analytical list page; List report page; Object page; Overview page,,Messaging,1.84.57
+Message popover,List report page; Object page,Using Messages,Message Popover,1.84.57
+Message toast,Analytical list page; List report page; Object page; Overview page,Using Messages,Message Toast,1.84.57
+Micro chart/Smart micro chart,Analytical list page; List report page; Object page,Micro Chart Facet in the Object Page Header; Smart Micro Chart; Adding a Micro Chart to a Table,Micro Chart,1.84.57
+Multi-combo box,List report page; Object page,Value Help as a Dropdown List,Multi-Combo Box,1.84.57
+Multi-input field,Overview page,Using the Multi-Input Field on the Object Page,,1.84.57
+Multiple selection of lines in tables,List report page; Object page,Configuring the Selection Mode for Tables,,1.84.57
+Multiple views on list report tables,List report,Multiple Views in the List Report,,1.84.57
+Navigation,Analytical list page; List report page; Object page; Overview page,Configuring Navigation; Example: Enable Internal Navigation to Different Detail Page; Handling of the preferredMode Parameter,Navigation,1.84.57
+P13n dialog,Analytical list page; List report page; Object page,,P13n Dialog,1.84.57
+Popover,Analytical list page; List report page; Object page; Overview page,Value Help as a Dropdown List,Popover,1.84.57
+Prefilling fields when creating a new entity,List report page; Object page,Prefilling Fields When Creating a New Entity,,1.84.57
+Progress indicator,Analytical list page; List report page; Object page,Adding a Progress Indicator to a Table; Progress Indicator Facet in the Object Page Header,Progress Indicator,1.84.57
+Quick view,Overview page (OData V2),Quick View Cards,Quick View,1.84.57
+Quick views for smart link navigation,List report page; Object page,Enabling Quick Views for Link Navigation,,1.84.57
+Radial micro chart,Analytical list page; List report page; Object page,Micro Chart Facet in the Object Page Header; Radial Micro Chart; Adding a Micro Chart to a Table,Radial Micro Chart,1.84.57
+Rating indicator,Analytical list page; List report page; Object page,Adding a Rating Indicator to a Table,Rating Indicator,1.84.57
+Related apps button,Object page,Enabling the Related Apps Button,,1.84.57
+Resizing cards,Overview page,Configuring Overview Pages Using Runtime Capabilities,,1.84.57
+Responsive table,List report page; Object page; Overview page,Setting the Table Type; Table Cards,Responsive Table,1.84.57
+Reuse components,Object page,Including Reuse Components on an Object Page,,1.84.57
+Search,Analytical list page; List report page; Object page; Overview page; Worklist,Enabling the Search Function,Search,1.84.57
+Segmented buttons,Object page,Adding Segmented Buttons to a Table Toolbar,Segmented Buttons,1.84.57
+Side effects,List report page; Object page,Side Effects,,1.84.57
+Smart link,Analytical list page; List report page; Object page; Overview page,Adding a Contact Quick View to a Table; Enabling Quick Views for Link Navigation,Smart Link,1.84.57
+Smart table,Analytical list page (OData V2); List report page; Object page; Overview page,Configuring the Table-Only View as the Default Option; Setting the Table Type; Table Cards,Smart Table,1.84.57
+Sorting on cards,Overview page,Configuring Sort Properties,,1.84.57
+Stack card,Overview page (OData V2),Stack Cards,Stack Card,1.84.57
+Stacked bar micro chart,Analytical list page; List report page; Object page,Micro Chart Facet in the Object Page Header; Stacked Bar Micro Chart; Adding a Micro Chart to a Table,Stacked Bar Micro Chart,1.84.57
+Status colors and icons,List report page; Object page,Status Colors and Icons,,1.84.57
+Table card,Overview page,Table Cards,,1.84.57
+Table personalization,Analytical list page; List report page; Object page; Overview page,Enabling Table Personalization,Table Personalization (Overview),1.84.57
+Table toolbar,List report page; Object page,Adding Segmented Buttons to a Table Toolbar,Table Toolbar,1.84.57
+Tables,List report page; Object page; Overview page,Configuring Tables; Setting the Table Type; Table Cards,Tree Table; Responsive Table; Grid Table; Analytical Table (ALV),1.84.57
+Text,Analytical list page; List report page; Object page; Overview page,Plain Text Facet in the Object Page Header,Text; Plain Text Facet,1.84.57
+Text area,Analytical list page; List report page; Object page; Overview page,Different Representations of a Field,Text Area,1.84.57
+Title,Analytical list page; List report page; Object page; Overview page,Adding Titles to Object Page Tables; Changing Default Titles of New and Unnamed Objects; Configuring the Table Card Header Area (Optional),Title,1.84.57
+Token,List report page; Object page,Field Help; Using the Multi-Input Field on the Object Page,Token,1.84.57
+Tree table,List report page; Object page,Setting the Table Type,Tree Table,1.84.57
+Unit of measure on cards,Overview page,Setting Units of Measure,,1.84.57
+Value help,Analytical list page; List report page; Object page; Overview page,Enhancing ValueList Annotations for Visual Filters; Value Help as a Dropdown List,Value Help Dialog,1.84.57
+Variant management,Analytical list page; List report page; Object page; Overview page,Managing Variants; Configuring the Manifest for the Analytical List Page; Creating a List Report Page Without Variant Management; Configuring the Manifest for the Overview Page,Variant Management,1.84.57
+Visual filter bar,Analytical list page,Configuring the Visual Filter Bar; Visual Filters,Visual Filter Bar,1.84.57
