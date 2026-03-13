@@ -178,4 +178,4 @@ Assumption: once a feature appears, it is treated as available from that version
 | Variant management | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 1.84.57 | 24/24 |
 | Visual filter bar | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 1.84.57 | 24/24 |
 
-Output file: /Users/marianzeis/DEV/blog.zeis.de/data/fe-feature-map/fe-feature-matrix.md
+Output file: /home/runner/work/blog/blog/data/fe-feature-map/fe-feature-matrix.md
