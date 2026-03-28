@@ -353,7 +353,7 @@
       "latestSeenVersion": "1.136.16",
       "latestScrapedVersion": "1.136.15",
       "lastCheckedAt": "2026-03-27T05:31:27.939Z",
-      "lastStatus": "checked-no-change",
+      "lastStatus": "already-checked",
       "patches": {
         "1.136.15": {
           "version": "1.136.15",
