@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-03-20T05:21:52.479Z",
+    "generatedAt": "2026-04-02T05:30:40.365Z",
     "rowCount": 173,
     "columns": [
       "Controls, UI Elements, Features",
@@ -173,9 +173,9 @@
       },
       {
         "minorKey": "1.145",
-        "fullVersion": "1.145.0",
-        "dataFile": "fe-features-1.145.0.json",
-        "sourceUrl": "https://ui5.sap.com/1.145.0/docs/topics/62d3f7c2a9424864921184fd6c7002eb.html",
+        "fullVersion": "1.145.1",
+        "dataFile": "fe-features-1.145.1.json",
+        "sourceUrl": "https://ui5.sap.com/1.145.1/docs/topics/62d3f7c2a9424864921184fd6c7002eb.html",
         "rowCount": 153
       },
       {
@@ -303,7 +303,7 @@
         ],
         "text": "Configuring Charts"
       },
-      "availableFromVersion": "1.145.0"
+      "availableFromVersion": "1.145.1"
     },
     {
       "feature": "Micro chart",
@@ -339,7 +339,7 @@
         ],
         "text": "Micro Chart Facet in the Object Page Header Adding a Micro Chart to a Table"
       },
-      "availableFromVersion": "1.145.0"
+      "availableFromVersion": "1.145.1"
     },
     {
       "feature": "Quick views for link navigation",
@@ -366,7 +366,7 @@
         ],
         "text": "Enabling Quick Views for Link Navigation"
       },
-      "availableFromVersion": "1.145.0"
+      "availableFromVersion": "1.145.1"
     },
     {
       "feature": "Lazy loading",
@@ -1581,7 +1581,7 @@
         "links": [
           {
             "label": "Worklist",
-            "url": "https://ui5.sap.com/1.145.0/#/topic/d1d588f1061b4bac96a1facb80d3f3a2"
+            "url": "https://ui5.sap.com/1.145.1/#/topic/d1d588f1061b4bac96a1facb80d3f3a2"
           }
         ],
         "text": "Worklist"
