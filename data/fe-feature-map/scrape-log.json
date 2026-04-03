@@ -34,7 +34,7 @@
       "latestSeenVersion": "1.96.47",
       "latestScrapedVersion": "1.96.46",
       "lastCheckedAt": "2026-04-02T05:30:40.144Z",
-      "lastStatus": "checked-no-change",
+      "lastStatus": "already-checked",
       "patches": {
         "1.96.46": {
           "version": "1.96.46",
@@ -584,7 +584,7 @@
       "latestSeenVersion": "1.145.1",
       "latestScrapedVersion": "1.145.1",
       "lastCheckedAt": "2026-04-02T05:30:40.366Z",
-      "lastStatus": "scraped",
+      "lastStatus": "already-scraped",
       "patches": {
         "1.145.0": {
           "version": "1.145.0",
