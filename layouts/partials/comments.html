@@ -1,0 +1,45 @@
+{{- if .Param "comments" }}
+<script src="https://giscus.app/client.js"
+        data-repo="marianfoo/blog"
+        data-repo-id="R_kgDOQvzFaA"
+        data-category="Blog Comments"
+        data-category-id="DIC_kwDOQvzFaM4C6b03"
+        data-mapping="pathname"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred-color-scheme"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+
+<script>
+  // Sync giscus theme with PaperMod's dark/light toggle
+  function getGiscusTheme() {
+    return document.body.classList.contains('dark') ? 'dark' : 'light';
+  }
+
+  // Set initial theme correctly (override static "dark" if in light mode)
+  (function() {
+    const script = document.querySelector('script[src="https://giscus.app/client.js"]');
+    if (script) {
+      script.setAttribute('data-theme', getGiscusTheme());
+    }
+  })();
+
+  // Watch for PaperMod theme toggle changes
+  const giscusObserver = new MutationObserver(() => {
+    const iframe = document.querySelector('iframe.giscus-frame');
+    if (iframe) {
+      iframe.contentWindow.postMessage(
+        { giscus: { setConfig: { theme: getGiscusTheme() } } },
+        'https://giscus.app'
+      );
+    }
+  });
+  giscusObserver.observe(document.body, { attributes: true, attributeFilter: ['class'] });
+</script>
+{{- end }}
