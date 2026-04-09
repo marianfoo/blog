@@ -37,7 +37,7 @@ enableEmoji = true
   # Theme settings
   defaultTheme = "auto"  # auto, light, dark
   ShowReadingTime = true
-  ShowShareButtons = true
+  ShowShareButtons = false
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
