@@ -22,7 +22,7 @@
     return document.body.classList.contains('dark') ? 'dark' : 'light';
   }
 
-  // Set initial theme correctly (override static "dark" if in light mode)
+  // Set initial theme correctly
   (function() {
     const script = document.querySelector('script[src="https://giscus.app/client.js"]');
     if (script) {
