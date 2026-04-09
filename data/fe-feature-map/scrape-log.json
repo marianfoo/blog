@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "createdAt": "2026-03-11T20:07:12.324Z",
-  "updatedAt": "2026-04-02T05:30:40.368Z",
+  "updatedAt": "2026-04-09T05:33:24.694Z",
   "versionsUrl": "https://ui5.sap.com/version.json?sap-ui-config-patches=true&sap-ui-config-showall=true",
   "topicId": "62d3f7c2a9424864921184fd6c7002eb",
   "minMinor": 84,
@@ -141,10 +141,10 @@
     "1.120": {
       "support": "Maintenance",
       "lts": true,
-      "latestSeenVersion": "1.120.43",
+      "latestSeenVersion": "1.120.44",
       "latestScrapedVersion": "1.120.43",
-      "lastCheckedAt": "2026-03-11T20:07:13.645Z",
-      "lastStatus": "already-scraped",
+      "lastCheckedAt": "2026-04-09T05:33:24.693Z",
+      "lastStatus": "checked-no-change",
       "patches": {
         "1.120.43": {
           "version": "1.120.43",
@@ -156,6 +156,17 @@
           "dataFile": "fe-features-1.120.43.json",
           "comparedToVersion": null,
           "changedComparedToPrevious": true
+        },
+        "1.120.44": {
+          "version": "1.120.44",
+          "sourceUrl": "https://ui5.sap.com/1.120.44/docs/topics/62d3f7c2a9424864921184fd6c7002eb.html",
+          "checkedAt": "2026-04-09T05:33:24.693Z",
+          "hash": "207d2b65127acff6dad5bb5dc22b09b04287b1cb210bc56b4062190022132dc4",
+          "rowCount": 144,
+          "scraped": false,
+          "dataFile": null,
+          "comparedToVersion": "1.120.43",
+          "changedComparedToPrevious": false
         }
       },
       "lastError": null
@@ -414,7 +425,7 @@
       "lastError": null
     },
     "1.139": {
-      "support": "Maintenance",
+      "support": "Out of maintenance",
       "lts": false,
       "latestSeenVersion": "1.139.4",
       "latestScrapedVersion": "1.139.4",
@@ -635,12 +646,12 @@
     }
   },
   "lastRun": {
-    "startedAt": "2026-04-02T05:30:39.370Z",
-    "finishedAt": "2026-04-02T05:30:40.368Z",
+    "startedAt": "2026-04-09T05:33:24.190Z",
+    "finishedAt": "2026-04-09T05:33:24.694Z",
     "summary": {
       "minorsDiscovered": 25,
-      "alreadyChecked": 23,
-      "scraped": 1,
+      "alreadyChecked": 24,
+      "scraped": 0,
       "checkedNoChange": 1,
       "errors": 0
     }
