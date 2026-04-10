@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "createdAt": "2026-03-11T20:07:12.324Z",
-  "updatedAt": "2026-04-09T05:33:24.694Z",
+  "updatedAt": "2026-04-10T05:40:56.907Z",
   "versionsUrl": "https://ui5.sap.com/version.json?sap-ui-config-patches=true&sap-ui-config-showall=true",
   "topicId": "62d3f7c2a9424864921184fd6c7002eb",
   "minMinor": 84,
@@ -9,10 +9,10 @@
     "1.84": {
       "support": "Out of maintenance",
       "lts": true,
-      "latestSeenVersion": "1.84.57",
+      "latestSeenVersion": "1.84.58",
       "latestScrapedVersion": "1.84.57",
-      "lastCheckedAt": "2026-03-11T20:07:13.165Z",
-      "lastStatus": "already-scraped",
+      "lastCheckedAt": "2026-04-10T05:40:56.906Z",
+      "lastStatus": "checked-no-change",
       "patches": {
         "1.84.57": {
           "version": "1.84.57",
@@ -24,6 +24,17 @@
           "dataFile": "fe-features-1.84.57.json",
           "comparedToVersion": null,
           "changedComparedToPrevious": true
+        },
+        "1.84.58": {
+          "version": "1.84.58",
+          "sourceUrl": "https://ui5.sap.com/1.84.58/docs/topics/62d3f7c2a9424864921184fd6c7002eb.html",
+          "checkedAt": "2026-04-10T05:40:56.906Z",
+          "hash": "1558fb8fdc442ee63eee80e29fe36faf8729133aa58f62055cd147d07c6c5eac",
+          "rowCount": 94,
+          "scraped": false,
+          "dataFile": null,
+          "comparedToVersion": "1.84.57",
+          "changedComparedToPrevious": false
         }
       },
       "lastError": null
@@ -144,7 +155,7 @@
       "latestSeenVersion": "1.120.44",
       "latestScrapedVersion": "1.120.43",
       "lastCheckedAt": "2026-04-09T05:33:24.693Z",
-      "lastStatus": "checked-no-change",
+      "lastStatus": "already-checked",
       "patches": {
         "1.120.43": {
           "version": "1.120.43",
@@ -646,8 +657,8 @@
     }
   },
   "lastRun": {
-    "startedAt": "2026-04-09T05:33:24.190Z",
-    "finishedAt": "2026-04-09T05:33:24.694Z",
+    "startedAt": "2026-04-10T05:40:56.508Z",
+    "finishedAt": "2026-04-10T05:40:56.907Z",
     "summary": {
       "minorsDiscovered": 25,
       "alreadyChecked": 24,
