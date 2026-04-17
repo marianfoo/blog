@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-04-02T05:30:40.365Z",
-    "rowCount": 173,
+    "generatedAt": "2026-04-17T05:42:03.179Z",
+    "rowCount": 174,
     "columns": [
       "Controls, UI Elements, Features",
       "Supported Floorplans",
@@ -184,10 +184,52 @@
         "dataFile": "fe-features-1.146.0.json",
         "sourceUrl": "https://ui5.sap.com/1.146.0/docs/topics/62d3f7c2a9424864921184fd6c7002eb.html",
         "rowCount": 154
+      },
+      {
+        "minorKey": "1.147",
+        "fullVersion": "1.147.0",
+        "dataFile": "fe-features-1.147.0.json",
+        "sourceUrl": "https://ui5.sap.com/1.147.0/docs/topics/62d3f7c2a9424864921184fd6c7002eb.html",
+        "rowCount": 155
       }
     ]
   },
   "rows": [
+    {
+      "feature": "Requesting additional properties",
+      "normalizedFeature": "requesting additional properties",
+      "supportedFloorplans": [
+        "Object page",
+        "Custom page"
+      ],
+      "developerDocumentation": {
+        "links": [
+          {
+            "label": "Requesting Additional Properties on the Object Page and Custom Page",
+            "url": "https://ui5.sap.com/1.147.0/#/topic/c5e38f91823a47a9abe3305970d39877"
+          },
+          {
+            "label": "Requesting Additional Properties",
+            "url": "https://ui5.sap.com/1.147.0/#/topic/82e27ffdc7804561970e9e84e2b4a4ef"
+          }
+        ],
+        "text": "Requesting Additional Properties on the Object Page and Custom Page Requesting Additional Properties"
+      },
+      "sapFioriDesignGuidelines": {
+        "links": [
+          {
+            "label": "Requesting Additional Properties on the Object Page and Custom Page",
+            "url": "https://ui5.sap.com/1.147.0/#/topic/c5e38f91823a47a9abe3305970d39877"
+          },
+          {
+            "label": "Requesting Additional Properties",
+            "url": "https://ui5.sap.com/1.147.0/#/topic/82e27ffdc7804561970e9e84e2b4a4ef"
+          }
+        ],
+        "text": "Requesting Additional Properties on the Object Page and Custom Page Requesting Additional Properties"
+      },
+      "availableFromVersion": "1.147.0"
+    },
     {
       "feature": "Illustrated message",
       "normalizedFeature": "illustrated message",
@@ -200,11 +242,11 @@
         "links": [
           {
             "label": "Displaying An Illustrated Message When No Data Is Found",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/f9925b63da5443afb7d3b50abb932cf2"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/f9925b63da5443afb7d3b50abb932cf2"
           },
           {
             "label": "Localization of UI Texts",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/91b525b1bb694d0680e980ac254f2a3c"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/91b525b1bb694d0680e980ac254f2a3c"
           }
         ],
         "text": "Displaying An Illustrated Message When No Data Is Found Localization of UI Texts"
@@ -213,11 +255,11 @@
         "links": [
           {
             "label": "Displaying An Illustrated Message When No Data Is Found",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/f9925b63da5443afb7d3b50abb932cf2"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/f9925b63da5443afb7d3b50abb932cf2"
           },
           {
             "label": "Localization of UI Texts",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/91b525b1bb694d0680e980ac254f2a3c"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/91b525b1bb694d0680e980ac254f2a3c"
           }
         ],
         "text": "Displaying An Illustrated Message When No Data Is Found Localization of UI Texts"
@@ -228,25 +270,34 @@
       "feature": "Notice for AI-generated content",
       "normalizedFeature": "notice for ai-generated content",
       "supportedFloorplans": [
+        "List report page",
         "Object page"
       ],
       "developerDocumentation": {
         "links": [
           {
+            "label": "Configuring the AI Notice in a Column Header",
+            "url": "https://ui5.sap.com/1.147.0/#/topic/82856ceb55584e22b0a3994d81fa963d"
+          },
+          {
             "label": "AI Notice",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/10a6cda6215e4cad9922a615e7f94341"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/10a6cda6215e4cad9922a615e7f94341"
           }
         ],
-        "text": "AI Notice"
+        "text": "Configuring the AI Notice in a Column Header AI Notice"
       },
       "sapFioriDesignGuidelines": {
         "links": [
           {
+            "label": "Configuring the AI Notice in a Column Header",
+            "url": "https://ui5.sap.com/1.147.0/#/topic/82856ceb55584e22b0a3994d81fa963d"
+          },
+          {
             "label": "AI Notice",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/10a6cda6215e4cad9922a615e7f94341"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/10a6cda6215e4cad9922a615e7f94341"
           }
         ],
-        "text": "AI Notice"
+        "text": "Configuring the AI Notice in a Column Header AI Notice"
       },
       "availableFromVersion": "1.146.0"
     },
@@ -260,7 +311,7 @@
         "links": [
           {
             "label": "Worklist Page",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/d1d588f1061b4bac96a1facb80d3f3a2"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/d1d588f1061b4bac96a1facb80d3f3a2"
           }
         ],
         "text": "Worklist Page"
@@ -269,7 +320,7 @@
         "links": [
           {
             "label": "Worklist Page",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/d1d588f1061b4bac96a1facb80d3f3a2"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/d1d588f1061b4bac96a1facb80d3f3a2"
           }
         ],
         "text": "Worklist Page"
@@ -289,7 +340,7 @@
         "links": [
           {
             "label": "Configuring Charts",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/653ed0f4f0d743dbb33ace4f68886c4e"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/653ed0f4f0d743dbb33ace4f68886c4e"
           }
         ],
         "text": "Configuring Charts"
@@ -298,7 +349,7 @@
         "links": [
           {
             "label": "Configuring Charts",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/653ed0f4f0d743dbb33ace4f68886c4e"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/653ed0f4f0d743dbb33ace4f68886c4e"
           }
         ],
         "text": "Configuring Charts"
@@ -317,11 +368,11 @@
         "links": [
           {
             "label": "Micro Chart Facet in the Object Page Header",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/e219fd0c85b842c69ac3a514e712ece5"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/e219fd0c85b842c69ac3a514e712ece5"
           },
           {
             "label": "Adding a Micro Chart to a Table",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/b8312a4adde54f33a89480dbe12d8632"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/b8312a4adde54f33a89480dbe12d8632"
           }
         ],
         "text": "Micro Chart Facet in the Object Page Header Adding a Micro Chart to a Table"
@@ -330,11 +381,11 @@
         "links": [
           {
             "label": "Micro Chart Facet in the Object Page Header",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/e219fd0c85b842c69ac3a514e712ece5"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/e219fd0c85b842c69ac3a514e712ece5"
           },
           {
             "label": "Adding a Micro Chart to a Table",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/b8312a4adde54f33a89480dbe12d8632"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/b8312a4adde54f33a89480dbe12d8632"
           }
         ],
         "text": "Micro Chart Facet in the Object Page Header Adding a Micro Chart to a Table"
@@ -352,7 +403,7 @@
         "links": [
           {
             "label": "Enabling Quick Views for Link Navigation",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/307ced1bc98c4e3d93ecbe9658dc9176"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/307ced1bc98c4e3d93ecbe9658dc9176"
           }
         ],
         "text": "Enabling Quick Views for Link Navigation"
@@ -361,7 +412,7 @@
         "links": [
           {
             "label": "Enabling Quick Views for Link Navigation",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/307ced1bc98c4e3d93ecbe9658dc9176"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/307ced1bc98c4e3d93ecbe9658dc9176"
           }
         ],
         "text": "Enabling Quick Views for Link Navigation"
@@ -378,7 +429,7 @@
         "links": [
           {
             "label": "Defining the Loading Behavior of Object Pages",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/ac035701f0f94bcca2d051bba9f1880d"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/ac035701f0f94bcca2d051bba9f1880d"
           }
         ],
         "text": "Defining the Loading Behavior of Object Pages"
@@ -387,7 +438,7 @@
         "links": [
           {
             "label": "Defining the Loading Behavior of Object Pages",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/ac035701f0f94bcca2d051bba9f1880d"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/ac035701f0f94bcca2d051bba9f1880d"
           }
         ],
         "text": "Defining the Loading Behavior of Object Pages"
@@ -404,7 +455,7 @@
         "links": [
           {
             "label": "Save and Navigation Options on the Object Page",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/55d81bc6997349f29e7b401ec1e16454"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/55d81bc6997349f29e7b401ec1e16454"
           }
         ],
         "text": "Save and Navigation Options on the Object Page"
@@ -413,7 +464,7 @@
         "links": [
           {
             "label": "Save and Navigation Options on the Object Page",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/55d81bc6997349f29e7b401ec1e16454"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/55d81bc6997349f29e7b401ec1e16454"
           }
         ],
         "text": "Save and Navigation Options on the Object Page"
@@ -432,11 +483,11 @@
         "links": [
           {
             "label": "The ConditionalSwitch Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/ba065421bdb74d6ead22489e3037a260"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/ba065421bdb74d6ead22489e3037a260"
           },
           {
             "label": "Building Blocks",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
           }
         ],
         "text": "The ConditionalSwitch Building Block Building Blocks"
@@ -445,11 +496,11 @@
         "links": [
           {
             "label": "The ConditionalSwitch Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/ba065421bdb74d6ead22489e3037a260"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/ba065421bdb74d6ead22489e3037a260"
           },
           {
             "label": "Building Blocks",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
           }
         ],
         "text": "The ConditionalSwitch Building Block Building Blocks"
@@ -468,11 +519,11 @@
         "links": [
           {
             "label": "The Status Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/8d8d810c649941358471aafa43d25828"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/8d8d810c649941358471aafa43d25828"
           },
           {
             "label": "Building Blocks",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
           }
         ],
         "text": "The Status Building Block Building Blocks"
@@ -481,11 +532,11 @@
         "links": [
           {
             "label": "The Status Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/8d8d810c649941358471aafa43d25828"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/8d8d810c649941358471aafa43d25828"
           },
           {
             "label": "Building Blocks",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
           }
         ],
         "text": "The Status Building Block Building Blocks"
@@ -502,7 +553,7 @@
         "links": [
           {
             "label": "Actions",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/cbf16c599f2d4b8796e3702f7d4aae6c"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/cbf16c599f2d4b8796e3702f7d4aae6c"
           }
         ],
         "text": "Actions"
@@ -511,7 +562,7 @@
         "links": [
           {
             "label": "Actions",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/cbf16c599f2d4b8796e3702f7d4aae6c"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/cbf16c599f2d4b8796e3702f7d4aae6c"
           }
         ],
         "text": "Actions"
@@ -529,7 +580,7 @@
         "links": [
           {
             "label": "Inline Edit",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/bb56175f37aa4530a59214025a005466"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/bb56175f37aa4530a59214025a005466"
           }
         ],
         "text": "Inline Edit"
@@ -538,7 +589,7 @@
         "links": [
           {
             "label": "Inline Edit",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/bb56175f37aa4530a59214025a005466"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/bb56175f37aa4530a59214025a005466"
           }
         ],
         "text": "Inline Edit"
@@ -555,7 +606,7 @@
         "links": [
           {
             "label": "Multiple Views on the List Report Page",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/a37df408044e41ef84e67207c8658d4f"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/a37df408044e41ef84e67207c8658d4f"
           }
         ],
         "text": "Multiple Views on the List Report Page"
@@ -564,7 +615,7 @@
         "links": [
           {
             "label": "Multiple Views on the List Report Page",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/a37df408044e41ef84e67207c8658d4f"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/a37df408044e41ef84e67207c8658d4f"
           }
         ],
         "text": "Multiple Views on the List Report Page"
@@ -581,7 +632,7 @@
         "links": [
           {
             "label": "Grouping of Fields",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/cb1748ea9b984251addc03718d98df35"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/cb1748ea9b984251addc03718d98df35"
           }
         ],
         "text": "Grouping of Fields"
@@ -590,7 +641,7 @@
         "links": [
           {
             "label": "Grouping of Fields",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/cb1748ea9b984251addc03718d98df35"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/cb1748ea9b984251addc03718d98df35"
           }
         ],
         "text": "Grouping of Fields"
@@ -632,7 +683,7 @@
         "links": [
           {
             "label": "Adding the AI Icon to Action Buttons",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/3ad04527971c4641a85d232fde076747"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/3ad04527971c4641a85d232fde076747"
           }
         ],
         "text": "Adding the AI Icon to Action Buttons"
@@ -641,7 +692,7 @@
         "links": [
           {
             "label": "Adding the AI Icon to Action Buttons",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/3ad04527971c4641a85d232fde076747"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/3ad04527971c4641a85d232fde076747"
           }
         ],
         "text": "Adding the AI Icon to Action Buttons"
@@ -658,7 +709,7 @@
         "links": [
           {
             "label": "Input Assistance",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/1a6324d5ad7f4034a93f911b4e53e080"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/1a6324d5ad7f4034a93f911b4e53e080"
           }
         ],
         "text": "Input Assistance"
@@ -667,7 +718,7 @@
         "links": [
           {
             "label": "Input Assistance",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/1a6324d5ad7f4034a93f911b4e53e080"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/1a6324d5ad7f4034a93f911b4e53e080"
           }
         ],
         "text": "Input Assistance"
@@ -688,7 +739,7 @@
         "links": [
           {
             "label": "Influencing the Request Dynamically",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/2cc6c03336954133beea3bd3dcac60db"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/2cc6c03336954133beea3bd3dcac60db"
           }
         ],
         "text": "Influencing the Request Dynamically"
@@ -697,7 +748,7 @@
         "links": [
           {
             "label": "Influencing the Request Dynamically",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/2cc6c03336954133beea3bd3dcac60db"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/2cc6c03336954133beea3bd3dcac60db"
           }
         ],
         "text": "Influencing the Request Dynamically"
@@ -716,11 +767,11 @@
         "links": [
           {
             "label": "The MessageButton Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/b365f2af2e59456e831c7ee98a896d0e"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/b365f2af2e59456e831c7ee98a896d0e"
           },
           {
             "label": "Building Blocks",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
           }
         ],
         "text": "The MessageButton Building Block Building Blocks"
@@ -729,11 +780,11 @@
         "links": [
           {
             "label": "The MessageButton Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/b365f2af2e59456e831c7ee98a896d0e"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/b365f2af2e59456e831c7ee98a896d0e"
           },
           {
             "label": "Building Blocks",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
           }
         ],
         "text": "The MessageButton Building Block Building Blocks"
@@ -752,11 +803,11 @@
         "links": [
           {
             "label": "The Page Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/025865041ec64c6daf58034d78f11310"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/025865041ec64c6daf58034d78f11310"
           },
           {
             "label": "Building Blocks",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
           }
         ],
         "text": "The Page Building Block Building Blocks"
@@ -765,11 +816,11 @@
         "links": [
           {
             "label": "The Page Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/025865041ec64c6daf58034d78f11310"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/025865041ec64c6daf58034d78f11310"
           },
           {
             "label": "Building Blocks",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
           }
         ],
         "text": "The Page Building Block Building Blocks"
@@ -790,15 +841,15 @@
         "links": [
           {
             "label": "Building Blocks",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
           },
           {
             "label": "Extension Points for Sections on the Object Page",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/92ad9968e41748aeb74971f7a08a91c8"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/92ad9968e41748aeb74971f7a08a91c8"
           },
           {
             "label": "Extension Points for Pages",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/ecdf1d6b2bda47b2accd369046c4936d"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/ecdf1d6b2bda47b2accd369046c4936d"
           }
         ],
         "text": "Building Blocks Extension Points for Sections on the Object Page Extension Points for Pages"
@@ -807,15 +858,15 @@
         "links": [
           {
             "label": "Building Blocks",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
           },
           {
             "label": "Extension Points for Sections on the Object Page",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/92ad9968e41748aeb74971f7a08a91c8"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/92ad9968e41748aeb74971f7a08a91c8"
           },
           {
             "label": "Extension Points for Pages",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/ecdf1d6b2bda47b2accd369046c4936d"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/ecdf1d6b2bda47b2accd369046c4936d"
           }
         ],
         "text": "Building Blocks Extension Points for Sections on the Object Page Extension Points for Pages"
@@ -832,11 +883,11 @@
         "links": [
           {
             "label": "The RichTextEditor Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/7bd2767a8f74423ca5fbdf84f1341782"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/7bd2767a8f74423ca5fbdf84f1341782"
           },
           {
             "label": "Building Blocks",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
           }
         ],
         "text": "The RichTextEditor Building Block Building Blocks"
@@ -845,11 +896,11 @@
         "links": [
           {
             "label": "The RichTextEditor Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/7bd2767a8f74423ca5fbdf84f1341782"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/7bd2767a8f74423ca5fbdf84f1341782"
           },
           {
             "label": "Building Blocks",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
           }
         ],
         "text": "The RichTextEditor Building Block Building Blocks"
@@ -868,11 +919,11 @@
         "links": [
           {
             "label": "The VariantManagement Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/33640ff8ccba4df48e23a92a25288651"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/33640ff8ccba4df48e23a92a25288651"
           },
           {
             "label": "Building Blocks",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
           }
         ],
         "text": "The VariantManagement Building Block Building Blocks"
@@ -881,11 +932,11 @@
         "links": [
           {
             "label": "The VariantManagement Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/33640ff8ccba4df48e23a92a25288651"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/33640ff8ccba4df48e23a92a25288651"
           },
           {
             "label": "Building Blocks",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
           }
         ],
         "text": "The VariantManagement Building Block Building Blocks"
@@ -903,7 +954,7 @@
         "links": [
           {
             "label": "Generative AI Features",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/0ec03d463567494cb17d446e2e92c13a"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/0ec03d463567494cb17d446e2e92c13a"
           }
         ],
         "text": "Generative AI Features"
@@ -912,7 +963,7 @@
         "links": [
           {
             "label": "Generative AI Features",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/0ec03d463567494cb17d446e2e92c13a"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/0ec03d463567494cb17d446e2e92c13a"
           }
         ],
         "text": "Generative AI Features"
@@ -966,7 +1017,7 @@
         "links": [
           {
             "label": "Tables",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/c0f6592a592e47f9bb6d09900de47412"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/c0f6592a592e47f9bb6d09900de47412"
           }
         ],
         "text": "Tables"
@@ -975,7 +1026,7 @@
         "links": [
           {
             "label": "Tables",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/c0f6592a592e47f9bb6d09900de47412"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/c0f6592a592e47f9bb6d09900de47412"
           }
         ],
         "text": "Tables"
@@ -994,11 +1045,11 @@
         "links": [
           {
             "label": "The TreeTable Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/667851f2d0d746a387d7e2fc7766b743"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/667851f2d0d746a387d7e2fc7766b743"
           },
           {
             "label": "Building Blocks",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
           }
         ],
         "text": "The TreeTable Building Block Building Blocks"
@@ -1007,11 +1058,11 @@
         "links": [
           {
             "label": "The TreeTable Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/667851f2d0d746a387d7e2fc7766b743"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/667851f2d0d746a387d7e2fc7766b743"
           },
           {
             "label": "Building Blocks",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
           }
         ],
         "text": "The TreeTable Building Block Building Blocks"
@@ -1030,7 +1081,7 @@
         "links": [
           {
             "label": "Actions",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/cbf16c599f2d4b8796e3702f7d4aae6c"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/cbf16c599f2d4b8796e3702f7d4aae6c"
           }
         ],
         "text": "Actions"
@@ -1039,7 +1090,7 @@
         "links": [
           {
             "label": "Actions",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/cbf16c599f2d4b8796e3702f7d4aae6c"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/cbf16c599f2d4b8796e3702f7d4aae6c"
           }
         ],
         "text": "Actions"
@@ -1058,7 +1109,7 @@
         "links": [
           {
             "label": "Field Help",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/a5608eabcc184aee99e1a7d88b28816c"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/a5608eabcc184aee99e1a7d88b28816c"
           }
         ],
         "text": "Field Help"
@@ -1067,7 +1118,7 @@
         "links": [
           {
             "label": "Field Help",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/a5608eabcc184aee99e1a7d88b28816c"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/a5608eabcc184aee99e1a7d88b28816c"
           }
         ],
         "text": "Field Help"
@@ -1085,7 +1136,7 @@
         "links": [
           {
             "label": "Adding Actions to Tables",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/b623e0bbbb2b4147b2d0516c463921a0"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/b623e0bbbb2b4147b2d0516c463921a0"
           }
         ],
         "text": "Adding Actions to Tables"
@@ -1094,7 +1145,7 @@
         "links": [
           {
             "label": "Adding Actions to Tables",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/b623e0bbbb2b4147b2d0516c463921a0"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/b623e0bbbb2b4147b2d0516c463921a0"
           }
         ],
         "text": "Adding Actions to Tables"
@@ -1111,7 +1162,7 @@
         "links": [
           {
             "label": "Enabling Inline Creation Mode or Empty Row Mode for Table Entries",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/cfb04f0c58e7409992feb4c91aa9410b"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/cfb04f0c58e7409992feb4c91aa9410b"
           }
         ],
         "text": "Enabling Inline Creation Mode or Empty Row Mode for Table Entries"
@@ -1120,7 +1171,7 @@
         "links": [
           {
             "label": "Enabling Inline Creation Mode or Empty Row Mode for Table Entries",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/cfb04f0c58e7409992feb4c91aa9410b"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/cfb04f0c58e7409992feb4c91aa9410b"
           }
         ],
         "text": "Enabling Inline Creation Mode or Empty Row Mode for Table Entries"
@@ -1139,7 +1190,7 @@
         "links": [
           {
             "label": "Tables",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/c0f6592a592e47f9bb6d09900de47412"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/c0f6592a592e47f9bb6d09900de47412"
           }
         ],
         "text": "Tables"
@@ -1148,7 +1199,7 @@
         "links": [
           {
             "label": "Tables",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/c0f6592a592e47f9bb6d09900de47412"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/c0f6592a592e47f9bb6d09900de47412"
           }
         ],
         "text": "Tables"
@@ -1166,7 +1217,7 @@
         "links": [
           {
             "label": "Enabling the History of Recently Entered Values",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/37dbf1f30127420d9c585bc1ad80086b"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/37dbf1f30127420d9c585bc1ad80086b"
           }
         ],
         "text": "Enabling the History of Recently Entered Values"
@@ -1175,7 +1226,7 @@
         "links": [
           {
             "label": "Enabling the History of Recently Entered Values",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/37dbf1f30127420d9c585bc1ad80086b"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/37dbf1f30127420d9c585bc1ad80086b"
           }
         ],
         "text": "Enabling the History of Recently Entered Values"
@@ -1192,7 +1243,7 @@
         "links": [
           {
             "label": "Enabling Inline Creation Mode or Empty Row Mode for Table Entries",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/cfb04f0c58e7409992feb4c91aa9410b"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/cfb04f0c58e7409992feb4c91aa9410b"
           }
         ],
         "text": "Enabling Inline Creation Mode or Empty Row Mode for Table Entries"
@@ -1201,7 +1252,7 @@
         "links": [
           {
             "label": "Enabling Inline Creation Mode or Empty Row Mode for Table Entries",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/cfb04f0c58e7409992feb4c91aa9410b"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/cfb04f0c58e7409992feb4c91aa9410b"
           }
         ],
         "text": "Enabling Inline Creation Mode or Empty Row Mode for Table Entries"
@@ -1218,7 +1269,7 @@
         "links": [
           {
             "label": "Handling of the preferredMode Parameter",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/bfaf3ccf3d6d4735990cc793b21f5529"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/bfaf3ccf3d6d4735990cc793b21f5529"
           }
         ],
         "text": "Handling of the preferredMode Parameter"
@@ -1227,7 +1278,7 @@
         "links": [
           {
             "label": "Handling of the preferredMode Parameter",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/bfaf3ccf3d6d4735990cc793b21f5529"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/bfaf3ccf3d6d4735990cc793b21f5529"
           }
         ],
         "text": "Handling of the preferredMode Parameter"
@@ -1245,7 +1296,7 @@
         "links": [
           {
             "label": "The Share Functionality",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/022bf0dcae1d4d90961ebe23d642fca3"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/022bf0dcae1d4d90961ebe23d642fca3"
           }
         ],
         "text": "The Share Functionality"
@@ -1254,7 +1305,7 @@
         "links": [
           {
             "label": "The Share Functionality",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/022bf0dcae1d4d90961ebe23d642fca3"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/022bf0dcae1d4d90961ebe23d642fca3"
           }
         ],
         "text": "The Share Functionality"
@@ -1272,7 +1323,7 @@
         "links": [
           {
             "label": "Setting the Table Type",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/7f844f1021cd4791b8f7408eac7c1cec"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/7f844f1021cd4791b8f7408eac7c1cec"
           }
         ],
         "text": "Setting the Table Type"
@@ -1281,7 +1332,7 @@
         "links": [
           {
             "label": "Setting the Table Type",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/7f844f1021cd4791b8f7408eac7c1cec"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/7f844f1021cd4791b8f7408eac7c1cec"
           }
         ],
         "text": "Setting the Table Type"
@@ -1299,7 +1350,7 @@
         "links": [
           {
             "label": "Creating Cards for the Insights Cards Section of My Home in SAP S/4HANA Cloud Public Edition and My Home in SAP S/4HANA",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/9b13559ef978405a99e8b624a87daf31"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/9b13559ef978405a99e8b624a87daf31"
           }
         ],
         "text": "Creating Cards for the Insights Cards Section of My Home in SAP S/4HANA Cloud Public Edition and My Home in SAP S/4HANA"
@@ -1308,7 +1359,7 @@
         "links": [
           {
             "label": "Creating Cards for the Insights Cards Section of My Home in SAP S/4HANA Cloud Public Edition and My Home in SAP S/4HANA",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/9b13559ef978405a99e8b624a87daf31"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/9b13559ef978405a99e8b624a87daf31"
           }
         ],
         "text": "Creating Cards for the Insights Cards Section of My Home in SAP S/4HANA Cloud Public Edition and My Home in SAP S/4HANA"
@@ -1326,11 +1377,11 @@
         "links": [
           {
             "label": "Adapting the UI: List Report Page and Object Page",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/0d2f1a9ebd2d4a4c906216ded1d33783"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/0d2f1a9ebd2d4a4c906216ded1d33783"
           },
           {
             "label": "Extending Delivered Apps Using Adaptation Extensions",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/52fc48b479314d0688be24f699778c47"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/52fc48b479314d0688be24f699778c47"
           }
         ],
         "text": "Adapting the UI: List Report Page and Object Page Extending Delivered Apps Using Adaptation Extensions"
@@ -1339,11 +1390,11 @@
         "links": [
           {
             "label": "Adapting the UI: List Report Page and Object Page",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/0d2f1a9ebd2d4a4c906216ded1d33783"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/0d2f1a9ebd2d4a4c906216ded1d33783"
           },
           {
             "label": "Extending Delivered Apps Using Adaptation Extensions",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/52fc48b479314d0688be24f699778c47"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/52fc48b479314d0688be24f699778c47"
           }
         ],
         "text": "Adapting the UI: List Report Page and Object Page Extending Delivered Apps Using Adaptation Extensions"
@@ -1360,7 +1411,7 @@
         "links": [
           {
             "label": "Copying and Pasting from External Applications to Tables",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/f6a8fd2812d9442a9bba2f6fb296c42e"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/f6a8fd2812d9442a9bba2f6fb296c42e"
           }
         ],
         "text": "Copying and Pasting from External Applications to Tables"
@@ -1369,7 +1420,7 @@
         "links": [
           {
             "label": "Copying and Pasting from External Applications to Tables",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/f6a8fd2812d9442a9bba2f6fb296c42e"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/f6a8fd2812d9442a9bba2f6fb296c42e"
           }
         ],
         "text": "Copying and Pasting from External Applications to Tables"
@@ -1386,7 +1437,7 @@
         "links": [
           {
             "label": "Using Custom Code Before Standard Operations",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/877e5ff4e9e243e4a821811b183f8937"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/877e5ff4e9e243e4a821811b183f8937"
           }
         ],
         "text": "Using Custom Code Before Standard Operations"
@@ -1395,7 +1446,7 @@
         "links": [
           {
             "label": "Using Custom Code Before Standard Operations",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/877e5ff4e9e243e4a821811b183f8937"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/877e5ff4e9e243e4a821811b183f8937"
           }
         ],
         "text": "Using Custom Code Before Standard Operations"
@@ -1413,7 +1464,7 @@
         "links": [
           {
             "label": "Navigation to an Object Page in Edit Mode",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/8665847a17a14e1abdcebe3e235c8c68"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/8665847a17a14e1abdcebe3e235c8c68"
           }
         ],
         "text": "Navigation to an Object Page in Edit Mode"
@@ -1422,7 +1473,7 @@
         "links": [
           {
             "label": "Navigation to an Object Page in Edit Mode",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/8665847a17a14e1abdcebe3e235c8c68"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/8665847a17a14e1abdcebe3e235c8c68"
           }
         ],
         "text": "Navigation to an Object Page in Edit Mode"
@@ -1440,7 +1491,7 @@
         "links": [
           {
             "label": "Example: Enable Internal Navigation to Different Detail Page",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/75002b3c5ad7407dadce2f88f15f4253"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/75002b3c5ad7407dadce2f88f15f4253"
           }
         ],
         "text": "Example: Enable Internal Navigation to Different Detail Page"
@@ -1449,7 +1500,7 @@
         "links": [
           {
             "label": "Example: Enable Internal Navigation to Different Detail Page",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/75002b3c5ad7407dadce2f88f15f4253"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/75002b3c5ad7407dadce2f88f15f4253"
           }
         ],
         "text": "Example: Enable Internal Navigation to Different Detail Page"
@@ -1468,7 +1519,7 @@
         "links": [
           {
             "label": "Keyboard Shortcuts",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/0cd318c83ec5473d9a091c1782d03c21"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/0cd318c83ec5473d9a091c1782d03c21"
           }
         ],
         "text": "Keyboard Shortcuts"
@@ -1477,7 +1528,7 @@
         "links": [
           {
             "label": "Keyboard Shortcuts",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/0cd318c83ec5473d9a091c1782d03c21"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/0cd318c83ec5473d9a091c1782d03c21"
           }
         ],
         "text": "Keyboard Shortcuts"
@@ -1495,7 +1546,7 @@
         "links": [
           {
             "label": "Enabling Editing Using a Dialog (Mass Edit)",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/965ef5b2895641bc9b6cd44f1bd0eb4d"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/965ef5b2895641bc9b6cd44f1bd0eb4d"
           }
         ],
         "text": "Enabling Editing Using a Dialog (Mass Edit)"
@@ -1504,7 +1555,7 @@
         "links": [
           {
             "label": "Enabling Editing Using a Dialog (Mass Edit)",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/965ef5b2895641bc9b6cd44f1bd0eb4d"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/965ef5b2895641bc9b6cd44f1bd0eb4d"
           }
         ],
         "text": "Enabling Editing Using a Dialog (Mass Edit)"
@@ -1521,11 +1572,11 @@
         "links": [
           {
             "label": "Save and Navigation Options on the Object Page",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/55d81bc6997349f29e7b401ec1e16454"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/55d81bc6997349f29e7b401ec1e16454"
           },
           {
             "label": "Toggling Between Draft and Saved Values",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/fd3950a0b251439ab8cd4153d64844b6"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/fd3950a0b251439ab8cd4153d64844b6"
           }
         ],
         "text": "Save and Navigation Options on the Object Page Toggling Between Draft and Saved Values"
@@ -1534,11 +1585,11 @@
         "links": [
           {
             "label": "Save and Navigation Options on the Object Page",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/55d81bc6997349f29e7b401ec1e16454"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/55d81bc6997349f29e7b401ec1e16454"
           },
           {
             "label": "Toggling Between Draft and Saved Values",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/fd3950a0b251439ab8cd4153d64844b6"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/fd3950a0b251439ab8cd4153d64844b6"
           }
         ],
         "text": "Save and Navigation Options on the Object Page Toggling Between Draft and Saved Values"
@@ -1555,7 +1606,7 @@
         "links": [
           {
             "label": "Enabling Stream Support",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/b236d32d48b74304887b3dd5163548c1"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/b236d32d48b74304887b3dd5163548c1"
           }
         ],
         "text": "Enabling Stream Support"
@@ -1564,7 +1615,7 @@
         "links": [
           {
             "label": "Enabling Stream Support",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/b236d32d48b74304887b3dd5163548c1"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/b236d32d48b74304887b3dd5163548c1"
           }
         ],
         "text": "Enabling Stream Support"
@@ -1608,11 +1659,11 @@
         "links": [
           {
             "label": "The Share Functionality",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/022bf0dcae1d4d90961ebe23d642fca3"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/022bf0dcae1d4d90961ebe23d642fca3"
           },
           {
             "label": "Store/Restore the Application State",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/46bf248182ed47cb85a05610abe361f7"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/46bf248182ed47cb85a05610abe361f7"
           }
         ],
         "text": "The Share Functionality Store/Restore the Application State"
@@ -1621,11 +1672,11 @@
         "links": [
           {
             "label": "The Share Functionality",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/022bf0dcae1d4d90961ebe23d642fca3"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/022bf0dcae1d4d90961ebe23d642fca3"
           },
           {
             "label": "Store/Restore the Application State",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/46bf248182ed47cb85a05610abe361f7"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/46bf248182ed47cb85a05610abe361f7"
           }
         ],
         "text": "The Share Functionality Store/Restore the Application State"
@@ -1645,15 +1696,15 @@
         "links": [
           {
             "label": "Defining Line Items",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/f0e1e1743bef4f519c34025ad4351f77"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/f0e1e1743bef4f519c34025ad4351f77"
           },
           {
             "label": "Table Cards",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/167bf7ccbb084afab7d846e1fa30b49c"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/167bf7ccbb084afab7d846e1fa30b49c"
           },
           {
             "label": "Grouping of Fields",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/cb1748ea9b984251addc03718d98df35"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/cb1748ea9b984251addc03718d98df35"
           }
         ],
         "text": "Defining Line Items Table Cards Grouping of Fields"
@@ -1662,15 +1713,15 @@
         "links": [
           {
             "label": "Defining Line Items",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/f0e1e1743bef4f519c34025ad4351f77"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/f0e1e1743bef4f519c34025ad4351f77"
           },
           {
             "label": "Table Cards",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/167bf7ccbb084afab7d846e1fa30b49c"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/167bf7ccbb084afab7d846e1fa30b49c"
           },
           {
             "label": "Grouping of Fields",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/cb1748ea9b984251addc03718d98df35"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/cb1748ea9b984251addc03718d98df35"
           }
         ],
         "text": "Defining Line Items Table Cards Grouping of Fields"
@@ -1688,7 +1739,7 @@
         "links": [
           {
             "label": "Extension Points for Tables",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/d525522c1bf54672ae4e02d66b38e60c"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/d525522c1bf54672ae4e02d66b38e60c"
           }
         ],
         "text": "Extension Points for Tables"
@@ -1697,7 +1748,7 @@
         "links": [
           {
             "label": "Extension Points for Tables",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/d525522c1bf54672ae4e02d66b38e60c"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/d525522c1bf54672ae4e02d66b38e60c"
           }
         ],
         "text": "Extension Points for Tables"
@@ -1717,7 +1768,7 @@
         "links": [
           {
             "label": "Adding Multiple Fields to One Column in Responsive Tables",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/d318e423c7c14c98957fe0642b6fcf49"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/d318e423c7c14c98957fe0642b6fcf49"
           }
         ],
         "text": "Adding Multiple Fields to One Column in Responsive Tables"
@@ -1726,7 +1777,7 @@
         "links": [
           {
             "label": "Adding Multiple Fields to One Column in Responsive Tables",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/d318e423c7c14c98957fe0642b6fcf49"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/d318e423c7c14c98957fe0642b6fcf49"
           }
         ],
         "text": "Adding Multiple Fields to One Column in Responsive Tables"
@@ -1745,163 +1796,171 @@
         "links": [
           {
             "label": "Building Blocks",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
           },
           {
             "label": "The Field Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/5260b9ca249f465ab33769b9edb442aa"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/5260b9ca249f465ab33769b9edb442aa"
           },
           {
             "label": "The Form Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/391aad28bfc64616abe2500a631391c1"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/391aad28bfc64616abe2500a631391c1"
           },
           {
             "label": "The FormElement Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/b45f038068ca4b68a2d8008c1de5f7fb"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/b45f038068ca4b68a2d8008c1de5f7fb"
           },
           {
             "label": "The Table Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/3801656db27b4b7a9099b6ed5fa1d769"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/3801656db27b4b7a9099b6ed5fa1d769"
           },
           {
             "label": "The FilterBar Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/78386110817d43978ffd6988d1704e38"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/78386110817d43978ffd6988d1704e38"
           },
           {
             "label": "The FilterField Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/2df783760a8e4540ad19ce5ec3ed91c8"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/2df783760a8e4540ad19ce5ec3ed91c8"
           },
           {
             "label": "The MicroChart Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/74554b4ca1de49aea42e2c309946ba05"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/74554b4ca1de49aea42e2c309946ba05"
           },
           {
             "label": "The Chart Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/52d065ab8bb740c58c834a0c985e3b9e"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/52d065ab8bb740c58c834a0c985e3b9e"
           },
           {
             "label": "The FlexibleColumnLayoutActions Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/1ba680b7ed6f4b1f8415c0a196264a6c"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/1ba680b7ed6f4b1f8415c0a196264a6c"
           },
           {
             "label": "The Share Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/41b02dfe1ac44d72bb766f5fc3e3d244"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/41b02dfe1ac44d72bb766f5fc3e3d244"
           },
           {
             "label": "The Paginator Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/997292b38e584e6aa6d848f22e4422fd"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/997292b38e584e6aa6d848f22e4422fd"
           },
           {
             "label": "The TreeTable Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/667851f2d0d746a387d7e2fc7766b743"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/667851f2d0d746a387d7e2fc7766b743"
           },
           {
             "label": "The VariantManagement Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/33640ff8ccba4df48e23a92a25288651"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/33640ff8ccba4df48e23a92a25288651"
           },
           {
             "label": "The RichTextEditor Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/7bd2767a8f74423ca5fbdf84f1341782"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/7bd2767a8f74423ca5fbdf84f1341782"
           },
           {
             "label": "The Page Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/025865041ec64c6daf58034d78f11310"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/025865041ec64c6daf58034d78f11310"
           },
           {
             "label": "The MessageButton Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/b365f2af2e59456e831c7ee98a896d0e"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/b365f2af2e59456e831c7ee98a896d0e"
           },
           {
             "label": "The KPITag Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/a256bfff28ef46229ac1f51250bd0b35"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/a256bfff28ef46229ac1f51250bd0b35"
           },
           {
             "label": "The AINotice Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/8c6e98b0ca914541abfb7763fe4af309"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/8c6e98b0ca914541abfb7763fe4af309"
+          },
+          {
+            "label": "The AlwaysEditableField Building Block",
+            "url": "https://ui5.sap.com/1.147.0/#/topic/67add6da9b3e476cba94ec6dcfb69f98"
           }
         ],
-        "text": "Building Blocks The Field Building Block The Form Building Block The FormElement Building Block The Table Building Block The FilterBar Building Block The FilterField Building Block The MicroChart Building Block The Chart Building Block The FlexibleColumnLayoutActions Building Block The Share Building Block The Paginator Building Block The TreeTable Building Block The VariantManagement Building Block The RichTextEditor Building Block The Page Building Block The MessageButton Building Block The KPITag Building Block The AINotice Building Block"
+        "text": "Building Blocks The Field Building Block The Form Building Block The FormElement Building Block The Table Building Block The FilterBar Building Block The FilterField Building Block The MicroChart Building Block The Chart Building Block The FlexibleColumnLayoutActions Building Block The Share Building Block The Paginator Building Block The TreeTable Building Block The VariantManagement Building Block The RichTextEditor Building Block The Page Building Block The MessageButton Building Block The KPITag Building Block The AINotice Building Block The AlwaysEditableField Building Block"
       },
       "sapFioriDesignGuidelines": {
         "links": [
           {
             "label": "Building Blocks",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
           },
           {
             "label": "The Field Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/5260b9ca249f465ab33769b9edb442aa"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/5260b9ca249f465ab33769b9edb442aa"
           },
           {
             "label": "The Form Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/391aad28bfc64616abe2500a631391c1"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/391aad28bfc64616abe2500a631391c1"
           },
           {
             "label": "The FormElement Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/b45f038068ca4b68a2d8008c1de5f7fb"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/b45f038068ca4b68a2d8008c1de5f7fb"
           },
           {
             "label": "The Table Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/3801656db27b4b7a9099b6ed5fa1d769"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/3801656db27b4b7a9099b6ed5fa1d769"
           },
           {
             "label": "The FilterBar Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/78386110817d43978ffd6988d1704e38"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/78386110817d43978ffd6988d1704e38"
           },
           {
             "label": "The FilterField Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/2df783760a8e4540ad19ce5ec3ed91c8"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/2df783760a8e4540ad19ce5ec3ed91c8"
           },
           {
             "label": "The MicroChart Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/74554b4ca1de49aea42e2c309946ba05"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/74554b4ca1de49aea42e2c309946ba05"
           },
           {
             "label": "The Chart Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/52d065ab8bb740c58c834a0c985e3b9e"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/52d065ab8bb740c58c834a0c985e3b9e"
           },
           {
             "label": "The FlexibleColumnLayoutActions Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/1ba680b7ed6f4b1f8415c0a196264a6c"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/1ba680b7ed6f4b1f8415c0a196264a6c"
           },
           {
             "label": "The Share Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/41b02dfe1ac44d72bb766f5fc3e3d244"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/41b02dfe1ac44d72bb766f5fc3e3d244"
           },
           {
             "label": "The Paginator Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/997292b38e584e6aa6d848f22e4422fd"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/997292b38e584e6aa6d848f22e4422fd"
           },
           {
             "label": "The TreeTable Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/667851f2d0d746a387d7e2fc7766b743"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/667851f2d0d746a387d7e2fc7766b743"
           },
           {
             "label": "The VariantManagement Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/33640ff8ccba4df48e23a92a25288651"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/33640ff8ccba4df48e23a92a25288651"
           },
           {
             "label": "The RichTextEditor Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/7bd2767a8f74423ca5fbdf84f1341782"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/7bd2767a8f74423ca5fbdf84f1341782"
           },
           {
             "label": "The Page Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/025865041ec64c6daf58034d78f11310"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/025865041ec64c6daf58034d78f11310"
           },
           {
             "label": "The MessageButton Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/b365f2af2e59456e831c7ee98a896d0e"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/b365f2af2e59456e831c7ee98a896d0e"
           },
           {
             "label": "The KPITag Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/a256bfff28ef46229ac1f51250bd0b35"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/a256bfff28ef46229ac1f51250bd0b35"
           },
           {
             "label": "The AINotice Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/8c6e98b0ca914541abfb7763fe4af309"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/8c6e98b0ca914541abfb7763fe4af309"
+          },
+          {
+            "label": "The AlwaysEditableField Building Block",
+            "url": "https://ui5.sap.com/1.147.0/#/topic/67add6da9b3e476cba94ec6dcfb69f98"
           }
         ],
-        "text": "Building Blocks The Field Building Block The Form Building Block The FormElement Building Block The Table Building Block The FilterBar Building Block The FilterField Building Block The MicroChart Building Block The Chart Building Block The FlexibleColumnLayoutActions Building Block The Share Building Block The Paginator Building Block The TreeTable Building Block The VariantManagement Building Block The RichTextEditor Building Block The Page Building Block The MessageButton Building Block The KPITag Building Block The AINotice Building Block"
+        "text": "Building Blocks The Field Building Block The Form Building Block The FormElement Building Block The Table Building Block The FilterBar Building Block The FilterField Building Block The MicroChart Building Block The Chart Building Block The FlexibleColumnLayoutActions Building Block The Share Building Block The Paginator Building Block The TreeTable Building Block The VariantManagement Building Block The RichTextEditor Building Block The Page Building Block The MessageButton Building Block The KPITag Building Block The AINotice Building Block The AlwaysEditableField Building Block"
       },
       "availableFromVersion": "1.96.46"
     },
@@ -1939,11 +1998,11 @@
         "links": [
           {
             "label": "The Chart Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/52d065ab8bb740c58c834a0c985e3b9e"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/52d065ab8bb740c58c834a0c985e3b9e"
           },
           {
             "label": "Building Blocks",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
           }
         ],
         "text": "The Chart Building Block Building Blocks"
@@ -1952,11 +2011,11 @@
         "links": [
           {
             "label": "The Chart Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/52d065ab8bb740c58c834a0c985e3b9e"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/52d065ab8bb740c58c834a0c985e3b9e"
           },
           {
             "label": "Building Blocks",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
           }
         ],
         "text": "The Chart Building Block Building Blocks"
@@ -1973,7 +2032,7 @@
         "links": [
           {
             "label": "Tables",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/c0f6592a592e47f9bb6d09900de47412"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/c0f6592a592e47f9bb6d09900de47412"
           }
         ],
         "text": "Tables"
@@ -1982,7 +2041,7 @@
         "links": [
           {
             "label": "Tables",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/c0f6592a592e47f9bb6d09900de47412"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/c0f6592a592e47f9bb6d09900de47412"
           }
         ],
         "text": "Tables"
@@ -2021,7 +2080,7 @@
         "links": [
           {
             "label": "Adding Custom Actions Using Extension Points",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/7619517a92414e27b71f02094bd08d06"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/7619517a92414e27b71f02094bd08d06"
           }
         ],
         "text": "Adding Custom Actions Using Extension Points"
@@ -2030,7 +2089,7 @@
         "links": [
           {
             "label": "Adding Custom Actions Using Extension Points",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/7619517a92414e27b71f02094bd08d06"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/7619517a92414e27b71f02094bd08d06"
           }
         ],
         "text": "Adding Custom Actions Using Extension Points"
@@ -2047,7 +2106,7 @@
         "links": [
           {
             "label": "Adding Dynamic Side Content to Object Page Sections",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/8e01a463d3984bfa8b23c2270d40e38c"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/8e01a463d3984bfa8b23c2270d40e38c"
           }
         ],
         "text": "Adding Dynamic Side Content to Object Page Sections"
@@ -2056,7 +2115,7 @@
         "links": [
           {
             "label": "Adding Dynamic Side Content to Object Page Sections",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/8e01a463d3984bfa8b23c2270d40e38c"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/8e01a463d3984bfa8b23c2270d40e38c"
           }
         ],
         "text": "Adding Dynamic Side Content to Object Page Sections"
@@ -2073,7 +2132,7 @@
         "links": [
           {
             "label": "Adding Custom Fields to the Filter Bar",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/5fb9f57fcf12401bbe39a635e9a32a4e"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/5fb9f57fcf12401bbe39a635e9a32a4e"
           }
         ],
         "text": "Adding Custom Fields to the Filter Bar"
@@ -2082,7 +2141,7 @@
         "links": [
           {
             "label": "Adding Custom Fields to the Filter Bar",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/5fb9f57fcf12401bbe39a635e9a32a4e"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/5fb9f57fcf12401bbe39a635e9a32a4e"
           }
         ],
         "text": "Adding Custom Fields to the Filter Bar"
@@ -2099,7 +2158,7 @@
         "links": [
           {
             "label": "Extension Points for Forms on the Object Page",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/4e49753530ad4a73a44a5f8efac238d6"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/4e49753530ad4a73a44a5f8efac238d6"
           }
         ],
         "text": "Extension Points for Forms on the Object Page"
@@ -2108,7 +2167,7 @@
         "links": [
           {
             "label": "Extension Points for Forms on the Object Page",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/4e49753530ad4a73a44a5f8efac238d6"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/4e49753530ad4a73a44a5f8efac238d6"
           }
         ],
         "text": "Extension Points for Forms on the Object Page"
@@ -2126,11 +2185,11 @@
         "links": [
           {
             "label": "Extension Point for List Report Page Header",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/1ab83e62a8804f1eb270f7bc353f3669"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/1ab83e62a8804f1eb270f7bc353f3669"
           },
           {
             "label": "Extension Points for Object Page Header Facets",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/61cf0ee828824903907464c80dd0d88c"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/61cf0ee828824903907464c80dd0d88c"
           }
         ],
         "text": "Extension Point for List Report Page Header Extension Points for Object Page Header Facets"
@@ -2139,11 +2198,11 @@
         "links": [
           {
             "label": "Extension Point for List Report Page Header",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/1ab83e62a8804f1eb270f7bc353f3669"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/1ab83e62a8804f1eb270f7bc353f3669"
           },
           {
             "label": "Extension Points for Object Page Header Facets",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/61cf0ee828824903907464c80dd0d88c"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/61cf0ee828824903907464c80dd0d88c"
           }
         ],
         "text": "Extension Point for List Report Page Header Extension Points for Object Page Header Facets"
@@ -2160,7 +2219,7 @@
         "links": [
           {
             "label": "Extension Points for Sections on the Object Page",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/92ad9968e41748aeb74971f7a08a91c8"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/92ad9968e41748aeb74971f7a08a91c8"
           }
         ],
         "text": "Extension Points for Sections on the Object Page"
@@ -2169,7 +2228,7 @@
         "links": [
           {
             "label": "Extension Points for Sections on the Object Page",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/92ad9968e41748aeb74971f7a08a91c8"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/92ad9968e41748aeb74971f7a08a91c8"
           }
         ],
         "text": "Extension Points for Sections on the Object Page"
@@ -2186,7 +2245,7 @@
         "links": [
           {
             "label": "Extension Points for Subsections on the Object Page",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/ce8d468269814077bc4b132572979b66"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/ce8d468269814077bc4b132572979b66"
           }
         ],
         "text": "Extension Points for Subsections on the Object Page"
@@ -2195,7 +2254,7 @@
         "links": [
           {
             "label": "Extension Points for Subsections on the Object Page",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/ce8d468269814077bc4b132572979b66"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/ce8d468269814077bc4b132572979b66"
           }
         ],
         "text": "Extension Points for Subsections on the Object Page"
@@ -2213,15 +2272,15 @@
         "links": [
           {
             "label": "Default Values for Action Parameters",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/cbf16c599f2d4b8796e3702f7d4aae6c.html#loiocbf16c599f2d4b8796e3702f7d4aae6c/DefaultValuesActionParameters"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/cbf16c599f2d4b8796e3702f7d4aae6c.html#loiocbf16c599f2d4b8796e3702f7d4aae6c/DefaultValuesActionParameters"
           },
           {
             "label": "Actions",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/cbf16c599f2d4b8796e3702f7d4aae6c"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/cbf16c599f2d4b8796e3702f7d4aae6c"
           },
           {
             "label": "Prefilling Fields Using the DefaultValuesFunction",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/5ada91cc1ad8455bbfb7e6aee96383f2"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/5ada91cc1ad8455bbfb7e6aee96383f2"
           }
         ],
         "text": "Default Values for Action Parameters section in Actions Prefilling Fields Using the DefaultValuesFunction"
@@ -2230,15 +2289,15 @@
         "links": [
           {
             "label": "Default Values for Action Parameters",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/cbf16c599f2d4b8796e3702f7d4aae6c.html#loiocbf16c599f2d4b8796e3702f7d4aae6c/DefaultValuesActionParameters"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/cbf16c599f2d4b8796e3702f7d4aae6c.html#loiocbf16c599f2d4b8796e3702f7d4aae6c/DefaultValuesActionParameters"
           },
           {
             "label": "Actions",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/cbf16c599f2d4b8796e3702f7d4aae6c"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/cbf16c599f2d4b8796e3702f7d4aae6c"
           },
           {
             "label": "Prefilling Fields Using the DefaultValuesFunction",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/5ada91cc1ad8455bbfb7e6aee96383f2"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/5ada91cc1ad8455bbfb7e6aee96383f2"
           }
         ],
         "text": "Default Values for Action Parameters section in Actions Prefilling Fields Using the DefaultValuesFunction"
@@ -2255,7 +2314,7 @@
         "links": [
           {
             "label": "Value Help",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/fccb255723d3489cae955648756411f6"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/fccb255723d3489cae955648756411f6"
           }
         ],
         "text": "Value Help"
@@ -2264,7 +2323,7 @@
         "links": [
           {
             "label": "Value Help",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/fccb255723d3489cae955648756411f6"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/fccb255723d3489cae955648756411f6"
           }
         ],
         "text": "Value Help"
@@ -2282,7 +2341,7 @@
         "links": [
           {
             "label": "Using the Export Button",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/4bab6f2043814257974b52d4dafe1dcd"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/4bab6f2043814257974b52d4dafe1dcd"
           }
         ],
         "text": "Using the Export Button"
@@ -2291,7 +2350,7 @@
         "links": [
           {
             "label": "Using the Export Button",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/4bab6f2043814257974b52d4dafe1dcd"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/4bab6f2043814257974b52d4dafe1dcd"
           }
         ],
         "text": "Using the Export Button"
@@ -2310,11 +2369,11 @@
         "links": [
           {
             "label": "The Field Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/5260b9ca249f465ab33769b9edb442aa"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/5260b9ca249f465ab33769b9edb442aa"
           },
           {
             "label": "Building Blocks",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
           }
         ],
         "text": "The Field Building Block Building Blocks"
@@ -2323,11 +2382,11 @@
         "links": [
           {
             "label": "The Field Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/5260b9ca249f465ab33769b9edb442aa"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/5260b9ca249f465ab33769b9edb442aa"
           },
           {
             "label": "Building Blocks",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
           }
         ],
         "text": "The Field Building Block Building Blocks"
@@ -2346,11 +2405,11 @@
         "links": [
           {
             "label": "The FilterBar Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/78386110817d43978ffd6988d1704e38"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/78386110817d43978ffd6988d1704e38"
           },
           {
             "label": "Building Blocks",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
           }
         ],
         "text": "The FilterBar Building Block Building Blocks"
@@ -2359,11 +2418,11 @@
         "links": [
           {
             "label": "The FilterBar Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/78386110817d43978ffd6988d1704e38"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/78386110817d43978ffd6988d1704e38"
           },
           {
             "label": "Building Blocks",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
           }
         ],
         "text": "The FilterBar Building Block Building Blocks"
@@ -2382,11 +2441,11 @@
         "links": [
           {
             "label": "The FlexibleColumnLayoutActions Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/1ba680b7ed6f4b1f8415c0a196264a6c"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/1ba680b7ed6f4b1f8415c0a196264a6c"
           },
           {
             "label": "Building Blocks",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
           }
         ],
         "text": "The FlexibleColumnLayoutActions Building Block Building Blocks"
@@ -2395,11 +2454,11 @@
         "links": [
           {
             "label": "The FlexibleColumnLayoutActions Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/1ba680b7ed6f4b1f8415c0a196264a6c"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/1ba680b7ed6f4b1f8415c0a196264a6c"
           },
           {
             "label": "Building Blocks",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
           }
         ],
         "text": "The FlexibleColumnLayoutActions Building Block Building Blocks"
@@ -2418,11 +2477,11 @@
         "links": [
           {
             "label": "The FormElement Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/b45f038068ca4b68a2d8008c1de5f7fb"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/b45f038068ca4b68a2d8008c1de5f7fb"
           },
           {
             "label": "Building Blocks",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
           }
         ],
         "text": "The FormElement Building Block Building Blocks"
@@ -2431,11 +2490,11 @@
         "links": [
           {
             "label": "The FormElement Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/b45f038068ca4b68a2d8008c1de5f7fb"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/b45f038068ca4b68a2d8008c1de5f7fb"
           },
           {
             "label": "Building Blocks",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
           }
         ],
         "text": "The FormElement Building Block Building Blocks"
@@ -2453,7 +2512,7 @@
         "links": [
           {
             "label": "Refresh Dataset for Back Navigation When sap-keep-alive Is Set to True",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/f1c2704cc302401ba935f18e6303f123"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/f1c2704cc302401ba935f18e6303f123"
           }
         ],
         "text": "Refresh Dataset for Back Navigation When sap-keep-alive Is Set to True"
@@ -2462,7 +2521,7 @@
         "links": [
           {
             "label": "Refresh Dataset for Back Navigation When sap-keep-alive Is Set to True",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/f1c2704cc302401ba935f18e6303f123"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/f1c2704cc302401ba935f18e6303f123"
           }
         ],
         "text": "Refresh Dataset for Back Navigation When sap-keep-alive Is Set to True"
@@ -2481,11 +2540,11 @@
         "links": [
           {
             "label": "The MicroChart Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/74554b4ca1de49aea42e2c309946ba05"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/74554b4ca1de49aea42e2c309946ba05"
           },
           {
             "label": "Building Blocks",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
           }
         ],
         "text": "The MicroChart Building Block Building Blocks"
@@ -2494,11 +2553,11 @@
         "links": [
           {
             "label": "The MicroChart Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/74554b4ca1de49aea42e2c309946ba05"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/74554b4ca1de49aea42e2c309946ba05"
           },
           {
             "label": "Building Blocks",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
           }
         ],
         "text": "The MicroChart Building Block Building Blocks"
@@ -2517,19 +2576,19 @@
         "links": [
           {
             "label": "Replacing Standard Navigation in a Table",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/a12ad6058db84e8cb60a3a9b2ade63fb"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/a12ad6058db84e8cb60a3a9b2ade63fb"
           },
           {
             "label": "Example: Replacing Standard Navigation in a Responsive Table on the Object Page",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/b20dc7a3d9ca41bebdb86fc3ae3295bf"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/b20dc7a3d9ca41bebdb86fc3ae3295bf"
           },
           {
             "label": "Creating an Extension to Modify Properties in the Navigation Context",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/199a496c5fa544dfbe134b53eaba092e"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/199a496c5fa544dfbe134b53eaba092e"
           },
           {
             "label": "Example: Enable Internal Navigation to Different Detail Page",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/75002b3c5ad7407dadce2f88f15f4253"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/75002b3c5ad7407dadce2f88f15f4253"
           }
         ],
         "text": "Replacing Standard Navigation in a Table Example: Replacing Standard Navigation in a Responsive Table on the Object Page Creating an Extension to Modify Properties in the Navigation Context Example: Enable Internal Navigation to Different Detail Page"
@@ -2538,19 +2597,19 @@
         "links": [
           {
             "label": "Replacing Standard Navigation in a Table",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/a12ad6058db84e8cb60a3a9b2ade63fb"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/a12ad6058db84e8cb60a3a9b2ade63fb"
           },
           {
             "label": "Example: Replacing Standard Navigation in a Responsive Table on the Object Page",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/b20dc7a3d9ca41bebdb86fc3ae3295bf"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/b20dc7a3d9ca41bebdb86fc3ae3295bf"
           },
           {
             "label": "Creating an Extension to Modify Properties in the Navigation Context",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/199a496c5fa544dfbe134b53eaba092e"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/199a496c5fa544dfbe134b53eaba092e"
           },
           {
             "label": "Example: Enable Internal Navigation to Different Detail Page",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/75002b3c5ad7407dadce2f88f15f4253"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/75002b3c5ad7407dadce2f88f15f4253"
           }
         ],
         "text": "Replacing Standard Navigation in a Table Example: Replacing Standard Navigation in a Responsive Table on the Object Page Creating an Extension to Modify Properties in the Navigation Context Example: Enable Internal Navigation to Different Detail Page"
@@ -2569,11 +2628,11 @@
         "links": [
           {
             "label": "The Paginator Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/997292b38e584e6aa6d848f22e4422fd"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/997292b38e584e6aa6d848f22e4422fd"
           },
           {
             "label": "Building Blocks",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
           }
         ],
         "text": "The Paginator Building Block Building Blocks"
@@ -2582,11 +2641,11 @@
         "links": [
           {
             "label": "The Paginator Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/997292b38e584e6aa6d848f22e4422fd"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/997292b38e584e6aa6d848f22e4422fd"
           },
           {
             "label": "Building Blocks",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
           }
         ],
         "text": "The Paginator Building Block Building Blocks"
@@ -2604,7 +2663,7 @@
         "links": [
           {
             "label": "Refresh Entity Sets in sap-keep-alive Mode",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/3c65f2cc630c472da8328a6f3c193683"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/3c65f2cc630c472da8328a6f3c193683"
           }
         ],
         "text": "Refresh Entity Sets in sap-keep-alive Mode"
@@ -2613,7 +2672,7 @@
         "links": [
           {
             "label": "Refresh Entity Sets in sap-keep-alive Mode",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/3c65f2cc630c472da8328a6f3c193683"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/3c65f2cc630c472da8328a6f3c193683"
           }
         ],
         "text": "Refresh Entity Sets in sap-keep-alive Mode"
@@ -2633,7 +2692,7 @@
         "links": [
           {
             "label": "Enabling Semantic Operators in the Filter Bar",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/fef65d03d01a4b2baca28983a5449cf7"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/fef65d03d01a4b2baca28983a5449cf7"
           }
         ],
         "text": "Enabling Semantic Operators in the Filter Bar"
@@ -2642,7 +2701,7 @@
         "links": [
           {
             "label": "Enabling Semantic Operators in the Filter Bar",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/fef65d03d01a4b2baca28983a5449cf7"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/fef65d03d01a4b2baca28983a5449cf7"
           }
         ],
         "text": "Enabling Semantic Operators in the Filter Bar"
@@ -2661,11 +2720,11 @@
         "links": [
           {
             "label": "The Share Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/41b02dfe1ac44d72bb766f5fc3e3d244"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/41b02dfe1ac44d72bb766f5fc3e3d244"
           },
           {
             "label": "Building Blocks",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
           }
         ],
         "text": "The Share Building Block Building Blocks"
@@ -2674,11 +2733,11 @@
         "links": [
           {
             "label": "The Share Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/41b02dfe1ac44d72bb766f5fc3e3d244"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/41b02dfe1ac44d72bb766f5fc3e3d244"
           },
           {
             "label": "Building Blocks",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
           }
         ],
         "text": "The Share Building Block Building Blocks"
@@ -2697,11 +2756,11 @@
         "links": [
           {
             "label": "The Table Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/3801656db27b4b7a9099b6ed5fa1d769"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/3801656db27b4b7a9099b6ed5fa1d769"
           },
           {
             "label": "Building Blocks",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
           }
         ],
         "text": "The Table Building Block Building Blocks"
@@ -2710,11 +2769,11 @@
         "links": [
           {
             "label": "The Table Building Block",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/3801656db27b4b7a9099b6ed5fa1d769"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/3801656db27b4b7a9099b6ed5fa1d769"
           },
           {
             "label": "Building Blocks",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/24c1304739dd4f19af0ce2482c4d9bbe"
           }
         ],
         "text": "The Table Building Block Building Blocks"
@@ -2732,11 +2791,11 @@
         "links": [
           {
             "label": "Creating Key Performance Indicator Tags in Analytical Services",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/d80a360638ad4cf193cc55eee92bff2e"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/d80a360638ad4cf193cc55eee92bff2e"
           },
           {
             "label": "Analytical Cards",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/d7b0b420eccf4d50bfd1b8a75e7a0fed"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/d7b0b420eccf4d50bfd1b8a75e7a0fed"
           }
         ],
         "text": "Creating Key Performance Indicator Tags in Analytical Services Analytical Cards"
@@ -2745,11 +2804,11 @@
         "links": [
           {
             "label": "Creating Key Performance Indicator Tags in Analytical Services",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/d80a360638ad4cf193cc55eee92bff2e"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/d80a360638ad4cf193cc55eee92bff2e"
           },
           {
             "label": "Analytical Cards",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/d7b0b420eccf4d50bfd1b8a75e7a0fed"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/d7b0b420eccf4d50bfd1b8a75e7a0fed"
           }
         ],
         "text": "Creating Key Performance Indicator Tags in Analytical Services Analytical Cards"
@@ -2767,7 +2826,7 @@
         "links": [
           {
             "label": "Configuring Tables",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/f4eb70f4808b48adb6ea03a4017aba24"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/f4eb70f4808b48adb6ea03a4017aba24"
           }
         ],
         "text": "Configuring Tables"
@@ -2776,7 +2835,7 @@
         "links": [
           {
             "label": "Configuring Tables",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/f4eb70f4808b48adb6ea03a4017aba24"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/f4eb70f4808b48adb6ea03a4017aba24"
           }
         ],
         "text": "Configuring Tables"
@@ -2795,15 +2854,15 @@
         "links": [
           {
             "label": "Micro Chart Facet in the Object Page Header",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/e219fd0c85b842c69ac3a514e712ece5"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/e219fd0c85b842c69ac3a514e712ece5"
           },
           {
             "label": "Area Micro Chart",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/1467f2bc79874281ac152c1e15f133f5"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/1467f2bc79874281ac152c1e15f133f5"
           },
           {
             "label": "Adding a Micro Chart to a Table",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/b8312a4adde54f33a89480dbe12d8632"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/b8312a4adde54f33a89480dbe12d8632"
           }
         ],
         "text": "Micro Chart Facet in the Object Page Header Area Micro Chart Adding a Micro Chart to a Table"
@@ -2812,15 +2871,15 @@
         "links": [
           {
             "label": "Micro Chart Facet in the Object Page Header",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/e219fd0c85b842c69ac3a514e712ece5"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/e219fd0c85b842c69ac3a514e712ece5"
           },
           {
             "label": "Area Micro Chart",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/1467f2bc79874281ac152c1e15f133f5"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/1467f2bc79874281ac152c1e15f133f5"
           },
           {
             "label": "Adding a Micro Chart to a Table",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/b8312a4adde54f33a89480dbe12d8632"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/b8312a4adde54f33a89480dbe12d8632"
           }
         ],
         "text": "Micro Chart Facet in the Object Page Header Area Micro Chart Adding a Micro Chart to a Table"
@@ -2838,7 +2897,7 @@
         "links": [
           {
             "label": "Using Images and Icons",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/5760b638ea274d7aab59e4e434899528"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/5760b638ea274d7aab59e4e434899528"
           }
         ],
         "text": "Using Images and Icons"
@@ -2847,7 +2906,7 @@
         "links": [
           {
             "label": "Using Images and Icons",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/5760b638ea274d7aab59e4e434899528"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/5760b638ea274d7aab59e4e434899528"
           }
         ],
         "text": "Using Images and Icons"
@@ -2865,7 +2924,7 @@
         "links": [
           {
             "label": "Object Page Header",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/6e340c119ddd4c778b315f65a0432420"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/6e340c119ddd4c778b315f65a0432420"
           }
         ],
         "text": "Object Page Header"
@@ -2874,7 +2933,7 @@
         "links": [
           {
             "label": "Object Page Header",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/6e340c119ddd4c778b315f65a0432420"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/6e340c119ddd4c778b315f65a0432420"
           }
         ],
         "text": "Object Page Header"
@@ -2892,7 +2951,7 @@
         "links": [
           {
             "label": "Configuring Charts",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/653ed0f4f0d743dbb33ace4f68886c4e"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/653ed0f4f0d743dbb33ace4f68886c4e"
           }
         ],
         "text": "Configuring Charts"
@@ -2901,7 +2960,7 @@
         "links": [
           {
             "label": "Configuring Charts",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/653ed0f4f0d743dbb33ace4f68886c4e"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/653ed0f4f0d743dbb33ace4f68886c4e"
           }
         ],
         "text": "Configuring Charts"
@@ -2920,15 +2979,15 @@
         "links": [
           {
             "label": "Micro Chart Facet in the Object Page Header",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/e219fd0c85b842c69ac3a514e712ece5"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/e219fd0c85b842c69ac3a514e712ece5"
           },
           {
             "label": "Bullet Micro Chart",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/b91516684a8641b2964c2380c9ea94df"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/b91516684a8641b2964c2380c9ea94df"
           },
           {
             "label": "Adding a Micro Chart to a Table",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/b8312a4adde54f33a89480dbe12d8632"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/b8312a4adde54f33a89480dbe12d8632"
           }
         ],
         "text": "Micro Chart Facet in the Object Page Header Bullet Micro Chart Adding a Micro Chart to a Table"
@@ -2937,15 +2996,15 @@
         "links": [
           {
             "label": "Micro Chart Facet in the Object Page Header",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/e219fd0c85b842c69ac3a514e712ece5"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/e219fd0c85b842c69ac3a514e712ece5"
           },
           {
             "label": "Bullet Micro Chart",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/b91516684a8641b2964c2380c9ea94df"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/b91516684a8641b2964c2380c9ea94df"
           },
           {
             "label": "Adding a Micro Chart to a Table",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/b8312a4adde54f33a89480dbe12d8632"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/b8312a4adde54f33a89480dbe12d8632"
           }
         ],
         "text": "Micro Chart Facet in the Object Page Header Bullet Micro Chart Adding a Micro Chart to a Table"
@@ -2984,11 +3043,11 @@
         "links": [
           {
             "label": "Actions",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/cbf16c599f2d4b8796e3702f7d4aae6c"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/cbf16c599f2d4b8796e3702f7d4aae6c"
           },
           {
             "label": "Adding Custom Actions Using Extension Points",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/7619517a92414e27b71f02094bd08d06"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/7619517a92414e27b71f02094bd08d06"
           }
         ],
         "text": "Actions Adding Custom Actions Using Extension Points"
@@ -2997,11 +3056,11 @@
         "links": [
           {
             "label": "Actions",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/cbf16c599f2d4b8796e3702f7d4aae6c"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/cbf16c599f2d4b8796e3702f7d4aae6c"
           },
           {
             "label": "Adding Custom Actions Using Extension Points",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/7619517a92414e27b71f02094bd08d06"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/7619517a92414e27b71f02094bd08d06"
           }
         ],
         "text": "Actions Adding Custom Actions Using Extension Points"
@@ -3083,7 +3142,7 @@
         "links": [
           {
             "label": "Configuring the Selection Mode for Tables",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/116b5d82e8c545e2a56e1b51b8b0a9bd"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/116b5d82e8c545e2a56e1b51b8b0a9bd"
           }
         ],
         "text": "Configuring the Selection Mode for Tables"
@@ -3092,7 +3151,7 @@
         "links": [
           {
             "label": "Configuring the Selection Mode for Tables",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/116b5d82e8c545e2a56e1b51b8b0a9bd"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/116b5d82e8c545e2a56e1b51b8b0a9bd"
           }
         ],
         "text": "Configuring the Selection Mode for Tables"
@@ -3109,7 +3168,7 @@
         "links": [
           {
             "label": "Coloring Cards Based on Threshold Values",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/02c53f4d9e58447db939546bed33fb44"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/02c53f4d9e58447db939546bed33fb44"
           }
         ],
         "text": "Coloring Cards Based on Threshold Values"
@@ -3118,7 +3177,7 @@
         "links": [
           {
             "label": "Coloring Cards Based on Threshold Values",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/02c53f4d9e58447db939546bed33fb44"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/02c53f4d9e58447db939546bed33fb44"
           }
         ],
         "text": "Coloring Cards Based on Threshold Values"
@@ -3136,7 +3195,7 @@
         "links": [
           {
             "label": "Column Chart",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/d80ef8e964cc48a69989fb61815e151d"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/d80ef8e964cc48a69989fb61815e151d"
           }
         ],
         "text": "Column Chart"
@@ -3145,7 +3204,7 @@
         "links": [
           {
             "label": "Column Chart",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/d80ef8e964cc48a69989fb61815e151d"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/d80ef8e964cc48a69989fb61815e151d"
           }
         ],
         "text": "Column Chart"
@@ -3165,11 +3224,11 @@
         "links": [
           {
             "label": "Value Help as a Dropdown List",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/2a0a630e50c7472b803fb94dab922d18"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/2a0a630e50c7472b803fb94dab922d18"
           },
           {
             "label": "Configuring View Switch",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/931f92df1cd145b88f8214f0ce4ae8bb"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/931f92df1cd145b88f8214f0ce4ae8bb"
           }
         ],
         "text": "Value Help as a Dropdown List Configuring View Switch"
@@ -3178,11 +3237,11 @@
         "links": [
           {
             "label": "Value Help as a Dropdown List",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/2a0a630e50c7472b803fb94dab922d18"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/2a0a630e50c7472b803fb94dab922d18"
           },
           {
             "label": "Configuring View Switch",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/931f92df1cd145b88f8214f0ce4ae8bb"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/931f92df1cd145b88f8214f0ce4ae8bb"
           }
         ],
         "text": "Value Help as a Dropdown List Configuring View Switch"
@@ -3200,7 +3259,7 @@
         "links": [
           {
             "label": "Adding a Contact Quick View to a Table",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/677fbde43a324f36aa9398b7f04e9896"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/677fbde43a324f36aa9398b7f04e9896"
           }
         ],
         "text": "Adding a Contact Quick View to a Table"
@@ -3209,7 +3268,7 @@
         "links": [
           {
             "label": "Adding a Contact Quick View to a Table",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/677fbde43a324f36aa9398b7f04e9896"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/677fbde43a324f36aa9398b7f04e9896"
           }
         ],
         "text": "Adding a Contact Quick View to a Table"
@@ -3248,7 +3307,7 @@
         "links": [
           {
             "label": "Configuring Charts",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/653ed0f4f0d743dbb33ace4f68886c4e"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/653ed0f4f0d743dbb33ace4f68886c4e"
           }
         ],
         "text": "Configuring Charts"
@@ -3257,7 +3316,7 @@
         "links": [
           {
             "label": "Configuring Charts",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/653ed0f4f0d743dbb33ace4f68886c4e"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/653ed0f4f0d743dbb33ace4f68886c4e"
           }
         ],
         "text": "Configuring Charts"
@@ -3277,7 +3336,7 @@
         "links": [
           {
             "label": "Different Representations of a Field",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/c18ada4bc56e427a9a2df2d1898f28a5"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/c18ada4bc56e427a9a2df2d1898f28a5"
           }
         ],
         "text": "Different Representations of a Field"
@@ -3286,7 +3345,7 @@
         "links": [
           {
             "label": "Different Representations of a Field",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/c18ada4bc56e427a9a2df2d1898f28a5"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/c18ada4bc56e427a9a2df2d1898f28a5"
           }
         ],
         "text": "Different Representations of a Field"
@@ -3303,7 +3362,7 @@
         "links": [
           {
             "label": "Creating Custom Cards",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/6d260f7708ca4c4a9ff45e846402aebb"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/6d260f7708ca4c4a9ff45e846402aebb"
           }
         ],
         "text": "Creating Custom Cards"
@@ -3312,7 +3371,7 @@
         "links": [
           {
             "label": "Creating Custom Cards",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/6d260f7708ca4c4a9ff45e846402aebb"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/6d260f7708ca4c4a9ff45e846402aebb"
           }
         ],
         "text": "Creating Custom Cards"
@@ -3332,7 +3391,7 @@
         "links": [
           {
             "label": "Field Help",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/a5608eabcc184aee99e1a7d88b28816c"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/a5608eabcc184aee99e1a7d88b28816c"
           }
         ],
         "text": "Field Help"
@@ -3341,7 +3400,7 @@
         "links": [
           {
             "label": "Field Help",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/a5608eabcc184aee99e1a7d88b28816c"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/a5608eabcc184aee99e1a7d88b28816c"
           }
         ],
         "text": "Field Help"
@@ -3361,7 +3420,7 @@
         "links": [
           {
             "label": "Enabling Semantic Operators in the Filter Bar",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/fef65d03d01a4b2baca28983a5449cf7"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/fef65d03d01a4b2baca28983a5449cf7"
           }
         ],
         "text": "Enabling Semantic Operators in the Filter Bar"
@@ -3370,7 +3429,7 @@
         "links": [
           {
             "label": "Enabling Semantic Operators in the Filter Bar",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/fef65d03d01a4b2baca28983a5449cf7"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/fef65d03d01a4b2baca28983a5449cf7"
           }
         ],
         "text": "Enabling Semantic Operators in the Filter Bar"
@@ -3390,7 +3449,7 @@
         "links": [
           {
             "label": "Field Help",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/a5608eabcc184aee99e1a7d88b28816c"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/a5608eabcc184aee99e1a7d88b28816c"
           }
         ],
         "text": "Field Help"
@@ -3399,7 +3458,7 @@
         "links": [
           {
             "label": "Field Help",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/a5608eabcc184aee99e1a7d88b28816c"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/a5608eabcc184aee99e1a7d88b28816c"
           }
         ],
         "text": "Field Help"
@@ -3417,7 +3476,7 @@
         "links": [
           {
             "label": "Configuring Default Settings (Visualizations, Sort Order, Filter Values)",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/49a6ba5b8d6946208322a9f7e16837c2"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/49a6ba5b8d6946208322a9f7e16837c2"
           }
         ],
         "text": "Configuring Default Settings (Visualizations, Sort Order, Filter Values)"
@@ -3426,7 +3485,7 @@
         "links": [
           {
             "label": "Configuring Default Settings (Visualizations, Sort Order, Filter Values)",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/49a6ba5b8d6946208322a9f7e16837c2"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/49a6ba5b8d6946208322a9f7e16837c2"
           }
         ],
         "text": "Configuring Default Settings (Visualizations, Sort Order, Filter Values)"
@@ -3445,15 +3504,15 @@
         "links": [
           {
             "label": "Adapting Texts for Confirmation Dialog Box When Deleting Lines in a Table",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/0d1fbf4f4d0048949f4335007fb5a856"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/0d1fbf4f4d0048949f4335007fb5a856"
           },
           {
             "label": "Confirmation Popups",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/9a536627a6a94de084b0605eb164d2c8"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/9a536627a6a94de084b0605eb164d2c8"
           },
           {
             "label": "Enabling Object Creation Using the Dialog on the List Report Page",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/ceb9284b16f64f30865ce999dbd56064"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/ceb9284b16f64f30865ce999dbd56064"
           }
         ],
         "text": "Adapting Texts for Confirmation Dialog Box When Deleting Lines in a Table Confirmation Popups Enabling Object Creation Using the Dialog on the List Report Page"
@@ -3462,15 +3521,15 @@
         "links": [
           {
             "label": "Adapting Texts for Confirmation Dialog Box When Deleting Lines in a Table",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/0d1fbf4f4d0048949f4335007fb5a856"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/0d1fbf4f4d0048949f4335007fb5a856"
           },
           {
             "label": "Confirmation Popups",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/9a536627a6a94de084b0605eb164d2c8"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/9a536627a6a94de084b0605eb164d2c8"
           },
           {
             "label": "Enabling Object Creation Using the Dialog on the List Report Page",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/ceb9284b16f64f30865ce999dbd56064"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/ceb9284b16f64f30865ce999dbd56064"
           }
         ],
         "text": "Adapting Texts for Confirmation Dialog Box When Deleting Lines in a Table Confirmation Popups Enabling Object Creation Using the Dialog on the List Report Page"
@@ -3488,7 +3547,7 @@
         "links": [
           {
             "label": "Draft Handling",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/ed9aa41c563a44b18701529c8327db4d"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/ed9aa41c563a44b18701529c8327db4d"
           }
         ],
         "text": "Draft Handling"
@@ -3497,7 +3556,7 @@
         "links": [
           {
             "label": "Draft Handling",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/ed9aa41c563a44b18701529c8327db4d"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/ed9aa41c563a44b18701529c8327db4d"
           }
         ],
         "text": "Draft Handling"
@@ -3515,7 +3574,7 @@
         "links": [
           {
             "label": "Configuring the Manifest for the Overview Page",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/f194b411027e4402a0be0537fa7b803b"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/f194b411027e4402a0be0537fa7b803b"
           }
         ],
         "text": "Configuring the Manifest for the Overview Page"
@@ -3524,7 +3583,7 @@
         "links": [
           {
             "label": "Configuring the Manifest for the Overview Page",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/f194b411027e4402a0be0537fa7b803b"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/f194b411027e4402a0be0537fa7b803b"
           }
         ],
         "text": "Configuring the Manifest for the Overview Page"
@@ -3542,15 +3601,15 @@
         "links": [
           {
             "label": "Editing Status",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/668ea184f58c4378a5394f54b4ae205d"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/668ea184f58c4378a5394f54b4ae205d"
           },
           {
             "label": "Disabling the Editing Status Filter",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/8eb695ac473b4ab0a726e4021ce35cf4"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/8eb695ac473b4ab0a726e4021ce35cf4"
           },
           {
             "label": "Settings for List Report Page Tables",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/4c2d17aec55b4162b19f1b573b5a4f99"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/4c2d17aec55b4162b19f1b573b5a4f99"
           }
         ],
         "text": "Editing Status Disabling the Editing Status Filter Settings for List Report Page Tables"
@@ -3559,15 +3618,15 @@
         "links": [
           {
             "label": "Editing Status",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/668ea184f58c4378a5394f54b4ae205d"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/668ea184f58c4378a5394f54b4ae205d"
           },
           {
             "label": "Disabling the Editing Status Filter",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/8eb695ac473b4ab0a726e4021ce35cf4"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/8eb695ac473b4ab0a726e4021ce35cf4"
           },
           {
             "label": "Settings for List Report Page Tables",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/4c2d17aec55b4162b19f1b573b5a4f99"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/4c2d17aec55b4162b19f1b573b5a4f99"
           }
         ],
         "text": "Editing Status Disabling the Editing Status Filter Settings for List Report Page Tables"
@@ -3586,123 +3645,115 @@
         "links": [
           {
             "label": "Enhancing ValueList Annotations for Visual Filters",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/16d43eb0472c4d5a9439ca1bf92c915d"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/16d43eb0472c4d5a9439ca1bf92c915d"
           },
           {
             "label": "Adapting the Filter Bar",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/609c39a7498541559dbef503c1ffd194"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/609c39a7498541559dbef503c1ffd194"
           },
           {
             "label": "Disabling the Editing Status Filter",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/8eb695ac473b4ab0a726e4021ce35cf4"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/8eb695ac473b4ab0a726e4021ce35cf4"
           },
           {
             "label": "Adding Custom Fields to the Filter Bar",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/5fb9f57fcf12401bbe39a635e9a32a4e"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/5fb9f57fcf12401bbe39a635e9a32a4e"
           },
           {
             "label": "Configuring the Global Filter on the Overview Page",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/73d96937ae94468da04cf0d32eb4c6ee"
-          },
-          {
-            "label": "Adding Custom Filters to the Overview Page",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/4739893805f74a409e241698858ee424"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/73d96937ae94468da04cf0d32eb4c6ee"
           },
           {
             "label": "Configuring Filter Bars",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/4bd7590569c74c61a0124c6e370030f6"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/4bd7590569c74c61a0124c6e370030f6"
           },
           {
             "label": "Enabling the Search Function",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/3cdebeebb04b4205908140242c9d6817"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/3cdebeebb04b4205908140242c9d6817"
           },
           {
             "label": "Enabling Semantic Operators in the Filter Bar",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/fef65d03d01a4b2baca28983a5449cf7"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/fef65d03d01a4b2baca28983a5449cf7"
           },
           {
             "label": "Configuring Default Filter Values",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/f27ad7bc1f9c4b0d947b1fb18c37e94c"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/f27ad7bc1f9c4b0d947b1fb18c37e94c"
           },
           {
             "label": "Defining Filter Facets",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/89f63ef59d4440958a27b636c500ffbc"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/89f63ef59d4440958a27b636c500ffbc"
           },
           {
             "label": "Configuring Filter Fields",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/f5dcb29da3bf4e0091eba3e7ccef4580"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/f5dcb29da3bf4e0091eba3e7ccef4580"
           },
           {
             "label": "Configuring Default Settings (Visualizations, Sort Order, Filter Values)",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/49a6ba5b8d6946208322a9f7e16837c2"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/49a6ba5b8d6946208322a9f7e16837c2"
           },
           {
             "label": "Enabling the History of Recently Entered Values",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/37dbf1f30127420d9c585bc1ad80086b"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/37dbf1f30127420d9c585bc1ad80086b"
           }
         ],
-        "text": "Enhancing ValueList Annotations for Visual Filters Adapting the Filter Bar Disabling the Editing Status Filter Adding Custom Fields to the Filter Bar Configuring the Global Filter on the Overview Page Adding Custom Filters to the Overview Page Configuring Filter Bars Enabling the Search Function Enabling Semantic Operators in the Filter Bar Configuring Default Filter Values Defining Filter Facets Configuring Filter Fields Configuring Default Settings (Visualizations, Sort Order, Filter Values) Enabling the History of Recently Entered Values"
+        "text": "Enhancing ValueList Annotations for Visual Filters Adapting the Filter Bar Disabling the Editing Status Filter Adding Custom Fields to the Filter Bar Configuring the Global Filter on the Overview Page Configuring Filter Bars Enabling the Search Function Enabling Semantic Operators in the Filter Bar Configuring Default Filter Values Defining Filter Facets Configuring Filter Fields Configuring Default Settings (Visualizations, Sort Order, Filter Values) Enabling the History of Recently Entered Values"
       },
       "sapFioriDesignGuidelines": {
         "links": [
           {
             "label": "Enhancing ValueList Annotations for Visual Filters",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/16d43eb0472c4d5a9439ca1bf92c915d"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/16d43eb0472c4d5a9439ca1bf92c915d"
           },
           {
             "label": "Adapting the Filter Bar",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/609c39a7498541559dbef503c1ffd194"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/609c39a7498541559dbef503c1ffd194"
           },
           {
             "label": "Disabling the Editing Status Filter",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/8eb695ac473b4ab0a726e4021ce35cf4"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/8eb695ac473b4ab0a726e4021ce35cf4"
           },
           {
             "label": "Adding Custom Fields to the Filter Bar",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/5fb9f57fcf12401bbe39a635e9a32a4e"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/5fb9f57fcf12401bbe39a635e9a32a4e"
           },
           {
             "label": "Configuring the Global Filter on the Overview Page",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/73d96937ae94468da04cf0d32eb4c6ee"
-          },
-          {
-            "label": "Adding Custom Filters to the Overview Page",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/4739893805f74a409e241698858ee424"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/73d96937ae94468da04cf0d32eb4c6ee"
           },
           {
             "label": "Configuring Filter Bars",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/4bd7590569c74c61a0124c6e370030f6"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/4bd7590569c74c61a0124c6e370030f6"
           },
           {
             "label": "Enabling the Search Function",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/3cdebeebb04b4205908140242c9d6817"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/3cdebeebb04b4205908140242c9d6817"
           },
           {
             "label": "Enabling Semantic Operators in the Filter Bar",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/fef65d03d01a4b2baca28983a5449cf7"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/fef65d03d01a4b2baca28983a5449cf7"
           },
           {
             "label": "Configuring Default Filter Values",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/f27ad7bc1f9c4b0d947b1fb18c37e94c"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/f27ad7bc1f9c4b0d947b1fb18c37e94c"
           },
           {
             "label": "Defining Filter Facets",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/89f63ef59d4440958a27b636c500ffbc"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/89f63ef59d4440958a27b636c500ffbc"
           },
           {
             "label": "Configuring Filter Fields",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/f5dcb29da3bf4e0091eba3e7ccef4580"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/f5dcb29da3bf4e0091eba3e7ccef4580"
           },
           {
             "label": "Configuring Default Settings (Visualizations, Sort Order, Filter Values)",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/49a6ba5b8d6946208322a9f7e16837c2"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/49a6ba5b8d6946208322a9f7e16837c2"
           },
           {
             "label": "Enabling the History of Recently Entered Values",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/37dbf1f30127420d9c585bc1ad80086b"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/37dbf1f30127420d9c585bc1ad80086b"
           }
         ],
-        "text": "Enhancing ValueList Annotations for Visual Filters Adapting the Filter Bar Disabling the Editing Status Filter Adding Custom Fields to the Filter Bar Configuring the Global Filter on the Overview Page Adding Custom Filters to the Overview Page Configuring Filter Bars Enabling the Search Function Enabling Semantic Operators in the Filter Bar Configuring Default Filter Values Defining Filter Facets Configuring Filter Fields Configuring Default Settings (Visualizations, Sort Order, Filter Values) Enabling the History of Recently Entered Values"
+        "text": "Enhancing ValueList Annotations for Visual Filters Adapting the Filter Bar Disabling the Editing Status Filter Adding Custom Fields to the Filter Bar Configuring the Global Filter on the Overview Page Configuring Filter Bars Enabling the Search Function Enabling Semantic Operators in the Filter Bar Configuring Default Filter Values Defining Filter Facets Configuring Filter Fields Configuring Default Settings (Visualizations, Sort Order, Filter Values) Enabling the History of Recently Entered Values"
       },
       "availableFromVersion": "1.84.57"
     },
@@ -3717,7 +3768,7 @@
         "links": [
           {
             "label": "Enabling the Flexible Column Layout",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/e762257125b34513b0859faa1610b09e"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/e762257125b34513b0859faa1610b09e"
           }
         ],
         "text": "Enabling the Flexible Column Layout"
@@ -3726,7 +3777,7 @@
         "links": [
           {
             "label": "Enabling the Flexible Column Layout",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/e762257125b34513b0859faa1610b09e"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/e762257125b34513b0859faa1610b09e"
           }
         ],
         "text": "Enabling the Flexible Column Layout"
@@ -3743,11 +3794,11 @@
         "links": [
           {
             "label": "Defining Determining Actions",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/1743323829e5474eb3829d2e9ab022ae"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/1743323829e5474eb3829d2e9ab022ae"
           },
           {
             "label": "Adding Custom Actions Using Extension Points",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/7619517a92414e27b71f02094bd08d06"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/7619517a92414e27b71f02094bd08d06"
           }
         ],
         "text": "Defining Determining Actions Adding Custom Actions Using Extension Points"
@@ -3756,11 +3807,11 @@
         "links": [
           {
             "label": "Defining Determining Actions",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/1743323829e5474eb3829d2e9ab022ae"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/1743323829e5474eb3829d2e9ab022ae"
           },
           {
             "label": "Adding Custom Actions Using Extension Points",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/7619517a92414e27b71f02094bd08d06"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/7619517a92414e27b71f02094bd08d06"
           }
         ],
         "text": "Defining Determining Actions Adding Custom Actions Using Extension Points"
@@ -3778,11 +3829,11 @@
         "links": [
           {
             "label": "Defining and Configuring Sections",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/facfea09018d4376acaceddb7e3f03b6"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/facfea09018d4376acaceddb7e3f03b6"
           },
           {
             "label": "Grouping of Fields",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/cb1748ea9b984251addc03718d98df35"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/cb1748ea9b984251addc03718d98df35"
           }
         ],
         "text": "Defining and Configuring Sections Grouping of Fields"
@@ -3791,11 +3842,11 @@
         "links": [
           {
             "label": "Defining and Configuring Sections",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/facfea09018d4376acaceddb7e3f03b6"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/facfea09018d4376acaceddb7e3f03b6"
           },
           {
             "label": "Grouping of Fields",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/cb1748ea9b984251addc03718d98df35"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/cb1748ea9b984251addc03718d98df35"
           }
         ],
         "text": "Defining and Configuring Sections Grouping of Fields"
@@ -3812,7 +3863,7 @@
         "links": [
           {
             "label": "Formatting Numeric Values",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/735e518fcadb44c2b434f5f7b49bfcde"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/735e518fcadb44c2b434f5f7b49bfcde"
           }
         ],
         "text": "Formatting Numeric Values"
@@ -3821,7 +3872,7 @@
         "links": [
           {
             "label": "Formatting Numeric Values",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/735e518fcadb44c2b434f5f7b49bfcde"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/735e518fcadb44c2b434f5f7b49bfcde"
           }
         ],
         "text": "Formatting Numeric Values"
@@ -3865,7 +3916,7 @@
         "links": [
           {
             "label": "Setting the Table Type",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/7f844f1021cd4791b8f7408eac7c1cec"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/7f844f1021cd4791b8f7408eac7c1cec"
           }
         ],
         "text": "Setting the Table Type"
@@ -3874,7 +3925,7 @@
         "links": [
           {
             "label": "Setting the Table Type",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/7f844f1021cd4791b8f7408eac7c1cec"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/7f844f1021cd4791b8f7408eac7c1cec"
           }
         ],
         "text": "Setting the Table Type"
@@ -3894,19 +3945,19 @@
         "links": [
           {
             "label": "Actions",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/cbf16c599f2d4b8796e3702f7d4aae6c"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/cbf16c599f2d4b8796e3702f7d4aae6c"
           },
           {
             "label": "Enabling Actions in the Object Page Header",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/5fe439613f9c4e259015951594c423dc"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/5fe439613f9c4e259015951594c423dc"
           },
           {
             "label": "Adding Custom Actions Using Extension Points",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/7619517a92414e27b71f02094bd08d06"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/7619517a92414e27b71f02094bd08d06"
           },
           {
             "label": "Defining Custom Actions on the Overview Page",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/02fb273ee1024fec914b11befe2b1887"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/02fb273ee1024fec914b11befe2b1887"
           }
         ],
         "text": "Actions Enabling Actions in the Object Page Header Adding Custom Actions Using Extension Points Defining Custom Actions on the Overview Page"
@@ -3915,19 +3966,19 @@
         "links": [
           {
             "label": "Actions",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/cbf16c599f2d4b8796e3702f7d4aae6c"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/cbf16c599f2d4b8796e3702f7d4aae6c"
           },
           {
             "label": "Enabling Actions in the Object Page Header",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/5fe439613f9c4e259015951594c423dc"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/5fe439613f9c4e259015951594c423dc"
           },
           {
             "label": "Adding Custom Actions Using Extension Points",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/7619517a92414e27b71f02094bd08d06"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/7619517a92414e27b71f02094bd08d06"
           },
           {
             "label": "Defining Custom Actions on the Overview Page",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/02fb273ee1024fec914b11befe2b1887"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/02fb273ee1024fec914b11befe2b1887"
           }
         ],
         "text": "Actions Enabling Actions in the Object Page Header Adding Custom Actions Using Extension Points Defining Custom Actions on the Overview Page"
@@ -3945,7 +3996,7 @@
         "links": [
           {
             "label": "Highlighting Line Items Based on Criticality",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/0d501b16e43d45d0a19ae54a3be883d3"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/0d501b16e43d45d0a19ae54a3be883d3"
           }
         ],
         "text": "Highlighting Line Items Based on Criticality"
@@ -3954,7 +4005,7 @@
         "links": [
           {
             "label": "Highlighting Line Items Based on Criticality",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/0d501b16e43d45d0a19ae54a3be883d3"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/0d501b16e43d45d0a19ae54a3be883d3"
           }
         ],
         "text": "Highlighting Line Items Based on Criticality"
@@ -3972,15 +4023,15 @@
         "links": [
           {
             "label": "Defining and Configuring Sections",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/facfea09018d4376acaceddb7e3f03b6"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/facfea09018d4376acaceddb7e3f03b6"
           },
           {
             "label": "Multiple Views on the List Report Page",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/a37df408044e41ef84e67207c8658d4f"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/a37df408044e41ef84e67207c8658d4f"
           },
           {
             "label": "Grouping of Fields",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/cb1748ea9b984251addc03718d98df35"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/cb1748ea9b984251addc03718d98df35"
           }
         ],
         "text": "Defining and Configuring Sections Multiple Views on the List Report Page Grouping of Fields"
@@ -3989,15 +4040,15 @@
         "links": [
           {
             "label": "Defining and Configuring Sections",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/facfea09018d4376acaceddb7e3f03b6"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/facfea09018d4376acaceddb7e3f03b6"
           },
           {
             "label": "Multiple Views on the List Report Page",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/a37df408044e41ef84e67207c8658d4f"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/a37df408044e41ef84e67207c8658d4f"
           },
           {
             "label": "Grouping of Fields",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/cb1748ea9b984251addc03718d98df35"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/cb1748ea9b984251addc03718d98df35"
           }
         ],
         "text": "Defining and Configuring Sections Multiple Views on the List Report Page Grouping of Fields"
@@ -4081,15 +4132,15 @@
         "links": [
           {
             "label": "Adapting the Filter Bar",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/609c39a7498541559dbef503c1ffd194"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/609c39a7498541559dbef503c1ffd194"
           },
           {
             "label": "Defining and Configuring Sections",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/facfea09018d4376acaceddb7e3f03b6"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/facfea09018d4376acaceddb7e3f03b6"
           },
           {
             "label": "Grouping of Fields",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/cb1748ea9b984251addc03718d98df35"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/cb1748ea9b984251addc03718d98df35"
           }
         ],
         "text": "Adapting the Filter Bar Defining and Configuring Sections Grouping of Fields"
@@ -4098,15 +4149,15 @@
         "links": [
           {
             "label": "Adapting the Filter Bar",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/609c39a7498541559dbef503c1ffd194"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/609c39a7498541559dbef503c1ffd194"
           },
           {
             "label": "Defining and Configuring Sections",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/facfea09018d4376acaceddb7e3f03b6"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/facfea09018d4376acaceddb7e3f03b6"
           },
           {
             "label": "Grouping of Fields",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/cb1748ea9b984251addc03718d98df35"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/cb1748ea9b984251addc03718d98df35"
           }
         ],
         "text": "Adapting the Filter Bar Defining and Configuring Sections Grouping of Fields"
@@ -4123,7 +4174,7 @@
         "links": [
           {
             "label": "Visual Filters",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/1714720cae984ad8b9d9111937e7cd38"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/1714720cae984ad8b9d9111937e7cd38"
           }
         ],
         "text": "Visual Filters"
@@ -4132,7 +4183,7 @@
         "links": [
           {
             "label": "Visual Filters",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/1714720cae984ad8b9d9111937e7cd38"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/1714720cae984ad8b9d9111937e7cd38"
           }
         ],
         "text": "Visual Filters"
@@ -4150,11 +4201,11 @@
         "links": [
           {
             "label": "Defining and Configuring Sections",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/facfea09018d4376acaceddb7e3f03b6"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/facfea09018d4376acaceddb7e3f03b6"
           },
           {
             "label": "Grouping of Fields",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/cb1748ea9b984251addc03718d98df35"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/cb1748ea9b984251addc03718d98df35"
           }
         ],
         "text": "Defining and Configuring Sections Grouping of Fields"
@@ -4163,11 +4214,11 @@
         "links": [
           {
             "label": "Defining and Configuring Sections",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/facfea09018d4376acaceddb7e3f03b6"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/facfea09018d4376acaceddb7e3f03b6"
           },
           {
             "label": "Grouping of Fields",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/cb1748ea9b984251addc03718d98df35"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/cb1748ea9b984251addc03718d98df35"
           }
         ],
         "text": "Defining and Configuring Sections Grouping of Fields"
@@ -4185,7 +4236,7 @@
         "links": [
           {
             "label": "Configuring Charts",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/653ed0f4f0d743dbb33ace4f68886c4e"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/653ed0f4f0d743dbb33ace4f68886c4e"
           }
         ],
         "text": "Configuring Charts"
@@ -4194,7 +4245,7 @@
         "links": [
           {
             "label": "Configuring Charts",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/653ed0f4f0d743dbb33ace4f68886c4e"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/653ed0f4f0d743dbb33ace4f68886c4e"
           }
         ],
         "text": "Configuring Charts"
@@ -4213,15 +4264,15 @@
         "links": [
           {
             "label": "Micro Chart Facet in the Object Page Header",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/e219fd0c85b842c69ac3a514e712ece5"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/e219fd0c85b842c69ac3a514e712ece5"
           },
           {
             "label": "Line Micro Chart",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/e5cb2afe0e484e4b803b0c82190895de"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/e5cb2afe0e484e4b803b0c82190895de"
           },
           {
             "label": "Adding a Micro Chart to a Table",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/b8312a4adde54f33a89480dbe12d8632"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/b8312a4adde54f33a89480dbe12d8632"
           }
         ],
         "text": "Micro Chart Facet in the Object Page Header Line Micro Chart Adding a Micro Chart to a Table"
@@ -4230,15 +4281,15 @@
         "links": [
           {
             "label": "Micro Chart Facet in the Object Page Header",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/e219fd0c85b842c69ac3a514e712ece5"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/e219fd0c85b842c69ac3a514e712ece5"
           },
           {
             "label": "Line Micro Chart",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/e5cb2afe0e484e4b803b0c82190895de"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/e5cb2afe0e484e4b803b0c82190895de"
           },
           {
             "label": "Adding a Micro Chart to a Table",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/b8312a4adde54f33a89480dbe12d8632"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/b8312a4adde54f33a89480dbe12d8632"
           }
         ],
         "text": "Micro Chart Facet in the Object Page Header Line Micro Chart Adding a Micro Chart to a Table"
@@ -4258,11 +4309,11 @@
         "links": [
           {
             "label": "Adding a Contact Quick View to a Table",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/677fbde43a324f36aa9398b7f04e9896"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/677fbde43a324f36aa9398b7f04e9896"
           },
           {
             "label": "Enabling Quick Views for Link Navigation",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/307ced1bc98c4e3d93ecbe9658dc9176"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/307ced1bc98c4e3d93ecbe9658dc9176"
           }
         ],
         "text": "Adding a Contact Quick View to a Table Enabling Quick Views for Link Navigation"
@@ -4271,11 +4322,11 @@
         "links": [
           {
             "label": "Adding a Contact Quick View to a Table",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/677fbde43a324f36aa9398b7f04e9896"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/677fbde43a324f36aa9398b7f04e9896"
           },
           {
             "label": "Enabling Quick Views for Link Navigation",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/307ced1bc98c4e3d93ecbe9658dc9176"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/307ced1bc98c4e3d93ecbe9658dc9176"
           }
         ],
         "text": "Adding a Contact Quick View to a Table Enabling Quick Views for Link Navigation"
@@ -4292,7 +4343,7 @@
         "links": [
           {
             "label": "Link List Cards",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/0326f910c6af4fb1b86f2810ee10419e"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/0326f910c6af4fb1b86f2810ee10419e"
           }
         ],
         "text": "Link List Cards"
@@ -4301,7 +4352,7 @@
         "links": [
           {
             "label": "Link List Cards",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/0326f910c6af4fb1b86f2810ee10419e"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/0326f910c6af4fb1b86f2810ee10419e"
           }
         ],
         "text": "Link List Cards"
@@ -4318,7 +4369,7 @@
         "links": [
           {
             "label": "List Cards",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/56f39e077efb477d9e851cd082b7760c"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/56f39e077efb477d9e851cd082b7760c"
           }
         ],
         "text": "List Cards"
@@ -4327,7 +4378,7 @@
         "links": [
           {
             "label": "List Cards",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/56f39e077efb477d9e851cd082b7760c"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/56f39e077efb477d9e851cd082b7760c"
           }
         ],
         "text": "List Cards"
@@ -4344,7 +4395,7 @@
         "links": [
           {
             "label": "Configuring Overview Pages Using Runtime Capabilities",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/5b1dd11bc3834b05aa9832f2a48a3dec"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/5b1dd11bc3834b05aa9832f2a48a3dec"
           }
         ],
         "text": "Configuring Overview Pages Using Runtime Capabilities"
@@ -4353,7 +4404,7 @@
         "links": [
           {
             "label": "Configuring Overview Pages Using Runtime Capabilities",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/5b1dd11bc3834b05aa9832f2a48a3dec"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/5b1dd11bc3834b05aa9832f2a48a3dec"
           }
         ],
         "text": "Configuring Overview Pages Using Runtime Capabilities"
@@ -4400,15 +4451,15 @@
         "links": [
           {
             "label": "Adding Confirmation Popovers for Actions",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/87130de10c8a44269c605b0322df6b1a"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/87130de10c8a44269c605b0322df6b1a"
           },
           {
             "label": "Confirmation Popups",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/9a536627a6a94de084b0605eb164d2c8"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/9a536627a6a94de084b0605eb164d2c8"
           },
           {
             "label": "Using Messages",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/239b1922758645e7b451e01ded7f56bc"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/239b1922758645e7b451e01ded7f56bc"
           }
         ],
         "text": "Adding Confirmation Popovers for Actions Confirmation Popups Using Messages"
@@ -4417,15 +4468,15 @@
         "links": [
           {
             "label": "Adding Confirmation Popovers for Actions",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/87130de10c8a44269c605b0322df6b1a"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/87130de10c8a44269c605b0322df6b1a"
           },
           {
             "label": "Confirmation Popups",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/9a536627a6a94de084b0605eb164d2c8"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/9a536627a6a94de084b0605eb164d2c8"
           },
           {
             "label": "Using Messages",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/239b1922758645e7b451e01ded7f56bc"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/239b1922758645e7b451e01ded7f56bc"
           }
         ],
         "text": "Adding Confirmation Popovers for Actions Confirmation Popups Using Messages"
@@ -4467,7 +4518,7 @@
         "links": [
           {
             "label": "Using Messages",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/239b1922758645e7b451e01ded7f56bc"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/239b1922758645e7b451e01ded7f56bc"
           }
         ],
         "text": "Using Messages"
@@ -4476,7 +4527,7 @@
         "links": [
           {
             "label": "Using Messages",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/239b1922758645e7b451e01ded7f56bc"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/239b1922758645e7b451e01ded7f56bc"
           }
         ],
         "text": "Using Messages"
@@ -4496,7 +4547,7 @@
         "links": [
           {
             "label": "Using Messages",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/239b1922758645e7b451e01ded7f56bc"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/239b1922758645e7b451e01ded7f56bc"
           }
         ],
         "text": "Using Messages"
@@ -4505,7 +4556,7 @@
         "links": [
           {
             "label": "Using Messages",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/239b1922758645e7b451e01ded7f56bc"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/239b1922758645e7b451e01ded7f56bc"
           }
         ],
         "text": "Using Messages"
@@ -4559,7 +4610,7 @@
         "links": [
           {
             "label": "Value Help as a Dropdown List",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/2a0a630e50c7472b803fb94dab922d18"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/2a0a630e50c7472b803fb94dab922d18"
           }
         ],
         "text": "Value Help as a Dropdown List"
@@ -4568,7 +4619,7 @@
         "links": [
           {
             "label": "Value Help as a Dropdown List",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/2a0a630e50c7472b803fb94dab922d18"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/2a0a630e50c7472b803fb94dab922d18"
           }
         ],
         "text": "Value Help as a Dropdown List"
@@ -4585,7 +4636,7 @@
         "links": [
           {
             "label": "Using the Multi-Input Field on the Object Page",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/04ff5b1a81344a8e8169ea99630ff4e5"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/04ff5b1a81344a8e8169ea99630ff4e5"
           }
         ],
         "text": "Using the Multi-Input Field on the Object Page"
@@ -4594,7 +4645,7 @@
         "links": [
           {
             "label": "Using the Multi-Input Field on the Object Page",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/04ff5b1a81344a8e8169ea99630ff4e5"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/04ff5b1a81344a8e8169ea99630ff4e5"
           }
         ],
         "text": "Using the Multi-Input Field on the Object Page"
@@ -4612,7 +4663,7 @@
         "links": [
           {
             "label": "Configuring the Selection Mode for Tables",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/116b5d82e8c545e2a56e1b51b8b0a9bd"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/116b5d82e8c545e2a56e1b51b8b0a9bd"
           }
         ],
         "text": "Configuring the Selection Mode for Tables"
@@ -4621,7 +4672,7 @@
         "links": [
           {
             "label": "Configuring the Selection Mode for Tables",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/116b5d82e8c545e2a56e1b51b8b0a9bd"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/116b5d82e8c545e2a56e1b51b8b0a9bd"
           }
         ],
         "text": "Configuring the Selection Mode for Tables"
@@ -4662,15 +4713,15 @@
         "links": [
           {
             "label": "Configuring Navigation",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/a42427550b72436a8bdf53045b06effb"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/a42427550b72436a8bdf53045b06effb"
           },
           {
             "label": "Example: Enable Internal Navigation to Different Detail Page",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/75002b3c5ad7407dadce2f88f15f4253"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/75002b3c5ad7407dadce2f88f15f4253"
           },
           {
             "label": "Handling of the preferredMode Parameter",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/bfaf3ccf3d6d4735990cc793b21f5529"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/bfaf3ccf3d6d4735990cc793b21f5529"
           }
         ],
         "text": "Configuring Navigation Example: Enable Internal Navigation to Different Detail Page Handling of the preferredMode Parameter"
@@ -4679,15 +4730,15 @@
         "links": [
           {
             "label": "Configuring Navigation",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/a42427550b72436a8bdf53045b06effb"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/a42427550b72436a8bdf53045b06effb"
           },
           {
             "label": "Example: Enable Internal Navigation to Different Detail Page",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/75002b3c5ad7407dadce2f88f15f4253"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/75002b3c5ad7407dadce2f88f15f4253"
           },
           {
             "label": "Handling of the preferredMode Parameter",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/bfaf3ccf3d6d4735990cc793b21f5529"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/bfaf3ccf3d6d4735990cc793b21f5529"
           }
         ],
         "text": "Configuring Navigation Example: Enable Internal Navigation to Different Detail Page Handling of the preferredMode Parameter"
@@ -4725,7 +4776,7 @@
         "links": [
           {
             "label": "Value Help as a Dropdown List",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/2a0a630e50c7472b803fb94dab922d18"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/2a0a630e50c7472b803fb94dab922d18"
           }
         ],
         "text": "Value Help as a Dropdown List"
@@ -4734,7 +4785,7 @@
         "links": [
           {
             "label": "Value Help as a Dropdown List",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/2a0a630e50c7472b803fb94dab922d18"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/2a0a630e50c7472b803fb94dab922d18"
           }
         ],
         "text": "Value Help as a Dropdown List"
@@ -4752,7 +4803,7 @@
         "links": [
           {
             "label": "Prefilling Fields When Creating a New Entity",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/11ff444f82e14eb3a2e8eca0065a5055"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/11ff444f82e14eb3a2e8eca0065a5055"
           }
         ],
         "text": "Prefilling Fields When Creating a New Entity"
@@ -4761,7 +4812,7 @@
         "links": [
           {
             "label": "Prefilling Fields When Creating a New Entity",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/11ff444f82e14eb3a2e8eca0065a5055"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/11ff444f82e14eb3a2e8eca0065a5055"
           }
         ],
         "text": "Prefilling Fields When Creating a New Entity"
@@ -4780,11 +4831,11 @@
         "links": [
           {
             "label": "Adding a Progress Indicator to a Table",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/43f6f0faa1b64c5aa92bcde379be9054"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/43f6f0faa1b64c5aa92bcde379be9054"
           },
           {
             "label": "Progress Indicator Facet in the Object Page Header",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/3b5e01c647f44ea98655b8c08feba780"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/3b5e01c647f44ea98655b8c08feba780"
           }
         ],
         "text": "Adding a Progress Indicator to a Table Progress Indicator Facet in the Object Page Header"
@@ -4793,11 +4844,11 @@
         "links": [
           {
             "label": "Adding a Progress Indicator to a Table",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/43f6f0faa1b64c5aa92bcde379be9054"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/43f6f0faa1b64c5aa92bcde379be9054"
           },
           {
             "label": "Progress Indicator Facet in the Object Page Header",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/3b5e01c647f44ea98655b8c08feba780"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/3b5e01c647f44ea98655b8c08feba780"
           }
         ],
         "text": "Adding a Progress Indicator to a Table Progress Indicator Facet in the Object Page Header"
@@ -4864,15 +4915,15 @@
         "links": [
           {
             "label": "Micro Chart Facet in the Object Page Header",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/e219fd0c85b842c69ac3a514e712ece5"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/e219fd0c85b842c69ac3a514e712ece5"
           },
           {
             "label": "Radial Micro Chart",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/51eb56989df94267a75ebeff24093a5e"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/51eb56989df94267a75ebeff24093a5e"
           },
           {
             "label": "Adding a Micro Chart to a Table",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/b8312a4adde54f33a89480dbe12d8632"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/b8312a4adde54f33a89480dbe12d8632"
           }
         ],
         "text": "Micro Chart Facet in the Object Page Header Radial Micro Chart Adding a Micro Chart to a Table"
@@ -4881,15 +4932,15 @@
         "links": [
           {
             "label": "Micro Chart Facet in the Object Page Header",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/e219fd0c85b842c69ac3a514e712ece5"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/e219fd0c85b842c69ac3a514e712ece5"
           },
           {
             "label": "Radial Micro Chart",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/51eb56989df94267a75ebeff24093a5e"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/51eb56989df94267a75ebeff24093a5e"
           },
           {
             "label": "Adding a Micro Chart to a Table",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/b8312a4adde54f33a89480dbe12d8632"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/b8312a4adde54f33a89480dbe12d8632"
           }
         ],
         "text": "Micro Chart Facet in the Object Page Header Radial Micro Chart Adding a Micro Chart to a Table"
@@ -4908,7 +4959,7 @@
         "links": [
           {
             "label": "Adding a Rating Indicator to a Table",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/a797173b84724ef1bc54d59dc575e52f"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/a797173b84724ef1bc54d59dc575e52f"
           }
         ],
         "text": "Adding a Rating Indicator to a Table"
@@ -4917,7 +4968,7 @@
         "links": [
           {
             "label": "Adding a Rating Indicator to a Table",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/a797173b84724ef1bc54d59dc575e52f"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/a797173b84724ef1bc54d59dc575e52f"
           }
         ],
         "text": "Adding a Rating Indicator to a Table"
@@ -4934,7 +4985,7 @@
         "links": [
           {
             "label": "Enabling the Related Apps Button",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/8dcfe2e4555f49db8859cb6eb838692e"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/8dcfe2e4555f49db8859cb6eb838692e"
           }
         ],
         "text": "Enabling the Related Apps Button"
@@ -4943,7 +4994,7 @@
         "links": [
           {
             "label": "Enabling the Related Apps Button",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/8dcfe2e4555f49db8859cb6eb838692e"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/8dcfe2e4555f49db8859cb6eb838692e"
           }
         ],
         "text": "Enabling the Related Apps Button"
@@ -4960,7 +5011,7 @@
         "links": [
           {
             "label": "Configuring Overview Pages Using Runtime Capabilities",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/5b1dd11bc3834b05aa9832f2a48a3dec"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/5b1dd11bc3834b05aa9832f2a48a3dec"
           }
         ],
         "text": "Configuring Overview Pages Using Runtime Capabilities"
@@ -4969,7 +5020,7 @@
         "links": [
           {
             "label": "Configuring Overview Pages Using Runtime Capabilities",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/5b1dd11bc3834b05aa9832f2a48a3dec"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/5b1dd11bc3834b05aa9832f2a48a3dec"
           }
         ],
         "text": "Configuring Overview Pages Using Runtime Capabilities"
@@ -4988,11 +5039,11 @@
         "links": [
           {
             "label": "Setting the Table Type",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/7f844f1021cd4791b8f7408eac7c1cec"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/7f844f1021cd4791b8f7408eac7c1cec"
           },
           {
             "label": "Table Cards",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/167bf7ccbb084afab7d846e1fa30b49c"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/167bf7ccbb084afab7d846e1fa30b49c"
           }
         ],
         "text": "Setting the Table Type Table Cards"
@@ -5001,11 +5052,11 @@
         "links": [
           {
             "label": "Setting the Table Type",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/7f844f1021cd4791b8f7408eac7c1cec"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/7f844f1021cd4791b8f7408eac7c1cec"
           },
           {
             "label": "Table Cards",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/167bf7ccbb084afab7d846e1fa30b49c"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/167bf7ccbb084afab7d846e1fa30b49c"
           }
         ],
         "text": "Setting the Table Type Table Cards"
@@ -5022,7 +5073,7 @@
         "links": [
           {
             "label": "Including Reuse Components on an Object Page",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/d869d7ab3caa48b2a20dc20dfa248380"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/d869d7ab3caa48b2a20dc20dfa248380"
           }
         ],
         "text": "Including Reuse Components on an Object Page"
@@ -5031,7 +5082,7 @@
         "links": [
           {
             "label": "Including Reuse Components on an Object Page",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/d869d7ab3caa48b2a20dc20dfa248380"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/d869d7ab3caa48b2a20dc20dfa248380"
           }
         ],
         "text": "Including Reuse Components on an Object Page"
@@ -5052,7 +5103,7 @@
         "links": [
           {
             "label": "Enabling the Search Function",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/3cdebeebb04b4205908140242c9d6817"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/3cdebeebb04b4205908140242c9d6817"
           }
         ],
         "text": "Enabling the Search Function"
@@ -5061,7 +5112,7 @@
         "links": [
           {
             "label": "Enabling the Search Function",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/3cdebeebb04b4205908140242c9d6817"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/3cdebeebb04b4205908140242c9d6817"
           }
         ],
         "text": "Enabling the Search Function"
@@ -5078,7 +5129,7 @@
         "links": [
           {
             "label": "Adding Segmented Buttons to a Table Toolbar",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/5532c899e6e94137b18b8ee68df12efb"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/5532c899e6e94137b18b8ee68df12efb"
           }
         ],
         "text": "Adding Segmented Buttons to a Table Toolbar"
@@ -5087,7 +5138,7 @@
         "links": [
           {
             "label": "Adding Segmented Buttons to a Table Toolbar",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/5532c899e6e94137b18b8ee68df12efb"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/5532c899e6e94137b18b8ee68df12efb"
           }
         ],
         "text": "Adding Segmented Buttons to a Table Toolbar"
@@ -5105,7 +5156,7 @@
         "links": [
           {
             "label": "Side Effects",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/18b17bdd49d1436fa9172cbb01e26544"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/18b17bdd49d1436fa9172cbb01e26544"
           }
         ],
         "text": "Side Effects"
@@ -5114,7 +5165,7 @@
         "links": [
           {
             "label": "Side Effects",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/18b17bdd49d1436fa9172cbb01e26544"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/18b17bdd49d1436fa9172cbb01e26544"
           }
         ],
         "text": "Side Effects"
@@ -5201,7 +5252,7 @@
         "links": [
           {
             "label": "Configuring Sort Properties",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/41af842da7694ef1918fc06b75679ecc"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/41af842da7694ef1918fc06b75679ecc"
           }
         ],
         "text": "Configuring Sort Properties"
@@ -5210,7 +5261,7 @@
         "links": [
           {
             "label": "Configuring Sort Properties",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/41af842da7694ef1918fc06b75679ecc"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/41af842da7694ef1918fc06b75679ecc"
           }
         ],
         "text": "Configuring Sort Properties"
@@ -5255,15 +5306,15 @@
         "links": [
           {
             "label": "Micro Chart Facet in the Object Page Header",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/e219fd0c85b842c69ac3a514e712ece5"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/e219fd0c85b842c69ac3a514e712ece5"
           },
           {
             "label": "Stacked Bar Micro Chart",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/9c938378cf4245e9903e806cb4d41d97"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/9c938378cf4245e9903e806cb4d41d97"
           },
           {
             "label": "Adding a Micro Chart to a Table",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/b8312a4adde54f33a89480dbe12d8632"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/b8312a4adde54f33a89480dbe12d8632"
           }
         ],
         "text": "Micro Chart Facet in the Object Page Header Stacked Bar Micro Chart Adding a Micro Chart to a Table"
@@ -5272,15 +5323,15 @@
         "links": [
           {
             "label": "Micro Chart Facet in the Object Page Header",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/e219fd0c85b842c69ac3a514e712ece5"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/e219fd0c85b842c69ac3a514e712ece5"
           },
           {
             "label": "Stacked Bar Micro Chart",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/9c938378cf4245e9903e806cb4d41d97"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/9c938378cf4245e9903e806cb4d41d97"
           },
           {
             "label": "Adding a Micro Chart to a Table",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/b8312a4adde54f33a89480dbe12d8632"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/b8312a4adde54f33a89480dbe12d8632"
           }
         ],
         "text": "Micro Chart Facet in the Object Page Header Stacked Bar Micro Chart Adding a Micro Chart to a Table"
@@ -5298,7 +5349,7 @@
         "links": [
           {
             "label": "Status Colors and Icons",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/16411809012845a993198bc94c8a99a5"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/16411809012845a993198bc94c8a99a5"
           }
         ],
         "text": "Status Colors and Icons"
@@ -5307,7 +5358,7 @@
         "links": [
           {
             "label": "Status Colors and Icons",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/16411809012845a993198bc94c8a99a5"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/16411809012845a993198bc94c8a99a5"
           }
         ],
         "text": "Status Colors and Icons"
@@ -5324,7 +5375,7 @@
         "links": [
           {
             "label": "Table Cards",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/167bf7ccbb084afab7d846e1fa30b49c"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/167bf7ccbb084afab7d846e1fa30b49c"
           }
         ],
         "text": "Table Cards"
@@ -5333,7 +5384,7 @@
         "links": [
           {
             "label": "Table Cards",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/167bf7ccbb084afab7d846e1fa30b49c"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/167bf7ccbb084afab7d846e1fa30b49c"
           }
         ],
         "text": "Table Cards"
@@ -5353,7 +5404,7 @@
         "links": [
           {
             "label": "Enabling Table Personalization",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/3e2b4d212b66481a829ccef1dc0ca16b"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/3e2b4d212b66481a829ccef1dc0ca16b"
           }
         ],
         "text": "Enabling Table Personalization"
@@ -5362,7 +5413,7 @@
         "links": [
           {
             "label": "Enabling Table Personalization",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/3e2b4d212b66481a829ccef1dc0ca16b"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/3e2b4d212b66481a829ccef1dc0ca16b"
           }
         ],
         "text": "Enabling Table Personalization"
@@ -5380,7 +5431,7 @@
         "links": [
           {
             "label": "Adding Segmented Buttons to a Table Toolbar",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/5532c899e6e94137b18b8ee68df12efb"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/5532c899e6e94137b18b8ee68df12efb"
           }
         ],
         "text": "Adding Segmented Buttons to a Table Toolbar"
@@ -5389,7 +5440,7 @@
         "links": [
           {
             "label": "Adding Segmented Buttons to a Table Toolbar",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/5532c899e6e94137b18b8ee68df12efb"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/5532c899e6e94137b18b8ee68df12efb"
           }
         ],
         "text": "Adding Segmented Buttons to a Table Toolbar"
@@ -5408,15 +5459,15 @@
         "links": [
           {
             "label": "Configuring Tables",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/f4eb70f4808b48adb6ea03a4017aba24"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/f4eb70f4808b48adb6ea03a4017aba24"
           },
           {
             "label": "Setting the Table Type",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/7f844f1021cd4791b8f7408eac7c1cec"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/7f844f1021cd4791b8f7408eac7c1cec"
           },
           {
             "label": "Table Cards",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/167bf7ccbb084afab7d846e1fa30b49c"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/167bf7ccbb084afab7d846e1fa30b49c"
           }
         ],
         "text": "Configuring Tables Setting the Table Type Table Cards"
@@ -5425,15 +5476,15 @@
         "links": [
           {
             "label": "Configuring Tables",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/f4eb70f4808b48adb6ea03a4017aba24"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/f4eb70f4808b48adb6ea03a4017aba24"
           },
           {
             "label": "Setting the Table Type",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/7f844f1021cd4791b8f7408eac7c1cec"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/7f844f1021cd4791b8f7408eac7c1cec"
           },
           {
             "label": "Table Cards",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/167bf7ccbb084afab7d846e1fa30b49c"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/167bf7ccbb084afab7d846e1fa30b49c"
           }
         ],
         "text": "Configuring Tables Setting the Table Type Table Cards"
@@ -5453,7 +5504,7 @@
         "links": [
           {
             "label": "Plain Text Facet in the Object Page Header",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/1da0926a5d404c5586cd8b4f73d1cf4a"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/1da0926a5d404c5586cd8b4f73d1cf4a"
           }
         ],
         "text": "Plain Text Facet in the Object Page Header"
@@ -5462,7 +5513,7 @@
         "links": [
           {
             "label": "Plain Text Facet in the Object Page Header",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/1da0926a5d404c5586cd8b4f73d1cf4a"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/1da0926a5d404c5586cd8b4f73d1cf4a"
           }
         ],
         "text": "Plain Text Facet in the Object Page Header"
@@ -5482,7 +5533,7 @@
         "links": [
           {
             "label": "Different Representations of a Field",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/c18ada4bc56e427a9a2df2d1898f28a5"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/c18ada4bc56e427a9a2df2d1898f28a5"
           }
         ],
         "text": "Different Representations of a Field"
@@ -5491,7 +5542,7 @@
         "links": [
           {
             "label": "Different Representations of a Field",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/c18ada4bc56e427a9a2df2d1898f28a5"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/c18ada4bc56e427a9a2df2d1898f28a5"
           }
         ],
         "text": "Different Representations of a Field"
@@ -5511,15 +5562,15 @@
         "links": [
           {
             "label": "Adding Titles to Object Page Tables",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/d9a45394165e439595cf0006924b6996"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/d9a45394165e439595cf0006924b6996"
           },
           {
             "label": "Changing Default Titles of New and Unnamed Objects",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/63946c02df1d45efbbad5b1658fef3a5"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/63946c02df1d45efbbad5b1658fef3a5"
           },
           {
             "label": "Configuring the Table Card Header Area (Optional)",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/05887bd915b4410db59784d07de45446"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/05887bd915b4410db59784d07de45446"
           }
         ],
         "text": "Adding Titles to Object Page Tables Changing Default Titles of New and Unnamed Objects Configuring the Table Card Header Area (Optional)"
@@ -5528,15 +5579,15 @@
         "links": [
           {
             "label": "Adding Titles to Object Page Tables",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/d9a45394165e439595cf0006924b6996"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/d9a45394165e439595cf0006924b6996"
           },
           {
             "label": "Changing Default Titles of New and Unnamed Objects",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/63946c02df1d45efbbad5b1658fef3a5"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/63946c02df1d45efbbad5b1658fef3a5"
           },
           {
             "label": "Configuring the Table Card Header Area (Optional)",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/05887bd915b4410db59784d07de45446"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/05887bd915b4410db59784d07de45446"
           }
         ],
         "text": "Adding Titles to Object Page Tables Changing Default Titles of New and Unnamed Objects Configuring the Table Card Header Area (Optional)"
@@ -5554,11 +5605,11 @@
         "links": [
           {
             "label": "Field Help",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/a5608eabcc184aee99e1a7d88b28816c"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/a5608eabcc184aee99e1a7d88b28816c"
           },
           {
             "label": "Using the Multi-Input Field on the Object Page",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/04ff5b1a81344a8e8169ea99630ff4e5"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/04ff5b1a81344a8e8169ea99630ff4e5"
           }
         ],
         "text": "Field Help Using the Multi-Input Field on the Object Page"
@@ -5567,11 +5618,11 @@
         "links": [
           {
             "label": "Field Help",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/a5608eabcc184aee99e1a7d88b28816c"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/a5608eabcc184aee99e1a7d88b28816c"
           },
           {
             "label": "Using the Multi-Input Field on the Object Page",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/04ff5b1a81344a8e8169ea99630ff4e5"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/04ff5b1a81344a8e8169ea99630ff4e5"
           }
         ],
         "text": "Field Help Using the Multi-Input Field on the Object Page"
@@ -5589,7 +5640,7 @@
         "links": [
           {
             "label": "Setting the Table Type",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/7f844f1021cd4791b8f7408eac7c1cec"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/7f844f1021cd4791b8f7408eac7c1cec"
           }
         ],
         "text": "Setting the Table Type"
@@ -5598,7 +5649,7 @@
         "links": [
           {
             "label": "Setting the Table Type",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/7f844f1021cd4791b8f7408eac7c1cec"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/7f844f1021cd4791b8f7408eac7c1cec"
           }
         ],
         "text": "Setting the Table Type"
@@ -5615,7 +5666,7 @@
         "links": [
           {
             "label": "Setting Units of Measure",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/0d6c1d5f9e1e4aab950f7b528c59fa5d"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/0d6c1d5f9e1e4aab950f7b528c59fa5d"
           }
         ],
         "text": "Setting Units of Measure"
@@ -5624,7 +5675,7 @@
         "links": [
           {
             "label": "Setting Units of Measure",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/0d6c1d5f9e1e4aab950f7b528c59fa5d"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/0d6c1d5f9e1e4aab950f7b528c59fa5d"
           }
         ],
         "text": "Setting Units of Measure"
@@ -5644,11 +5695,11 @@
         "links": [
           {
             "label": "Enhancing ValueList Annotations for Visual Filters",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/16d43eb0472c4d5a9439ca1bf92c915d"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/16d43eb0472c4d5a9439ca1bf92c915d"
           },
           {
             "label": "Value Help as a Dropdown List",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/2a0a630e50c7472b803fb94dab922d18"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/2a0a630e50c7472b803fb94dab922d18"
           }
         ],
         "text": "Enhancing ValueList Annotations for Visual Filters Value Help as a Dropdown List"
@@ -5657,11 +5708,11 @@
         "links": [
           {
             "label": "Enhancing ValueList Annotations for Visual Filters",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/16d43eb0472c4d5a9439ca1bf92c915d"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/16d43eb0472c4d5a9439ca1bf92c915d"
           },
           {
             "label": "Value Help as a Dropdown List",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/2a0a630e50c7472b803fb94dab922d18"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/2a0a630e50c7472b803fb94dab922d18"
           }
         ],
         "text": "Enhancing ValueList Annotations for Visual Filters Value Help as a Dropdown List"
@@ -5681,19 +5732,19 @@
         "links": [
           {
             "label": "Managing Variants",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/8ce658e05498466d9a74823b94e840ac"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/8ce658e05498466d9a74823b94e840ac"
           },
           {
             "label": "Configuring the Manifest for the Analytical List Page",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/2a9df06673d34f72b238549d49da8bfb"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/2a9df06673d34f72b238549d49da8bfb"
           },
           {
             "label": "Creating a List Report Page Without Variant Management",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/094fe8c8d8ac4f0eb4724b1a52d2ad61"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/094fe8c8d8ac4f0eb4724b1a52d2ad61"
           },
           {
             "label": "Configuring the Manifest for the Overview Page",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/f194b411027e4402a0be0537fa7b803b"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/f194b411027e4402a0be0537fa7b803b"
           }
         ],
         "text": "Managing Variants Configuring the Manifest for the Analytical List Page Creating a List Report Page Without Variant Management Configuring the Manifest for the Overview Page"
@@ -5702,19 +5753,19 @@
         "links": [
           {
             "label": "Managing Variants",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/8ce658e05498466d9a74823b94e840ac"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/8ce658e05498466d9a74823b94e840ac"
           },
           {
             "label": "Configuring the Manifest for the Analytical List Page",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/2a9df06673d34f72b238549d49da8bfb"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/2a9df06673d34f72b238549d49da8bfb"
           },
           {
             "label": "Creating a List Report Page Without Variant Management",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/094fe8c8d8ac4f0eb4724b1a52d2ad61"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/094fe8c8d8ac4f0eb4724b1a52d2ad61"
           },
           {
             "label": "Configuring the Manifest for the Overview Page",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/f194b411027e4402a0be0537fa7b803b"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/f194b411027e4402a0be0537fa7b803b"
           }
         ],
         "text": "Managing Variants Configuring the Manifest for the Analytical List Page Creating a List Report Page Without Variant Management Configuring the Manifest for the Overview Page"
@@ -5731,11 +5782,11 @@
         "links": [
           {
             "label": "Configuring the Visual Filter Bar",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/33f3d807c10b47d9a8141692d2619dc2"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/33f3d807c10b47d9a8141692d2619dc2"
           },
           {
             "label": "Visual Filters",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/1714720cae984ad8b9d9111937e7cd38"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/1714720cae984ad8b9d9111937e7cd38"
           }
         ],
         "text": "Configuring the Visual Filter Bar Visual Filters"
@@ -5744,11 +5795,11 @@
         "links": [
           {
             "label": "Configuring the Visual Filter Bar",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/33f3d807c10b47d9a8141692d2619dc2"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/33f3d807c10b47d9a8141692d2619dc2"
           },
           {
             "label": "Visual Filters",
-            "url": "https://ui5.sap.com/1.146.0/#/topic/1714720cae984ad8b9d9111937e7cd38"
+            "url": "https://ui5.sap.com/1.147.0/#/topic/1714720cae984ad8b9d9111937e7cd38"
           }
         ],
         "text": "Configuring the Visual Filter Bar Visual Filters"
