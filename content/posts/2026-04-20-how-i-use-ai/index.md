@@ -8,11 +8,11 @@ categories: ["General"]
 author: "Marian Zeis"
 showToc: false
 cover:
-  image: "image.jpg"
-  alt: "Desk setup with code on multiple monitors, a keyboard, and colorful ambient lighting."
+  image: "image.png"
+  alt: "Screenshot of the AI development workflow with ChatGPT, Claude Code, and MCP servers."
   relative: true
 images:
-  - "image.jpg"
+  - "image.png"
 keywords: ["AI development workflow", "context engineering", "SAP AI development", "ABAP AI", "MCP", "agentic coding"]
 ---
 
