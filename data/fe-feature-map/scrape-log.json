@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "createdAt": "2026-03-11T20:07:12.324Z",
-  "updatedAt": "2026-04-21T05:42:14.027Z",
+  "updatedAt": "2026-04-22T05:41:27.078Z",
   "versionsUrl": "https://ui5.sap.com/version.json?sap-ui-config-patches=true&sap-ui-config-showall=true",
   "topicId": "62d3f7c2a9424864921184fd6c7002eb",
   "minMinor": 84,
@@ -188,7 +188,7 @@
       "latestSeenVersion": "1.124.2",
       "latestScrapedVersion": "1.124.11",
       "lastCheckedAt": "2026-04-21T05:42:14.027Z",
-      "lastStatus": "checked-no-change",
+      "lastStatus": "already-checked",
       "patches": {
         "1.124.11": {
           "version": "1.124.11",
@@ -691,10 +691,10 @@
     "1.147": {
       "support": "Maintenance",
       "lts": false,
-      "latestSeenVersion": "1.147.0",
+      "latestSeenVersion": "1.147.1",
       "latestScrapedVersion": "1.147.0",
-      "lastCheckedAt": "2026-04-17T05:42:03.181Z",
-      "lastStatus": "already-scraped",
+      "lastCheckedAt": "2026-04-22T05:41:27.078Z",
+      "lastStatus": "checked-no-change",
       "patches": {
         "1.147.0": {
           "version": "1.147.0",
@@ -706,14 +706,25 @@
           "dataFile": "fe-features-1.147.0.json",
           "comparedToVersion": null,
           "changedComparedToPrevious": true
+        },
+        "1.147.1": {
+          "version": "1.147.1",
+          "sourceUrl": "https://ui5.sap.com/1.147.1/docs/topics/62d3f7c2a9424864921184fd6c7002eb.html",
+          "checkedAt": "2026-04-22T05:41:27.078Z",
+          "hash": "581a018cefbc4aa387a30cfa828b023b5b897b21feba92ceff0df548c5a208bb",
+          "rowCount": 155,
+          "scraped": false,
+          "dataFile": null,
+          "comparedToVersion": "1.147.0",
+          "changedComparedToPrevious": false
         }
       },
       "lastError": null
     }
   },
   "lastRun": {
-    "startedAt": "2026-04-21T05:42:13.722Z",
-    "finishedAt": "2026-04-21T05:42:14.027Z",
+    "startedAt": "2026-04-22T05:41:26.265Z",
+    "finishedAt": "2026-04-22T05:41:27.078Z",
     "summary": {
       "minorsDiscovered": 23,
       "alreadyChecked": 22,
