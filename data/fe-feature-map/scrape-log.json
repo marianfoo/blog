@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "createdAt": "2026-03-11T20:07:12.324Z",
-  "updatedAt": "2026-04-24T05:47:08.821Z",
+  "updatedAt": "2026-04-25T05:33:20.531Z",
   "versionsUrl": "https://ui5.sap.com/version.json?sap-ui-config-patches=true&sap-ui-config-showall=true",
   "topicId": "62d3f7c2a9424864921184fd6c7002eb",
   "minMinor": 84,
@@ -45,7 +45,7 @@
       "latestSeenVersion": "1.96.48",
       "latestScrapedVersion": "1.96.46",
       "lastCheckedAt": "2026-04-24T05:47:08.821Z",
-      "lastStatus": "checked-no-change",
+      "lastStatus": "already-checked",
       "patches": {
         "1.96.46": {
           "version": "1.96.46",
@@ -559,10 +559,10 @@
     "1.142": {
       "support": "Maintenance",
       "lts": false,
-      "latestSeenVersion": "1.142.11",
+      "latestSeenVersion": "1.142.12",
       "latestScrapedVersion": "1.142.7",
-      "lastCheckedAt": "2026-04-16T05:43:18.852Z",
-      "lastStatus": "already-checked",
+      "lastCheckedAt": "2026-04-25T05:33:20.531Z",
+      "lastStatus": "checked-no-change",
       "patches": {
         "1.142.7": {
           "version": "1.142.7",
@@ -617,6 +617,17 @@
           "scraped": false,
           "dataFile": null,
           "comparedToVersion": "1.142.10",
+          "changedComparedToPrevious": false
+        },
+        "1.142.12": {
+          "version": "1.142.12",
+          "sourceUrl": "https://ui5.sap.com/1.142.12/docs/topics/62d3f7c2a9424864921184fd6c7002eb.html",
+          "checkedAt": "2026-04-25T05:33:20.531Z",
+          "hash": "6b602e37766bf7a38f662ec5b3050515fc4a337e658507aee1df0984bc20c53a",
+          "rowCount": 156,
+          "scraped": false,
+          "dataFile": null,
+          "comparedToVersion": "1.142.11",
           "changedComparedToPrevious": false
         }
       },
@@ -756,8 +767,8 @@
     }
   },
   "lastRun": {
-    "startedAt": "2026-04-24T05:47:05.989Z",
-    "finishedAt": "2026-04-24T05:47:08.821Z",
+    "startedAt": "2026-04-25T05:33:19.957Z",
+    "finishedAt": "2026-04-25T05:33:20.531Z",
     "summary": {
       "minorsDiscovered": 23,
       "alreadyChecked": 22,
