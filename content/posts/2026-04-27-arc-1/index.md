@@ -20,7 +20,7 @@ Series note: This post is part of my [AI ABAP development series](/tags/ai-abap-
 
 In the [first post of this series](https://blog.zeis.de/posts/2026-04-20-how-i-use-ai/), I wrote about context and how I use AI in development. In the [previous post](https://blog.zeis.de/posts/2026-04-22-ai-abap-development/), I then moved that discussion into ABAP and ended more or less with one question: what would an ADT MCP setup need to look like if you take control, identity, and security seriously from the beginning?
 
-This post is my current answer to that question. It is called [ARC-1](https://github.com/marianfoo/arc-1), and yes, it is another ADT MCP server. But the important difference is not that it can talk to ADT at all. Other projects already showed very well that this is possible and useful. The difference is the architecture and the focus, which is also why the [ARC-1 documentation](https://marianfoo.github.io/arc-1/) spends a lot of space on security, authentication, deployment, and operations, not only on the tool list.
+This post is my current answer to that question. It is called [ARC-1](https://github.com/marianfoo/arc-1) (ABAP Relay Connector, pronounced arc one [ɑːrk wʌn]), and yes, it is another ADT MCP server. But the important difference is not that it can talk to ADT at all. Other projects already showed very well that this is possible and useful. The difference is the architecture and the focus, which is also why the [ARC-1 documentation](https://marianfoo.github.io/arc-1/) spends a lot of space on security, authentication, deployment, and operations, not only on the tool list.
 
 ## Why ARC-1 had to exist
 
