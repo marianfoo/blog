@@ -3,7 +3,7 @@ title: "ABAP and Agentic AI: The Hidden Problem in Real Projects"
 date: 2026-04-22T09:00:00+02:00
 draft: false
 description: "Why AI already fits quite naturally into UI5 and CAP workflows, why ABAP is much harder, and which patterns actually make sense for enterprise SAP development."
-tags: ["ai", "sap", "abap", "mcp", "agentic", "development", "ui5", "cap"]
+tags: ["ai", "sap", "abap", "mcp", "agentic", "development", "ui5", "cap", "ai-abap-development-series"]
 categories: ["General"]
 author: "Marian Zeis"
 showToc: false
@@ -16,6 +16,8 @@ images:
   - "pattern-git-offstack-readonly-mcp.png"
 keywords: ["AI in SAP development", "ABAP AI", "agentic ABAP", "SAP MCP", "ABAP development patterns", "UI5 AI development", "CAP AI development"]
 ---
+
+Series note: This post is part of my [AI ABAP development series](/tags/ai-abap-development-series/), where I go from AI development in general, to ABAP-specific problems, and then to ARC-1.
 
 In the [first post of this series](https://blog.zeis.de/posts/2026-04-20-how-i-use-ai/), I wrote more generally about how I use AI today, why context matters so much, and why I am still not fully convinced by the more maximalist agentic hype.
 

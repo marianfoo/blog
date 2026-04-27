@@ -3,7 +3,7 @@ title: "How I Use AI for Development and Why Context Matters"
 date: 2026-04-20T20:00:00+02:00
 draft: false
 description: "How I actually use AI in software development today, why context matters more than hype, and why this gets much harder in SAP."
-tags: ["ai", "llm", "sap", "mcp", "abap", "agentic", "development"]
+tags: ["ai", "llm", "sap", "mcp", "abap", "agentic", "development", "ai-abap-development-series"]
 categories: ["General"]
 author: "Marian Zeis"
 showToc: false
@@ -15,6 +15,8 @@ images:
   - "image.png"
 keywords: ["AI development workflow", "context engineering", "SAP AI development", "ABAP AI", "MCP", "agentic coding"]
 ---
+
+Series note: This post is part of my [AI ABAP development series](/tags/ai-abap-development-series/), where I go from AI development in general, to ABAP-specific problems, and then to ARC-1.
 
 When it comes to AI, I do not really think about magic.
 
@@ -139,4 +141,4 @@ The next post is where I want to look more concrete at that gap: what is already
 - [SAP’s ABAP-1 Loses Every ABAP Benchmark, Even “Explaining”](https://blog.zeis.de/posts/2026-03-05-abap-llm-benchmark-understanding/)
 - [Give Your AI Agent Some Tools: Introducing the UI5 MCP Server](https://community.sap.com/t5/technology-blog-posts-by-sap/give-your-ai-agent-some-tools-introducing-the-ui5-mcp-server/bc-p/14206959)
 - [Boost your CAP Development with AI: Introducing the MCP Server for CAP](https://community.sap.com/t5/technology-blog-posts-by-sap/boost-your-cap-development-with-ai-introducing-the-mcp-server-for-cap/ba-p/14202849)
-- [SAP Fiori Tools Update – First Release of the SAP Fiori MCP Server for Agentic AI Workflows](https://community.sap.com/t5/technology-blog-posts-by-sap/sap-fiori-tools-update-first-release-of-the-sap-fiori-mcp-server-for/ba-p/14204694)
+- [SAP Fiori Tools Update - First Release of the SAP Fiori MCP Server for Agentic AI Workflows](https://community.sap.com/t5/technology-blog-posts-by-sap/sap-fiori-tools-update-first-release-of-the-sap-fiori-mcp-server-for/ba-p/14204694)
