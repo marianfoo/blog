@@ -1,7 +1,7 @@
 ---
 title: "ARC-1 on SAP BTP: Secure ABAP Agentic Development Beyond the Laptop"
 date: 2026-04-29T09:00:00+02:00
-draft: true
+draft: false
 description: "How ARC-1 can be deployed on SAP BTP, what architecture options exist, and how XSUAA, destinations, Cloud Connector, Principal Propagation, roles, and MCP clients fit together."
 tags: ["arc-1", "sap", "abap", "mcp", "agentic", "btp", "xsuaa", "principal-propagation", "development", "ai-abap-development-series"]
 categories: ["projects"]
