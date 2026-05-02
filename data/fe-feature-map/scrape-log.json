@@ -760,7 +760,7 @@
       "latestSeenVersion": "1.147.2",
       "latestScrapedVersion": "1.147.0",
       "lastCheckedAt": "2026-05-01T06:01:17.764Z",
-      "lastStatus": "checked-no-change",
+      "lastStatus": "already-checked",
       "patches": {
         "1.147.0": {
           "version": "1.147.0",
