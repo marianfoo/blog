@@ -53,7 +53,7 @@ Copilot Studio / Teams
   -> SAP ABAP system
 ```
 
-This means the security story does not change only because the client changes. ARC-1 still has the [server ceiling](https://marianfoo.github.io/arc-1/authorization/#the-model-in-one-picture). [XSUAA roles](https://marianfoo.github.io/arc-1/xsuaa-setup/) still control what the user can do. SAP still decides the backend authorization. If [Principal Propagation](https://marianfoo.github.io/arc-1/principal-propagation-setup/) is active, the SAP system can still see the real user.
+This means the security story does not change only because the client changes. ARC-1 still has the [server ceiling](https://marianfoo.github.io/arc-1/authorization/#the-model-in-one-picture). [XSUAA roles](https://marianfoo.github.io/arc-1/xsuaa-setup/) still control what the user can do in ARC-1. If [Principal Propagation](https://marianfoo.github.io/arc-1/principal-propagation-setup/) is active, ARC-1 does not call SAP as one shared technical user. The signed-in user's identity is propagated to the ABAP backend, so SAP checks the request with that user's normal SAP authorizations, for example object, package, transport, table, or `S_DEVELOP` permissions.
 
 In simpler words: Copilot calls ARC-1 over HTTPS, BTP authenticates the user and resolves the SAP destination, and the Cloud Connector forwards the request to the ABAP system. The server ceiling is the maximum ARC-1 capability the admin enabled for this instance, so a user role can never enable more than the server allows.
 
