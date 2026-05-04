@@ -1,0 +1,235 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2160" height="1000" viewBox="0 0 2160 1000">
+<defs>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#092A52" flood-opacity="0.08"/></filter>
+  <marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="9" markerHeight="9" orient="auto"><path d="M2,2 L10,6 L2,10 Z" fill="#003B77"/></marker>
+</defs>
+<rect width="100%" height="100%" fill="white"/>
+
+<rect x="40" y="140" width="320" height="560" rx="18" ry="18" fill="white" stroke="#0064FF" stroke-width="2" opacity="1"/>
+<g transform="translate(95,210) scale(0.85)" fill="none" stroke="#0A6ED1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+  <rect x="-24" y="-26" width="48" height="52" rx="4"/>
+  <path d="M-12 -10 H12 M-12 4 H12 M-12 18 H4"/>
+</g>
+<text x="130" y="218" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#0B1F33" text-anchor="start">
+<tspan x="130" dy="0">Enterprise Context</tspan>
+</text>
+<rect x="70" y="255" width="260" height="115" rx="14" ry="14" fill="white" stroke="#0064FF" stroke-width="2" opacity="1"/>
+<text x="200" y="303" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="600" fill="#0B1F33" text-anchor="middle">
+<tspan x="200" dy="0">SharePoint</tspan>
+<tspan x="200" dy="28">Specs &amp; documents</tspan>
+</text>
+<rect x="70" y="410" width="260" height="115" rx="14" ry="14" fill="white" stroke="#0064FF" stroke-width="2" opacity="1"/>
+<text x="200" y="458" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="600" fill="#0B1F33" text-anchor="middle">
+<tspan x="200" dy="0">Atlassian</tspan>
+<tspan x="200" dy="28">Jira / Confluence</tspan>
+</text>
+<rect x="70" y="565" width="260" height="105" rx="14" ry="14" fill="white" stroke="#D800B9" stroke-width="2" stroke-dasharray="5 5" opacity="1"/>
+<text x="200" y="598" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#0B1F33" text-anchor="middle">
+<tspan x="200" dy="0">mcp-sap-docs</tspan>
+<tspan x="200" dy="24" font-size="15" font-weight="500">mcp-sap-docs.marianzeis.de</tspan>
+<tspan x="200" dy="20" font-size="15" font-weight="500">separate MCP server</tspan>
+</text>
+
+<g transform="translate(360,0)">
+<rect x="40" y="140" width="320" height="560" rx="18" ry="18" fill="white" stroke="#0064FF" stroke-width="2" opacity="1"/>
+
+<g transform="translate(95,210) scale(1.05)" stroke="#0A6ED1" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="0" cy="-16" r="10"/>
+  <path d="M-26 24 C-22 3 -10 -1 0 -1 C10 -1 22 3 26 24 Z"/>
+</g>
+<text x="145" y="218" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#0B1F33" text-anchor="start">
+<tspan x="145" dy="0">AI Clients</tspan>
+</text>
+<rect x="70" y="255" width="260" height="115" rx="14" ry="14" fill="white" stroke="#0064FF" stroke-width="2" opacity="1"/>
+
+<svg x="92" y="282" width="60" height="60" viewBox="0 0 512 512">
+  <defs>
+    <radialGradient id="copilot-gradient-1" cx="-877.7161" cy="-132.567" r="10.2279" gradientTransform="matrix(-10.9605 -13.3892 12.5901 -10.3064 -7551.9165 -12897.8545)" gradientUnits="userSpaceOnUse">
+      <stop offset="9.560000e-02" style="stop-color:#00AEFF"/>
+      <stop offset="0.7732" style="stop-color:#2253CE"/>
+      <stop offset="1" style="stop-color:#0736C4"/>
+    </radialGradient>
+    <radialGradient id="copilot-gradient-2" cx="-737.2332" cy="-182.9438" r="10.2279" gradientTransform="matrix(9.8803 12.5737 -12.1968 9.5842 5177.0391 11369.2686)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" style="stop-color:#FFB657"/>
+      <stop offset="0.6337" style="stop-color:#FF5F3D"/>
+      <stop offset="0.9234" style="stop-color:#C02B3C"/>
+    </radialGradient>
+    <linearGradient id="copilot-gradient-3" gradientUnits="userSpaceOnUse" x1="164.1335" y1="322.2711" x2="187.5389" y2="593.0553" gradientTransform="matrix(1 0 0 1 0 -237.2563)">
+      <stop offset="0.1562" style="stop-color:#0D91E1"/>
+      <stop offset="0.4875" style="stop-color:#52B471"/>
+      <stop offset="0.6524" style="stop-color:#98BD42"/>
+      <stop offset="0.9374" style="stop-color:#FFC800"/>
+    </linearGradient>
+    <linearGradient id="copilot-gradient-4" gradientUnits="userSpaceOnUse" x1="166.4654" y1="288.3688" x2="179.2448" y2="583.7725" gradientTransform="matrix(1 0 0 1 0 -237.2563)">
+      <stop offset="0" style="stop-color:#3DCBFF"/>
+      <stop offset="0.2467" style="stop-color:#0588F7;stop-opacity:0"/>
+    </linearGradient>
+    <radialGradient id="copilot-gradient-5" cx="-805.3843" cy="-193.1469" r="10.2279" gradientTransform="matrix(-12.6711 36.2357 -43.4092 -15.1796 -18156.3125 26387.9707)" gradientUnits="userSpaceOnUse">
+      <stop offset="6.620000e-02" style="stop-color:#8C48FF"/>
+      <stop offset="0.5" style="stop-color:#F2598A"/>
+      <stop offset="0.8958" style="stop-color:#FFB152"/>
+    </radialGradient>
+    <linearGradient id="copilot-gradient-6" gradientUnits="userSpaceOnUse" x1="340.7789" y1="384.0687" x2="340.611" y2="464.5487" gradientTransform="matrix(1 0 0 1 0 -237.2563)">
+      <stop offset="5.820000e-02" style="stop-color:#F8ADFA"/>
+      <stop offset="0.7081" style="stop-color:#A86EDD;stop-opacity:0"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#copilot-gradient-1)" d="M359.7,85.5c-5.9-20.2-24.4-34-45.4-34h-13.8c-22.9,0-42.4,16.3-46.6,38.8l-23.7,129l5.9-20.1c5.9-20.2,24.4-34.1,45.4-34.1h80.3l33.7,13.1l32.5-13.1h-9.5c-21,0-39.5-13.8-45.4-34L359.7,85.5z"/>
+  <path fill="url(#copilot-gradient-2)" d="M157.1,426.4c5.9,20.3,24.4,34.2,45.5,34.2H232c25.7,0,46.7-20.5,47.3-46.1l3.2-124.4l-6.7,22.8c-5.9,20.2-24.4,34-45.4,34h-81l-28.9-15.7l-31.3,15.7h9.3c21.1,0,39.6,13.9,45.5,34.2L157.1,426.4z"/>
+  <path fill="url(#copilot-gradient-3)" d="M312.3,51.4h-164c-46.9,0-75,61.9-93.7,123.9C32.3,248.7,3.2,346.9,87.3,346.9h70.8c21.2,0,39.7-14,45.6-34.3c12.3-43.1,33.9-118.2,50.9-175.5c8.6-29.1,15.8-54,26.8-69.6C287.5,58.7,297.8,51.4,312.3,51.4z"/>
+  <path fill="url(#copilot-gradient-4)" d="M312.3,51.4h-164c-46.9,0-75,61.9-93.7,123.9C32.3,248.7,3.2,346.9,87.3,346.9h70.8c21.2,0,39.7-14,45.6-34.3c12.3-43.1,33.9-118.2,50.9-175.5c8.6-29.1,15.8-54,26.8-69.6C287.5,58.7,297.8,51.4,312.3,51.4z"/>
+  <path fill="url(#copilot-gradient-5)" d="M199.7,460.6h164c46.9,0,75-62,93.7-123.9c22.2-73.4,51.3-171.6-32.8-171.6h-70.8c-21.2,0-39.8,14-45.6,34.4c-12.3,43.1-33.9,118.3-50.9,175.5c-8.6,29.1-15.8,54.1-26.8,69.6C224.5,453.3,214.2,460.6,199.7,460.6z"/>
+  <path fill="url(#copilot-gradient-6)" d="M199.7,460.6h164c46.9,0,75-62,93.7-123.9c22.2-73.4,51.3-171.6-32.8-171.6h-70.8c-21.2,0-39.8,14-45.6,34.4c-12.3,43.1-33.9,118.3-50.9,175.5c-8.6,29.1-15.8,54.1-26.8,69.6C224.5,453.3,214.2,460.6,199.7,460.6z"/>
+</svg>
+<text x="235" y="303" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="600" fill="#0B1F33" text-anchor="middle">
+<tspan x="235" dy="0">Microsoft</tspan>
+<tspan x="235" dy="30.0">Copilot</tspan>
+</text>
+<rect x="70" y="410" width="260" height="115" rx="14" ry="14" fill="white" stroke="#0064FF" stroke-width="2" opacity="1"/>
+
+<svg x="90" y="436" width="64" height="64" viewBox="4 4 36 38" fill="none">
+  <path fill="url(#teams-gradient-a)" d="M21.9999 20h12c3.3137 0 6 2.6863 6 6v10c0 3.3137-2.6863 6-6 6s-6-2.6863-6-6V26c0-3.3137-2.6863-6-6-6"/>
+  <path fill="url(#teams-gradient-b)" d="M7.99988 24c0-3.3137 2.68632-6 6.00002-6h8c3.3137 0 6 2.6863 6 6v12c0 3.3137 2.6863 6 6 6l-16.0001-.0001c-5.5228 0-9.99992-4.4771-9.99992-10z"/>
+  <path fill="url(#teams-gradient-c)" fill-opacity=".7" d="M7.99988 24c0-3.3137 2.68632-6 6.00002-6h8c3.3137 0 6 2.6863 6 6v12c0 3.3137 2.6863 6 6 6l-16.0001-.0001c-5.5228 0-9.99992-4.4771-9.99992-10z"/>
+  <path fill="url(#teams-gradient-d)" fill-opacity=".7" d="M7.99988 24c0-3.3137 2.68632-6 6.00002-6h8c3.3137 0 6 2.6863 6 6v12c0 3.3137 2.6863 6 6 6l-16.0001-.0001c-5.5228 0-9.99992-4.4771-9.99992-10z"/>
+  <path fill="url(#teams-gradient-e)" d="M32.9999 18c2.7614 0 5-2.2386 5-5s-2.2386-5-5-5-5 2.2386-5 5 2.2386 5 5 5"/>
+  <path fill="url(#teams-gradient-f)" fill-opacity=".46" d="M32.9999 18c2.7614 0 5-2.2386 5-5s-2.2386-5-5-5-5 2.2386-5 5 2.2386 5 5 5"/>
+  <path fill="url(#teams-gradient-g)" fill-opacity=".4" d="M32.9999 18c2.7614 0 5-2.2386 5-5s-2.2386-5-5-5-5 2.2386-5 5 2.2386 5 5 5"/>
+  <path fill="url(#teams-gradient-h)" d="M17.9999 16c3.3137 0 6-2.6863 6-6 0-3.31371-2.6863-6-6-6s-6 2.68629-6 6c0 3.3137 2.6863 6 6 6"/>
+  <path fill="url(#teams-gradient-i)" fill-opacity=".6" d="M17.9999 16c3.3137 0 6-2.6863 6-6 0-3.31371-2.6863-6-6-6s-6 2.68629-6 6c0 3.3137 2.6863 6 6 6"/>
+  <path fill="url(#teams-gradient-j)" fill-opacity=".5" d="M17.9999 16c3.3137 0 6-2.6863 6-6 0-3.31371-2.6863-6-6-6s-6 2.68629-6 6c0 3.3137 2.6863 6 6 6"/>
+  <rect width="16" height="16" x="4" y="23" fill="url(#teams-gradient-k)" rx="3.25"/>
+  <rect width="16" height="16" x="4" y="23" fill="url(#teams-gradient-l)" fill-opacity=".7" rx="3.25"/>
+  <path fill="#fff" d="M15.4792 28.1054h-2.4471v7.466h-2.0648v-7.466H8.52014v-1.6768h6.95906z"/>
+  <defs>
+    <radialGradient id="teams-gradient-a" cx="0" cy="0" r="1" gradientTransform="matrix(13.4784 0 0 33.2694 39.7967 22.1739)" gradientUnits="userSpaceOnUse"><stop stop-color="#a98aff"/><stop offset=".14" stop-color="#8c75ff"/><stop offset=".565" stop-color="#5f50e2"/><stop offset=".9" stop-color="#3c2cb8"/></radialGradient>
+    <radialGradient id="teams-gradient-b" cx="0" cy="0" r="1" gradientTransform="rotate(68.1539 -7.71566095 14.71355834)scale(32.752 33.1231)" gradientUnits="userSpaceOnUse"><stop stop-color="#85c2ff"/><stop offset=".69" stop-color="#7588ff"/><stop offset="1" stop-color="#6459fe"/></radialGradient>
+    <linearGradient id="teams-gradient-c" x1="20.5936" x2="20.5936" y1="18" y2="42" gradientUnits="userSpaceOnUse"><stop offset=".801159" stop-color="#6864f6" stop-opacity="0"/><stop offset="1" stop-color="#5149de"/></linearGradient>
+    <radialGradient id="teams-gradient-d" cx="0" cy="0" r="1" gradientTransform="rotate(113.326 8.09285255 17.64474501)scale(19.2186 15.4273)" gradientUnits="userSpaceOnUse"><stop stop-color="#bd96ff"/><stop offset=".686685" stop-color="#bd96ff" stop-opacity="0"/></radialGradient>
+    <radialGradient id="teams-gradient-e" cx="0" cy="0" r="1" gradientTransform="matrix(0 -10 12.6216 0 32.9999 11.5714)" gradientUnits="userSpaceOnUse"><stop offset=".268201" stop-color="#6868f7"/><stop offset="1" stop-color="#3923b1"/></radialGradient>
+    <radialGradient id="teams-gradient-f" cx="0" cy="0" r="1" gradientTransform="rotate(40.0516 -.03068196 44.8729095)scale(7.14629 10.3363)" gradientUnits="userSpaceOnUse"><stop offset=".270711" stop-color="#a1d3ff"/><stop offset=".813393" stop-color="#a1d3ff" stop-opacity="0"/></radialGradient>
+    <radialGradient id="teams-gradient-g" cx="0" cy="0" r="1" gradientTransform="rotate(-41.6581 32.11799918 -43.41948423)scale(8.51275 20.8824)" gradientUnits="userSpaceOnUse"><stop stop-color="#e3acfd"/><stop offset=".816041" stop-color="#9fa2ff" stop-opacity="0"/></radialGradient>
+    <radialGradient id="teams-gradient-h" cx="0" cy="0" r="1" gradientTransform="matrix(0 -12 15.146 0 17.9999 8.28571)" gradientUnits="userSpaceOnUse"><stop offset=".268201" stop-color="#8282ff"/><stop offset="1" stop-color="#3923b1"/></radialGradient>
+    <radialGradient id="teams-gradient-i" cx="0" cy="0" r="1" gradientTransform="rotate(40.0516 -3.15465147 21.41641466)scale(8.57554 12.4035)" gradientUnits="userSpaceOnUse"><stop offset=".270711" stop-color="#a1d3ff"/><stop offset=".813393" stop-color="#a1d3ff" stop-opacity="0"/></radialGradient>
+    <radialGradient id="teams-gradient-j" cx="0" cy="0" r="1" gradientTransform="rotate(-41.6581 20.38180375 -26.51566158)scale(10.2153 25.0589)" gradientUnits="userSpaceOnUse"><stop stop-color="#e3acfd"/><stop offset=".816041" stop-color="#9fa2ff" stop-opacity="0"/></radialGradient>
+    <radialGradient id="teams-gradient-k" cx="0" cy="0" r="1" gradientTransform="rotate(45 -25.76345597 16.32842712)scale(22.6274)" gradientUnits="userSpaceOnUse"><stop offset=".046875" stop-color="#688eff"/><stop offset=".946875" stop-color="#230f94"/></radialGradient>
+    <radialGradient id="teams-gradient-l" cx="0" cy="0" r="1" gradientTransform="matrix(0 11.2 -13.0702 0 12 32.6)" gradientUnits="userSpaceOnUse"><stop offset=".570647" stop-color="#6965f6" stop-opacity="0"/><stop offset="1" stop-color="#8f8fff"/></radialGradient>
+  </defs>
+</svg>
+<text x="235" y="458" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="600" fill="#0B1F33" text-anchor="middle">
+<tspan x="235" dy="0">Microsoft</tspan>
+<tspan x="235" dy="30.0">Teams</tspan>
+</text>
+<rect x="430" y="60" width="920" height="850" rx="18" ry="18" fill="#F7FBFF" stroke="#0064FF" stroke-width="2" opacity="1"/>
+
+<text x="890" y="135" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="700" fill="#003B77" text-anchor="middle">
+<tspan x="890" dy="0">BTP</tspan>
+</text>
+<rect x="465" y="165" width="450" height="745" rx="16" ry="16" fill="white" stroke="#0064FF" stroke-width="2" opacity="1"/>
+<text x="505" y="240" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700" fill="#0B1F33" text-anchor="start">
+<tspan x="505" dy="0">ARC-1 on SAP BTP</tspan>
+</text>
+<rect x="505" y="295" width="400" height="415" rx="16" ry="16" fill="white" stroke="#0064FF" stroke-width="2" opacity="1"/>
+
+<g transform="translate(705,350) scale(0.82)">
+  <circle cx="0" cy="0" r="30" fill="#F2F7FD" stroke="#D7E5F5" stroke-width="2"/>
+  <path d="M0 -26 L22 -13 L22 13 L0 26 L-22 13 L-22 -13 Z" fill="white" stroke="#0A6ED1" stroke-width="4"/>
+  <circle cx="0" cy="0" r="10" fill="#0A6ED1"/>
+  <path d="M0 -38 V-26 M0 26 V38" stroke="#0A6ED1" stroke-width="4" stroke-linecap="round"/>
+</g>
+<text x="705" y="407" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" fill="#0B1F33" text-anchor="middle">
+<tspan x="705" dy="0">ARC-1 MCP Gateway</tspan>
+</text>
+<rect x="535" y="420" width="335" height="60" rx="12" ry="12" fill="white" stroke="#0064FF" stroke-width="2" opacity="1"/>
+<g transform="translate(575,450) scale(0.82)" fill="none" stroke="#0A6ED1" stroke-width="3.5" stroke-linecap="round"><circle cx="0" cy="0" r="18"/><path d="M-18 0 H18 M0 -18 C-8 -9 -8 9 0 18 M0 -18 C8 -9 8 9 0 18 M-14 -10 H14 M-14 10 H14"/></g>
+<text x="623" y="458" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#0B1F33" text-anchor="start">
+<tspan x="623" dy="0">HTTP MCP endpoint</tspan>
+</text>
+<rect x="535" y="505" width="335" height="60" rx="12" ry="12" fill="white" stroke="#0064FF" stroke-width="2" opacity="1"/>
+<g transform="translate(575,535) scale(0.62)"><path d="M0 -24 L20 -14 V2 C20 17 8 25 0 30 C-8 25 -20 17 -20 2 V-14 Z" fill="white" stroke="#0A6ED1" stroke-width="4" stroke-linejoin="round"/><circle cx="0" cy="-4" r="5" fill="#0A6ED1"/><path d="M-10 12 C-8 3 -4 1 0 1 C4 1 8 3 10 12" fill="#0A6ED1"/></g>
+<text x="623" y="543" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#0B1F33" text-anchor="start">
+<tspan x="623" dy="0">OAuth validation</tspan>
+</text>
+<rect x="535" y="590" width="335" height="60" rx="12" ry="12" fill="white" stroke="#0064FF" stroke-width="2" opacity="1"/>
+<g transform="translate(575,620) scale(0.72)" stroke="#001E42" stroke-width="4" fill="none" stroke-linecap="round"><path d="M-22 -17 V18 M0 -17 V18 M22 -17 V18 M-28 -7 H28 M-28 8 H28"/></g>
+<text x="623" y="628" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#0B1F33" text-anchor="start">
+<tspan x="623" dy="0">Authorization gates</tspan>
+</text>
+<rect x="535" y="675" width="335" height="60" rx="12" ry="12" fill="white" stroke="#0064FF" stroke-width="2" opacity="1"/>
+<g transform="translate(575,705) scale(0.58)" fill="none"><rect x="-18" y="-22" width="36" height="44" rx="4" fill="white" stroke="#0A6ED1" stroke-width="4"/><path d="M-8 -22 C-8 -30 8 -30 8 -22 H15 V-13 H-15 V-22 Z" fill="#EAF4FF" stroke="#0A6ED1" stroke-width="3"/><path d="M-10 -2 H10 M-10 8 H10 M-10 18 H4" stroke="#0B1F33" stroke-width="3" stroke-linecap="round"/></g>
+<text x="623" y="713" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#0B1F33" text-anchor="start">
+<tspan x="623" dy="0">Audit logging</tspan>
+</text>
+<rect x="535" y="775" width="330" height="70" rx="10" ry="10" fill="white" stroke="#0064FF" stroke-width="2" stroke-dasharray="5 5" opacity="1"/>
+<text x="700" y="818" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="500" fill="#0046C7" text-anchor="middle">
+<tspan x="700" dy="0">Central BTP deployment</tspan>
+</text>
+<rect x="950" y="165" width="320" height="745" rx="16" ry="16" fill="white" stroke="#0064FF" stroke-width="2" opacity="1"/>
+<g transform="translate(1005,220) scale(0.75)" fill="white" stroke="#0A6ED1" stroke-width="3" stroke-linejoin="round"><path d="M0 -34 L16 -25 V-7 L0 2 L-16 -7 V-25 Z"/><path d="M-28 10 L-12 1 L4 10 V28 L-12 37 L-28 28 Z"/><path d="M28 10 L12 1 L-4 10 V28 L12 37 L28 28 Z"/><path d="M0 -34 V2 M-16 -25 L0 -16 L16 -25"/></g>
+<text x="1050" y="235" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700" fill="#0B1F33" text-anchor="start">
+<tspan x="1050" dy="0">BTP Services</tspan>
+</text>
+<rect x="985" y="295" width="260" height="95" rx="12" ry="12" fill="white" stroke="#0064FF" stroke-width="2" opacity="1"/>
+<g transform="translate(1032,350) scale(0.8)"><path d="M0 -24 L20 -14 V2 C20 17 8 25 0 30 C-8 25 -20 17 -20 2 V-14 Z" fill="white" stroke="#0A6ED1" stroke-width="4" stroke-linejoin="round"/><circle cx="0" cy="-4" r="5" fill="#0A6ED1"/><path d="M-10 12 C-8 3 -4 1 0 1 C4 1 8 3 10 12" fill="#0A6ED1"/></g>
+<text x="1115" y="351" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="600" fill="#0B1F33" text-anchor="middle">
+<tspan x="1115" dy="0">XSUAA</tspan>
+</text>
+<rect x="985" y="425" width="260" height="95" rx="12" ry="12" fill="white" stroke="#0064FF" stroke-width="2" opacity="1"/>
+<g transform="translate(1032,480) scale(0.75)" fill="white" stroke="#0A6ED1" stroke-width="4" stroke-linecap="round"><circle cx="0" cy="-22" r="8"/><circle cx="-22" cy="18" r="8"/><circle cx="22" cy="18" r="8"/><path d="M0 -14 V3 M0 3 L-15 13 M0 3 L15 13" fill="none"/></g>
+<text x="1115" y="466" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="600" fill="#0B1F33" text-anchor="middle">
+<tspan x="1115" dy="0">Destination</tspan>
+<tspan x="1115" dy="30.0">Service</tspan>
+</text>
+<rect x="985" y="555" width="260" height="95" rx="12" ry="12" fill="white" stroke="#0064FF" stroke-width="2" opacity="1"/>
+<g transform="translate(1032,610) scale(0.75)" fill="white" stroke="#0A6ED1" stroke-width="4" stroke-linecap="round"><circle cx="0" cy="-22" r="8"/><circle cx="-22" cy="18" r="8"/><circle cx="22" cy="18" r="8"/><path d="M0 -14 V3 M0 3 L-15 13 M0 3 L15 13" fill="none"/></g>
+<text x="1115" y="596" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="600" fill="#0B1F33" text-anchor="middle">
+<tspan x="1115" dy="0">Connectivity</tspan>
+<tspan x="1115" dy="30.0">Service</tspan>
+</text>
+<rect x="985" y="685" width="260" height="95" rx="12" ry="12" fill="white" stroke="#0064FF" stroke-width="2" opacity="1"/>
+<g transform="translate(1032,740) scale(0.72)" fill="none"><rect x="-18" y="-22" width="36" height="44" rx="4" fill="white" stroke="#0A6ED1" stroke-width="4"/><path d="M-8 -22 C-8 -30 8 -30 8 -22 H15 V-13 H-15 V-22 Z" fill="#EAF4FF" stroke="#0A6ED1" stroke-width="3"/><path d="M-9 9 L-2 16 L12 0" fill="none" stroke="#00A19B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></g>
+<text x="1115" y="726" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="600" fill="#0B1F33" text-anchor="middle">
+<tspan x="1115" dy="0">Audit Log</tspan>
+<tspan x="1115" dy="30.0">Service</tspan>
+</text>
+<rect x="1460" y="140" width="320" height="560" rx="18" ry="18" fill="white" stroke="#0064FF" stroke-width="2" opacity="1"/>
+<g transform="translate(1515,205) scale(0.8)" fill="none" stroke="#0A6ED1" stroke-width="4" stroke-linejoin="round"><rect x="-18" y="-30" width="36" height="60" rx="3"/><path d="M-6 30 V15 H6 V30 M-8 -18 H-2 M8 -18 H2 M-8 -5 H-2 M8 -5 H2 M-8 8 H-2 M8 8 H2"/></g>
+<text x="1555" y="218" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700" fill="#0B1F33" text-anchor="start">
+<tspan x="1555" dy="0">SAP Systems</tspan>
+</text>
+<rect x="1525" y="280" width="230" height="110" rx="12" ry="12" fill="white" stroke="#0064FF" stroke-width="2" opacity="1"/>
+<g transform="translate(1640,318) scale(0.5)" fill="none" stroke="#0A6ED1" stroke-width="4" stroke-linejoin="round"><rect x="-28" y="-24" width="56" height="16" rx="3"/><rect x="-28" y="-4" width="56" height="16" rx="3"/><rect x="-28" y="16" width="56" height="16" rx="3"/><circle cx="-17" cy="-16" r="2" fill="#0A6ED1"/><circle cx="-17" cy="4" r="2" fill="#0A6ED1"/><circle cx="-17" cy="24" r="2" fill="#0A6ED1"/></g>
+<text x="1640" y="356" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="600" fill="#0B1F33" text-anchor="middle">
+<tspan x="1640" dy="0">On-premise</tspan>
+<tspan x="1640" dy="26">SAP ABAP</tspan>
+</text>
+<rect x="1525" y="480" width="220" height="125" rx="12" ry="12" fill="white" stroke="#0064FF" stroke-width="2" opacity="1"/>
+<g transform="translate(1635,525) scale(0.72)" fill="none" stroke="#0A6ED1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M-30 14 H24 C34 14 39 5 35 -4 C32 -12 24 -15 17 -12 C13 -26 -8 -28 -15 -13 C-25 -13 -34 -6 -34 4 C-34 10 -31 14 -30 14 Z"/><path d="M0 -1 V22 M-9 13 L0 22 L9 13"/></g>
+<text x="1635" y="570" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" fill="#0B1F33" text-anchor="middle">
+<tspan x="1635" dy="0">Cloud</tspan>
+<tspan x="1635" dy="25.0">Connector</tspan>
+</text>
+<path d="M360 445 H390" fill="none" stroke="#003B77" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="390" y="395" width="110" height="110" rx="12" ry="12" fill="white" stroke="#0064FF" stroke-width="2" opacity="1"/>
+<text x="445" y="425" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="600" fill="#0046C7" text-anchor="middle">
+<tspan x="445" dy="0">Hop 1:</tspan>
+<tspan x="445" dy="27">OAuth via</tspan>
+<tspan x="445" dy="27">XSUAA</tspan>
+</text>
+<path d="M500 445 H535" fill="none" stroke="#003B77" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M905 480 H985" fill="none" stroke="#003B77" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1245 480 H1320" fill="none" stroke="#003B77" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1320" y="410" width="140" height="135" rx="14" ry="14" fill="white" stroke="#D800B9" stroke-width="2" opacity="1"/>
+<text x="1390" y="444" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="600" fill="#D800B9" text-anchor="middle">
+<tspan x="1390" dy="0">Hop 2:</tspan>
+<tspan x="1390" dy="26">Destination +</tspan>
+<tspan x="1390" dy="26">Principal</tspan>
+<tspan x="1390" dy="26">Propagation</tspan>
+</text>
+<path d="M1460 480 H1525" fill="none" stroke="#003B77" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M1635 480 V390" fill="none" stroke="#003B77" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+</g>
+<path d="M400 312 H330" fill="none" stroke="#003B77" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M400 467 H330" fill="none" stroke="#003B77" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M400 618 H330" fill="none" stroke="#003B77" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+</svg>

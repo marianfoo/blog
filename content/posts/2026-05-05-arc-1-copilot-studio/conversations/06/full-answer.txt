@@ -1,0 +1,44 @@
+Q: Is ZCL_ARC1_DEMO_CCORE clean-core ready?
+A:
+
+Now I have the complete picture. Here's the full assessment:
+🔴 ZCL_ARC1_DEMO_CCORE is NOT Clean-Core Ready
+The class has two methods, and both use non-released SAP objects that violate Clean Core Level A (Released API). Here's the breakdown:
+Method-by-Method Analysis
+1. GET_USER_VALIDITY — Direct SELECT on USR02
+Object	Type	Clean Core Level	Status
+USR02	TABL	❌ Not found in released catalog	Not released at any level — completely internal to the kernel user management layer
+XUBNAME	DTEL	❌ Not found in released catalog	Internal data element
+Problem: SELECT SINGLE bname FROM usr02 is a direct table read on the security-sensitive user master table. This table is not released for any clean-core tier and has no direct successor in the released dataset.
+✅ Successor: Use the released CDS view I_BUSINESSUSERBASIC (Level A, BC-SRV-BUM)
+" Instead of: SELECT SINGLE bname FROM usr02 ...
+SELECT SINGLE UserID FROM i_businessuserbasic
+  WHERE UserID = @iv_bname
+    AND ValidityStartDate <= @lv_today
+    AND ValidityEndDate   >= @lv_today
+  INTO @DATA(lv_user).
+2. PARTNER_EXISTS — Direct SELECT on BUT000
+Object	Type	Clean Core Level	Status
+BUT000	TABL	⚠️ C (Internal / Stable)	notToBeReleased — non-compliant at Level A
+BU_PARTNER	DTEL	❌ Not found in released catalog	Internal data element
+Problem: SELECT SINGLE partner FROM but000 reads the BP master table directly. SAP explicitly declares this table as "not to be released" with a named successor.
+✅ Successor: Use the released CDS view I_BUSINESSPARTNER (Level A, AP-MD-BP)
+" Instead of: SELECT SINGLE partner FROM but000 ...
+SELECT SINGLE BusinessPartner FROM i_businesspartner
+  WHERE BusinessPartner = @iv_partner
+  INTO @DATA(lv_partner).
+Summary Scorecard
+Check	Result
+Class own API state (C1/C4)	❌ NOT_RELEASED
+USR02 table access	🔴 Not in any tier — no release
+BUT000 table access	🔴 Level C (Internal) — successor: I_BUSINESSPARTNER
+XUBNAME data element	🔴 Not found in released catalog
+BU_PARTNER data element	🔴 Not found in released catalog
+Overall Clean Core (Level A)	🔴 Non-Compliant
+Recommended Refactoring
+To make this class clean-core ready:
+Replace USR02 → I_BUSINESSUSERBASIC (released CDS view for business user data)
+Replace BUT000 → I_BUSINESSPARTNER (released CDS view, officially designated successor)
+Replace data elements XUBNAME / BU_PARTNER with released types from the CDS view signatures (e.g., SYUNAME for user, or just use ABAP_BOOL return and STRING/CHAR for importing)
+Set the class API state to C1 Released once refactored
+Would you like me to refactor the class to use the released CDS views?

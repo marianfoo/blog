@@ -1,0 +1,36 @@
+Q: Build the CDS view from IT/Specifications/spec-orders-kpi.md.
+A:
+
+✅ CDS View Built — ZARC1_DEMO_C_ORDERS_KPI
+Both views are created and activated in SAP based on the spec from IT/Specifications/spec-orders-kpi.md.
+Architecture (Two-Layer Design)
+The system doesn't allow arithmetic expressions (like quantity * unit_price) directly inside aggregate functions. So I used a clean two-layer pattern:
+ZARC1_DM_ORDERS  (table)
+  └─ ZARC1_DEMO_I_ORDERS_BASE  (base view — computes LineRevenue per row)
+       └─ ZARC1_DEMO_C_ORDERS_KPI  (KPI view — aggregates per customer/region)
+Layer 1 — ZARC1_DEMO_I_ORDERS_BASE (Helper)
+Purpose	Computes line-level quantity * unit_price as LineRevenue
+Source	zarc1_dm_orders (table)
+Key	OrderId
+SQL View	ZARC1VORDBASE
+Exposes all table fields with CamelCase aliases plus the calculated LineRevenue field.
+Layer 2 — ZARC1_DEMO_C_ORDERS_KPI (Requested View)
+Purpose	One row per (CustomerId, Region) with KPI aggregates
+Source	ZARC1_DEMO_I_ORDERS_BASE
+Key	CustomerId, Region
+SQL View	ZARC1VORDKPI
+Columns (per spec ✔️)
+Column	Expression	Spec Requirement
+OrdersCount	count(*)	✅ Count of all orders
+OpenOrdersCount	sum(case Status when 'OP' …)	✅ Count where status = 'OP'
+CompletedCount	sum(case Status when 'CO' …)	✅ Count where status = 'CO'
+CancelledCount	sum(case Status when 'CA' …)	✅ Count where status = 'CA'
+LineRevenue	sum(LineRevenue)	✅ sum(quantity × unit_price)
+AvgUnitPrice	avg(UnitPrice)	✅ avg(unit_price)
+Currency	min(Currency)	✅ Tie-breaker per spec
+Annotations applied:
+@Semantics.amount.currencyCode on LineRevenue and AvgUnitPrice → proper currency handling
+@AccessControl.authorizationCheck: #CHECK → client-safe
+@ClientHandling.algorithm: #SESSION_VARIABLE → automatic client filtering
+Read-only, no behavior definition → as requested
+Both views are active in $TMP. Would you like me to add an access control (DCLS), a metadata extension (DDLX) for UI annotations, or run an ATC check on the views?

@@ -1,0 +1,44 @@
+Q: Look at KAN-2, propose a patch, but don't apply it yet.
+A: 
+🎫 KAN-2 — Patch Proposal
+Ticket Summary
+Customer ACME-AG (revenue = EUR 1,000,000.00 exactly) is assigned Gold / 10% by report ZARC1_DEMO_DISCOUNT, but discount policy DEMO-SPEC-001 mandates Platinum / 15% at that threshold.
+🔍 Root Cause — Off-by-one operator on line 27
+The code's own header comment documents the correct spec:
+Tier	Condition	Discount
+Bronze	< 100,000	0%
+Silver	< 500,000	5%
+Gold	< 1,000,000	10%
+Platinum	≥ 1,000,000	15%
+But the implementation on line 27 uses <= instead of <:
+ELSEIF p_revn <= 1000000.   " ← BUG: should be <
+  lv_discount = 10.
+  lv_tier     = 'Gold'.
+
+This makes revenue of exactly 1,000,000.00 match Gold rather than falling through to the ELSE (Platinum) branch. The other two tier boundaries already use < correctly.
+🛠️ Proposed Fix — Single operator change
+- ELSEIF p_revn <= 1000000.
++ ELSEIF p_revn < 1000000.
+📊 Impact Assessment
+Dimension	Rating	Detail
+Scope	🟢 Minimal	One character change on one line
+Downstream impact	🟢 None	Where-used check confirms zero consumers
+Spec alignment	🟢 Exact	Brings code in line with DEMO-SPEC-001
+Regression risk	🟢 Very low	All other tier boundaries are unaffected
+🧪 Key Verification Scenarios
+P_REVN	Before (bug)	After (fix)
+999,999.99	Gold 10% ✅	Gold 10% ✅
+1,000,000.00	Gold 10% ❌	Platinum 15% ✅
+1,000,000.01	Platinum 15% ✅	Platinum 15% ✅
+Full proposal with corrected source and complete test matrix: KAN-2_Patch_Proposal.md
+Nothing has been applied — just say the word when you're ready to patch!
+
+Q: Implement the patch in the SAP system.
+A: 
+✅ KAN-2 Patch Applied & Activated
+Step	Action	Result
+1	Update ZARC1_DEMO_DISCOUNT source — changed <= to < on line 27	✅ Success
+2	Activate report	✅ Success
+The fix is now live. Revenue of exactly EUR 1,000,000.00 will correctly return Platinum / 15% instead of Gold / 10%.
+Would you like me to run a syntax check or ATC scan to confirm everything is clean?
+ 

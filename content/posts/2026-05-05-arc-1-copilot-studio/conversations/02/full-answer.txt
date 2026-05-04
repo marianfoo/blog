@@ -1,0 +1,28 @@
+Q: Read the change request in IT/Clean Core/ and tell me what would break.
+A:
+
+📋 CR-2026-014 — Impact Analysis
+The Change Request
+The document CR-2026-014-amount-widening.md in IT/Clean Core/ asks to widen domain ZARC1_DEMO_AMOUNT_DOM from CURR 13,2 → CURR 23,2 because two new customers have invoice amounts that overflow the current 13-digit capacity. Requested by Lena (Architecture) for Q3-2026 wave 14.
+Full Dependency Chain Traced in SAP
+ZARC1_DEMO_AMOUNT_DOM  (DOMA — the domain being widened)
+  └─ ZARC1_DEMO_AMOUNT  (DTEL — data element)
+       └─ ZARC1_DM_INVOICE  (TABL — field AMOUNT)
+            └─ ZARC1_DEMO_INV_RPT  (PROG — reads & displays invoices)
+
+Only 3 dependent objects exist. No CDS views, BDEFs, service bindings, or OData services sit on this table.
+What Would Break?
+✅ Nothing breaks outright — widening CURR is a safe, additive change
+No data truncation, no type mismatch, no consumer logic invalidated. But there are three things to watch:
+⚠️ Concern	Detail
+Table lock during activation	Re-activating ZARC1_DM_INVOICE triggers a DB ALTER TABLE. If the table has many rows, it briefly locks concurrent access. Schedule during a low-traffic window.
+Report column layout	ZARC1_DEMO_INV_RPT uses hardcoded column positions (25, 40, 60). A 23-digit amount will overflow the current layout. The WRITE column widths should be adjusted.
+Domain output length	The current outputLength is 18 — too narrow for 23-digit formatted amounts. It should be bumped to 28 to accommodate sign, decimal, and thousands separators.
+Recommended Activation Order
+Step	Object	Type	Action	Risk
+1	ZARC1_DEMO_AMOUNT_DOM	DOMA	Update length 13→23, outputLength 18→28	🟢 Low
+2	ZARC1_DEMO_AMOUNT	DTEL	Re-activate (inherits new length)	🟢 Low
+3	ZARC1_DM_INVOICE	TABL	Re-activate (ALTER TABLE on DB)	🟡 Medium — brief lock
+4	ZARC1_DEMO_INV_RPT	PROG	Adjust column widths, re-activate	🟡 Medium — cosmetic fix
+Full analysis with detailed risk breakdown: CR-2026-014_Impact_Analysis.md
+Would you like me to go ahead and implement the domain widening?
