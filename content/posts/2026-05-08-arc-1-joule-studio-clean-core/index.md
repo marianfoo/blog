@@ -1,6 +1,6 @@
 ---
 title: "ARC-1 with Joule Studio: Bringing Real ABAP System Context into Joule"
-date: 2026-05-08T09:00:00+02:00
+date: 2026-05-06T09:00:00+02:00
 draft: false
 description: "How ARC-1 can bring governed ADT-based ABAP system context into Joule Studio, following SAP's agentic AI architecture direction with MCP, Integration Suite, and Joule."
 tags: ["arc-1", "sap", "abap", "mcp", "joule-studio", "joule", "clean-core", "btp", "agentic", "ai-abap-development-series"]
