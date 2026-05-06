@@ -154,3 +154,17 @@
 </script>
 {{- end }}
 
+<script type="module">
+    const mermaidDiagrams = document.querySelectorAll('.mermaid');
+
+    if (mermaidDiagrams.length > 0) {
+        import('https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs')
+            .then(({ default: mermaid }) => {
+                mermaid.initialize({
+                    startOnLoad: false,
+                    theme: document.documentElement.dataset.theme === 'dark' ? 'dark' : 'default'
+                });
+                mermaid.run({ nodes: mermaidDiagrams });
+            });
+    }
+</script>

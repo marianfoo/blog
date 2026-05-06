@@ -22,6 +22,54 @@
     font-size: 0.85em;
   }
 
+  /* Keep fenced text/code blocks inside the viewport */
+  .post-content,
+  .post-single {
+    min-width: 0;
+  }
+
+  .post-content .highlight,
+  .post-content pre:not(.mermaid) {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .post-content pre code {
+    display: block;
+    min-width: 0;
+    max-width: 100%;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+
+  .post-content .chroma .cl {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+
+  .post-content .chroma .line {
+    display: block;
+    min-width: 0;
+  }
+
+  .post-content code {
+    overflow-wrap: anywhere;
+  }
+
+  .post-content pre.mermaid {
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+  @media screen and (max-width: 768px) {
+    .post-content pre.mermaid svg {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
   /* Simple lightbox for post images */
   .post-content img:not(a img),
   .post-single img:not(a img) {
