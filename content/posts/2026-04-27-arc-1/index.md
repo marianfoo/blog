@@ -138,6 +138,12 @@ In this post I mainly wanted to explain why ARC-1 exists at all and why it looks
 
 The next post is where I want to go deeper into the BTP side, because that is where the architecture becomes much more interesting in practice: XSUAA, Destination Service, Cloud Connector, Principal Propagation, and how this can fit into a real enterprise setup instead of just a developer laptop.
 
+## Discuss this post
+
+- [Saptodon](https://saptodon.org/@Mianbsp/116477784495254338)
+- [Bluesky](https://bsky.app/profile/marian.zeis.de/post/3mkikvj4aos2k)
+- [LinkedIn](https://www.linkedin.com/posts/marianzeis_introducing-arc-1-an-enterprise-adt-mcp-activity-7454748910893457408-M8BU)
+
 ## References & links
 
 - [ARC-1 on GitHub](https://github.com/marianfoo/arc-1)

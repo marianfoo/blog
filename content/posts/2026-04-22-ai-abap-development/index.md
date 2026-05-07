@@ -221,6 +221,12 @@ That does not mean every team needs the exact same architecture. But it does mea
 
 The next post is where I want to look at what a more enterprise-ready ADT MCP setup should actually provide if you take those problems seriously from the beginning.
 
+## Discuss this post
+
+- [Saptodon](https://saptodon.org/@Mianbsp/116450582013903540)
+- [Bluesky](https://bsky.app/profile/marian.zeis.de/post/3mk4idkeoi224)
+- [LinkedIn](https://www.linkedin.com/posts/marianzeis_abap-and-agentic-ai-the-hidden-problem-in-activity-7452940568571232256-GF_S)
+
 ## Related posts
 
 - [How I Use AI for Development and Why Context Matters](https://blog.zeis.de/posts/2026-04-20-how-i-use-ai/)

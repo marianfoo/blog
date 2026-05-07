@@ -128,6 +128,12 @@ In frontend and CAP development, AI can already fit quite naturally into workflo
 
 The next post is where I want to look more concrete at that gap: what is already possible today, which patterns exist, and why enterprise guardrails matter much more there.
 
+## Discuss this post
+
+- [Saptodon](https://saptodon.org/@Mianbsp/116439309593074502)
+- [Bluesky](https://bsky.app/profile/marian.zeis.de/post/3mjxi4yqxtk2k)
+- [LinkedIn](https://www.linkedin.com/posts/marianzeis_how-i-use-ai-for-development-and-why-context-activity-7452215820195184641-r-uK)
+
 ## References & links
 
 - [How I write software with LLMs](https://www.stavros.io/posts/how-i-write-software-with-llms/)

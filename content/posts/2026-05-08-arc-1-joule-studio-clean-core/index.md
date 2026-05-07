@@ -169,6 +169,12 @@ humans approve the risky parts
 
 That is much more interesting than a local MCP demo. It is also much closer to what I think enterprise ABAP agentic development needs.
 
+## Discuss this post
+
+- [Saptodon](https://saptodon.org/@Mianbsp/116529573994656695)
+- [Bluesky](https://bsky.app/profile/marian.zeis.de/post/3ml7kulu55s2v)
+- [LinkedIn](https://www.linkedin.com/posts/marianzeis_what-if-joule-could-answer-abap-and-clean-activity-7458010353239691264-gbF0)
+
 ## References & links
 
 - [ARC-1 on GitHub](https://github.com/marianfoo/arc-1)

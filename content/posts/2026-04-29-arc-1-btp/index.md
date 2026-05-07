@@ -199,6 +199,12 @@ For the concrete steps, I would start with the [BTP Cloud Foundry deployment gui
 
 For me the main point stays the same: ARC-1 on BTP is not just a nicer place to host a Node.js app. It is where the MCP server can become part of an enterprise SAP development architecture, with central access, controlled permissions, and a real identity story.
 
+## Discuss this post
+
+- [Saptodon](https://saptodon.org/@Mianbsp/116490533476845801)
+- [Bluesky](https://bsky.app/profile/marian.zeis.de/post/3mkoa3dkw5c27)
+- [LinkedIn](https://www.linkedin.com/posts/marianzeis_arc-1-on-btp-is-about-one-simple-shift-agentic-activity-7455473576280817664-6oWh)
+
 ## References & links
 
 - [ARC-1 on GitHub](https://github.com/marianfoo/arc-1)

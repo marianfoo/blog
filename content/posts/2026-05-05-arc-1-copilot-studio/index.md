@@ -221,6 +221,12 @@ The important change is not that Copilot Studio can call one more tool. The impo
 
 Developers still need IDEs, and Copilot Studio does not replace ABAP development tools. But it can become a useful layer for analysis, specification, support, documentation, and architecture work, especially when it combines SAP system context, SAP documentation, SharePoint, Jira, and Microsoft 365 through governed tools and connectors. Without that central architecture, this would again become a local tool story. With BTP, it becomes an enterprise agent story.
 
+## Discuss this post
+
+- [Saptodon](https://saptodon.org/@Mianbsp/116518419049843109)
+- [Bluesky](https://bsky.app/profile/marian.zeis.de/post/3ml2me6teds2q)
+- [LinkedIn](https://www.linkedin.com/posts/marianzeis_what-if-copilot-could-start-from-a-support-activity-7457285481433559041-tvAA)
+
 ## References & links
 
 - [ARC-1 on GitHub](https://github.com/marianfoo/arc-1)
