@@ -9,11 +9,11 @@ author: "Marian Zeis"
 showToc: false
 keywords: ["SEGW to RAP", "ARC-1 RAP migration", "legacy UI5 modernization", "UI5 TypeScript", "Fiori elements RAP", "Clean Core ABAP"]
 cover:
-  image: "images/fe-screenshot-1.png"
-  alt: "Fiori elements list report generated from the migrated RAP OData V4 service."
+  image: "images/cover.png"
+  alt: "Before and after cover image showing SEGW OData V2 converted to RAP and Fiori elements with ARC-1."
   relative: true
 images:
-  - "images/fe-screenshot-1.png"
+  - "images/cover.png"
 ---
 
 Series note: This post is part of my [AI ABAP development series](/tags/ai-abap-development-series/), where I go from AI development in general, to ABAP-specific problems, and then to ARC-1.
@@ -295,3 +295,8 @@ That is exactly where I want ARC-1 to go.
 - [ABAP Platform Fiori Feature Showcase](https://github.com/SAP-samples/abap-platform-fiori-feature-showcase)
 - [Nova Intelligence](https://www.novaintelligence.com/)
 - [Conduct](https://www.conduct.ai/)
+
+## Discuss this post
+
+- [Saptodon](https://saptodon.org/@Mianbsp/116558132953167166)
+- [Bluesky](https://bsky.app/profile/marian.zeis.de/post/3mlmapv4vu22d)
