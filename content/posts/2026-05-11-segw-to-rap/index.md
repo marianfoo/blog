@@ -62,6 +62,8 @@ Can it inspect the old service, understand the contract, and create a modern rep
 
 For this run I did not just write one big prompt. I used three ARC-1 skills from the maintained [`arc-1/skills`](https://github.com/marianfoo/arc-1/tree/main/skills) folder: [`migrate-segw-to-rap`](https://github.com/marianfoo/arc-1/tree/main/skills/migrate-segw-to-rap), [`modernize-ui5-app`](https://github.com/marianfoo/arc-1/tree/main/skills/modernize-ui5-app), and [`convert-ui5-to-fiori-elements`](https://github.com/marianfoo/arc-1/tree/main/skills/convert-ui5-to-fiori-elements).
 
+The folder is worth looking at beyond this demo. It also contains skills for RAP service generation, ABAP test generation, code explanation, custom-code migration, Clean Core checks, documentation, and system-context setup. The idea is that ARC-1 does not only provide tools, but repeatable workflows around those tools.
+
 The point of these skills is not that they are perfect generic migration products. They are templates for a process.
 
 That distinction matters. The real value is that the skill forces the agent into a structured workflow:
@@ -287,6 +289,7 @@ That is exactly where I want ARC-1 to go.
 - [Demo repository: arc-1-segw-to-rap](https://github.com/marianfoo/arc-1-segw-to-rap)
 - [ARC-1 on GitHub](https://github.com/marianfoo/arc-1)
 - [ARC-1 Documentation](https://marianfoo.github.io/arc-1/)
+- [ARC-1 Skills](https://github.com/marianfoo/arc-1/tree/main/skills)
 - [SAP Docs MCP Server](https://github.com/marianfoo/mcp-sap-docs)
 - [ABAP RESTful Application Programming Model](https://pages.community.sap.com/topics/abap/rap)
 - [UI5 TypeScript](https://ui5.github.io/typescript/)
