@@ -35,7 +35,7 @@ It covers three development automation scenarios:
 
 1. PR checks for ABAP code: abaplint, ABAP Unit, and ATC.
 2. PR review with SAP context: Copilot and Claude can review with live SAP reads instead of only the diff.
-3. Operational follow-up: ST22 dumps can become GitHub issues, and a deeper investigation can be triggered from a label.
+3. Operational follow-up: ARC-1 can check ST22 dumps on a schedule, create GitHub issues for new dumps, and trigger a deeper investigation from a label.
 
 The repo has six small workflow files: [`pr.yml`](https://github.com/marianfoo/arc-1-abap-cicd-review/blob/main/.github/workflows/pr.yml), [`sap-tests.yml`](https://github.com/marianfoo/arc-1-abap-cicd-review/blob/main/.github/workflows/sap-tests.yml), [`copilot-review-trigger.yml`](https://github.com/marianfoo/arc-1-abap-cicd-review/blob/main/.github/workflows/copilot-review-trigger.yml), [`claude-review-trigger.yml`](https://github.com/marianfoo/arc-1-abap-cicd-review/blob/main/.github/workflows/claude-review-trigger.yml), [`sap-dump-triage.yml`](https://github.com/marianfoo/arc-1-abap-cicd-review/blob/main/.github/workflows/sap-dump-triage.yml), and [`sap-dump-deep-dive.yml`](https://github.com/marianfoo/arc-1-abap-cicd-review/blob/main/.github/workflows/sap-dump-deep-dive.yml). ARC-1 is the common backend. GitHub Actions is only the automation surface.
 
@@ -94,7 +94,7 @@ COPILOT_TRIGGER_PAT
 
 Fourth, configure Copilot Coding Agent. In the repository settings, the Copilot Cloud Agent gets an MCP configuration for ARC-1. The important detail is the tool allowlist: Copilot should see the read-side tools it needs for review, not the write-side tools.
 
-Fifth, decide which workflows you actually want. For a first rollout I would start with abaplint, the SAP test gate, and one AI review path. The dump triage workflows are useful, but they are a separate operational pattern. You do not need to enable everything on day one.
+Fifth, decide which workflows you actually want. For a first rollout I would start with abaplint, the SAP test gate, and one AI review path. The scheduled dump check is useful because it helps you see new runtime problems before someone reports them manually, but it is a separate operational pattern. You do not need to enable everything on day one.
 
 ## PR Automation Layers
 
@@ -215,11 +215,11 @@ This is not a replacement for a proper feature branch. It is just a good review 
 
 **Autonomous dump triage**
 
-The repo also has an operations pattern.
+The repo also has an operations pattern for staying ahead of runtime issues.
 
-The [`sap-dump-triage.yml`](https://github.com/marianfoo/arc-1-abap-cicd-review/blob/main/.github/workflows/sap-dump-triage.yml) workflow asks ARC-1 for recent ST22 dumps through [`SAPDiagnose`](https://marianfoo.github.io/arc-1/tools/#sapdiagnose). It deduplicates them against existing GitHub issues by storing the dump ID in an HTML comment marker. For each new dump, it creates one issue with metadata, a short Claude triage, and an urgency label.
+The [`sap-dump-triage.yml`](https://github.com/marianfoo/arc-1-abap-cicd-review/blob/main/.github/workflows/sap-dump-triage.yml) workflow asks ARC-1 for recent ST22 dumps through [`SAPDiagnose`](https://marianfoo.github.io/arc-1/tools/#sapdiagnose). It can run on a schedule, deduplicates dumps against existing GitHub issues by storing the dump ID in an HTML comment marker, and creates one issue for each new dump with metadata, a short Claude triage, and an urgency label.
 
-For the sample repo, the cron is disabled so the issue list stays stable. In a real setup, I would run it on a schedule. The current examples are visible through the [`sap:dump` label](https://github.com/marianfoo/arc-1-abap-cicd-review/issues?q=is%3Aissue+label%3Asap%3Adump).
+For the sample repo, the cron is disabled so the issue list stays stable. In a real setup, I would turn it on so GitHub becomes a lightweight watch list for new dumps instead of waiting until someone reports the same runtime error again. The current examples are visible through the [`sap:dump` label](https://github.com/marianfoo/arc-1-abap-cicd-review/issues?q=is%3Aissue+label%3Asap%3Adump).
 
 This is the part I like most conceptually:
 
@@ -256,7 +256,7 @@ For a small ABAP team, I would start with this sequence:
 4. Use Copilot Code Review as a cheap, generic first AI review if you already have Copilot.
 5. Add `claude:review` or `copilot:review` only when the PR needs deeper SAP context.
 6. Enable dump triage manually first.
-7. Turn on the dump cron once the issue noise level is understood.
+7. Turn on the scheduled dump check once the issue noise level is understood.
 8. Use `dump:investigate` only for dumps that are recurring, high urgency, or unclear.
 
 This keeps the workflow understandable. Not every PR needs a deep AI review, and not every dump needs full investigation. Static and deterministic checks should do the boring work first.
