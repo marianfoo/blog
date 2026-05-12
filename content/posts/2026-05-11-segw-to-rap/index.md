@@ -6,7 +6,8 @@ description: "A practical ARC-1 modernization run: converting a legacy SEGW ODat
 tags: ["arc-1", "sap", "abap", "rap", "segw", "ui5", "fiori-elements", "mcp", "clean-core", "ai-abap-development-series"]
 categories: ["projects"]
 author: "Marian Zeis"
-showToc: false
+showToc: true
+TocOpen: true
 keywords: ["SEGW to RAP", "ARC-1 RAP migration", "legacy UI5 modernization", "UI5 TypeScript", "Fiori elements RAP", "Clean Core ABAP"]
 cover:
   image: "images/cover.png"
