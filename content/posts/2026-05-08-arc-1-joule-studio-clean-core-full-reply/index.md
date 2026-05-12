@@ -1,7 +1,7 @@
 ---
 title: "Translated Full Joule Reply: Dependency Diagram for ZCL_ARC1_DEMO_CCORE"
 date: 2026-05-08T09:05:00+02:00
-draft: true
+draft: false
 description: "Translated and rendered full Joule reply for a dependency diagram and evidence table around ZCL_ARC1_DEMO_CCORE."
 tags: ["arc-1", "sap", "abap", "mcp", "joule-studio", "joule", "clean-core", "btp", "agentic", "ai-abap-development-series"]
 categories: ["projects"]

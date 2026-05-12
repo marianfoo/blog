@@ -25,7 +25,7 @@ images:
 
 In my first evaluation (based on the TH Köln benchmark paper), I extended the original setup with additional models and focused on a very concrete question: how well can LLMs generate ABAP code that actually compiles and passes ABAP Unit tests?
 
-I also tested SAP’s model **ABAP-1**, and it performed very poorly for code generation. To be fair: SAP also states this in the documentation. ABAP-1 is primarily meant [for explaining ABAP code](https://www.sap.com/products/artificial-intelligence/sap-abap.html) not for reliably generating full working implementations.
+I also tested SAP’s model **ABAP-1**, and it performed very poorly for code generation. To be fair: SAP also states this in the documentation. ABAP-1 is primarily meant [for explaining ABAP code](https://help.sap.com/docs/sap-ai-core/generative-ai/sap-abap-1?locale=en-US) not for reliably generating full working implementations.
 
 So I built a second test that targets exactly that: understanding and explaining ABAP.
 
@@ -114,10 +114,10 @@ You can still suggest models I have not tested yet, but benchmarks like this are
 - Benchmark repo (my fork with updates): [marianfoo/LLM-Benchmark-ABAP-Code-Generation](https://github.com/marianfoo/LLM-Benchmark-ABAP-Code-Generation)
 - Model requests / discussion: [GitHub issues](https://github.com/marianfoo/LLM-Benchmark-ABAP-Code-Generation/issues?q=sort%3Aupdated-desc%20is%3Aissue)
 - SAP ABAP-1 documentation: [SAP ABAP-1](https://help.sap.com/docs/sap-ai-core/generative-ai/sap-abap-1?locale=en-US)
-- ABAP Cloud Developer Trial (Docker image used by the benchmark): [sapse/abap-cloud-developer-trial](https://hub.docker.com/r/sapse/abap-cloud-developer-trial)
+- ABAP Cloud Developer Trial (Docker image used by the benchmark): [SAP-docs/abap-platform-trial-image](https://github.com/SAP-docs/abap-platform-trial-image)
 - Batch APIs (used for running large benchmarks cheaper): [OpenAI Batch API](https://platform.openai.com/docs/guides/batch), [Anthropic batch processing](https://docs.anthropic.com/en/docs/build-with-claude/batch-processing)
 - Pricing references:
   - OpenAI: [API pricing](https://openai.com/api/pricing)
   - DeepSeek: [Pricing (official docs)](https://api-docs.deepseek.com/quick_start/pricing/)
-  - Google Gemini: [Gemini API pricing](https://ai.google.dev/gemini-api/docs/pricing)
+  - Google Gemini: [generative AI pricing](https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing)
   - Anthropic: [Claude API pricing](https://docs.anthropic.com/en/docs/about-claude/pricing)
