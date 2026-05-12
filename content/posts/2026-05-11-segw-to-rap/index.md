@@ -298,5 +298,6 @@ That is exactly where I want ARC-1 to go.
 
 ## Discuss this post
 
+- [LinkedIn](https://www.linkedin.com/posts/marianzeis_i-converted-a-legacy-segw-odata-service-to-activity-7459822169758326786-LagF)
 - [Saptodon](https://saptodon.org/@Mianbsp/116558132953167166)
 - [Bluesky](https://bsky.app/profile/marian.zeis.de/post/3mlmapv4vu22d)
