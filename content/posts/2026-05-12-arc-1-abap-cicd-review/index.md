@@ -8,6 +8,12 @@ categories: ["projects"]
 author: "Marian Zeis"
 showToc: true
 TocOpen: false
+cover:
+  image: "linkedin-image.png"
+  alt: "ABAP CI/CD with ARC-1 cover image showing GitHub Actions connected to SAP through ARC-1 MCP with Claude review, ABAP Unit, ATC, and ST22 monitoring."
+  relative: true
+images:
+  - "linkedin-image.png"
 keywords: ["ABAP CI/CD", "ABAP GitHub Actions", "ARC-1 MCP", "ABAP Unit GitHub Actions", "ATC GitHub Actions", "abaplint reviewdog", "Copilot Coding Agent MCP", "Claude Code Action ABAP"]
 ---
 
