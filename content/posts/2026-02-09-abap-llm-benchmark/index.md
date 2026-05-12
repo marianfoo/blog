@@ -39,7 +39,7 @@ Luckily, TH Köln recently published a paper that answers exactly this question:
 
 The paper builds a benchmark so different LLMs can be compared fairly for ABAP code generation.
 
-It includes 180 tasks ([HumanEval](https://github.com/marianfoo/LLM-Benchmark-ABAP-Code-Generation/tree/main/dataset/abap_canonical_solution) adapted to ABAP plus a set of ABAP/SAP practical scenarios). The flow is fully automated: the model generates ABAP code, the code is created and activated in a fixed SAP environment ([ABAP Cloud Developer Trial as a Docker image](https://hub.docker.com/r/sapse/abap-cloud-developer-trial)), and then ABAP Unit tests run against it.
+It includes 180 tasks ([HumanEval](https://github.com/marianfoo/LLM-Benchmark-ABAP-Code-Generation/tree/main/dataset/abap_canonical_solution) adapted to ABAP plus a set of ABAP/SAP practical scenarios). The flow is fully automated: the model generates ABAP code, the code is created and activated in a fixed SAP environment ([ABAP Cloud Developer Trial image documentation](https://github.com/SAP-docs/abap-platform-trial-image)), and then ABAP Unit tests run against it.
 
 If syntax checks or tests fail, the model gets the error messages as feedback and can try again for up to 5 rounds. In the end, it's not about whether the code "looks plausible", but whether it actually passes the tests (and how quickly it gets there).
 

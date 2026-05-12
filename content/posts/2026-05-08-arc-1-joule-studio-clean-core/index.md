@@ -11,6 +11,7 @@ keywords: ["ARC-1 Joule Studio", "Joule Studio MCP", "SAP Joule MCP", "ABAP MCP 
 cover:
   image: "arc1joulestdioarchitecutre.png"
   alt: "Architecture diagram showing Joule Studio using ARC-1 on SAP BTP to access ABAP system context through governed MCP and SAP connectivity."
+  relative: true
 images: ["arc1joulestdioarchitecutre.png"]
 ---
 
@@ -18,7 +19,7 @@ Series note: This post is part of my [AI ABAP development series](/tags/ai-abap-
 
 In the [previous post](https://blog.zeis.de/posts/2026-05-05-arc-1-copilot-studio/), I showed [ARC-1](https://github.com/marianfoo/arc-1) with Microsoft Copilot Studio. The idea was that SAP system context should not be locked inside a local IDE. If ARC-1 runs centrally on SAP BTP, it can also be used from Teams, Microsoft 365 Copilot, SharePoint, Jira, and other places where functional consultants, architects, support teams, and project leads already work.
 
-This post is the SAP-native version of that idea. If Microsoft Copilot Studio is close to the Microsoft workday, then [Joule](https://help.sap.com/docs/JOULE/3fdd7b321eb24d1b9d40605dce822e84) is close to the SAP workday. SAP describes Joule as the unified assistant experience across SAP's solution portfolio, and [Joule Studio](https://www.sap.com/products/artificial-intelligence/joule-studio.html) as the place to build custom Joule agents with SAP and non-SAP integrations.
+This post is the SAP-native version of that idea. If Microsoft Copilot Studio is close to the Microsoft workday, then [Joule](https://help.sap.com/docs/JOULE/3fdd7b321eb24d1b9d40605dce822e84) is close to the SAP workday. SAP describes Joule as the unified assistant experience across SAP's solution portfolio, and [Joule Studio](https://help.sap.com/docs/Joule_Studio/45f9d2b8914b4f0ba731570ff9a85313/4444cd1ce4cd471bbe127ea2e4735b40.html) as the place to build custom Joule agents with SAP and non-SAP integrations.
 
 So the question is not only: can Joule call another MCP server? The better question is: can the ARC-1 capabilities be brought to the place where SAP users already ask questions?
 
@@ -39,7 +40,7 @@ In the [BTP post](https://blog.zeis.de/posts/2026-04-29-arc-1-btp/), I described
 
 ## What ARC-1 Adds To Joule
 
-Joule already has useful SAP context. SAP has [Joule for Developers](https://www.sap.com/products/artificial-intelligence/joule-for-developers.html), [Joule for Developers, ABAP AI capabilities](https://www.sap.com/products/artificial-intelligence/joule-for-developers-abap-ai-capabilities.html), and [Joule for Consultants](https://www.sap.com/products/artificial-intelligence/joule-for-consultants.html). So this is not about pretending Joule cannot help with ABAP at all.
+Joule already has useful SAP context. SAP has [Joule for Developers](https://help.sap.com/docs/btp/btp-developers-guide/use-joule-for-developers-generative-ai-in-abap-cloud), [Joule for Developers, ABAP AI capabilities](https://help.sap.com/docs/abap-ai/generative-ai-in-abap-cloud/joule-for-developers-abap-ai-capabilities-5f175c94900741d6af3dbb23ce37e81a), and [Joule for Consultants](https://help.sap.com/docs/joule/serviceguide/sap-consulting-capability-for-joule). So this is not about pretending Joule cannot help with ABAP at all.
 
 But there is a difference between a useful standard assistant and a tool that can query my actual ABAP system through ADT, read my custom code, inspect dependencies, run diagnostics, check release state, read ATC findings, and create a system-specific proposal.
 
@@ -98,7 +99,7 @@ This is the kind of result I mean:
 
 The screenshot is still a rough showcase, but it already shows the value. Joule is not only giving generic Clean Core advice. It can show that the class is not released for the relevant contracts, that it uses `USR02` and `BUT000`, and that there are no ATC findings in this small example. That is a much better starting point for an architect or developer than a general explanation of what Clean Core means.
 
-I also asked a follow-up prompt for a dependency diagram. The result was almost the answer I wanted: not perfect, but useful because it returned a Mermaid diagram and an evidence table instead of only prose. You can open the [translated and rendered full Joule reply here](full-reply/).
+I also asked a follow-up prompt for a dependency diagram. The result was almost the answer I wanted: not perfect, but useful because it returned a Mermaid diagram and an evidence table instead of only prose. You can open the [translated and rendered full Joule reply here]({{< relref "/posts/2026-05-08-arc-1-joule-studio-clean-core-full-reply" >}}).
 
 The second use case is package-level modernization planning. This is where an agent is useful because it needs multiple tool calls, grouping, prioritization, and a bit more reasoning:
 
@@ -135,9 +136,9 @@ And yes, you can also vibe code with this. If write access is enabled for a deve
 
 ## Open Points
 
-The [SAP API Policy](https://help.sap.com/doc/sap-api-policy/latest/en-US/API_Policy_latest.pdf) and [API Policy FAQ](https://www.sap.com/documents/2026/04/e2a0665e-4c7f-0010-bca6-c68f7e60039b.html) also matter here, but they should not become the whole post. ARC-1 should be positioned as ADT development tooling, not as a generic business-data extraction layer. Clean Core checks, ATC, code inspection, syntax checks, ABAP Unit, activation, and development support are the story. Data extraction is not the story.
+The [SAP API Policy](https://help.sap.com/doc/sap-api-policy/latest/en-US/API_Policy_latest.pdf) also matters here, but it should not become the whole post. ARC-1 should be positioned as ADT development tooling, not as a generic business-data extraction layer. Clean Core checks, ATC, code inspection, syntax checks, ABAP Unit, activation, and development support are the story. Data extraction is not the story.
 
-This is also why the Joule Studio architecture is interesting. The API Policy talks about agentic API access through SAP-endorsed architectures, and the FAQ describes SAP Integration Suite and API Management as part of a governed pathway for AI agents, including a governance layer like an MCP gateway in front of APIs. That is much closer to the setup in this post than a local MCP server on a developer laptop. It gives the agent a controlled entry point, central configuration, identity, monitoring, and auditability. It does not mean every possible ADT usage is automatically fine, but the architecture shape is much closer to what SAP is describing for API agents.
+This is also why the Joule Studio architecture is interesting. SAP's architecture guidance describes SAP Integration Suite and API Management as part of a governed pathway for AI agents, including a governance layer like an MCP gateway in front of APIs. That is much closer to the setup in this post than a local MCP server on a developer laptop. It gives the agent a controlled entry point, central configuration, identity, monitoring, and auditability. It does not mean every possible ADT usage is automatically fine, but the architecture shape is much closer to what SAP is describing for API agents.
 
 ## Why This Matters
 
@@ -185,12 +186,11 @@ That is much more interesting than a local MCP demo. It is also much closer to w
 - [ARC-1 Principal Propagation Setup](https://marianfoo.github.io/arc-1/principal-propagation-setup/)
 - [mcp-sap-docs](https://mcp-sap-docs.marianzeis.de/)
 - [SAP Help: What is Joule?](https://help.sap.com/docs/JOULE/3fdd7b321eb24d1b9d40605dce822e84)
-- [SAP: Joule Studio](https://www.sap.com/products/artificial-intelligence/joule-studio.html)
+- [SAP Help: What is Joule Studio?](https://help.sap.com/docs/Joule_Studio/45f9d2b8914b4f0ba731570ff9a85313/4444cd1ce4cd471bbe127ea2e4735b40.html)
 - [SAP Help: Add MCP Servers to Your Joule Agent](https://help.sap.com/docs/Joule_Studio/45f9d2b8914b4f0ba731570ff9a85313/3d9dfad0bc39468292d508f0808a12fe.html)
 - [SAP Architecture Center: A2A and MCP for Interoperability](https://architecture.learning.sap.com/docs/ref-arch/ca1d2a3e/1)
 - [SAP Integration Suite API Management](https://help.sap.com/docs/integration-suite/sap-integration-suite/api-management-capability)
-- [SAP Joule for Developers](https://www.sap.com/products/artificial-intelligence/joule-for-developers.html)
-- [SAP Joule for Developers, ABAP AI capabilities](https://www.sap.com/products/artificial-intelligence/joule-for-developers-abap-ai-capabilities.html)
-- [SAP Joule for Consultants](https://www.sap.com/products/artificial-intelligence/joule-for-consultants.html)
+- [SAP Joule for Developers](https://help.sap.com/docs/btp/btp-developers-guide/use-joule-for-developers-generative-ai-in-abap-cloud)
+- [SAP Joule for Developers, ABAP AI capabilities](https://help.sap.com/docs/abap-ai/generative-ai-in-abap-cloud/joule-for-developers-abap-ai-capabilities-5f175c94900741d6af3dbb23ce37e81a)
+- [SAP Joule for Consultants](https://help.sap.com/docs/joule/serviceguide/sap-consulting-capability-for-joule)
 - [SAP API Policy](https://help.sap.com/doc/sap-api-policy/latest/en-US/API_Policy_latest.pdf)
-- [SAP API Policy FAQ](https://www.sap.com/documents/2026/04/e2a0665e-4c7f-0010-bca6-c68f7e60039b.html)

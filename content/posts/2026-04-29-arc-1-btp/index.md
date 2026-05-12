@@ -11,6 +11,7 @@ keywords: ["ARC-1 on SAP BTP", "ABAP MCP BTP", "secure ABAP agentic development"
 cover:
   image: "arc-1-btp-architecture.png"
   alt: "ARC-1 on SAP BTP architecture diagram showing AI clients, MCP Gateway, BTP Services, Cloud Connector, and on-premise SAP ABAP"
+  relative: true
 ---
 
 Series note: This post is part of my [AI ABAP development series](/tags/ai-abap-development-series/), where I go from AI development in general, to ABAP-specific problems, and then to ARC-1.
