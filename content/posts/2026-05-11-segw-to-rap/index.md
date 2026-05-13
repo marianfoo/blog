@@ -81,6 +81,8 @@ This is much closer to how I want agentic SAP development to work. Not "please c
 
 For the run, I used Cursor with Composer-2. I did that intentionally. This was not meant to be a best-case frontier-model demo. It should be closer to what people might actually try in an IDE with a good but not magical model.
 
+That is also why the skills matter so much. A detailed skill moves part of the intelligence out of the model and into the workflow: what to read first, when to stop, which tools to use, which checks must pass, and what the target shape should look like. The model still has to reason, but it does not have to invent the whole process from scratch.
+
 The MCP setup was split by responsibility. [ARC-1](https://github.com/marianfoo/arc-1) handled the SAP system side: object reads, writes, activation, transports, and service binding work. [SAP Docs MCP Server](https://github.com/marianfoo/mcp-sap-docs) gave RAP and CDS documentation context. [UI5 MCP Server](https://github.com/UI5/mcp-server) and [SAP Fiori MCP Server](https://github.com/SAP/open-ux-tools/tree/main/packages/fiori-mcp-server) were used for the frontend conversion and validation steps.
 
 The net execution time for the three guided runs was below 20 minutes. That does not include the time I spent before the final run building the demo, improving the skills, and learning from earlier failed attempts. But for the final guided process itself, this was comfortably under 20 minutes.
