@@ -135,7 +135,7 @@ Message popover,List report page; Object page,Using Messages,Using Messages,1.84
 Message toast,Analytical list page; List report page; Object page; Overview page,Using Messages,Using Messages,1.84.57
 Micro chart/Smart micro chart,Analytical list page; List report page; Object page,Micro Chart Facet in the Object Page Header; Smart Micro Chart; Adding a Micro Chart to a Table,Micro Chart,1.84.57
 Multi-combo box,List report page; Object page,Value Help as a Dropdown List,Value Help as a Dropdown List,1.84.57
-Multi-input field,Overview page,Using the Multi-Input Field on the Object Page,Using the Multi-Input Field on the Object Page,1.84.57
+Multi-input field,Overview page,Using the Multi-Input Field,Using the Multi-Input Field,1.84.57
 Multiple selection of lines in tables,List report page; Object page,Configuring the Selection Mode for Tables,Configuring the Selection Mode for Tables,1.84.57
 Multiple views on list report tables,List report,Multiple Views in the List Report,,1.84.57
 Navigation,Analytical list page; List report page; Object page; Overview page,Configuring Navigation; Example: Enable Internal Navigation to Different Detail Page; Handling of the preferredMode Parameter,Configuring Navigation; Example: Enable Internal Navigation to Different Detail Page; Handling of the preferredMode Parameter,1.84.57
@@ -153,7 +153,7 @@ Responsive table,List report page; Object page; Overview page,Setting the Table 
 Reuse components,Object page,Including Reuse Components on an Object Page,Including Reuse Components on an Object Page,1.84.57
 Search,Analytical list page; List report page; Object page; Overview page; Worklist page,Enabling the Search Function,Enabling the Search Function,1.84.57
 Segmented buttons,Object page,Adding Segmented Buttons to a Table Toolbar,Adding Segmented Buttons to a Table Toolbar,1.84.57
-Side effects,List report page; Object page,Side Effects,Side Effects,1.84.57
+Side effects,List report page; Object page,Side Effects; Event-Driven Side Effects,Side Effects; Event-Driven Side Effects,1.84.57
 Smart link,Analytical list page; List report page; Object page; Overview page,Adding a Contact Quick View to a Table; Enabling Quick Views for Link Navigation,Smart Link,1.84.57
 Smart table,Analytical list page (OData V2); List report page; Object page; Overview page,Configuring the Table-Only View as the Default Option; Setting the Table Type; Table Cards,Smart Table,1.84.57
 Sorting on cards,Overview page,Configuring Sort Properties,Configuring Sort Properties,1.84.57
@@ -167,7 +167,7 @@ Tables,List report page; Object page; Overview page,Configuring Tables; Setting 
 Text,Analytical list page; List report page; Object page; Overview page,Plain Text Facet in the Object Page Header,Plain Text Facet in the Object Page Header,1.84.57
 Text area,Analytical list page; List report page; Object page; Overview page,Different Representations of a Field,Different Representations of a Field,1.84.57
 Title,Analytical list page; List report page; Object page; Overview page,Adding Titles to Object Page Tables; Changing Default Titles of New and Unnamed Objects; Configuring the Table Card Header Area (Optional),Adding Titles to Object Page Tables; Changing Default Titles of New and Unnamed Objects; Configuring the Table Card Header Area (Optional),1.84.57
-Token,List report page; Object page,Field Help; Using the Multi-Input Field on the Object Page,Field Help; Using the Multi-Input Field on the Object Page,1.84.57
+Token,List report page; Object page,Field Help; Using the Multi-Input Field,Field Help; Using the Multi-Input Field,1.84.57
 Tree table,List report page; Object page,Setting the Table Type,Setting the Table Type,1.84.57
 Unit of measure on cards,Overview page,Setting Units of Measure,Setting Units of Measure,1.84.57
 Value help,Analytical list page; List report page; Object page; Overview page,Enhancing ValueList Annotations for Visual Filters; Value Help as a Dropdown List,Enhancing ValueList Annotations for Visual Filters; Value Help as a Dropdown List,1.84.57

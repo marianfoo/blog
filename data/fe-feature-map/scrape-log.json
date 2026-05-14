@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "createdAt": "2026-03-11T20:07:12.324Z",
-  "updatedAt": "2026-05-14T06:05:32.801Z",
+  "updatedAt": "2026-05-14T18:46:04.723Z",
   "versionsUrl": "https://ui5.sap.com/version.json?sap-ui-config-patches=true&sap-ui-config-showall=true",
   "topicId": "62d3f7c2a9424864921184fd6c7002eb",
   "minMinor": 84,
@@ -441,7 +441,7 @@
       "latestSeenVersion": "1.136.18",
       "latestScrapedVersion": "1.136.15",
       "lastCheckedAt": "2026-05-14T06:05:32.656Z",
-      "lastStatus": "checked-no-change",
+      "lastStatus": "already-checked",
       "patches": {
         "1.136.15": {
           "version": "1.136.15",
@@ -584,7 +584,7 @@
       "latestSeenVersion": "1.142.13",
       "latestScrapedVersion": "1.142.7",
       "lastCheckedAt": "2026-05-14T06:05:32.800Z",
-      "lastStatus": "checked-no-change",
+      "lastStatus": "already-checked",
       "patches": {
         "1.142.7": {
           "version": "1.142.7",
@@ -819,16 +819,38 @@
         }
       },
       "lastError": null
+    },
+    "1.148": {
+      "support": "Maintenance",
+      "lts": false,
+      "latestSeenVersion": "1.148.0",
+      "latestScrapedVersion": "1.148.0",
+      "lastCheckedAt": "2026-05-14T18:46:04.720Z",
+      "lastStatus": "scraped",
+      "patches": {
+        "1.148.0": {
+          "version": "1.148.0",
+          "sourceUrl": "https://ui5.sap.com/1.148.0/docs/topics/62d3f7c2a9424864921184fd6c7002eb.html",
+          "checkedAt": "2026-05-14T18:46:04.720Z",
+          "hash": "28c32ed2cc31c9e5143acfdf1db17e914bb68ad5c8a02c16f4c2bcc01249cddf",
+          "rowCount": 155,
+          "scraped": true,
+          "dataFile": "fe-features-1.148.0.json",
+          "comparedToVersion": null,
+          "changedComparedToPrevious": true
+        }
+      },
+      "lastError": null
     }
   },
   "lastRun": {
-    "startedAt": "2026-05-14T06:05:31.876Z",
-    "finishedAt": "2026-05-14T06:05:32.801Z",
+    "startedAt": "2026-05-14T18:46:04.141Z",
+    "finishedAt": "2026-05-14T18:46:04.723Z",
     "summary": {
-      "minorsDiscovered": 23,
-      "alreadyChecked": 21,
-      "scraped": 0,
-      "checkedNoChange": 2,
+      "minorsDiscovered": 24,
+      "alreadyChecked": 23,
+      "scraped": 1,
+      "checkedNoChange": 0,
       "errors": 0
     }
   }
