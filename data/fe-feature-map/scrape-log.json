@@ -826,7 +826,7 @@
       "latestSeenVersion": "1.148.0",
       "latestScrapedVersion": "1.148.0",
       "lastCheckedAt": "2026-05-14T18:46:04.720Z",
-      "lastStatus": "scraped",
+      "lastStatus": "already-scraped",
       "patches": {
         "1.148.0": {
           "version": "1.148.0",
