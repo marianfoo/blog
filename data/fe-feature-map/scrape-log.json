@@ -822,7 +822,7 @@
     },
     "1.148": {
       "support": "Maintenance",
-      "lts": false,
+      "lts": true,
       "latestSeenVersion": "1.148.0",
       "latestScrapedVersion": "1.148.0",
       "lastCheckedAt": "2026-05-14T18:46:04.720Z",
