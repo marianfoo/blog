@@ -37,13 +37,17 @@ I added a new `ui5_version_diff` tool to my [SAP Docs MCP server](https://github
 
 The tool is backed by [ui5-lib-diff](https://github.com/marianfoo/ui5-lib-diff). A small change in [ui5-lib-diff PR #11](https://github.com/marianfoo/ui5-lib-diff/pull/11) now publishes a static JSON API for tools.
 
-The important part is that the MCP server does send HTTP requests at runtime. During setup it downloads the `all-changes.json` bundle once. At runtime the tool reads the local bundle and filters it by version range, change type, UI5 library, or query text.
+The important part is that the MCP server does not send HTTP requests at runtime. During setup it downloads the `all-changes.json` bundle once. At runtime the tool reads the local bundle and filters it by version range, change type, UI5 library, or query text.
 
 That makes it much more useful for agents. The UI5 Lib Diff app is still great for humans, because you can visually compare versions at [ui5-lib-diff.marianzeis.de](https://ui5-lib-diff.marianzeis.de/). But an agent needs structured data it can filter without opening a client-rendered UI route.
 
 ![UI5 version diff, project info, and version info tool calls in the upgrade run.](images/tool-calls-project-info.png)
 
-The second part is the official [UI5 MCP server](https://github.com/UI5/mcp-server) from SAP. That server can inspect a local UI5 project and run UI5-specific checks. In this run the useful tools were:
+The second part is the official [UI5 MCP server](https://github.com/UI5/mcp-server) from SAP. That server can inspect a local UI5 project and run UI5-specific checks.
+
+This is important: these checks run against the app source code in a local checkout, for example the version cloned from your Git server. They are not executed against the deployed app in the SAP system or against a running launchpad tile. The deployed app still needs runtime testing later, but the first evidence can come from the local project before that.
+
+In this run the useful tools were:
 
 - `get_project_info`
 - `get_version_info`
@@ -60,7 +64,7 @@ That combination is the interesting part.
 
 ## The Run
 
-For the showcase I used the same [legacy UI5 app](https://github.com/marianfoo/arc-1-segw-to-rap/tree/main/legacy-ui5-app) from the [arc-1-segw-to-rap repo](https://github.com/marianfoo/arc-1-segw-to-rap). I also used the workflow in [`ui5-versions-upgrade.md`](https://github.com/marianfoo/arc-1-segw-to-rap/blob/main/skills/ui5-versions-upgrade.md).
+For the showcase I used a local clone of the same [legacy UI5 app](https://github.com/marianfoo/arc-1-segw-to-rap/tree/main/legacy-ui5-app) from the [arc-1-segw-to-rap repo](https://github.com/marianfoo/arc-1-segw-to-rap). I also used the workflow in [`ui5-versions-upgrade.md`](https://github.com/marianfoo/arc-1-segw-to-rap/blob/main/skills/ui5-versions-upgrade.md).
 
 The prompt was basically:
 
@@ -99,7 +103,7 @@ The UI5 linter and manifest validation made the report concrete. It did not just
 - ambiguous XML event handlers
 - old UI5 Tooling setup
 
-That is exactly the kind of list I want before I start the live browser test. It does not replace testing, but it removes a lot of blind work.
+That is exactly the kind of list I want before I start the live browser test. It does not replace testing the deployed app, but it removes a lot of blind work before testers touch the running application.
 
 ## Narrowing the Changelog
 
