@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "createdAt": "2026-03-11T20:07:12.324Z",
-  "updatedAt": "2026-05-21T06:22:00.414Z",
+  "updatedAt": "2026-05-28T06:23:04.445Z",
   "versionsUrl": "https://ui5.sap.com/version.json?sap-ui-config-patches=true&sap-ui-config-showall=true",
   "topicId": "62d3f7c2a9424864921184fd6c7002eb",
   "minMinor": 84,
@@ -119,10 +119,10 @@
     "1.108": {
       "support": "Maintenance",
       "lts": true,
-      "latestSeenVersion": "1.108.52",
+      "latestSeenVersion": "1.108.53",
       "latestScrapedVersion": "1.108.50",
-      "lastCheckedAt": "2026-04-23T05:44:08.231Z",
-      "lastStatus": "already-checked",
+      "lastCheckedAt": "2026-05-28T06:23:03.902Z",
+      "lastStatus": "checked-no-change",
       "patches": {
         "1.108.50": {
           "version": "1.108.50",
@@ -155,6 +155,17 @@
           "scraped": false,
           "dataFile": null,
           "comparedToVersion": "1.108.51",
+          "changedComparedToPrevious": false
+        },
+        "1.108.53": {
+          "version": "1.108.53",
+          "sourceUrl": "https://ui5.sap.com/1.108.53/docs/topics/62d3f7c2a9424864921184fd6c7002eb.html",
+          "checkedAt": "2026-05-28T06:23:03.902Z",
+          "hash": "b79bb32f9c2ef272a095a6860360120aefeafdc0b2c05aa22ee6cf4f9a5dd4aa",
+          "rowCount": 134,
+          "scraped": false,
+          "dataFile": null,
+          "comparedToVersion": "1.108.52",
           "changedComparedToPrevious": false
         }
       },
@@ -724,10 +735,10 @@
     "1.145": {
       "support": "Maintenance",
       "lts": false,
-      "latestSeenVersion": "1.145.2",
+      "latestSeenVersion": "1.145.3",
       "latestScrapedVersion": "1.145.1",
-      "lastCheckedAt": "2026-04-30T06:00:21.019Z",
-      "lastStatus": "already-checked",
+      "lastCheckedAt": "2026-05-28T06:23:04.136Z",
+      "lastStatus": "checked-no-change",
       "patches": {
         "1.145.0": {
           "version": "1.145.0",
@@ -760,6 +771,17 @@
           "scraped": false,
           "dataFile": null,
           "comparedToVersion": "1.145.1",
+          "changedComparedToPrevious": false
+        },
+        "1.145.3": {
+          "version": "1.145.3",
+          "sourceUrl": "https://ui5.sap.com/1.145.3/docs/topics/62d3f7c2a9424864921184fd6c7002eb.html",
+          "checkedAt": "2026-05-28T06:23:04.136Z",
+          "hash": "c9bcc81741918ae97a73e28966969b8961fdf1d97ef1943dd6ab93c152c61b7f",
+          "rowCount": 153,
+          "scraped": false,
+          "dataFile": null,
+          "comparedToVersion": "1.145.2",
           "changedComparedToPrevious": false
         }
       },
@@ -834,10 +856,10 @@
     "1.148": {
       "support": "Maintenance",
       "lts": true,
-      "latestSeenVersion": "1.148.0",
+      "latestSeenVersion": "1.148.1",
       "latestScrapedVersion": "1.148.0",
-      "lastCheckedAt": "2026-05-14T18:46:04.720Z",
-      "lastStatus": "already-scraped",
+      "lastCheckedAt": "2026-05-28T06:23:04.445Z",
+      "lastStatus": "checked-no-change",
       "patches": {
         "1.148.0": {
           "version": "1.148.0",
@@ -849,19 +871,30 @@
           "dataFile": "fe-features-1.148.0.json",
           "comparedToVersion": null,
           "changedComparedToPrevious": true
+        },
+        "1.148.1": {
+          "version": "1.148.1",
+          "sourceUrl": "https://ui5.sap.com/1.148.1/docs/topics/62d3f7c2a9424864921184fd6c7002eb.html",
+          "checkedAt": "2026-05-28T06:23:04.445Z",
+          "hash": "28c32ed2cc31c9e5143acfdf1db17e914bb68ad5c8a02c16f4c2bcc01249cddf",
+          "rowCount": 155,
+          "scraped": false,
+          "dataFile": null,
+          "comparedToVersion": "1.148.0",
+          "changedComparedToPrevious": false
         }
       },
       "lastError": null
     }
   },
   "lastRun": {
-    "startedAt": "2026-05-21T06:21:59.484Z",
-    "finishedAt": "2026-05-21T06:22:00.414Z",
+    "startedAt": "2026-05-28T06:23:03.179Z",
+    "finishedAt": "2026-05-28T06:23:04.445Z",
     "summary": {
       "minorsDiscovered": 24,
-      "alreadyChecked": 23,
+      "alreadyChecked": 21,
       "scraped": 0,
-      "checkedNoChange": 1,
+      "checkedNoChange": 3,
       "errors": 0
     }
   }
