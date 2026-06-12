@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "createdAt": "2026-03-11T20:07:12.324Z",
-  "updatedAt": "2026-06-11T06:31:54.850Z",
+  "updatedAt": "2026-06-12T06:30:47.097Z",
   "versionsUrl": "https://ui5.sap.com/version.json?sap-ui-config-patches=true&sap-ui-config-showall=true",
   "topicId": "62d3f7c2a9424864921184fd6c7002eb",
   "minMinor": 84,
@@ -56,7 +56,7 @@
       "latestSeenVersion": "1.96.49",
       "latestScrapedVersion": "1.96.46",
       "lastCheckedAt": "2026-06-11T06:31:54.745Z",
-      "lastStatus": "checked-no-change",
+      "lastStatus": "already-checked",
       "patches": {
         "1.96.46": {
           "version": "1.96.46",
@@ -210,7 +210,7 @@
       "latestSeenVersion": "1.120.47",
       "latestScrapedVersion": "1.120.43",
       "lastCheckedAt": "2026-06-11T06:31:54.849Z",
-      "lastStatus": "checked-no-change",
+      "lastStatus": "already-checked",
       "patches": {
         "1.120.43": {
           "version": "1.120.43",
@@ -918,16 +918,38 @@
         }
       },
       "lastError": null
+    },
+    "1.149": {
+      "support": "Maintenance",
+      "lts": false,
+      "latestSeenVersion": "1.149.0",
+      "latestScrapedVersion": "1.149.0",
+      "lastCheckedAt": "2026-06-12T06:30:47.094Z",
+      "lastStatus": "scraped",
+      "patches": {
+        "1.149.0": {
+          "version": "1.149.0",
+          "sourceUrl": "https://ui5.sap.com/1.149.0/docs/topics/62d3f7c2a9424864921184fd6c7002eb.html",
+          "checkedAt": "2026-06-12T06:30:47.094Z",
+          "hash": "1b3c12b56858f48a48750750c7cb75e15670fcc05528edfbe642a333fbf6202c",
+          "rowCount": 155,
+          "scraped": true,
+          "dataFile": "fe-features-1.149.0.json",
+          "comparedToVersion": null,
+          "changedComparedToPrevious": true
+        }
+      },
+      "lastError": null
     }
   },
   "lastRun": {
-    "startedAt": "2026-06-11T06:31:54.432Z",
-    "finishedAt": "2026-06-11T06:31:54.850Z",
+    "startedAt": "2026-06-12T06:30:46.544Z",
+    "finishedAt": "2026-06-12T06:30:47.097Z",
     "summary": {
-      "minorsDiscovered": 22,
-      "alreadyChecked": 20,
-      "scraped": 0,
-      "checkedNoChange": 2,
+      "minorsDiscovered": 23,
+      "alreadyChecked": 22,
+      "scraped": 1,
+      "checkedNoChange": 0,
       "errors": 0
     }
   }
