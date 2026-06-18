@@ -18,11 +18,11 @@ keywords: ["ARC-1 Copilot Studio", "SAP MCP Copilot Studio", "ABAP MCP Microsoft
 
 Series note: This post is part of my [AI ABAP development series](/tags/ai-abap-development-series/), where I go from AI development in general, to ABAP-specific problems, and then to ARC-1.
 
-In the [previous post](https://blog.zeis.de/posts/2026-04-29-arc-1-btp/), I wrote about running [ARC-1](https://github.com/marianfoo/arc-1) on SAP BTP. That was the architecture part: central deployment, XSUAA, destinations, Cloud Connector, Principal Propagation, roles, and auditability.
+In the [previous post](https://blog.zeis.de/posts/2026-04-29-arc-1-btp/), I wrote about running [ARC-1](https://github.com/arc-mcp/arc-1) on SAP BTP. That was the architecture part: central deployment, XSUAA, destinations, Cloud Connector, Principal Propagation, roles, and auditability.
 
 This post is the next step. If ARC-1 is already deployed centrally on BTP, then it does not have to be used only from developer tools like VS Code, Claude, Cursor, or Eclipse. It can also be used from [Microsoft Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) and then published into [Teams or Microsoft 365 Copilot](https://learn.microsoft.com/en-us/microsoft-copilot-studio/publication-add-bot-to-microsoft-teams). That changes the audience quite a bit.
 
-For developers, ARC-1 is mainly an ADT MCP gateway for code, packages, activation, transports, diagnostics, and system context. MCP is the protocol that lets an AI client call external tools, and ADT is the API layer behind [ABAP Development Tools](https://help.sap.com/docs/btp/sap-business-technology-platform/abap-development-user-guides). But this SAP system access is not only useful for developers. [ARC-1 tools](https://marianfoo.github.io/arc-1/tools/) can also expose table structures, selected data, messages, transaction metadata, API release state, feature toggles, FLP content, dumps, transport information, and more. Depending on the enabled ARC-1 tools and SAP authorizations, that can become useful for functional consultants, solution architects, testers, security people, and support teams.
+For developers, ARC-1 is mainly an ADT MCP gateway for code, packages, activation, transports, diagnostics, and system context. MCP is the protocol that lets an AI client call external tools, and ADT is the API layer behind [ABAP Development Tools](https://help.sap.com/docs/btp/sap-business-technology-platform/abap-development-user-guides). But this SAP system access is not only useful for developers. [ARC-1 tools](https://docs.arc-1-mcp.com/tools/) can also expose table structures, selected data, messages, transaction metadata, API release state, feature toggles, FLP content, dumps, transport information, and more. Depending on the enabled ARC-1 tools and SAP authorizations, that can become useful for functional consultants, solution architects, testers, security people, and support teams.
 
 The question for this post is: what happens if the SAP system context is not only available inside an IDE?
 
@@ -42,7 +42,7 @@ That does not mean everyone should get write access to SAP from Teams. Quite the
 
 ## The Architecture Stays The Same
 
-Copilot Studio should not create a second SAP access architecture. It should use the same [BTP-deployed ARC-1 endpoint](https://marianfoo.github.io/arc-1/phase4-btp-deployment/) from the previous post.
+Copilot Studio should not create a second SAP access architecture. It should use the same [BTP-deployed ARC-1 endpoint](https://docs.arc-1-mcp.com/phase4-btp-deployment/) from the previous post.
 
 ```text
 Copilot Studio / Teams
@@ -53,7 +53,7 @@ Copilot Studio / Teams
   -> SAP ABAP system
 ```
 
-This means the security story does not change only because the client changes. ARC-1 still has the [server ceiling](https://marianfoo.github.io/arc-1/authorization/#the-model-in-one-picture). [XSUAA roles](https://marianfoo.github.io/arc-1/xsuaa-setup/) still control what the user can do in ARC-1. If [Principal Propagation](https://marianfoo.github.io/arc-1/principal-propagation-setup/) is active, ARC-1 does not call SAP as one shared technical user. The signed-in user's identity is propagated to the ABAP backend, so SAP checks the request with that user's normal SAP authorizations, for example object, package, transport, table, or `S_DEVELOP` permissions.
+This means the security story does not change only because the client changes. ARC-1 still has the [server ceiling](https://docs.arc-1-mcp.com/authorization/#the-model-in-one-picture). [XSUAA roles](https://docs.arc-1-mcp.com/xsuaa-setup/) still control what the user can do in ARC-1. If [Principal Propagation](https://docs.arc-1-mcp.com/principal-propagation-setup/) is active, ARC-1 does not call SAP as one shared technical user. The signed-in user's identity is propagated to the ABAP backend, so SAP checks the request with that user's normal SAP authorizations, for example object, package, transport, table, or `S_DEVELOP` permissions.
 
 In simpler words: Copilot calls ARC-1 over HTTPS, BTP authenticates the user and resolves the SAP destination, and the Cloud Connector forwards the request to the ABAP system. The server ceiling is the maximum ARC-1 capability the admin enabled for this instance, so a user role can never enable more than the server allows.
 
@@ -73,8 +73,8 @@ A Copilot Studio agent can be much more accessible to non-developers than an IDE
 
 I would keep the setup simple and reuse the BTP deployment from the previous post:
 
-1. Deploy ARC-1 on BTP with [XSUAA](https://marianfoo.github.io/arc-1/xsuaa-setup/), [BTP destinations](https://marianfoo.github.io/arc-1/btp-destination-setup/), and ideally [Principal Propagation](https://marianfoo.github.io/arc-1/principal-propagation-setup/). The detailed steps are in the [BTP deployment guide](https://marianfoo.github.io/arc-1/phase4-btp-deployment/).
-2. Keep ARC-1 read-only first, or at least very restricted with [ARC-1 authorization and roles](https://marianfoo.github.io/arc-1/authorization/).
+1. Deploy ARC-1 on BTP with [XSUAA](https://docs.arc-1-mcp.com/xsuaa-setup/), [BTP destinations](https://docs.arc-1-mcp.com/btp-destination-setup/), and ideally [Principal Propagation](https://docs.arc-1-mcp.com/principal-propagation-setup/). The detailed steps are in the [BTP deployment guide](https://docs.arc-1-mcp.com/phase4-btp-deployment/).
+2. Keep ARC-1 read-only first, or at least very restricted with [ARC-1 authorization and roles](https://docs.arc-1-mcp.com/authorization/).
 3. In Copilot Studio, add ARC-1 as an [existing MCP server](https://learn.microsoft.com/en-us/microsoft-copilot-studio/mcp-add-existing-server-to-agent) with the public HTTPS endpoint from BTP, for example `https://arc1-ecc-dev.cfapps.eu10.hana.ondemand.com/mcp`.
 4. Use OAuth 2.0 for the MCP server authentication. Copilot Studio supports manual OAuth configuration for MCP servers, and ARC-1 on BTP can use XSUAA for that.
 5. Add [SharePoint as a knowledge source](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-add-sharepoint), add the [SAP documentation MCP server](https://mcp-sap-docs.marianzeis.de/) with its public MCP endpoint `https://mcp-sap-docs.marianzeis.de/mcp`, and then add other enterprise sources only where they make sense.
@@ -94,7 +94,7 @@ Microsoft's own [MCP Server for Enterprise](https://learn.microsoft.com/en-us/gr
 
 The most natural non-developer setup is probably SharePoint plus SAP docs plus SAP system context. SharePoint is where many specifications and project documents already live, and Copilot Studio can use [SharePoint as a knowledge source](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-add-sharepoint) while Microsoft authentication keeps the normal document permissions in place.
 
-But SharePoint alone is not enough. A specification can say what should happen, but it often does not know how the SAP system actually works today. This is where ARC-1 comes in. The agent can ask ARC-1 for current ABAP objects, CDS views, table structures, message texts, service bindings, transaction metadata, or selected table data, depending on what is enabled and authorized in the [ARC-1 tool and role model](https://marianfoo.github.io/arc-1/authorization/).
+But SharePoint alone is not enough. A specification can say what should happen, but it often does not know how the SAP system actually works today. This is where ARC-1 comes in. The agent can ask ARC-1 for current ABAP objects, CDS views, table structures, message texts, service bindings, transaction metadata, or selected table data, depending on what is enabled and authorized in the [ARC-1 tool and role model](https://docs.arc-1-mcp.com/authorization/).
 
 Then I would add the separately deployed [mcp-sap-docs](https://mcp-sap-docs.marianzeis.de/) server as the documentation layer, using the public MCP endpoint `https://mcp-sap-docs.marianzeis.de/mcp`. It can search SAP documentation, ABAP keyword docs, RAP samples, style guides, DSAG guidelines, SAP Community, and also released object information. That gives the agent a much better chance to not only say "this is possible", but also explain what SAP recommends and where the current system differs.
 
@@ -229,15 +229,15 @@ Developers still need IDEs, and Copilot Studio does not replace ABAP development
 
 ## References & links
 
-- [ARC-1 on GitHub](https://github.com/marianfoo/arc-1)
-- [ARC-1 Documentation](https://marianfoo.github.io/arc-1/)
-- [ARC-1 Tools](https://marianfoo.github.io/arc-1/tools/)
-- [ARC-1 Authentication Overview](https://marianfoo.github.io/arc-1/enterprise-auth/)
-- [ARC-1 BTP Cloud Foundry Deployment](https://marianfoo.github.io/arc-1/phase4-btp-deployment/)
-- [ARC-1 XSUAA Setup](https://marianfoo.github.io/arc-1/xsuaa-setup/)
-- [ARC-1 BTP Destination Setup](https://marianfoo.github.io/arc-1/btp-destination-setup/)
-- [ARC-1 Principal Propagation Setup](https://marianfoo.github.io/arc-1/principal-propagation-setup/)
-- [ARC-1 Authorization and Roles](https://marianfoo.github.io/arc-1/authorization/)
+- [ARC-1 on GitHub](https://github.com/arc-mcp/arc-1)
+- [ARC-1 Documentation](https://docs.arc-1-mcp.com/)
+- [ARC-1 Tools](https://docs.arc-1-mcp.com/tools/)
+- [ARC-1 Authentication Overview](https://docs.arc-1-mcp.com/enterprise-auth/)
+- [ARC-1 BTP Cloud Foundry Deployment](https://docs.arc-1-mcp.com/phase4-btp-deployment/)
+- [ARC-1 XSUAA Setup](https://docs.arc-1-mcp.com/xsuaa-setup/)
+- [ARC-1 BTP Destination Setup](https://docs.arc-1-mcp.com/btp-destination-setup/)
+- [ARC-1 Principal Propagation Setup](https://docs.arc-1-mcp.com/principal-propagation-setup/)
+- [ARC-1 Authorization and Roles](https://docs.arc-1-mcp.com/authorization/)
 - [mcp-sap-docs](https://github.com/marianfoo/mcp-sap-docs)
 - [SAP Help: ABAP Development Tools for Eclipse: User Guides](https://help.sap.com/docs/btp/sap-business-technology-platform/abap-development-user-guides)
 - [Microsoft Learn: Copilot Studio documentation](https://learn.microsoft.com/en-us/microsoft-copilot-studio/)

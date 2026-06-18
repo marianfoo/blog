@@ -17,7 +17,7 @@ images: ["arc1joulestdioarchitecutre.png"]
 
 Series note: This post is part of my [AI ABAP development series](/tags/ai-abap-development-series/), where I go from AI development in general, to ABAP-specific problems, and then to ARC-1.
 
-In the [previous post](https://blog.zeis.de/posts/2026-05-05-arc-1-copilot-studio/), I showed [ARC-1](https://github.com/marianfoo/arc-1) with Microsoft Copilot Studio. The idea was that SAP system context should not be locked inside a local IDE. If ARC-1 runs centrally on SAP BTP, it can also be used from Teams, Microsoft 365 Copilot, SharePoint, Jira, and other places where functional consultants, architects, support teams, and project leads already work.
+In the [previous post](https://blog.zeis.de/posts/2026-05-05-arc-1-copilot-studio/), I showed [ARC-1](https://github.com/arc-mcp/arc-1) with Microsoft Copilot Studio. The idea was that SAP system context should not be locked inside a local IDE. If ARC-1 runs centrally on SAP BTP, it can also be used from Teams, Microsoft 365 Copilot, SharePoint, Jira, and other places where functional consultants, architects, support teams, and project leads already work.
 
 This post is the SAP-native version of that idea. If Microsoft Copilot Studio is close to the Microsoft workday, then [Joule](https://help.sap.com/docs/JOULE/3fdd7b321eb24d1b9d40605dce822e84) is close to the SAP workday. SAP describes Joule as the unified assistant experience across SAP's solution portfolio, and [Joule Studio](https://help.sap.com/docs/Joule_Studio/45f9d2b8914b4f0ba731570ff9a85313/4444cd1ce4cd471bbe127ea2e4735b40.html) as the place to build custom Joule agents with SAP and non-SAP integrations.
 
@@ -25,7 +25,7 @@ So the question is not only: can Joule call another MCP server? The better quest
 
 ## What Carries Over From Earlier Posts
 
-ARC-1 is a secure ADT MCP server for ABAP systems. It connects AI clients to SAP systems through [ABAP Development Tools](https://help.sap.com/docs/btp/sap-business-technology-platform/abap-development-user-guides) APIs and exposes this through tools like [SAPRead, SAPSearch, SAPWrite, SAPActivate, SAPContext, SAPDiagnose, SAPTransport, and SAPManage](https://marianfoo.github.io/arc-1/tools/).
+ARC-1 is a secure ADT MCP server for ABAP systems. It connects AI clients to SAP systems through [ABAP Development Tools](https://help.sap.com/docs/btp/sap-business-technology-platform/abap-development-user-guides) APIs and exposes this through tools like [SAPRead, SAPSearch, SAPWrite, SAPActivate, SAPContext, SAPDiagnose, SAPTransport, and SAPManage](https://docs.arc-1-mcp.com/tools/).
 
 For this post, the important part is not the full tool list. It is the operating model from the earlier BTP post:
 
@@ -36,7 +36,7 @@ server ceiling + user permission + SAP authorization
 audit logging instead of invisible local tool calls
 ```
 
-In the [BTP post](https://blog.zeis.de/posts/2026-04-29-arc-1-btp/), I described how ARC-1 can run as a central Cloud Foundry application with [XSUAA](https://marianfoo.github.io/arc-1/xsuaa-setup/), [BTP destinations](https://marianfoo.github.io/arc-1/btp-destination-setup/), [Cloud Connector](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/cloud-connector), [Principal Propagation](https://marianfoo.github.io/arc-1/principal-propagation-setup/), roles, and BTP audit logging. For Joule Studio, I would not create a second SAP access architecture. I would reuse that controlled endpoint.
+In the [BTP post](https://blog.zeis.de/posts/2026-04-29-arc-1-btp/), I described how ARC-1 can run as a central Cloud Foundry application with [XSUAA](https://docs.arc-1-mcp.com/xsuaa-setup/), [BTP destinations](https://docs.arc-1-mcp.com/btp-destination-setup/), [Cloud Connector](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/cloud-connector), [Principal Propagation](https://docs.arc-1-mcp.com/principal-propagation-setup/), roles, and BTP audit logging. For Joule Studio, I would not create a second SAP access architecture. I would reuse that controlled endpoint.
 
 ## What ARC-1 Adds To Joule
 
@@ -73,7 +73,7 @@ There are still open points. [Joule Studio already supports adding MCP servers](
 
 So I would present this as a target architecture and showcase, not as a final productive setup guide yet.
 
-For the showcase, I configured a Joule Studio agent with a small instruction set, Anthropic Claude Sonnet 4 as model, and two MCP servers: [ARC-1](https://github.com/marianfoo/arc-1) for the ABAP system and the [SAP Docs MCP Server](https://github.com/marianfoo/mcp-sap-docs) for official SAP documentation context. I condensed the screenshots here to show only the relevant configuration parts:
+For the showcase, I configured a Joule Studio agent with a small instruction set, Anthropic Claude Sonnet 4 as model, and two MCP servers: [ARC-1](https://github.com/arc-mcp/arc-1) for the ABAP system and the [SAP Docs MCP Server](https://github.com/marianfoo/mcp-sap-docs) for official SAP documentation context. I condensed the screenshots here to show only the relevant configuration parts:
 
 ![Condensed Joule Studio agent configuration showing the agent basics, instructions, model settings, execution steps, and MCP servers for ARC-1 and SAP_DOCS.](joule-studio-agent-configuration.png)
 
@@ -128,7 +128,7 @@ These examples have a better through line for this post than repeating the Copil
 
 ## Why I Use An Agent Here
 
-For this showcase an agent is perfectly fine. The interesting part is not the packaging. The interesting part is that Joule can call [ARC-1](https://github.com/marianfoo/arc-1) and the [SAP Docs MCP Server](https://github.com/marianfoo/mcp-sap-docs), collect system evidence, and turn that into something useful for the user.
+For this showcase an agent is perfectly fine. The interesting part is not the packaging. The interesting part is that Joule can call [ARC-1](https://github.com/arc-mcp/arc-1) and the [SAP Docs MCP Server](https://github.com/marianfoo/mcp-sap-docs), collect system evidence, and turn that into something useful for the user.
 
 For ARC-1 I would still keep the first Joule Studio agent conservative: one object or one package, read-only by default, no automatic rewrite. I would not start with a big automation story. I would start with analysis, evidence, and a proposal.
 
@@ -178,12 +178,12 @@ That is much more interesting than a local MCP demo. It is also much closer to w
 
 ## References & links
 
-- [ARC-1 on GitHub](https://github.com/marianfoo/arc-1)
-- [ARC-1 Documentation](https://marianfoo.github.io/arc-1/)
-- [ARC-1 Tools](https://marianfoo.github.io/arc-1/tools/)
-- [ARC-1 Authorization and Roles](https://marianfoo.github.io/arc-1/authorization/)
-- [ARC-1 BTP Cloud Foundry Deployment](https://marianfoo.github.io/arc-1/phase4-btp-deployment/)
-- [ARC-1 Principal Propagation Setup](https://marianfoo.github.io/arc-1/principal-propagation-setup/)
+- [ARC-1 on GitHub](https://github.com/arc-mcp/arc-1)
+- [ARC-1 Documentation](https://docs.arc-1-mcp.com/)
+- [ARC-1 Tools](https://docs.arc-1-mcp.com/tools/)
+- [ARC-1 Authorization and Roles](https://docs.arc-1-mcp.com/authorization/)
+- [ARC-1 BTP Cloud Foundry Deployment](https://docs.arc-1-mcp.com/phase4-btp-deployment/)
+- [ARC-1 Principal Propagation Setup](https://docs.arc-1-mcp.com/principal-propagation-setup/)
 - [mcp-sap-docs](https://mcp-sap-docs.marianzeis.de/)
 - [SAP Help: What is Joule?](https://help.sap.com/docs/JOULE/3fdd7b321eb24d1b9d40605dce822e84)
 - [SAP Help: What is Joule Studio?](https://help.sap.com/docs/Joule_Studio/45f9d2b8914b4f0ba731570ff9a85313/4444cd1ce4cd471bbe127ea2e4735b40.html)

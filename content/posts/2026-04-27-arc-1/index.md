@@ -20,7 +20,7 @@ Series note: This post is part of my [AI ABAP development series](/tags/ai-abap-
 
 In the [first post of this series](https://blog.zeis.de/posts/2026-04-20-how-i-use-ai/), I wrote about context and how I use AI in development. In the [previous post](https://blog.zeis.de/posts/2026-04-22-ai-abap-development/), I then moved that discussion into ABAP and ended more or less with one question: what would an ADT MCP setup need to look like if you take control, identity, and security seriously from the beginning?
 
-This post is my current answer to that question. It is called [ARC-1](https://github.com/marianfoo/arc-1) (ABAP Relay Connector, pronounced arc one [ɑːrk wʌn]), and yes, it is another ADT MCP server. But the important difference is not that it can talk to ADT at all. Other projects already showed very well that this is possible and useful. The difference is the architecture and the focus, which is also why the [ARC-1 documentation](https://marianfoo.github.io/arc-1/) spends a lot of space on security, authentication, deployment, and operations, not only on the tool list.
+This post is my current answer to that question. It is called [ARC-1](https://github.com/arc-mcp/arc-1) (ABAP Relay Connector, pronounced arc one [ɑːrk wʌn]), and yes, it is another ADT MCP server. But the important difference is not that it can talk to ADT at all. Other projects already showed very well that this is possible and useful. The difference is the architecture and the focus, which is also why the [ARC-1 documentation](https://docs.arc-1-mcp.com/) spends a lot of space on security, authentication, deployment, and operations, not only on the tool list.
 
 ## Why ARC-1 had to exist
 
@@ -36,7 +36,7 @@ For me this is probably the biggest architectural difference. Most current MCP A
 
 That is fine for trying things out. It is also fine for fast experimentation. And to be clear, ARC-1 can also run locally. That is useful for tests, local development, and simply trying the server out. But local developer setup is not the main story I care about here. The main story is central deployment.
 
-That means one managed ARC-1 instance per SAP system, with central configuration, central security settings, central logging, and a clear operational owner. That can run on a company server, in Docker, or ideally on SAP BTP Cloud Foundry. The [architecture documentation](https://marianfoo.github.io/arc-1/architecture/) goes into the technical flow in more detail, but I will go much deeper into the BTP side in the next post, because that deserves its own post.
+That means one managed ARC-1 instance per SAP system, with central configuration, central security settings, central logging, and a clear operational owner. That can run on a company server, in Docker, or ideally on SAP BTP Cloud Foundry. The [architecture documentation](https://docs.arc-1-mcp.com/architecture/) goes into the technical flow in more detail, but I will go much deeper into the BTP side in the next post, because that deserves its own post.
 
 For me BTP is especially interesting here because it lets you reuse things that already exist in many companies anyway: XSUAA, destinations, Cloud Connector, audit services, role assignment, and the usual BTP login flow. Then the developer mostly just needs the MCP URL and the standard login, while admins and authorization teams keep control in the place where they already work.
 
@@ -50,7 +50,7 @@ One thing that became very clear while building ARC-1 is that there are really t
 
 That sounds obvious, but many discussions around MCP servers blur those two things together. In ARC-1, these are treated as two separate hops: `MCP client -> ARC-1` and `ARC-1 -> SAP`. This matters because the architecture becomes much clearer after that.
 
-For the first hop, ARC-1 can use things like API keys, OIDC/JWT, or [XSUAA OAuth](https://marianfoo.github.io/arc-1/enterprise-auth/), depending on how and where it is deployed. For the second hop, ARC-1 can talk to SAP with Basic Auth, BTP service keys, or with [Principal Propagation](https://marianfoo.github.io/arc-1/principal-propagation-setup/), depending on the target landscape.
+For the first hop, ARC-1 can use things like API keys, OIDC/JWT, or [XSUAA OAuth](https://docs.arc-1-mcp.com/enterprise-auth/), depending on how and where it is deployed. For the second hop, ARC-1 can talk to SAP with Basic Auth, BTP service keys, or with [Principal Propagation](https://docs.arc-1-mcp.com/principal-propagation-setup/), depending on the target landscape.
 
 That split is very important for enterprise usage, because it lets you separate client access control from SAP identity handling instead of hiding both behind one local config file. It also makes it easier to support different use cases. If ARC-1 is used more like a backend connector for an automation, an API key may be totally fine. If real per-user identity matters, then OAuth or XSUAA plus Principal Propagation is the much more interesting setup.
 
@@ -76,7 +76,7 @@ That is exactly how I want it. ARC-1 should not replace SAP authorization. It sh
 
 This becomes even more interesting once you look at per-user identity. One of the things I wanted very early is that ARC-1 should not force everything through one shared technical SAP user if that can be avoided.
 
-That is why [Principal Propagation](https://marianfoo.github.io/arc-1/principal-propagation-setup/) is such an important part of the architecture for me. If Principal Propagation is active, the MCP user identity can flow through ARC-1 and into SAP, so that the action runs with the real SAP user and the real SAP authorization of that person. I already tested this and it works.
+That is why [Principal Propagation](https://docs.arc-1-mcp.com/principal-propagation-setup/) is such an important part of the architecture for me. If Principal Propagation is active, the MCP user identity can flow through ARC-1 and into SAP, so that the action runs with the real SAP user and the real SAP authorization of that person. I already tested this and it works.
 
 That is important not only because it is cleaner technically. It is important because it fits much better into audit, compliance, and real enterprise authorization models. I do not want the whole architecture to end in "trust this one service account and hope nobody asks too many questions later". I want the system to be able to say who actually did what.
 
@@ -84,7 +84,7 @@ That is important not only because it is cleaner technically. It is important be
 
 The same applies to audit logging. If AI is allowed to read from or write to a real SAP system, then logging is not some optional extra feature. It is part of the basic architecture.
 
-ARC-1 emits structured audit events and can integrate with the [BTP Audit Log Service](https://marianfoo.github.io/arc-1/security-guide/). That means you can log who called which tool, what happened, and in which request context it happened. Especially on BTP, that gives you a much better compliance story than a local MCP server that mostly lives on one laptop.
+ARC-1 emits structured audit events and can integrate with the [BTP Audit Log Service](https://docs.arc-1-mcp.com/security-guide/). That means you can log who called which tool, what happened, and in which request context it happened. Especially on BTP, that gives you a much better compliance story than a local MCP server that mostly lives on one laptop.
 
 For normal hobby tooling this might feel like overkill. For SAP it does not. Especially if the recommended target architecture is BTP, it makes sense to also use the established platform services for logging and identity instead of building a parallel side world around them.
 
@@ -106,7 +106,7 @@ If an MCP server only works in one perfect demo system, then that is not enough.
 
 That is why ARC-1 puts a lot of effort into testing. Right now the project has more than 1,300 unit tests, plus integration tests and E2E tests that execute real MCP tool calls against live SAP systems. As a freelancer I obviously do not have access to every possible enterprise landscape, but I do test against real systems. I test against BTP ABAP, the ABAP trial system in Docker, and the older 7.50 trial system.
 
-I also do not test only with one ideal model and one toy example. I try it myself with stronger and weaker models and with workflows that are much closer to reality. That includes things like clean core analysis or creating a full RAP project from nothing, not even a table, up to an activated RAP project you can actually use. A lot of the workflows and feature ideas behind that are also visible in the [ARC-1 skills catalog](https://github.com/marianfoo/arc-1/blob/main/skills/README.md), because those are more or less the kinds of use cases I want to make work reliably.
+I also do not test only with one ideal model and one toy example. I try it myself with stronger and weaker models and with workflows that are much closer to reality. That includes things like clean core analysis or creating a full RAP project from nothing, not even a table, up to an activated RAP project you can actually use. A lot of the workflows and feature ideas behind that are also visible in the [ARC-1 skills catalog](https://github.com/arc-mcp/arc-1/blob/main/skills/README.md), because those are more or less the kinds of use cases I want to make work reliably.
 
 For me that is also one of the big lessons from working with SAP tooling in general: if you do not test against real systems, you often only test your assumptions.
 
@@ -146,11 +146,11 @@ The next post is where I want to go deeper into the BTP side, because that is wh
 
 ## References & links
 
-- [ARC-1 on GitHub](https://github.com/marianfoo/arc-1)
-- [ARC-1 Documentation](https://marianfoo.github.io/arc-1/)
-- [ARC-1 Architecture](https://marianfoo.github.io/arc-1/architecture/)
-- [ARC-1 Authentication Overview](https://marianfoo.github.io/arc-1/enterprise-auth/)
-- [ARC-1 Security Guide](https://marianfoo.github.io/arc-1/security-guide/)
+- [ARC-1 on GitHub](https://github.com/arc-mcp/arc-1)
+- [ARC-1 Documentation](https://docs.arc-1-mcp.com/)
+- [ARC-1 Architecture](https://docs.arc-1-mcp.com/architecture/)
+- [ARC-1 Authentication Overview](https://docs.arc-1-mcp.com/enterprise-auth/)
+- [ARC-1 Security Guide](https://docs.arc-1-mcp.com/security-guide/)
 - [How I Use AI for Development and Why Context Matters](https://blog.zeis.de/posts/2026-04-20-how-i-use-ai/)
 - [ABAP and Agentic AI: The Hidden Problem in Real Projects](https://blog.zeis.de/posts/2026-04-22-ai-abap-development/)
 - [Marcello Urbani: abap-adt-api](https://github.com/marcellourbani/abap-adt-api)
@@ -158,7 +158,7 @@ The next post is where I want to go deeper into the BTP side, because that is wh
 - [oisee/vibing-steampunk](https://github.com/oisee/vibing-steampunk)
 - [fr0ster/mcp-abap-adt](https://github.com/fr0ster/mcp-abap-adt)
 - [DassianInc/dassian-adt](https://github.com/DassianInc/dassian-adt)
-- [ARC-1 Skills Catalog](https://github.com/marianfoo/arc-1/blob/main/skills/README.md)
+- [ARC-1 Skills Catalog](https://github.com/arc-mcp/arc-1/blob/main/skills/README.md)
 - [Introducing the Next Era of ABAP Development](https://community.sap.com/t5/technology-blog-posts-by-sap/introducing-the-next-era-of-abap-development/ba-p/14260522)
 - [SAP API Policy](https://www.sap.com/documents/2026/04/dce9aee4-497f-0010-bca6-c68f7e60039b.html)
 - [ABAP Development Tools SDK](https://tools.hana.ondemand.com/#abap)

@@ -16,11 +16,11 @@ cover:
 
 Series note: This post is part of my [AI ABAP development series](/tags/ai-abap-development-series/), where I go from AI development in general, to ABAP-specific problems, and then to ARC-1.
 
-In the [previous post](https://blog.zeis.de/posts/2026-04-27-arc-1/), I introduced [ARC-1](https://github.com/marianfoo/arc-1) as a secure ADT MCP gateway for ABAP systems. The main point was not only that ARC-1 can expose ABAP development functionality to AI clients. The main point was that this access needs a place in the architecture.
+In the [previous post](https://blog.zeis.de/posts/2026-04-27-arc-1/), I introduced [ARC-1](https://github.com/arc-mcp/arc-1) as a secure ADT MCP gateway for ABAP systems. The main point was not only that ARC-1 can expose ABAP development functionality to AI clients. The main point was that this access needs a place in the architecture.
 
 This post is about that place. If ARC-1 should not run uncontrolled on every developer laptop, then SAP BTP is the most natural enterprise option for me. Not because BTP makes the problem disappear, but because it already has the pieces you need for this kind of setup: XSUAA, destinations, Cloud Connector, role collections, audit logging, and the normal BTP operating model.
 
-This is not a full setup guide. The exact commands are in the [ARC-1 deployment docs](https://marianfoo.github.io/arc-1/deployment/), the [BTP deployment guide](https://marianfoo.github.io/arc-1/phase4-btp-deployment/), and the pages for [XSUAA](https://marianfoo.github.io/arc-1/xsuaa-setup/), [destinations](https://marianfoo.github.io/arc-1/btp-destination-setup/), and [Principal Propagation](https://marianfoo.github.io/arc-1/principal-propagation-setup/). Here I want to explain the architecture options and what I would look at first.
+This is not a full setup guide. The exact commands are in the [ARC-1 deployment docs](https://docs.arc-1-mcp.com/deployment/), the [BTP deployment guide](https://docs.arc-1-mcp.com/phase4-btp-deployment/), and the pages for [XSUAA](https://docs.arc-1-mcp.com/xsuaa-setup/), [destinations](https://docs.arc-1-mcp.com/btp-destination-setup/), and [Principal Propagation](https://docs.arc-1-mcp.com/principal-propagation-setup/). Here I want to explain the architecture options and what I would look at first.
 
 ## Why BTP
 
@@ -196,7 +196,7 @@ This is less exciting than a demo where the AI writes everything immediately, bu
 
 The architecture is the important part first, but the actual setup has many landscape-specific details.
 
-For the concrete steps, I would start with the [BTP Cloud Foundry deployment guide](https://marianfoo.github.io/arc-1/phase4-btp-deployment/), then go through [XSUAA setup](https://marianfoo.github.io/arc-1/xsuaa-setup/), [BTP destination setup](https://marianfoo.github.io/arc-1/btp-destination-setup/), and [Principal Propagation setup](https://marianfoo.github.io/arc-1/principal-propagation-setup/) depending on the target landscape.
+For the concrete steps, I would start with the [BTP Cloud Foundry deployment guide](https://docs.arc-1-mcp.com/phase4-btp-deployment/), then go through [XSUAA setup](https://docs.arc-1-mcp.com/xsuaa-setup/), [BTP destination setup](https://docs.arc-1-mcp.com/btp-destination-setup/), and [Principal Propagation setup](https://docs.arc-1-mcp.com/principal-propagation-setup/) depending on the target landscape.
 
 For me the main point stays the same: ARC-1 on BTP is not just a nicer place to host a Node.js app. It is where the MCP server can become part of an enterprise SAP development architecture, with central access, controlled permissions, and a real identity story.
 
@@ -208,16 +208,16 @@ For me the main point stays the same: ARC-1 on BTP is not just a nicer place to 
 
 ## References & links
 
-- [ARC-1 on GitHub](https://github.com/marianfoo/arc-1)
-- [ARC-1 Documentation](https://marianfoo.github.io/arc-1/)
-- [ARC-1 Deployment](https://marianfoo.github.io/arc-1/deployment/)
-- [ARC-1 BTP Cloud Foundry Deployment](https://marianfoo.github.io/arc-1/phase4-btp-deployment/)
-- [ARC-1 Enterprise Authentication](https://marianfoo.github.io/arc-1/enterprise-auth/)
-- [ARC-1 XSUAA Setup](https://marianfoo.github.io/arc-1/xsuaa-setup/)
-- [ARC-1 BTP Destination Setup](https://marianfoo.github.io/arc-1/btp-destination-setup/)
-- [ARC-1 Principal Propagation Setup](https://marianfoo.github.io/arc-1/principal-propagation-setup/)
-- [ARC-1 Authorization and Roles](https://marianfoo.github.io/arc-1/authorization/)
-- [ARC-1 BTP ABAP Environment Setup](https://marianfoo.github.io/arc-1/btp-abap-environment/)
+- [ARC-1 on GitHub](https://github.com/arc-mcp/arc-1)
+- [ARC-1 Documentation](https://docs.arc-1-mcp.com/)
+- [ARC-1 Deployment](https://docs.arc-1-mcp.com/deployment/)
+- [ARC-1 BTP Cloud Foundry Deployment](https://docs.arc-1-mcp.com/phase4-btp-deployment/)
+- [ARC-1 Enterprise Authentication](https://docs.arc-1-mcp.com/enterprise-auth/)
+- [ARC-1 XSUAA Setup](https://docs.arc-1-mcp.com/xsuaa-setup/)
+- [ARC-1 BTP Destination Setup](https://docs.arc-1-mcp.com/btp-destination-setup/)
+- [ARC-1 Principal Propagation Setup](https://docs.arc-1-mcp.com/principal-propagation-setup/)
+- [ARC-1 Authorization and Roles](https://docs.arc-1-mcp.com/authorization/)
+- [ARC-1 BTP ABAP Environment Setup](https://docs.arc-1-mcp.com/btp-abap-environment/)
 - [SAP Help: Multitarget Applications in Cloud Foundry](https://help.sap.com/docs/btp/sap-business-technology-platform/multitarget-applications-in-cloud-foundry-environment)
 - [SAP Help: Authorization and Trust Management Service](https://help.sap.com/docs/btp/sap-business-technology-platform/what-is-sap-authorization-and-trust-management-service)
 - [SAP Help: Authenticating Users Against On-Premise Systems](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/authenticating-users-against-on-premise-systems)

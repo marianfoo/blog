@@ -64,7 +64,7 @@ That combination is the interesting part.
 
 ## The Run
 
-For the showcase I used a local clone of the same [legacy UI5 app](https://github.com/marianfoo/arc-1-segw-to-rap/tree/main/legacy-ui5-app) from the [arc-1-segw-to-rap repo](https://github.com/marianfoo/arc-1-segw-to-rap). I also used the workflow in [`ui5-versions-upgrade.md`](https://github.com/marianfoo/arc-1-segw-to-rap/blob/main/skills/ui5-versions-upgrade.md).
+For the showcase I used a local clone of the same [legacy UI5 app](https://github.com/arc-mcp/arc-1-segw-to-rap/tree/main/legacy-ui5-app) from the [arc-1-segw-to-rap repo](https://github.com/arc-mcp/arc-1-segw-to-rap). I also used the workflow in [`ui5-versions-upgrade.md`](https://github.com/arc-mcp/arc-1-segw-to-rap/blob/main/skills/ui5-versions-upgrade.md).
 
 The prompt was basically:
 
@@ -124,11 +124,11 @@ It still has to verify the local code. A changelog entry is not proof that a wor
 
 The generated report is here:
 
-[legacy-ui5-app-upgrade.md](https://github.com/marianfoo/arc-1-segw-to-rap/blob/main/legacy-ui5-app-upgrade.md)
+[legacy-ui5-app-upgrade.md](https://github.com/arc-mcp/arc-1-segw-to-rap/blob/main/legacy-ui5-app-upgrade.md)
 
 The report is not a replacement for a real migration. It is the first step: concrete evidence for what may need to change. For this demo it already produced a useful edit plan: update tooling, switch theme, migrate the manifest, enable async loading, clean module usage, replace deprecated controls, then rerun linter and manifest validation.
 
-The next step can use the same MCP tools again, but now for implementation. You do not have to apply every finding at once. You can ask the agent to fix only the theme and manifest issues, only the `jQuery.sap.*` usage, or the full list. That is basically the same pattern I showed in the SEGW to RAP post when the legacy freestyle UI5 app was converted into a [modern UI5 TypeScript app](https://github.com/marianfoo/arc-1-segw-to-rap/tree/main/modern-ui5-ts-app): inspect first, use UI5-specific tools, implement, then rerun linting, manifest validation, type checks, and browser checks.
+The next step can use the same MCP tools again, but now for implementation. You do not have to apply every finding at once. You can ask the agent to fix only the theme and manifest issues, only the `jQuery.sap.*` usage, or the full list. That is basically the same pattern I showed in the SEGW to RAP post when the legacy freestyle UI5 app was converted into a [modern UI5 TypeScript app](https://github.com/arc-mcp/arc-1-segw-to-rap/tree/main/modern-ui5-ts-app): inspect first, use UI5-specific tools, implement, then rerun linting, manifest validation, type checks, and browser checks.
 
 If a finding needs more explanation, the same SAP Docs MCP server can still search SAPUI5 documentation and fetch more detail. For API-level replacement details, the UI5 MCP server can also use `get_api_reference`.
 
@@ -153,10 +153,10 @@ For me that is the real value of MCP in SAP development. Not magic. Better conte
 ## References and Links
 
 - [From SEGW and Legacy UI5 to RAP with ARC-1](/posts/2026-05-11-segw-to-rap/)
-- [arc-1-segw-to-rap repo](https://github.com/marianfoo/arc-1-segw-to-rap)
-- [legacy UI5 app](https://github.com/marianfoo/arc-1-segw-to-rap/tree/main/legacy-ui5-app)
-- [ui5-versions-upgrade.md skill](https://github.com/marianfoo/arc-1-segw-to-rap/blob/main/skills/ui5-versions-upgrade.md)
-- [generated legacy UI5 upgrade report](https://github.com/marianfoo/arc-1-segw-to-rap/blob/main/legacy-ui5-app-upgrade.md)
+- [arc-1-segw-to-rap repo](https://github.com/arc-mcp/arc-1-segw-to-rap)
+- [legacy UI5 app](https://github.com/arc-mcp/arc-1-segw-to-rap/tree/main/legacy-ui5-app)
+- [ui5-versions-upgrade.md skill](https://github.com/arc-mcp/arc-1-segw-to-rap/blob/main/skills/ui5-versions-upgrade.md)
+- [generated legacy UI5 upgrade report](https://github.com/arc-mcp/arc-1-segw-to-rap/blob/main/legacy-ui5-app-upgrade.md)
 - [mcp-sap-docs repo](https://github.com/marianfoo/mcp-sap-docs)
 - [mcp-sap-docs PR #47: load UI5 diffs from local bundle](https://github.com/marianfoo/mcp-sap-docs/pull/47)
 - [ui5-lib-diff repo](https://github.com/marianfoo/ui5-lib-diff)

@@ -19,7 +19,7 @@ images:
 
 Series note: This post is part of my [AI ABAP development series](/tags/ai-abap-development-series/), where I go from AI development in general, to ABAP-specific problems, and then to ARC-1.
 
-In the last posts I introduced [ARC-1](https://github.com/marianfoo/arc-1), explained why I built it, showed the BTP architecture, and then used it from Copilot Studio and Joule Studio. Those posts were mostly about architecture and possible use cases.
+In the last posts I introduced [ARC-1](https://github.com/arc-mcp/arc-1), explained why I built it, showed the BTP architecture, and then used it from Copilot Studio and Joule Studio. Those posts were mostly about architecture and possible use cases.
 
 This one is different. This is the use case ARC-1 was originally built for: making real SAP development easier.
 
@@ -37,13 +37,13 @@ So I built a small but complete demo for that:
 
 The full workspace, generated code, ABAP sources, screenshots, and chat logs are published here:
 
-[github.com/marianfoo/arc-1-segw-to-rap](https://github.com/marianfoo/arc-1-segw-to-rap)
+[github.com/arc-mcp/arc-1-segw-to-rap](https://github.com/arc-mcp/arc-1-segw-to-rap)
 
 ## The Starting Point
 
-The demo starts with a small project management application on an S/4HANA 2023 trial system, ABAP Platform 7.58. The legacy backend sits in package `ZDEMO_MIG` and uses three custom tables: [`ZDM_PROJECT`](https://github.com/marianfoo/arc-1-segw-to-rap/blob/main/ABAP_SRC/src/zdm_project.tabl.xml), [`ZDM_TASK`](https://github.com/marianfoo/arc-1-segw-to-rap/blob/main/ABAP_SRC/src/zdm_task.tabl.xml), and [`ZDM_TIMEENTRY`](https://github.com/marianfoo/arc-1-segw-to-rap/blob/main/ABAP_SRC/src/zdm_timeentry.tabl.xml).
+The demo starts with a small project management application on an S/4HANA 2023 trial system, ABAP Platform 7.58. The legacy backend sits in package `ZDEMO_MIG` and uses three custom tables: [`ZDM_PROJECT`](https://github.com/arc-mcp/arc-1-segw-to-rap/blob/main/ABAP_SRC/src/zdm_project.tabl.xml), [`ZDM_TASK`](https://github.com/arc-mcp/arc-1-segw-to-rap/blob/main/ABAP_SRC/src/zdm_task.tabl.xml), and [`ZDM_TIMEENTRY`](https://github.com/arc-mcp/arc-1-segw-to-rap/blob/main/ABAP_SRC/src/zdm_timeentry.tabl.xml).
 
-On top of that sits the SEGW service [`ZDEMO_MIG_PROJECTS_SRV`](https://github.com/marianfoo/arc-1-segw-to-rap/blob/main/ABAP_SRC/src/zdemo_mig_projects_srv_0001.iwsg.xml). It exposes `ProjectSet`, `TaskSet`, and `TimeEntrySet`, with navigation from projects to tasks and from tasks to time entries. The one bit of behavior is the `ApproveProject` function import, which changes the project status.
+On top of that sits the SEGW service [`ZDEMO_MIG_PROJECTS_SRV`](https://github.com/arc-mcp/arc-1-segw-to-rap/blob/main/ABAP_SRC/src/zdemo_mig_projects_srv_0001.iwsg.xml). It exposes `ProjectSet`, `TaskSet`, and `TimeEntrySet`, with navigation from projects to tasks and from tasks to time entries. The one bit of behavior is the `ApproveProject` function import, which changes the project status.
 
 This is the old service in SAP Gateway Service Builder. You can see the classic SEGW shape directly: entity types, properties, navigation associations, entity sets, and the function import sitting next to the data model.
 
@@ -53,7 +53,7 @@ The old UI is a classic master/detail app. The left side shows projects, the rig
 
 ![Legacy UI5 freestyle app showing the old project master/detail application.](images/ui5-legacy-app-screenshot.png)
 
-The backend is similar. The generated [MPC class](https://github.com/marianfoo/arc-1-segw-to-rap/blob/main/ABAP_SRC/src/zcl_zdemo_mig_projects_mpc.clas.abap) describes the model, and the [DPC_EXT class](https://github.com/marianfoo/arc-1-segw-to-rap/blob/main/ABAP_SRC/src/zcl_zdemo_mig_projects_dpc_ext.clas.abap) contains the custom logic. For the demo I made the legacy code deliberately rough: manual reads, ignored filters in some places, no authority checks, manual navigation handling, and an `ApproveProject` function import that updates the project status directly.
+The backend is similar. The generated [MPC class](https://github.com/arc-mcp/arc-1-segw-to-rap/blob/main/ABAP_SRC/src/zcl_zdemo_mig_projects_mpc.clas.abap) describes the model, and the [DPC_EXT class](https://github.com/arc-mcp/arc-1-segw-to-rap/blob/main/ABAP_SRC/src/zcl_zdemo_mig_projects_dpc_ext.clas.abap) contains the custom logic. For the demo I made the legacy code deliberately rough: manual reads, ignored filters in some places, no authority checks, manual navigation handling, and an `ApproveProject` function import that updates the project status directly.
 
 That is a good migration target because the interesting question is not "can an AI write a RAP sample from scratch?". The more useful question is:
 
@@ -61,7 +61,7 @@ Can it inspect the old service, understand the contract, and create a modern rep
 
 ## The Skills
 
-For this run I did not just write one big prompt. I used three ARC-1 skills from the maintained [`arc-1/skills`](https://github.com/marianfoo/arc-1/tree/main/skills) folder: [`migrate-segw-to-rap`](https://github.com/marianfoo/arc-1/tree/main/skills/migrate-segw-to-rap), [`modernize-ui5-app`](https://github.com/marianfoo/arc-1/tree/main/skills/modernize-ui5-app), and [`convert-ui5-to-fiori-elements`](https://github.com/marianfoo/arc-1/tree/main/skills/convert-ui5-to-fiori-elements).
+For this run I did not just write one big prompt. I used three ARC-1 skills from the maintained [`arc-1/skills`](https://github.com/arc-mcp/arc-1/tree/main/skills) folder: [`migrate-segw-to-rap`](https://github.com/arc-mcp/arc-1/tree/main/skills/migrate-segw-to-rap), [`modernize-ui5-app`](https://github.com/arc-mcp/arc-1/tree/main/skills/modernize-ui5-app), and [`convert-ui5-to-fiori-elements`](https://github.com/arc-mcp/arc-1/tree/main/skills/convert-ui5-to-fiori-elements).
 
 The folder is worth looking at beyond this demo. It also contains skills for RAP service generation, ABAP test generation, code explanation, custom-code migration, Clean Core checks, documentation, and system-context setup. The idea is that ARC-1 does not only provide tools, but repeatable workflows around those tools.
 
@@ -83,17 +83,17 @@ For the run, I used Cursor with Composer-2. I did that intentionally. This was n
 
 That is also why the skills matter so much. A detailed skill moves part of the intelligence out of the model and into the workflow: what to read first, when to stop, which tools to use, which checks must pass, and what the target shape should look like. The model still has to reason, but it does not have to invent the whole process from scratch.
 
-The MCP setup was split by responsibility. [ARC-1](https://github.com/marianfoo/arc-1) handled the SAP system side: object reads, writes, activation, transports, and service binding work. [SAP Docs MCP Server](https://github.com/marianfoo/mcp-sap-docs) gave RAP and CDS documentation context. [UI5 MCP Server](https://github.com/UI5/mcp-server) and [SAP Fiori MCP Server](https://github.com/SAP/open-ux-tools/tree/main/packages/fiori-mcp-server) were used for the frontend conversion and validation steps.
+The MCP setup was split by responsibility. [ARC-1](https://github.com/arc-mcp/arc-1) handled the SAP system side: object reads, writes, activation, transports, and service binding work. [SAP Docs MCP Server](https://github.com/marianfoo/mcp-sap-docs) gave RAP and CDS documentation context. [UI5 MCP Server](https://github.com/UI5/mcp-server) and [SAP Fiori MCP Server](https://github.com/SAP/open-ux-tools/tree/main/packages/fiori-mcp-server) were used for the frontend conversion and validation steps.
 
 The net execution time for the three guided runs was below 20 minutes. That does not include the time I spent before the final run building the demo, improving the skills, and learning from earlier failed attempts. But for the final guided process itself, this was comfortably under 20 minutes.
 
 ## Prompt 1: SEGW to RAP
 
-The first prompt asked the agent to run the `migrate-segw-to-rap` skill against `ZDEMO_MIG_PROJECTS_SRV`. The full transcript is in [`llm-chat-history/prompt-1-segw-to-rap`](https://github.com/marianfoo/arc-1-segw-to-rap/tree/main/llm-chat-history/prompt-1-segw-to-rap).
+The first prompt asked the agent to run the `migrate-segw-to-rap` skill against `ZDEMO_MIG_PROJECTS_SRV`. The full transcript is in [`llm-chat-history/prompt-1-segw-to-rap`](https://github.com/arc-mcp/arc-1-segw-to-rap/tree/main/llm-chat-history/prompt-1-segw-to-rap).
 
 ![Cursor prompt for the SEGW to RAP run showing ARC-1 reading the legacy service.](images/starting-prompt-1-segw-to-rap.png)
 
-The important part is what happened before the agent wrote anything. ARC-1 first probed the system and confirmed the real constraints: ABAP 7.58, RAP availability, transport access, search access, and write access. The agent then tried the obvious generated MPC naming, discovered that this SEGW service used the generated `ZCL_ZDEMO_MIG_PROJECTS_*` class names, and read the [MPC class](https://github.com/marianfoo/arc-1-segw-to-rap/blob/main/ABAP_SRC/src/zcl_zdemo_mig_projects_mpc.clas.abap) as the source of the OData model. After that it read the [DPC_EXT class](https://github.com/marianfoo/arc-1-segw-to-rap/blob/main/ABAP_SRC/src/zcl_zdemo_mig_projects_dpc_ext.clas.abap), because the interesting behavior was not in the metadata. It was in the custom code, especially the `ApproveProject` function import.
+The important part is what happened before the agent wrote anything. ARC-1 first probed the system and confirmed the real constraints: ABAP 7.58, RAP availability, transport access, search access, and write access. The agent then tried the obvious generated MPC naming, discovered that this SEGW service used the generated `ZCL_ZDEMO_MIG_PROJECTS_*` class names, and read the [MPC class](https://github.com/arc-mcp/arc-1-segw-to-rap/blob/main/ABAP_SRC/src/zcl_zdemo_mig_projects_mpc.clas.abap) as the source of the OData model. After that it read the [DPC_EXT class](https://github.com/arc-mcp/arc-1-segw-to-rap/blob/main/ABAP_SRC/src/zcl_zdemo_mig_projects_dpc_ext.clas.abap), because the interesting behavior was not in the metadata. It was in the custom code, especially the `ApproveProject` function import.
 
 Only after that discovery step did it print the extracted model and stop for `ok`:
 
@@ -115,15 +115,15 @@ Function import
   ApproveProject(ProjectId) -> Project
 ```
 
-After confirmation, ARC-1 created the [RAP stack under `ABAP_SRC/src/dm`](https://github.com/marianfoo/arc-1-segw-to-rap/tree/main/ABAP_SRC/src/dm). This is where the migration becomes interesting on the ABAP side.
+After confirmation, ARC-1 created the [RAP stack under `ABAP_SRC/src/dm`](https://github.com/arc-mcp/arc-1-segw-to-rap/tree/main/ABAP_SRC/src/dm). This is where the migration becomes interesting on the ABAP side.
 
-The root interface view [`ZI_DM_PROJECT`](https://github.com/marianfoo/arc-1-segw-to-rap/blob/main/ABAP_SRC/src/dm/zi_dm_project.ddls.asddls) selects from `ZDM_PROJECT` and models tasks as a RAP composition child. The same pattern continues with [`ZI_DM_TASK`](https://github.com/marianfoo/arc-1-segw-to-rap/blob/main/ABAP_SRC/src/dm/zi_dm_task.ddls.asddls) and [`ZI_DM_TIMEENTRY`](https://github.com/marianfoo/arc-1-segw-to-rap/blob/main/ABAP_SRC/src/dm/zi_dm_timeentry.ddls.asddls). So the old OData navigation model becomes a RAP business object structure instead of staying as manual navigation handling in DPC_EXT.
+The root interface view [`ZI_DM_PROJECT`](https://github.com/arc-mcp/arc-1-segw-to-rap/blob/main/ABAP_SRC/src/dm/zi_dm_project.ddls.asddls) selects from `ZDM_PROJECT` and models tasks as a RAP composition child. The same pattern continues with [`ZI_DM_TASK`](https://github.com/arc-mcp/arc-1-segw-to-rap/blob/main/ABAP_SRC/src/dm/zi_dm_task.ddls.asddls) and [`ZI_DM_TIMEENTRY`](https://github.com/arc-mcp/arc-1-segw-to-rap/blob/main/ABAP_SRC/src/dm/zi_dm_timeentry.ddls.asddls). So the old OData navigation model becomes a RAP business object structure instead of staying as manual navigation handling in DPC_EXT.
 
-The interface behavior definition [`ZI_DM_PROJECT`](https://github.com/marianfoo/arc-1-segw-to-rap/blob/main/ABAP_SRC/src/dm/zi_dm_project.bdef.asbdef) is managed, uses `strict ( 2 )`, and enables draft. It maps the nicer RAP field names like `ProjectId`, `StartDate`, and `EstimatedHours` back to the old table fields like `project_id`, `start_date`, and `estimated_hours`. It also defines the project as the lock master and the child entities as dependent by project. The draft tables [`ZDM_PROJECT_D`](https://github.com/marianfoo/arc-1-segw-to-rap/blob/main/ABAP_SRC/src/rap/zdm_project_d.tabl.xml), [`ZDM_TASK_D`](https://github.com/marianfoo/arc-1-segw-to-rap/blob/main/ABAP_SRC/src/rap/zdm_task_d.tabl.xml), and [`ZDM_TIMEENTRY_D`](https://github.com/marianfoo/arc-1-segw-to-rap/blob/main/ABAP_SRC/src/rap/zdm_timeentry_d.tabl.xml) are part of that generated target shape.
+The interface behavior definition [`ZI_DM_PROJECT`](https://github.com/arc-mcp/arc-1-segw-to-rap/blob/main/ABAP_SRC/src/dm/zi_dm_project.bdef.asbdef) is managed, uses `strict ( 2 )`, and enables draft. It maps the nicer RAP field names like `ProjectId`, `StartDate`, and `EstimatedHours` back to the old table fields like `project_id`, `start_date`, and `estimated_hours`. It also defines the project as the lock master and the child entities as dependent by project. The draft tables [`ZDM_PROJECT_D`](https://github.com/arc-mcp/arc-1-segw-to-rap/blob/main/ABAP_SRC/src/rap/zdm_project_d.tabl.xml), [`ZDM_TASK_D`](https://github.com/arc-mcp/arc-1-segw-to-rap/blob/main/ABAP_SRC/src/rap/zdm_task_d.tabl.xml), and [`ZDM_TIMEENTRY_D`](https://github.com/arc-mcp/arc-1-segw-to-rap/blob/main/ABAP_SRC/src/rap/zdm_timeentry_d.tabl.xml) are part of that generated target shape.
 
-The projection layer then exposes the service-facing model. [`ZC_DM_PROJECT`](https://github.com/marianfoo/arc-1-segw-to-rap/blob/main/ABAP_SRC/src/dm/zc_dm_project.ddls.asddls) is a transactional query projection on the interface view, redirects `_Tasks` to [`ZC_DM_TASK`](https://github.com/marianfoo/arc-1-segw-to-rap/blob/main/ABAP_SRC/src/dm/zc_dm_task.ddls.asddls), and carries metadata extension support. The projection behavior [`ZC_DM_PROJECT`](https://github.com/marianfoo/arc-1-segw-to-rap/blob/main/ABAP_SRC/src/dm/zc_dm_project.bdef.asbdef) reuses create, update, delete, draft actions, and the new approve action from the interface behavior.
+The projection layer then exposes the service-facing model. [`ZC_DM_PROJECT`](https://github.com/arc-mcp/arc-1-segw-to-rap/blob/main/ABAP_SRC/src/dm/zc_dm_project.ddls.asddls) is a transactional query projection on the interface view, redirects `_Tasks` to [`ZC_DM_TASK`](https://github.com/arc-mcp/arc-1-segw-to-rap/blob/main/ABAP_SRC/src/dm/zc_dm_task.ddls.asddls), and carries metadata extension support. The projection behavior [`ZC_DM_PROJECT`](https://github.com/arc-mcp/arc-1-segw-to-rap/blob/main/ABAP_SRC/src/dm/zc_dm_project.bdef.asbdef) reuses create, update, delete, draft actions, and the new approve action from the interface behavior.
 
-Finally, the service definition [`ZUI_DM_PROJECTS`](https://github.com/marianfoo/arc-1-segw-to-rap/blob/main/ABAP_SRC/src/dm/zui_dm_projects.srvd.srvdsrv) exposes the projection entities as `Project`, `Task`, and `TimeEntry`, and the service binding [`ZUI_DM_PROJECTS_O4`](https://github.com/marianfoo/arc-1-segw-to-rap/blob/main/ABAP_SRC/src/dm/zui_dm_projects_o4.srvb.xml) publishes them as OData V4.
+Finally, the service definition [`ZUI_DM_PROJECTS`](https://github.com/arc-mcp/arc-1-segw-to-rap/blob/main/ABAP_SRC/src/dm/zui_dm_projects.srvd.srvdsrv) exposes the projection entities as `Project`, `Task`, and `TimeEntry`, and the service binding [`ZUI_DM_PROJECTS_O4`](https://github.com/arc-mcp/arc-1-segw-to-rap/blob/main/ABAP_SRC/src/dm/zui_dm_projects_o4.srvb.xml) publishes them as OData V4.
 
 The new service is OData V4 and published through the service binding:
 
@@ -137,7 +137,7 @@ The old `ApproveProject` function import became a RAP action:
 action approve_project result [1] $self;
 ```
 
-The [behavior implementation](https://github.com/marianfoo/arc-1-segw-to-rap/blob/main/ABAP_SRC/src/dm/zbp_dm_project.clas.locals_imp.abap) no longer does a direct `UPDATE ... COMMIT WORK` in the old DPC_EXT style. It uses RAP EML in local mode, updates the project status, and lets the RAP runtime handle the transactional context.
+The [behavior implementation](https://github.com/arc-mcp/arc-1-segw-to-rap/blob/main/ABAP_SRC/src/dm/zbp_dm_project.clas.locals_imp.abap) no longer does a direct `UPDATE ... COMMIT WORK` in the old DPC_EXT style. It uses RAP EML in local mode, updates the project status, and lets the RAP runtime handle the transactional context.
 
 The logs also show why this is not just text generation. The agent had to deal with real ABAP Platform 7.58 details: where the provider contract belongs, how draft table fields need to be named, which timestamp annotations are available, and how the projection behavior should reuse the interface behavior. These are exactly the details that make a generated RAP example look easy and a real migration annoying.
 
@@ -147,7 +147,7 @@ For an ECC to S/4HANA journey, this is the kind of direction I would rather see 
 
 ## Prompt 2: UI5 JavaScript to UI5 TypeScript
 
-The second prompt converted the [legacy freestyle UI5 JavaScript app](https://github.com/marianfoo/arc-1-segw-to-rap/tree/main/legacy-ui5-app) into a [modern UI5 TypeScript app](https://github.com/marianfoo/arc-1-segw-to-rap/tree/main/modern-ui5-ts-app). The transcript is in [`llm-chat-history/prompt-2-js-to-ts`](https://github.com/marianfoo/arc-1-segw-to-rap/tree/main/llm-chat-history/prompt-2-js-to-ts).
+The second prompt converted the [legacy freestyle UI5 JavaScript app](https://github.com/arc-mcp/arc-1-segw-to-rap/tree/main/legacy-ui5-app) into a [modern UI5 TypeScript app](https://github.com/arc-mcp/arc-1-segw-to-rap/tree/main/modern-ui5-ts-app). The transcript is in [`llm-chat-history/prompt-2-js-to-ts`](https://github.com/arc-mcp/arc-1-segw-to-rap/tree/main/llm-chat-history/prompt-2-js-to-ts).
 
 ![Cursor prompt for converting the legacy UI5 JavaScript app into UI5 TypeScript.](images/starting-prompt-2-ui5-ts.png)
 
@@ -157,7 +157,7 @@ The [UI5 MCP Server](https://github.com/UI5/mcp-server) was the guardrail around
 
 The UI result is mostly relevant here because it proves that the RAP service was usable from a real consumer. The old app talked to `/ProjectSet`, followed `Tasks`, and called `ApproveProject` as an OData V2 function import. The new freestyle app talks to the RAP V4 entity set `/Project`, follows `_Tasks`, and calls `approve_project` as a bound OData V4 operation. The app itself also moved from JavaScript controllers and a manual OData V2 model to TypeScript controllers, manifest-driven OData V4, FlexibleColumnLayout routing, imported formatter modules, and real lint/typecheck gates.
 
-The new app consumes the RAP V4 service directly from its [manifest](https://github.com/marianfoo/arc-1-segw-to-rap/blob/main/modern-ui5-ts-app/webapp/manifest.json):
+The new app consumes the RAP V4 service directly from its [manifest](https://github.com/arc-mcp/arc-1-segw-to-rap/blob/main/modern-ui5-ts-app/webapp/manifest.json):
 
 ```json
 "dataSources": {
@@ -171,7 +171,7 @@ The new app consumes the RAP V4 service directly from its [manifest](https://git
 }
 ```
 
-The action call in the [detail controller](https://github.com/marianfoo/arc-1-segw-to-rap/blob/main/modern-ui5-ts-app/webapp/controller/Detail.controller.ts) also changed from the old OData V2 function import style to a bound OData V4 operation:
+The action call in the [detail controller](https://github.com/arc-mcp/arc-1-segw-to-rap/blob/main/modern-ui5-ts-app/webapp/controller/Detail.controller.ts) also changed from the old OData V2 function import style to a bound OData V4 operation:
 
 ```ts
 const operation = model.bindContext(
@@ -193,7 +193,7 @@ That is the second lesson from the logs: the model needed tooling feedback. It w
 
 ## Prompt 3: Legacy UI5 to Fiori Elements
 
-The third prompt took a different path. Instead of converting the old freestyle app to another freestyle app, it rebuilt the user-facing contract as a [Fiori elements V4 list report and object page](https://github.com/marianfoo/arc-1-segw-to-rap/tree/main/modern-fe-app/dm-projects-fe). The transcript is in [`llm-chat-history/prompt-3-js-to-fiori-elements`](https://github.com/marianfoo/arc-1-segw-to-rap/tree/main/llm-chat-history/prompt-3-js-to-fiori-elements).
+The third prompt took a different path. Instead of converting the old freestyle app to another freestyle app, it rebuilt the user-facing contract as a [Fiori elements V4 list report and object page](https://github.com/arc-mcp/arc-1-segw-to-rap/tree/main/modern-fe-app/dm-projects-fe). The transcript is in [`llm-chat-history/prompt-3-js-to-fiori-elements`](https://github.com/arc-mcp/arc-1-segw-to-rap/tree/main/llm-chat-history/prompt-3-js-to-fiori-elements).
 
 ![Cursor prompt for converting the legacy UI5 app into a Fiori elements V4 app.](images/starting-prompt-3-fiori-elements.png)
 
@@ -201,13 +201,13 @@ This is the more interesting Clean Core direction for many S/4HANA projects. A l
 
 The agent mined the legacy UI for the actual user contract: the columns from the old master list, search behavior, project header fields from the detail view, task table columns, time entry navigation from a selected task, `Approve` as a project action, and the status, priority, and date semantics that used to live in the formatter.
 
-Then it moved that contract into RAP UI metadata, mainly through the [`ZME_DM_PROJECT`](https://github.com/marianfoo/arc-1-segw-to-rap/blob/main/ABAP_SRC/src/dm/zme_dm_project.ddlx.asddlxs), [`ZME_DM_TASK`](https://github.com/marianfoo/arc-1-segw-to-rap/blob/main/ABAP_SRC/src/dm/zme_dm_task.ddlx.asddlxs), and [`ZME_DM_TIMEENTRY`](https://github.com/marianfoo/arc-1-segw-to-rap/blob/main/ABAP_SRC/src/dm/zme_dm_timeentry.ddlx.asddlxs) metadata extensions. That is where the old UI intent becomes `@UI.headerInfo`, line items, selection fields, facets, field groups, presentation variants, search metadata, and semantic keys.
+Then it moved that contract into RAP UI metadata, mainly through the [`ZME_DM_PROJECT`](https://github.com/arc-mcp/arc-1-segw-to-rap/blob/main/ABAP_SRC/src/dm/zme_dm_project.ddlx.asddlxs), [`ZME_DM_TASK`](https://github.com/arc-mcp/arc-1-segw-to-rap/blob/main/ABAP_SRC/src/dm/zme_dm_task.ddlx.asddlxs), and [`ZME_DM_TIMEENTRY`](https://github.com/arc-mcp/arc-1-segw-to-rap/blob/main/ABAP_SRC/src/dm/zme_dm_timeentry.ddlx.asddlxs) metadata extensions. That is where the old UI intent becomes `@UI.headerInfo`, line items, selection fields, facets, field groups, presentation variants, search metadata, and semantic keys.
 
 The [SAP Fiori MCP Server](https://github.com/SAP/open-ux-tools/tree/main/packages/fiori-mcp-server) had a different role than the UI5 MCP Server. It did not translate freestyle controller code into another set of controllers. It exposed the Fiori tools workflow for an external OData V4 list report and object page: discover the available generation capabilities, inspect the required generator configuration, and shape the app around a project name, target folder, UI5 version, service URL or metadata file, and main entity `Project`. In other words, it kept the frontend target inside the standard Fiori elements model instead of letting the conversion drift back into custom page wiring.
 
 That also makes the split of responsibility clearer. ARC-1 and SAP Docs MCP helped create and correct the RAP annotations in the ABAP backend. Fiori MCP helped define and generate the Fiori elements application that consumes those annotations through `$metadata`.
 
-The result is a Fiori elements list report on the RAP `Project` entity. The generated app manifest is also in the repo, under [`modern-fe-app/dm-projects-fe/webapp/manifest.json`](https://github.com/marianfoo/arc-1-segw-to-rap/blob/main/modern-fe-app/dm-projects-fe/webapp/manifest.json).
+The result is a Fiori elements list report on the RAP `Project` entity. The generated app manifest is also in the repo, under [`modern-fe-app/dm-projects-fe/webapp/manifest.json`](https://github.com/arc-mcp/arc-1-segw-to-rap/blob/main/modern-fe-app/dm-projects-fe/webapp/manifest.json).
 
 ![Fiori elements list report generated from the RAP OData V4 service.](images/fe-screenshot-1.png)
 
@@ -221,9 +221,9 @@ Old freestyle UI5 had the intent spread across controllers, XML views, formatter
 
 ## What The Logs Show
 
-I included the [Cursor chat exports](https://github.com/marianfoo/arc-1-segw-to-rap/tree/main/llm-chat-history) in the repository because I think the transcript is more useful than a polished final result alone.
+I included the [Cursor chat exports](https://github.com/arc-mcp/arc-1-segw-to-rap/tree/main/llm-chat-history) in the repository because I think the transcript is more useful than a polished final result alone.
 
-The [SEGW to RAP run](https://github.com/marianfoo/arc-1-segw-to-rap/tree/main/llm-chat-history/prompt-1-segw-to-rap) has 140 tool records. That is the most important transcript for this post because it shows ARC-1 reading the legacy service, extracting the model from the generated classes, creating the RAP artifacts, activating them, and publishing the service binding. The [UI5 TypeScript run](https://github.com/marianfoo/arc-1-segw-to-rap/tree/main/llm-chat-history/prompt-2-js-to-ts) has 142 tool records and is mostly about making the new V4 service usable from a freestyle app. The [Fiori elements run](https://github.com/marianfoo/arc-1-segw-to-rap/tree/main/llm-chat-history/prompt-3-js-to-fiori-elements) has 230 tool records because it had to mine the old UI and move more intent into annotations.
+The [SEGW to RAP run](https://github.com/arc-mcp/arc-1-segw-to-rap/tree/main/llm-chat-history/prompt-1-segw-to-rap) has 140 tool records. That is the most important transcript for this post because it shows ARC-1 reading the legacy service, extracting the model from the generated classes, creating the RAP artifacts, activating them, and publishing the service binding. The [UI5 TypeScript run](https://github.com/arc-mcp/arc-1-segw-to-rap/tree/main/llm-chat-history/prompt-2-js-to-ts) has 142 tool records and is mostly about making the new V4 service usable from a freestyle app. The [Fiori elements run](https://github.com/arc-mcp/arc-1-segw-to-rap/tree/main/llm-chat-history/prompt-3-js-to-fiori-elements) has 230 tool records because it had to mine the old UI and move more intent into annotations.
 
 There are a few patterns that stand out.
 
@@ -231,7 +231,7 @@ First, the model needed real SAP context. It did not know the generated class na
 
 Second, the skills mattered. Without the skills, the model would probably start writing too early. With the skills, it had to read, extract, summarize, stop, then write.
 
-Third, the MCP servers had different jobs. [ARC-1](https://github.com/marianfoo/arc-1) was the SAP system bridge. [SAP Docs MCP Server](https://github.com/marianfoo/mcp-sap-docs) gave release and documentation context. [UI5 MCP Server](https://github.com/UI5/mcp-server) and [SAP Fiori MCP Server](https://github.com/SAP/open-ux-tools/tree/main/packages/fiori-mcp-server) grounded the frontend work in current UI5 and Fiori conventions.
+Third, the MCP servers had different jobs. [ARC-1](https://github.com/arc-mcp/arc-1) was the SAP system bridge. [SAP Docs MCP Server](https://github.com/marianfoo/mcp-sap-docs) gave release and documentation context. [UI5 MCP Server](https://github.com/UI5/mcp-server) and [SAP Fiori MCP Server](https://github.com/SAP/open-ux-tools/tree/main/packages/fiori-mcp-server) grounded the frontend work in current UI5 and Fiori conventions.
 
 ## Why This Is More Than A Conversion Demo
 
@@ -289,10 +289,10 @@ That is exactly where I want ARC-1 to go.
 
 ## References & Links
 
-- [Demo repository: arc-1-segw-to-rap](https://github.com/marianfoo/arc-1-segw-to-rap)
-- [ARC-1 on GitHub](https://github.com/marianfoo/arc-1)
-- [ARC-1 Documentation](https://marianfoo.github.io/arc-1/)
-- [ARC-1 Skills](https://github.com/marianfoo/arc-1/tree/main/skills)
+- [Demo repository: arc-1-segw-to-rap](https://github.com/arc-mcp/arc-1-segw-to-rap)
+- [ARC-1 on GitHub](https://github.com/arc-mcp/arc-1)
+- [ARC-1 Documentation](https://docs.arc-1-mcp.com/)
+- [ARC-1 Skills](https://github.com/arc-mcp/arc-1/tree/main/skills)
 - [SAP Docs MCP Server](https://github.com/marianfoo/mcp-sap-docs)
 - [ABAP RESTful Application Programming Model](https://pages.community.sap.com/topics/abap/rap)
 - [UI5 TypeScript](https://ui5.github.io/typescript/)
