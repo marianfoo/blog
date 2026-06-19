@@ -12,7 +12,7 @@
       "latestSeenVersion": "1.84.60",
       "latestScrapedVersion": "1.84.57",
       "lastCheckedAt": "2026-06-18T06:33:18.438Z",
-      "lastStatus": "checked-no-change",
+      "lastStatus": "already-checked",
       "patches": {
         "1.84.57": {
           "version": "1.84.57",
