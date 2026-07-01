@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "createdAt": "2026-03-11T20:07:12.324Z",
-  "updatedAt": "2026-06-27T06:10:24.111Z",
+  "updatedAt": "2026-07-01T06:29:22.044Z",
   "versionsUrl": "https://ui5.sap.com/version.json?sap-ui-config-patches=true&sap-ui-config-showall=true",
   "topicId": "62d3f7c2a9424864921184fd6c7002eb",
   "minMinor": 84,
@@ -966,10 +966,10 @@
     "1.149": {
       "support": "Maintenance",
       "lts": false,
-      "latestSeenVersion": "1.149.0",
+      "latestSeenVersion": "1.149.1",
       "latestScrapedVersion": "1.149.0",
-      "lastCheckedAt": "2026-06-12T06:30:47.094Z",
-      "lastStatus": "already-scraped",
+      "lastCheckedAt": "2026-07-01T06:29:22.044Z",
+      "lastStatus": "checked-no-change",
       "patches": {
         "1.149.0": {
           "version": "1.149.0",
@@ -981,14 +981,25 @@
           "dataFile": "fe-features-1.149.0.json",
           "comparedToVersion": null,
           "changedComparedToPrevious": true
+        },
+        "1.149.1": {
+          "version": "1.149.1",
+          "sourceUrl": "https://ui5.sap.com/1.149.1/docs/topics/62d3f7c2a9424864921184fd6c7002eb.html",
+          "checkedAt": "2026-07-01T06:29:22.044Z",
+          "hash": "1b3c12b56858f48a48750750c7cb75e15670fcc05528edfbe642a333fbf6202c",
+          "rowCount": 155,
+          "scraped": false,
+          "dataFile": null,
+          "comparedToVersion": "1.149.0",
+          "changedComparedToPrevious": false
         }
       },
       "lastError": null
     }
   },
   "lastRun": {
-    "startedAt": "2026-06-27T06:10:23.551Z",
-    "finishedAt": "2026-06-27T06:10:24.111Z",
+    "startedAt": "2026-07-01T06:29:21.453Z",
+    "finishedAt": "2026-07-01T06:29:22.044Z",
     "summary": {
       "minorsDiscovered": 23,
       "alreadyChecked": 22,
