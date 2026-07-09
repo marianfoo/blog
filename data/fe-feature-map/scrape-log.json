@@ -62,7 +62,7 @@
       "lastError": null
     },
     "1.96": {
-      "support": "Maintenance",
+      "support": "Out of maintenance",
       "lts": true,
       "latestSeenVersion": "1.96.49",
       "latestScrapedVersion": "1.96.46",
@@ -139,7 +139,7 @@
       "lastError": null
     },
     "1.108": {
-      "support": "Maintenance",
+      "support": "Out of maintenance",
       "lts": true,
       "latestSeenVersion": "1.108.54",
       "latestScrapedVersion": "1.108.50",
