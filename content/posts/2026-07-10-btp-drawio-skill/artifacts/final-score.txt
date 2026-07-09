@@ -1,0 +1,15 @@
+candidate : outputs/arc-1-btp-cf-onprem-final.drawio
+references: 71
+best      : 67.1/100 corpus similarity
+sap-like  : 96.7/100 reference-free quality
+sap issues: 2 non-canonical pill label(s)
+1.  67.1  <path-to-btp-drawio-skill>/plugins/sap-architecture/skills/sap-architecture/assets/reference-examples/ext_FederatedML_v2.drawio
+   - zone nesting depth differs - ref 0 vs cand 1
+2.  64.6  <path-to-btp-drawio-skill>/plugins/sap-architecture/skills/sap-architecture/assets/reference-examples/btp_SAP_Task_Center_L0.drawio
+   - zone nesting depth differs - ref 0 vs cand 1
+3.  63.6  <path-to-btp-drawio-skill>/plugins/sap-architecture/skills/sap-architecture/assets/reference-examples/btp_SAP_Task_Center_L1.drawio
+   - zone nesting depth differs - ref 0 vs cand 1
+4.  62.1  <path-to-btp-drawio-skill>/plugins/sap-architecture/skills/sap-architecture/assets/reference-examples/ext_CloudLeadingAuthn.drawio
+   - zone nesting depth differs - ref 0 vs cand 1
+5.  61.3  <path-to-btp-drawio-skill>/plugins/sap-architecture/skills/sap-architecture/assets/reference-examples/ext_HyperscalerDatasphere.drawio
+   - zone nesting depth differs - ref 0 vs cand 1

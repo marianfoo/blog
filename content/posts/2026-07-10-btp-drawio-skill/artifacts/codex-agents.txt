@@ -1,0 +1,72 @@
+# ARC-1 Diagram Sample
+
+This workspace is only for generating the blog sample. Do not commit or push
+anything. Do not edit the blog repository, the diagram skill repository, or the
+ARC-1 repository.
+
+## SAP Architecture Skill
+
+Use the SAP architecture skill at:
+
+`<path-to-btp-drawio-skill>/plugins/sap-architecture/skills/sap-architecture`
+
+Before creating or editing a diagram, read that directory's `SKILL.md`
+completely. Follow its six-step workflow and use its bundled references,
+templates, assets, and scripts. The examples in the skill sometimes use a
+`.claude/skills/...` path. In this workspace, replace that prefix with the
+absolute skill path above.
+
+The skill repository is read-only for this task. Put generated artifacts in
+`outputs/` and temporary review files in `.cache/`.
+
+For architecture verification, these local ARC-1 documents are available
+read-only:
+
+- `<path-to-arc-1>/docs_page/btp-cloud-foundry-deployment.md`
+- `<path-to-arc-1>/docs_page/principal-propagation-setup.md`
+- `<path-to-arc-1>/docs_page/enterprise-auth.md`
+
+## Required Workflow
+
+1. Parse the request into level, zones, services, flow, and focus application.
+2. Run `scaffold_diagram.py` before creating any XML. Never author a draw.io
+   file from scratch.
+3. Prefer surgical relabeling and official bundled assets. Preserve the SAP
+   template's frame, zone hierarchy, footer, colors, icon scale, and canvas.
+4. Use `render_semantic.py --archetype on-prem-connectivity` only when no
+   suitable SAP template can express the architecture without removing more
+   than roughly one third of it. Explain this decision in the run report.
+5. After the first complete adaptation, preserve a first-pass `.drawio`, PNG,
+   validator output, and score output before making visual corrections.
+6. Run autofix, validate, score, render, and inspect the PNG. A high score does
+   not replace visual inspection.
+7. Fix the worst visible or structural issue in one small iteration. Then run
+   all checks again and preserve the final artifacts.
+8. Do not claim the result is clean while validator warnings remain. Fix each
+   warning or explain it in `outputs/run-report.md`.
+
+## Architecture Accuracy
+
+- VS Code is the remote MCP client on the developer workstation.
+- ARC-1 runs as a Node.js application on SAP BTP Cloud Foundry.
+- Client-to-ARC-1 transport is MCP Streamable HTTP over HTTPS at `/mcp`.
+- XSUAA authenticates the MCP client and supplies the JWT and scopes.
+- Destination Service resolves the on-premise destination and receives the
+  user token for Principal Propagation.
+- Connectivity Service provides the BTP connectivity proxy.
+- SAP Cloud Connector is in the customer on-premise network.
+- ARC-1 accesses the SAP ABAP system through ADT REST endpoints under
+  `/sap/bc/adt/`. Do not label this backend flow as an OData business API.
+- Principal Propagation maps the client identity to the SAP user. Keep the
+  diagram generic and do not invent tenant names, hostnames, users, or systems.
+
+## Visual Quality
+
+- Use the official grey-circle SAP BTP service icons at normal SAP sizes.
+- Use canonical SAP pills. MCP is teal; authentication and Principal
+  Propagation are green; structural synchronous calls use the inherited SAP
+  connector style.
+- Do not route edges through cards, zone labels, icons, or the network divider.
+- Keep labels readable and do not place icons over text.
+- Use one synchronous edge for request and response when possible.
+- Keep the flow narration outside the draw.io canvas.

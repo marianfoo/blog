@@ -1,0 +1,103 @@
+# Run report: ARC-1 on SAP BTP Cloud Foundry
+
+- Date: 2026-07-09
+- Codex model label: not exposed in the saved run output
+- SAP architecture skill Git commit: `2484140fb29f2083a8209dd9c22ce099ffcbe418`
+- Source request: `PROMPT.md` (published as `codex-prompt.txt`)
+- Correction iterations: **1**
+
+## Parsed diagram scope
+
+- Level: L2, for SAP platform and ABAP development teams.
+- Zones: Developer Workstation; SAP BTP Cloud Foundry; Customer On-Premise Network.
+- Focus: ARC-1 as a Node.js Cloud Foundry application, using the SAP purple accent.
+- Services: XSUAA, Destination Service, Connectivity Service, SAP Cloud Connector, and a generic SAP ABAP System.
+- Main flow: VS Code MCP Streamable HTTP over HTTPS at `/mcp`, XSUAA JWT validation, per-user destination resolution, BTP connectivity proxy, Principal Propagation, and ADT REST under `/sap/bc/adt/`.
+
+## Scaffold selection
+
+`scaffold_diagram.py` was run first with the full contents of `PROMPT.md` and external SAP references enabled.
+
+Top three candidates:
+
+1. `ac_RA0001_E2B_CloudConnector.drawio` - 191.0
+2. `ac_RA0029_AgenticAI_root.drawio` - 178.0
+3. `ac_RA0024_Joule_IAM_authn.drawio` - 165.0
+
+The scaffolded template was `ac_RA0001_E2B_CloudConnector.drawio`, and it remained the comparison reference because it is the correct Cloud Connector/connectivity family. Its recipe contains four top-level zones, 24 cards, 25 icons, seven pills, and 30 edges. Adapting that composition to this focused three-zone/eight-component flow would remove substantially more than one third of the template. Per the skill and workspace instructions, the deterministic `on-prem-connectivity` semantic fallback was therefore used instead of thinning the reference beyond its useful geometry.
+
+## First pass
+
+Preserved artifacts:
+
+- `arc-1-btp-cf-onprem-first-pass.drawio`
+- `arc-1-btp-cf-onprem-first-pass.png`
+- `first-pass-validation.txt`
+- `first-pass-score.txt`
+
+Checks:
+
+- Autofix: no fixes needed.
+- Validator: `OK` (no errors or warnings).
+- Corpus similarity: 68.2/100.
+- Reference-free SAP-likeness: **100.0/100**, passing the semantic-fallback threshold of 90.
+- Render: 2252 × 1572 RGB PNG, nonblank.
+
+Visual inspection found one dominant issue: the semantic archetype still used its generic stock scenario labels. The rendered first pass showed `On-Premise Connectivity on SAP BTP`, `HTTPS`, `OData/REST`, and `SAP S/4HANA On-Premise`, rather than the requested ARC-1 MCP, ADT REST, and generic SAP ABAP semantics.
+
+## One focused correction
+
+One surgical scenario-specific relabel-and-focus iteration was made without changing the validated geometry:
+
+- Applied the exact requested title and subtitle.
+- Represented the developer, VS Code, and MCP-capable AI assistant in the workstation card.
+- Relabeled the runtime and services for ARC-1, XSUAA, Destination Service, and Connectivity Service.
+- Replaced the S/4HANA/OData wording with generic `SAP ABAP System` and `ADT REST` wording.
+- Changed the client pill and edge to canonical teal `MCP`.
+- Changed authentication/JWT and Principal Propagation pills to green (`Authenticate`, `OAUTH · JWT`, and `mTLS · PP`).
+- Applied the purple SAP accent to ARC-1 as the focus application.
+
+No cards, zones, edge routes, canvas dimensions, footer elements, or icon geometries were moved in this correction.
+
+## Final verification
+
+Preserved artifacts:
+
+- `arc-1-btp-cf-onprem-final.drawio`
+- `arc-1-btp-cf-onprem-final.png`
+- `final-validation.txt`
+- `final-score.txt`
+- `arc-1-btp-cf-onprem-flow.md` (published as `arc-1-btp-cf-onprem-flow.txt`)
+- `review/review.html` and its reference/candidate images
+
+Checks:
+
+- Autofix: no fixes needed.
+- Validator: `OK` (no errors or warnings).
+- Corpus similarity: 67.1/100; this is informational because the deterministic semantic fallback was used.
+- Reference-free SAP-likeness: **96.7/100**, passing the required threshold of 90.
+- Render: 2252 × 1572 RGB PNG, nonblank and readable on visual inspection.
+- Draw.io/XML opening check: both validation and successful draw.io CLI rendering completed.
+- Side-by-side review: generated against `ac_RA0001_E2B_CloudConnector.drawio` under `outputs/review/`. The direct template-comparison score is 54.3/100, expected because the required fallback intentionally uses a much smaller three-zone composition than the 24-card reference. The applicable reference-free SAP-likeness gate passes.
+
+## Remaining warnings and accepted advisories
+
+- Final validator warnings: **none**.
+- Final validator errors: **none**.
+- The reference-free scorer reports two non-canonical-pill advisories for `OAUTH · JWT` and `mTLS · PP`. They are accepted because the request explicitly requires visible XSUAA/JWT and Principal Propagation semantics, and the skill's L2 flow guidance uses these labels as the intended SAP-style patterns. They are not validator warnings, do not use novelty verbs, and the final SAP-likeness score remains 96.7/100.
+
+## Completion criteria
+
+- Final `.drawio` validates and renders successfully.
+- Final PNG is nonblank and readable.
+- Validation has no errors or warnings.
+- The applicable semantic-fallback quality score exceeds 90.
+- The detailed numbered flow is outside the draw.io canvas.
+- Total correction iterations: **1**.
+- No commit or push was performed.
+
+## Publishing correction
+
+During the blog review, both attached draw.io files received an explicit white
+page background. One PNG export had otherwise inherited a black page
+background. The diagrams were exported and checked again after this change.

@@ -1,0 +1,10 @@
+# ARC-1 on SAP BTP Cloud Foundry flow
+
+1. The developer signs in through XSUAA and the configured BTP trust.
+2. VS Code sends an MCP tool call to the ARC-1 `/mcp` endpoint using Streamable HTTP over HTTPS and includes the XSUAA JWT.
+3. ARC-1 validates the JWT and its scopes.
+4. ARC-1 passes the user token to Destination Service and resolves the `PrincipalPropagation` destination.
+5. ARC-1 uses Connectivity Service to route the request through SAP Cloud Connector.
+6. Cloud Connector propagates the user's identity to the SAP system through a client certificate.
+7. ARC-1 reads the requested ABAP object through an ADT REST endpoint under `/sap/bc/adt/` as the mapped SAP user.
+8. The result returns through ARC-1 to the AI assistant in VS Code.

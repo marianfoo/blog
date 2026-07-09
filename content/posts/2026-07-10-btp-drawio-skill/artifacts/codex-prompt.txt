@@ -1,0 +1,121 @@
+# Prompt: ARC-1 on SAP BTP Cloud Foundry
+
+Create an L2 SAP Architecture Center-style diagram for the architecture below.
+Use the SAP architecture skill configured in `AGENTS.md` and follow its complete
+workflow. Do not stop after copying a template. Adapt it to this scenario,
+validate it, render it, inspect the image, and make one focused improvement.
+
+## Audience and Scope
+
+The audience is an SAP platform and ABAP development team. The diagram should
+explain how a developer in VS Code reaches an on-premise SAP ABAP system through
+a centrally deployed ARC-1 instance.
+
+Use a concrete read-only example: the developer asks the AI assistant in VS Code
+to inspect an ABAP class. VS Code sends an MCP tool call to ARC-1, and ARC-1
+reads the object through the ADT REST API.
+
+## Required Zones and Components
+
+### Developer Workstation
+
+- Developer
+- VS Code
+- MCP-capable AI assistant
+
+### SAP BTP Cloud Foundry
+
+- ARC-1 application as the focus application
+- XSUAA
+- Destination Service
+- Connectivity Service
+
+### Customer On-Premise Network
+
+- SAP Cloud Connector
+- SAP ABAP System
+
+Keep the backend generic. Do not call it SAP S/4HANA or ECC unless a selected
+SAP template requires a generic product label that cannot be safely replaced.
+
+## Numbered Flow
+
+1. The developer signs in through XSUAA and the configured BTP trust.
+2. VS Code sends an MCP tool call to the ARC-1 `/mcp` endpoint using Streamable
+   HTTP over HTTPS and includes the XSUAA JWT.
+3. ARC-1 validates the JWT and its scopes.
+4. ARC-1 passes the user token to Destination Service and resolves the
+   `PrincipalPropagation` destination.
+5. ARC-1 uses Connectivity Service to route the request through SAP Cloud
+   Connector.
+6. Cloud Connector propagates the user's identity to the SAP system.
+7. ARC-1 reads the requested ABAP object through an ADT REST endpoint under
+   `/sap/bc/adt/` as the mapped SAP user.
+8. The result returns through ARC-1 to the AI assistant in VS Code.
+
+## Diagram Constraints
+
+- Title: `ARC-1 on SAP BTP Cloud Foundry`
+- Subtitle: `VS Code to an on-premise SAP ABAP system with Principal Propagation`
+- ARC-1 is the visual focus and may use the SAP purple accent.
+- VS Code to ARC-1 uses a canonical teal `MCP` pill.
+- XSUAA authentication and Principal Propagation use canonical green labels.
+- Do not label the backend connection `OData/REST`. Use `ADT REST` or `HTTPS`
+  in the narration and the closest canonical pill supported by the SAP assets.
+- Cloud Connector belongs in the on-premise zone.
+- Destination Service and Connectivity Service belong in the BTP zone.
+- Use one edge per logical synchronous hop. Do not add separate return arrows.
+- Do not route arrows through cards, labels, icons, or zone boundaries.
+- Preserve the selected SAP template's canvas, frame, footer, and visual grammar.
+- Keep the canvas focused on this one flow. Do not add CI/CD, databases, Joule,
+  Integration Suite, or unrelated SAP services.
+- Put the detailed numbered flow in Markdown below the diagram, not inside it.
+
+## Required Execution and Evidence
+
+Use the full prompt text above as input to `scaffold_diagram.py`. Report the top
+three template candidates and explain the selected template. Prefer a suitable
+SAP template. Use the deterministic `on-prem-connectivity` semantic fallback
+only when the template geometry is clearly unsuitable.
+
+Create the first complete adapted diagram, then preserve these files before any
+visual correction:
+
+- `outputs/arc-1-btp-cf-onprem-first-pass.drawio`
+- `outputs/arc-1-btp-cf-onprem-first-pass.png`
+- `outputs/first-pass-validation.txt`
+- `outputs/first-pass-score.txt`
+
+Run autofix, validation, scoring, and rendering. Inspect the first-pass PNG with
+the available image-viewing tool. Identify the single worst visible or
+structural problem. Make one focused correction, rerun every check, and create:
+
+- `outputs/arc-1-btp-cf-onprem-final.drawio`
+- `outputs/arc-1-btp-cf-onprem-final.png`
+- `outputs/final-validation.txt`
+- `outputs/final-score.txt`
+- `outputs/arc-1-btp-cf-onprem-flow.md`
+- `outputs/run-report.md`
+
+Also generate a side-by-side visual review under `outputs/review/` using
+`render_compare.py` or `iterate.py` with the selected SAP reference.
+
+`outputs/run-report.md` must contain:
+
+- diagram skill Git commit
+- selected template and alternatives
+- whether template scaffolding or semantic fallback was used
+- first-pass validator summary and scores
+- the visible issue found in the rendered first pass
+- the one correction made
+- final validator summary and scores
+- every remaining warning and why it was accepted
+- total number of correction iterations
+- a placeholder for the exact Codex model label if Codex cannot determine it
+
+Do not invent the Codex model name. Write `Record from the Codex UI` when the
+runtime does not expose it.
+
+Finish only when the final `.drawio` opens correctly, the PNG is nonblank and
+readable, validation has no errors, the appropriate quality score passes 90,
+and all remaining warnings are documented.
