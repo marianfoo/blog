@@ -1,4 +1,5 @@
 "Controls, UI Elements, Features",Supported Floorplans,Developer Documentation,SAP Fiori Design Guidelines,Available from Version
+Disabling the selection of leaf nodes,List report page; Object page,Tree Tables,Tree Tables,1.150.0
 Requesting additional properties,Object page; Custom page,Requesting Additional Properties on the Object Page and Custom Page; Requesting Additional Properties,Requesting Additional Properties on the Object Page and Custom Page; Requesting Additional Properties,1.147.0
 Illustrated message,Analytical list page; List report page; Object page,Displaying An Illustrated Message When No Data Is Found; Localization of UI Texts,Displaying An Illustrated Message When No Data Is Found; Localization of UI Texts,1.146.0
 Notice for AI-generated content,List report page; Object page,Configuring the AI Notice in a Column Header; AI Notice,Configuring the AI Notice in a Column Header; AI Notice,1.146.0
@@ -98,7 +99,7 @@ Contact quick view,List report page; Object page,Adding a Contact Quick View to 
 Copy and paste from Microsoft Excel to editable tables,Object page,Copying and Pasting from Microsoft Excel to Editable Tables,,1.84.57
 Cumulation (Waterfall chart),Analytical list page; Object page,Configuring Charts,Configuring Charts,1.84.57
 Currency,Analytical list page; List report page; Object page; Overview page,Different Representations of a Field,Different Representations of a Field,1.84.57
-Custom card,Overview page,Creating Custom Cards,Creating Custom Cards,1.84.57
+Custom card,Overview page,Creating Custom Cards on the Overview Page,Creating Custom Cards on the Overview Page,1.84.57
 Date picker,Analytical list page; List report page; Object page; Overview page,Field Help,Field Help,1.84.57
 Date range selection,Analytical list page; List report page; Object page; Overview page,Enabling Semantic Operators in the Filter Bar,Enabling Semantic Operators in the Filter Bar,1.84.57
 Date/time picker,Analytical list page; List report page; Object page; Overview page,Field Help,Field Help,1.84.57
@@ -114,7 +115,7 @@ Form,List report page; Object page,Defining and Configuring Sections; Grouping o
 Formatting numeric values,Overview page,Formatting Numeric Values,Formatting Numeric Values,1.84.57
 Generic tag,Analytical list page (OData V2),Creating Key Performance Indicator Tags in Analytical Services,Generic Tag,1.84.57
 Grid table,List report page; Object page,Setting the Table Type,Setting the Table Type,1.84.57
-Header toolbar,Analytical list page; List report page; Object page; Overview page,Actions; Enabling Actions in the Object Page Header; Adding Custom Actions Using Extension Points; Defining Custom Actions on the Overview Page,Actions; Enabling Actions in the Object Page Header; Adding Custom Actions Using Extension Points; Defining Custom Actions on the Overview Page,1.84.57
+Header toolbar,Analytical list page; List report page; Object page; Overview page,Actions; Enabling Actions in the Object Page Header; Adding Custom Actions Using Extension Points; Defining Custom Actions for Quick View Cards on the Overview Page,Actions; Enabling Actions in the Object Page Header; Adding Custom Actions Using Extension Points; Defining Custom Actions for Quick View Cards on the Overview Page,1.84.57
 Highlighting line items based on criticality,List report page; Object page,Highlighting Line Items Based on Criticality,Highlighting Line Items Based on Criticality,1.84.57
 Icon tab bar,List report page; Object page,Defining and Configuring Sections; Multiple Views on the List Report Page; Grouping of Fields,Defining and Configuring Sections; Multiple Views on the List Report Page; Grouping of Fields,1.84.57
 Image,Analytical list page; List report; Object page; Overview page,"Displaying Images in Tables; Setting Up the Object Page Header; List Cards; Link List Cards; Using Images, Initials, and Icons",Image,1.84.57
