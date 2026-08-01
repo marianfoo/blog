@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "createdAt": "2026-03-11T20:07:12.324Z",
-  "updatedAt": "2026-07-31T06:00:36.595Z",
+  "updatedAt": "2026-08-01T05:58:34.148Z",
   "versionsUrl": "https://ui5.sap.com/version.json?sap-ui-config-patches=true&sap-ui-config-showall=true",
   "topicId": "62d3f7c2a9424864921184fd6c7002eb",
   "minMinor": 84,
@@ -529,7 +529,7 @@
       "latestSeenVersion": "1.136.21",
       "latestScrapedVersion": "1.136.15",
       "lastCheckedAt": "2026-07-31T06:00:36.019Z",
-      "lastStatus": "checked-no-change",
+      "lastStatus": "already-checked",
       "patches": {
         "1.136.15": {
           "version": "1.136.15",
@@ -966,10 +966,10 @@
     "1.148": {
       "support": "Maintenance",
       "lts": true,
-      "latestSeenVersion": "1.148.6",
+      "latestSeenVersion": "1.148.7",
       "latestScrapedVersion": "1.148.0",
-      "lastCheckedAt": "2026-07-25T05:51:38.369Z",
-      "lastStatus": "already-checked",
+      "lastCheckedAt": "2026-08-01T05:58:34.148Z",
+      "lastStatus": "checked-no-change",
       "patches": {
         "1.148.0": {
           "version": "1.148.0",
@@ -1047,6 +1047,17 @@
           "dataFile": null,
           "comparedToVersion": "1.148.5",
           "changedComparedToPrevious": false
+        },
+        "1.148.7": {
+          "version": "1.148.7",
+          "sourceUrl": "https://ui5.sap.com/1.148.7/docs/topics/62d3f7c2a9424864921184fd6c7002eb.html",
+          "checkedAt": "2026-08-01T05:58:34.148Z",
+          "hash": "28c32ed2cc31c9e5143acfdf1db17e914bb68ad5c8a02c16f4c2bcc01249cddf",
+          "rowCount": 155,
+          "scraped": false,
+          "dataFile": null,
+          "comparedToVersion": "1.148.6",
+          "changedComparedToPrevious": false
         }
       },
       "lastError": null
@@ -1090,7 +1101,7 @@
       "latestSeenVersion": "1.150.1",
       "latestScrapedVersion": "1.150.0",
       "lastCheckedAt": "2026-07-31T06:00:36.595Z",
-      "lastStatus": "checked-no-change",
+      "lastStatus": "already-checked",
       "patches": {
         "1.150.0": {
           "version": "1.150.0",
@@ -1119,13 +1130,13 @@
     }
   },
   "lastRun": {
-    "startedAt": "2026-07-31T06:00:35.180Z",
-    "finishedAt": "2026-07-31T06:00:36.595Z",
+    "startedAt": "2026-08-01T05:58:33.247Z",
+    "finishedAt": "2026-08-01T05:58:34.148Z",
     "summary": {
       "minorsDiscovered": 26,
-      "alreadyChecked": 24,
+      "alreadyChecked": 25,
       "scraped": 0,
-      "checkedNoChange": 2,
+      "checkedNoChange": 1,
       "errors": 0
     }
   }
