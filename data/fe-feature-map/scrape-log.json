@@ -969,7 +969,7 @@
       "latestSeenVersion": "1.148.7",
       "latestScrapedVersion": "1.148.0",
       "lastCheckedAt": "2026-08-01T05:58:34.148Z",
-      "lastStatus": "checked-no-change",
+      "lastStatus": "already-checked",
       "patches": {
         "1.148.0": {
           "version": "1.148.0",
