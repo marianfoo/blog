@@ -1,6 +1,6 @@
 ---
 title: "ARC-1 1.0: One Deployment, Multiple SAP Systems"
-date: 2026-08-03T15:00:00+02:00
+date: 2026-08-03T07:00:00+02:00
 draft: false
 description: "ARC-1 1.0 adds multi-system support on SAP BTP, 22 reusable SAP skills, extensions, and better enterprise guidance shaped by community feedback."
 tags: ["arc-1", "sap", "abap", "mcp", "btp", "multi-system", "skills", "segw", "rap", "open-source", "ai-abap-development-series"]
