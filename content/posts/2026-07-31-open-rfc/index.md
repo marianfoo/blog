@@ -1,7 +1,7 @@
 ---
 title: "Introducing open-rfc: Calling SAP RFC from Node.js Without the SDK"
 date: 2026-08-03T08:00:00+02:00
-draft: false
+draft: true
 description: "Why I built open-rfc, an SDK-free TypeScript and JavaScript client for calling SAP RFC from Node.js."
 tags: ["sap", "rfc", "node.js", "typescript", "javascript", "open-source", "cap"]
 categories: ["projects"]
