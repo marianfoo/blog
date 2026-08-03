@@ -1,6 +1,6 @@
 ---
 title: "ARC-1 1.0: One Deployment, Multiple SAP Systems"
-date: 2026-07-31T17:00:00+02:00
+date: 2026-08-03T15:00:00+02:00
 draft: false
 description: "ARC-1 1.0 adds multi-system support on SAP BTP, 22 reusable SAP skills, extensions, and better enterprise guidance shaped by community feedback."
 tags: ["arc-1", "sap", "abap", "mcp", "btp", "multi-system", "skills", "segw", "rap", "open-source", "ai-abap-development-series"]
@@ -18,7 +18,7 @@ keywords: ["ARC-1 1.0", "SAP ADT MCP server", "SAP BTP multi-system MCP", "ARC-1
 
 [ARC-1 1.0 is here](https://github.com/arc-mcp/arc-1/releases/tag/v1.0.0).
 
-When I published the [first ARC-1 post](/posts/2026-04-27-arc-1/), I explained why I built an MCP server for ABAP development and why security has to be part of it from the beginning. This post is not another deep dive into every tool. The [changelog](https://github.com/arc-mcp/arc-1/blob/main/CHANGELOG.md) already does that.
+When I published the [first ARC-1 post](/posts/2026-04-27-arc-1/), I explained why I built an MCP server for ABAP development and why security has to be part of it from the beginning. This post is not another deep dive into every tool. The [release notes](https://docs.arc-1-mcp.com/release-notes/) already do that.
 
 For version 1.0 I want to focus on what really changed: ARC-1 became more stable, it can serve multiple SAP systems from one BTP deployment, the BTP and security setup is much better documented, and the project is no longer only one repository.
 
@@ -78,7 +78,7 @@ I do not want to explain every feature here. These are the areas that matter mos
 - **Reusable workflows:** 22 included skills cover RAP, tests, migrations, Clean Core analysis, transport reviews, system documentation, and more.
 - **More checks before a release:** ARC-1 runs automated tests against the code and real SAP systems, checks dependencies and containers, and publishes information about what is included in a release.
 
-For the exact technical list, including fixes for transport state, ABAP object types, BTP token exchange, tracing, and protocol compatibility, use the [v1.0.0 release notes](https://github.com/arc-mcp/arc-1/releases/tag/v1.0.0) and the [changelog](https://github.com/arc-mcp/arc-1/blob/main/CHANGELOG.md).
+For the exact technical list, including fixes for transport state, ABAP object types, BTP token exchange, tracing, and protocol compatibility, use the [release notes](https://docs.arc-1-mcp.com/release-notes/) and the [GitHub v1.0.0 release](https://github.com/arc-mcp/arc-1/releases/tag/v1.0.0).
 
 ## Skills for complete SAP tasks
 
@@ -132,7 +132,7 @@ If you are new to ARC-1, use the [quickstart](https://docs.arc-1-mcp.com/quickst
 
 For a team deployment, start with the [BTP overview](https://docs.arc-1-mcp.com/btp-overview/). Decide the topology, identity model, destinations, and responsibilities before enabling more capabilities. Principal Propagation should be the normal choice when SAP needs to see the human user.
 
-If you already run ARC-1, follow the [update guide](https://docs.arc-1-mcp.com/updating/) and review the release notes. For production, pin a version instead of using `latest`, keep the first acceptance test read-only, and review the current SAP API policy and your own agreements before enabling data preview or free SQL.
+If you already run ARC-1, follow the [update guide](https://docs.arc-1-mcp.com/updating/) and review the [release notes](https://docs.arc-1-mcp.com/release-notes/). For production, pin a version instead of using `latest`, keep the first acceptance test read-only, and review the current SAP API policy and your own agreements before enabling data preview or free SQL.
 
 ## ARC-1, SAP's MCP server, and the API policy
 
