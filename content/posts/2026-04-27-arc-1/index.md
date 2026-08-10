@@ -56,17 +56,17 @@ That split is very important for enterprise usage, because it lets you separate 
 
 ## Safe by default, not allow all by default
 
-The next big difference is that ARC-1 starts from the assumption that the default should be restrictive. Out of the box ARC-1 is read-only. It blocks free SQL. It blocks named table preview. It does not expose transport actions unless those are enabled. And even if writing is enabled, writes are still restricted to `$TMP` unless packages are explicitly allowed.
+The next big difference is that ARC-1 starts from the assumption that the default should be restrictive. Out of the box ARC-1 is read-only. It blocks free SQL. It blocks named table preview. Transport reads such as list, get, check, and history remain available, but transport mutations require both writes and transport writes to be explicitly enabled. And even if writing is enabled, writes are still restricted to `$TMP` unless packages are explicitly allowed.
 
 That last point is important to me. Yes, it makes the first setup a bit less magical. Sometimes you need to configure one more thing. But I prefer that over accidentally giving an AI assistant full write access to transportable packages because one flag was too broad.
 
-ARC-1 also has operation allowlists and denylists, package restrictions, and safety profiles like `viewer`, `viewer-sql`, or `developer`. So there is not only one on or off switch. For SAP development that feels much more realistic to me than a server that starts by allowing everything and then hopes people will restrict it later.
+ARC-1 also has an action deny list, package restrictions, and safety profiles including `viewer`, `viewer-data`, `viewer-sql`, `developer`, `developer-data`, `developer-sql`, and `admin`. So there is not only one on or off switch. For SAP development that feels much more realistic to me than a server that starts by allowing everything and then hopes people will restrict it later.
 
 ## Layered security, not just one switch
 
 This also leads to the next point. For me, security here is not one boolean setting. It is several layers on top of each other.
 
-At the ARC-1 level there is the server safety configuration itself: read-only mode, blocked SQL, package restrictions, operation filters, transport gates. Then there is the identity and role layer on top, for example via OIDC or XSUAA scopes and roles. And then there is still the SAP system itself with its own authorization objects and checks.
+At the ARC-1 level there is the server safety configuration itself: read-only mode, blocked SQL, package restrictions, the action deny list, and transport gates. Then there is the identity and role layer on top, for example via OIDC or XSUAA scopes and roles. And then there is still the SAP system itself with its own authorization objects and checks.
 
 That means all of these layers have to allow something before it actually happens. If ARC-1 is configured read-only, then even a user with a more powerful role still cannot write. If a user has write scope in ARC-1, but the SAP backend authorization is missing, the write still fails.
 
@@ -104,7 +104,7 @@ I also want to stress the testing part, because for a project like this it matte
 
 If an MCP server only works in one perfect demo system, then that is not enough. SAP systems are messy. Different releases behave differently. Different endpoints exist or do not exist. BTP ABAP is different again. And error handling around ADT is not always beautiful.
 
-That is why ARC-1 puts a lot of effort into testing. Right now the project has more than 1,300 unit tests, plus integration tests and E2E tests that execute real MCP tool calls against live SAP systems. As a freelancer I obviously do not have access to every possible enterprise landscape, but I do test against real systems. I test against BTP ABAP, the ABAP trial system in Docker, and the older 7.50 trial system.
+That is why ARC-1 puts a lot of effort into testing. Right now the project has [3,474 unit tests, a 262-test default integration profile, and a 141-test default E2E profile](https://github.com/arc-mcp/arc-1#testing). The integration and E2E profiles test against live SAP systems, and the E2E tests execute real MCP tool calls against a running ARC-1 server. As a freelancer I obviously do not have access to every possible enterprise landscape, but I do test against real systems. I test against BTP ABAP, the ABAP trial system in Docker, and the older 7.50 trial system.
 
 I also do not test only with one ideal model and one toy example. I try it myself with stronger and weaker models and with workflows that are much closer to reality. That includes things like clean core analysis or creating a full RAP project from nothing, not even a table, up to an activated RAP project you can actually use. A lot of the workflows and feature ideas behind that are also visible in the [ARC-1 skills catalog](https://github.com/arc-mcp/arc-1/blob/main/skills/README.md), because those are more or less the kinds of use cases I want to make work reliably.
 
@@ -116,21 +116,21 @@ And that is fine. I do not think ARC-1 needs to exist because every other projec
 
 At the same time I think ARC-1 is different enough in architecture and focus that it makes sense right now. It is especially different from the angle of secure defaults, central deployment, layered security, per-user identity, and auditability.
 
-And yes, it may also differentiate itself from the future official SAP approach depending on how that evolves. As of SAP's [November 4, 2025 announcement about the next era of ABAP development](https://community.sap.com/t5/technology-blog-posts-by-sap/introducing-the-next-era-of-abap-development/ba-p/14260522), SAP plans an official ABAP MCP server for Q2 2026 together with the ABAP language server and related SDK pieces in VS Code. I think that is good news.
+And yes, it now also differentiates itself from SAP's official approach. SAP first announced the server in its [November 4, 2025 post about the next era of ABAP development](https://community.sap.com/t5/technology-blog-posts-by-sap/introducing-the-next-era-of-abap-development/ba-p/14260522). Since then, SAP has [made the official ABAP MCP server available in both Eclipse and VS Code](https://community.sap.com/t5/technology-blog-posts-by-sap/abap-ai-chapter-3-we-go-agentic/ba-p/14391469). I think that is good news.
 
-Actually, that is also the point where building yet another ADT MCP server becomes harder to justify long term. If SAP publishes the language server and SDK in a reusable way, then the right move would be to reuse the same foundation that the official SAP MCP server and Eclipse tooling use instead of reimplementing more and more HTTP details on the community side.
+The current difference is architectural. SAP's [configuration guide](https://help.sap.com/docs/abap-cloud/abap-development-tools-user-guide/configuring-adt-mcp-server-ed94320814734d97801f51a5b6deb802) describes the ADT MCP server as a local HTTP server hosted by the IDE and protected with a generated bearer token. ARC-1 can also run locally, but the main direction described in this post remains central deployment, BTP integration, enterprise authentication, per-user backend identity, roles, and audit logging.
 
-If SAP ends up shipping a server with a similar architectural direction, broad system coverage, and the same kind of enterprise features, then there may eventually be no strong reason for ARC-1 to continue. For me that would still be a win.
+SAP also says that a possible standalone shipment of the ABAP Language Server and MCP Server is still under discussion. If reusable standalone components become available, ARC-1 should evaluate using that foundation instead of reimplementing more and more HTTP details on the community side. For now, the official local server and a centrally deployed ARC-1 instance are two existing approaches with different deployment and governance models.
 
-The point is not that my server must win. The point is that there is clearly a gap today, the community is filling it, and competition is usually good. It helps people choose, it helps ideas spread, and ideally it also helps SAP learn from what the community already built. Until then, people can decide on their own if ARC-1 is useful for them.
+The point is not that my server must win. The point is that different architectures serve different needs, and competition is usually good. It helps people choose, it helps ideas spread, and it gives both SAP and community projects feedback from real use. People can decide whether the official local ADT MCP server, a centrally deployed ARC-1 setup, or both fit their landscape.
 
 ## A note on ADT APIs and SAP's new API policy
 
-There is one more point worth separating from the architecture discussion. SAP published a new API policy in April 2026, and some practical implications still need clarification, especially for SAP customers, partners, and community tools that build on top of SAP development APIs.
+There is one more point worth separating from the architecture discussion. SAP published a new API policy in April 2026. The [current SAP API Policy is version 4.2026a](https://help.sap.com/doc/sap-api-policy/latest/en-US/API_Policy_latest.pdf). It permits published APIs for their documented use, but says non-published APIs must not be used unless documentation or SAP authorization permits it. It also explicitly restricts API use with generative AI systems that plan, select, or execute sequences of calls outside SAP-endorsed architectures and documented limits. That makes this more than a theoretical support question for SAP customers, partners, and community tools that build on top of SAP development APIs.
 
 For ADT, the publicly available material points to a more nuanced situation. SAP provides an official ADT SDK with JavaDoc, and the ADT download page describes it as a public API to implement or integrate your own tools with SAP's ABAP IDE. There is also an SAP document about creating and consuming RESTful APIs in ADT. This does not imply that every internal `/sap/bc/adt` endpoint is covered by the same support boundary, but it does show that parts of the ADT tooling and communication model are documented and intended for integration scenarios.
 
-This is also relevant to what SAP wrote in the discussion around the new ABAP Development Tools for VS Code. SAP described the ABAP language server as something like an "ADT SDK 2.0" and mentioned plans to release it as a standalone component after the first VS Code extension release. A standalone release could make the support boundaries clearer for community tools, CLIs, MCP servers, and other integrations. Until more detailed guidance is available, the main point is to track SAP's policy and documentation closely and adjust implementations when specific activities are clarified as unsupported or not permitted.
+Since then, SAP has shipped the ABAP Language Server and MCP Server as parts of Eclipse and VS Code, while a standalone shipment remains under discussion. That does not by itself define the support boundary for every endpoint used by third-party tools. ARC-1's position is therefore deliberately cautious: stay close to documented and discoverable ADT behavior, keep data preview and free SQL off by default, review the SAP policy and the customer's SAP agreement, and ask SAP before production use. The [ARC-1 API Policy and Architecture Alignment](https://docs.arc-1-mcp.com/sap-api-policy-and-architecture/) page covers that position in more detail.
 
 ## Why this matters for the next post
 
@@ -160,7 +160,11 @@ The next post is where I want to go deeper into the BTP side, because that is wh
 - [DassianInc/dassian-adt](https://github.com/DassianInc/dassian-adt)
 - [ARC-1 Skills Catalog](https://github.com/arc-mcp/arc-1/blob/main/skills/README.md)
 - [Introducing the Next Era of ABAP Development](https://community.sap.com/t5/technology-blog-posts-by-sap/introducing-the-next-era-of-abap-development/ba-p/14260522)
-- [SAP API Policy](https://www.sap.com/documents/2026/04/dce9aee4-497f-0010-bca6-c68f7e60039b.html)
+- [ABAP AI - Chapter 3: We Go Agentic!](https://community.sap.com/t5/technology-blog-posts-by-sap/abap-ai-chapter-3-we-go-agentic/ba-p/14391469)
+- [Configuring the ADT MCP Server](https://help.sap.com/docs/abap-cloud/abap-development-tools-user-guide/configuring-adt-mcp-server-ed94320814734d97801f51a5b6deb802)
+- [SAP Model Context Protocol Tools](https://help.sap.com/docs/abap-cloud/abap-development-tools-user-guide/model-context-protocol-tools)
+- [SAP API Policy](https://help.sap.com/doc/sap-api-policy/latest/en-US/API_Policy_latest.pdf)
+- [ARC-1 API Policy and Architecture Alignment](https://docs.arc-1-mcp.com/sap-api-policy-and-architecture/)
 - [ABAP Development Tools SDK](https://tools.hana.ondemand.com/#abap)
 - [Create and Consume RESTful APIs in ADT](https://www.sap.com/documents/2013/04/12289ce1-527c-0010-82c7-eda71af511fa.html)
 - [ABAP Development Tools for VS Code discussion](https://community.sap.com/t5/technology-blog-posts-by-sap/abap-development-tools-for-vs-code-everything-you-need-to-know/bc-p/14263439/highlight/true#M186133)
