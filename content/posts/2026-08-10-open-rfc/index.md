@@ -54,6 +54,8 @@ Once you go deeper into RFC, a much larger world opens up. The client first has 
 
 The good news is that RFC is documented better than I first expected. I used the official [SAP NW RFC SDK 7.50 Programming Guide](https://support.sap.com/content/dam/support/en_us/library/ssp/products/connectors/nwrfcsdk/NW_RFC_750_ProgrammingGuide.pdf), the current SDK Doxygen documentation, the ABAP Keyword Documentation for the [RFC protocol](https://help.sap.com/doc/abapdocu_latest_index_htm/latest/en-US/ABENRFC_PROTOCOL.html), interfaces, restrictions, and session context, plus SAP's Network Interface documentation and relevant SAP Notes. The archived `node-rfc` and PyRFC APIs and tests are also important compatibility references.
 
+I also used [OWASP pysap](https://github.com/OWASP/pysap) and its [documentation](https://pysap.readthedocs.io/en/latest/) as a low-level reference for SAP network protocols. pysap, initially designed and developed by Martin Gallo, is a Python and Scapy packet-crafting and protocol-research toolkit, while open-rfc is an application-facing Node.js RFC client. Thank you to Martin and all pysap contributors for making this research available.
+
 Most importantly, I do not only test against mocks. Because of [ARC-1](https://github.com/arc-mcp/arc-1), I already have three ABAP trial systems for SAP NetWeaver 7.50, SAP S/4HANA 2023, and SAP S/4HANA 2025. Development tests run against all three. The formal first-beta support contract is intentionally smaller and qualifies NetWeaver 7.50 and S/4HANA 2023 with the exact packaged artifact.
 
 I keep offline protocol, property, fault, resource, and compatibility tests separate from live SAP evidence. The supported `node-rfc` facade is exercised against a pinned corpus from the archived project. For a beta release, the same exact tarball must pass as a standalone dependency, as the `node-rfc` npm alias, and below unchanged `@sap/cds-rfc`. A green test from some earlier source checkout does not promote a different package.
@@ -160,5 +162,6 @@ Let's make this work.
 - [node-rfc maintenance announcement](https://github.com/SAP-archive/node-rfc/issues/329)
 - [Archived SAP PyRFC project](https://github.com/SAP-archive/PyRFC)
 - [PyRFC maintenance announcement](https://github.com/SAP-archive/PyRFC/issues/372)
+- [OWASP pysap](https://github.com/OWASP/pysap)
 - [SAP CAP RFC plugin](https://www.npmjs.com/package/@sap/cds-rfc)
 - [Code Connect 2026](https://code-connect.dev/)
