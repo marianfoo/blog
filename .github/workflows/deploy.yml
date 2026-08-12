@@ -1,5 +1,5 @@
 # GitHub Actions workflow to build and deploy Hugo site to GitHub Pages
-# Triggers on every push to main branch
+# Triggers on every push to main and once each morning for scheduled posts
 
 name: Deploy Hugo site to GitHub Pages
 
@@ -8,6 +8,10 @@ on:
   push:
     branches:
       - main
+
+  # 01:00 UTC is 03:00 in Berlin while daylight saving time is active.
+  schedule:
+    - cron: "0 1 * * *"
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
