@@ -573,7 +573,7 @@
       "latestSeenVersion": "1.136.22",
       "latestScrapedVersion": "1.136.15",
       "lastCheckedAt": "2026-08-27T07:29:47.625Z",
-      "lastStatus": "checked-no-change",
+      "lastStatus": "already-checked",
       "patches": {
         "1.136.15": {
           "version": "1.136.15",
@@ -1024,7 +1024,7 @@
       "latestSeenVersion": "1.148.9",
       "latestScrapedVersion": "1.148.0",
       "lastCheckedAt": "2026-08-27T07:29:47.789Z",
-      "lastStatus": "checked-no-change",
+      "lastStatus": "already-checked",
       "patches": {
         "1.148.0": {
           "version": "1.148.0",
