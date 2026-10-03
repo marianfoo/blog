@@ -617,7 +617,7 @@
       "latestSeenVersion": "1.136.23",
       "latestScrapedVersion": "1.136.15",
       "lastCheckedAt": "2026-10-02T05:02:53.777Z",
-      "lastStatus": "checked-no-change",
+      "lastStatus": "already-checked",
       "patches": {
         "1.136.15": {
           "version": "1.136.15",
@@ -1079,7 +1079,7 @@
       "latestSeenVersion": "1.148.12",
       "latestScrapedVersion": "1.148.0",
       "lastCheckedAt": "2026-10-02T05:02:53.961Z",
-      "lastStatus": "checked-no-change",
+      "lastStatus": "already-checked",
       "patches": {
         "1.148.0": {
           "version": "1.148.0",
@@ -1354,7 +1354,7 @@
       "latestSeenVersion": "1.153.0",
       "latestScrapedVersion": "1.153.0",
       "lastCheckedAt": "2026-10-02T05:02:54.221Z",
-      "lastStatus": "scraped",
+      "lastStatus": "already-scraped",
       "patches": {
         "1.153.0": {
           "version": "1.153.0",
