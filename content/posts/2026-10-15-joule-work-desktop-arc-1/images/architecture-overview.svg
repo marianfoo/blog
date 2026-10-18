@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="590" viewBox="0 0 1440 590" role="img" aria-labelledby="title desc">
+  <title id="title">Your work and SAP context, connected</title>
+  <desc id="desc">Joule Work Desktop brings together files, work context and conversations. An approved connector reaches ARC-1 on SAP BTP, where the company manages access to SAP systems. The result can be organized in a Space.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="none" stroke="#7856b3" stroke-width="1.8"/></marker>
+    <style>text{font-family:Inter,Arial,sans-serif;fill:#242137}.title{font-size:38px;font-weight:700}.head{font-size:29px;font-weight:700}.body{font-size:24px}.small{font-size:21px;fill:#625c75}.line{stroke:#7856b3;stroke-width:3;fill:none;marker-end:url(#arrow)}</style>
+  </defs>
+  <rect width="1440" height="590" fill="#faf9fd"/>
+  <text x="60" y="78" class="title">Your work and SAP context, connected</text>
+  <text x="60" y="122" class="body">Bring the question, the evidence and the next step into one place.</text>
+  <rect x="60" y="180" width="385" height="275" rx="22" fill="#fff" stroke="#dcd5e8" stroke-width="2"/>
+  <text x="88" y="234" class="head">Joule Work Desktop</text>
+  <text x="88" y="290" class="body">Files and work context</text>
+  <text x="88" y="334" class="body">Questions and conversations</text>
+  <text x="88" y="378" class="body">Findings organized in Spaces</text>
+  <path d="M445 318 H526" class="line"/>
+  <rect x="530" y="180" width="380" height="275" rx="22" fill="#eee7fb" stroke="#d2bfee" stroke-width="2"/>
+  <text x="558" y="234" class="head">ARC-1 on SAP BTP</text>
+  <text x="558" y="290" class="body">An approved connector</text>
+  <text x="558" y="334" class="body">Tools to investigate SAP</text>
+  <text x="558" y="378" class="body">Access managed by IT</text>
+  <path d="M910 318 H991" class="line"/>
+  <rect x="995" y="180" width="385" height="275" rx="22" fill="#fff" stroke="#dcd5e8" stroke-width="2"/>
+  <text x="1023" y="234" class="head">Your SAP systems</text>
+  <text x="1023" y="290" class="body">ECC and S/4HANA</text>
+  <text x="1023" y="334" class="body">SAP ABAP cloud environment</text>
+  <text x="1023" y="394" class="small">Capabilities depend on the system</text>
+  <text x="1023" y="424" class="small">and the permissions granted.</text>
+  <text x="60" y="515" class="body">Start with the context you have. Ask SAP for the evidence you need.</text>
+  <text x="60" y="554" class="small">Simplified overview of the proposed connection. Your IT team prepares the SAP access.</text>
+</svg>
