@@ -1360,7 +1360,7 @@
       "lastError": null
     },
     "1.152": {
-      "support": "Maintenance",
+      "support": "Out of maintenance",
       "lts": false,
       "latestSeenVersion": "1.152.1",
       "latestScrapedVersion": "1.152.0",
