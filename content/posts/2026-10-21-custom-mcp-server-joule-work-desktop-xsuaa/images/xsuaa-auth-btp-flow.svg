@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1020" viewBox="0 0 1000 1020" role="img" aria-labelledby="title desc">
+  <title id="title">Where xsuaa-auth fits in a custom MCP server on SAP BTP</title>
+  <desc id="desc">Joule Work Desktop sends a user token to the custom MCP server. Inside that server, xsuaa-auth provides OAuth routes connected to XSUAA and validates tokens. The tool code receives the verified user and scopes, checks permissions, and uses xsuaa-auth's BTP helpers to resolve destination credentials. The application's HTTP client calls the SAP API with those credentials. SAP checks the mapped user's permissions. Backend trust, user mapping, Connectivity Service and Cloud Connector are not drawn.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#536980"/></marker>
+    <style>
+      text { font-family: Arial, Helvetica, sans-serif; fill: #18324d; }
+      .heading { font-size: 27px; font-weight: 700; }
+      .body { font-size: 23px; }
+      .label { font-size: 20px; fill: #435b72; }
+      .library { fill: #e6f4ef; stroke: #25826b; stroke-width: 2; }
+      .service { fill: #edf3fd; stroke: #708fb5; stroke-width: 2; }
+      .app { fill: #fff; stroke: #8092a6; stroke-width: 2; }
+      .line { fill: none; stroke: #536980; stroke-width: 2.5; marker-end: url(#arrow); }
+      .both { marker-start: url(#arrow); }
+    </style>
+  </defs>
+  <rect width="1000" height="1020" rx="14" fill="#fff"/>
+
+  <rect x="80" y="32" width="490" height="110" rx="12" class="app"/>
+  <text x="325" y="76" text-anchor="middle" class="heading">Joule Work Desktop</text>
+  <text x="325" y="111" text-anchor="middle" class="body">Your signed-in session</text>
+
+  <rect x="28" y="215" width="944" height="615" rx="16" fill="#f5f8fc" stroke="#afbed0" stroke-width="2"/>
+  <text x="942" y="249" text-anchor="end" class="heading">SAP BTP</text>
+  <rect x="50" y="270" width="550" height="520" rx="12" fill="#fff" stroke="#7b8da1" stroke-width="2"/>
+  <text x="80" y="304" class="heading">Your custom MCP server</text>
+
+  <rect x="80" y="340" width="490" height="105" rx="10" class="library"/>
+  <text x="325" y="381" text-anchor="middle" class="heading">xsuaa-auth</text>
+  <text x="325" y="417" text-anchor="middle" class="body">OAuth routes + token validation</text>
+
+  <rect x="670" y="340" width="280" height="140" rx="10" class="service"/>
+  <text x="810" y="380" text-anchor="middle" class="heading">XSUAA</text>
+  <text x="810" y="413" text-anchor="middle" class="body">Issues tokens</text>
+  <text x="810" y="443" text-anchor="middle" class="label">Sign-in through your</text>
+  <text x="810" y="467" text-anchor="middle" class="label">identity provider</text>
+
+  <rect x="80" y="510" width="490" height="105" rx="10" class="app"/>
+  <text x="325" y="551" text-anchor="middle" class="heading">Your tool code</text>
+  <text x="325" y="587" text-anchor="middle" class="body">Permissions + business API call</text>
+
+  <rect x="80" y="685" width="490" height="80" rx="10" class="library"/>
+  <text x="325" y="718" text-anchor="middle" class="heading">xsuaa-auth / btp</text>
+  <text x="325" y="748" text-anchor="middle" class="body">User-aware destination helpers</text>
+
+  <rect x="670" y="685" width="280" height="105" rx="10" class="service"/>
+  <text x="810" y="718" text-anchor="middle" class="heading">Destination Service</text>
+  <text x="810" y="748" text-anchor="middle" class="label">Connection +</text>
+  <text x="810" y="776" text-anchor="middle" class="label">authentication material</text>
+
+  <rect x="80" y="913" width="870" height="80" rx="12" class="app"/>
+  <text x="515" y="945" text-anchor="middle" class="heading">SAP business API</text>
+  <text x="515" y="976" text-anchor="middle" class="body">Checks your mapped SAP user's permissions</text>
+
+  <path d="M 325 142 V 270" class="line"/>
+  <text x="350" y="184" class="body">MCP + user token</text>
+  <path d="M 575 392 H 665" class="line both"/>
+  <text x="635" y="373" text-anchor="middle" class="label">OAuth</text>
+  <path d="M 325 448 V 507" class="line"/>
+  <text x="348" y="483" class="label">Verified user + scopes</text>
+  <path d="M 325 621 V 679" class="line both"/>
+  <text x="348" y="643" class="label">User context /</text>
+  <text x="348" y="668" class="label">credentials</text>
+  <path d="M 575 735 H 665" class="line both"/>
+  <text x="635" y="715" text-anchor="middle" class="label">Lookup</text>
+  <path d="M 80 565 H 14 V 953 H 74" class="line"/>
+  <text x="80" y="868" class="body">Your HTTP client calls SAP using destination credentials.</text>
+  <text x="80" y="895" class="label">Trust, exchange and user mapping determine the backend identity.</text>
+</svg>

@@ -1,7 +1,7 @@
 ---
 title: "Build a Custom MCP Server for Joule Work Desktop with XSUAA"
 date: 2026-10-21T17:25:36+02:00
-lastmod: 2026-10-21T23:50:50+02:00
+lastmod: 2026-10-22T00:39:51+02:00
 draft: false
 slug: "custom-mcp-server-joule-work-desktop-xsuaa"
 description: "Build custom MCP servers for Joule Work Desktop with xsuaa-auth: OAuth sign-in, per-user access, and central authorization on SAP BTP."
@@ -41,6 +41,8 @@ The same approach could support reading a delivery status, checking an order, or
 
 SAP documents [Pattern 2: Custom MCP Server on SAP BTP](https://architecture.learning.sap.com/docs/ref-arch/137800#pattern-2-custom-mcp-server-on-sap-btp) for organizations that want to build and operate their own server. Its guidance calls for authenticated connections, controlled access, protection of backend API quotas, and reliable operation.
 
+{{< figure src="images/sap-custom-mcp-reference-architecture.jpg" alt="SAP Architecture Center diagram showing a custom MCP server inside the SAP BTP subaccount, connected to external AI clients and SAP solutions, with identity trust shown separately." width="940" caption="SAP's reference architecture. The **Custom MCP Server** box inside BTP is the part this article builds on. Screenshot captured on 22 October 2026; diagram dated 8 June 2026. Source: [SAP Architecture Center](https://architecture.learning.sap.com/docs/ref-arch/137800#architecture), © SAP SE or an SAP affiliate company and contributors ([Apache 2.0](https://github.com/SAP/architecture-center#Apache-2.0-1-ov-file))." >}}
+
 **xsuaa-auth helps turn the authentication part of that architecture into reusable code.** It gives your server an XSUAA sign-in flow, token validation, and helpers for destination-based user propagation. Your team can build on those components while defining the business tools and their permissions.
 
 The complete architecture also needs input validation, rate limits, monitoring, and credential management. SAP additionally calls for identifying the calling agent, retaining the human user's context, and narrowing downstream credentials to the tool's needs. User authentication alone does not establish all of those properties. The library is a building block for this design, not certification of a finished server.
@@ -71,7 +73,11 @@ Returning only the necessary fields also limits what enters the conversation. SA
 
 ## Your SAP permissions should travel with the request
 
-The important part of this design is **whose access SAP checks**.
+The important part of this design is **whose access SAP checks**. This simplified view shows where the library fits:
+
+{{< figure src="images/xsuaa-auth-btp-flow.svg" alt="xsuaa-auth runs inside the custom MCP server on SAP BTP. It connects OAuth sign-in to XSUAA, validates the user's token, and provides destination helpers. The application's tool code calls SAP with destination credentials, and SAP checks the mapped user's permissions." width="1000" caption="Simplified authentication and connectivity view. Green boxes are library code; blue boxes are BTP services. OAuth browser redirects and the on-premise network path are omitted." >}}
+
+**Green boxes are xsuaa-auth code inside your server.** XSUAA handles token issuance and sign-in through the configured identity provider. Your tool uses the library's BTP helpers to obtain destination credentials, then its HTTP client calls the API. On-premise connections can also require Connectivity Service and Cloud Connector, omitted here for clarity. The configured exchange, trust, and user mapping determine the effective backend user.
 
 After the browser's OAuth sign-in, JWD sends authenticated requests to the MCP server on your behalf. With xsuaa-auth configured to require a user, the server validates that user context and the permissions needed for the tool.
 
