@@ -188,7 +188,7 @@
       "latestSeenVersion": "1.108.57",
       "latestScrapedVersion": "1.108.50",
       "lastCheckedAt": "2026-10-23T05:02:33.523Z",
-      "lastStatus": "checked-no-change",
+      "lastStatus": "already-checked",
       "patches": {
         "1.108.50": {
           "version": "1.108.50",
@@ -661,7 +661,7 @@
       "latestSeenVersion": "1.136.24",
       "latestScrapedVersion": "1.136.15",
       "lastCheckedAt": "2026-10-23T05:02:33.605Z",
-      "lastStatus": "checked-no-change",
+      "lastStatus": "already-checked",
       "patches": {
         "1.136.15": {
           "version": "1.136.15",
