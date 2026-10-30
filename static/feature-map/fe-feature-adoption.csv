@@ -1,4 +1,5 @@
 "Controls, UI Elements, Features",Supported Floorplans,Developer Documentation,SAP Fiori Design Guidelines,Available from Version
+Creation using value help,Analytical list page; List report page; Object page,Enabling Creation Using the Add Button and Value Help,Enabling Creation Using the Add Button and Value Help,1.154.0
 Bar chart,Analytical list page; List report page; Object page,Bar Chart,Bar Chart,1.153.0
 Bubble chart,Analytical list page; List report page; Object page,Bubble Chart,Bubble Chart,1.153.0
 Button/Navigation,Analytical list page; List report page; Object page; Overview page,Navigation from an App (Outbound Navigation),Navigation from an App (Outbound Navigation),1.153.0
@@ -11,7 +12,7 @@ Custom content in table toolbar,Analytical list page; List report page; Object p
 Donut chart,Analytical list page; List report page; Object page,Donut Chart,Donut Chart,1.153.0
 Dual combination chart,Analytical list page; List report page; Object page,Dual Combination Chart,Dual Combination Chart,1.153.0
 Harvey micro chart,Analytical list page; List report page; Object page,Harvey Micro Chart,Harvey Micro Chart,1.153.0
-Hide or show filter fields,List report page,Configuring Dynamic Visibility for Filter Fields,Configuring Dynamic Visibility for Filter Fields,1.153.0
+Hide or show filter fields,List report page,Configuring the Dynamic Visibility of Filter Fields,Configuring the Dynamic Visibility of Filter Fields,1.153.0
 Hide or show table columns,Analytical list page; List report page; Object page,Hiding or Showing Table Columns,Hiding or Showing Table Columns,1.153.0
 Scatter chart,Analytical list page; List report page; Object page,Scatter Chart,Scatter Chart,1.153.0
 Share functionality,Analytical list page; List report page; Object page,The Share Functionality; Store/Restore the Application State,The Share Functionality; Store/Restore the Application State,1.153.0
