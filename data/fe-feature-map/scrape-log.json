@@ -1376,7 +1376,7 @@
       "latestSeenVersion": "1.151.3",
       "latestScrapedVersion": "1.151.0",
       "lastCheckedAt": "2026-11-18T05:01:31.683Z",
-      "lastStatus": "checked-no-change",
+      "lastStatus": "already-checked",
       "patches": {
         "1.151.0": {
           "version": "1.151.0",
